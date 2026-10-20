@@ -886,15 +886,25 @@ int IrVmLinearFeaturesOn(void)
 void IrVmStrictTreeFallback(struct ParseState *Parser, const char *why)
 {
     const char *reason = why ? why : "body";
+    const char *func_name = NULL;
     if (!IrVmStrictOn() || Parser == NULL)
         return;
     /* Keep the normal diagnostic stable; opt-in trace identifies which guest
      * frame requested fallback, essential for debugging nested callbacks. */
     if (getenv("BABYC_BT") != NULL && IrCallDepth > 0
-        && IrCallDepth <= IR_CALL_MAX_DEPTH
-        && IrDebugFunc[IrCallDepth - 1] != NULL)
-        ProgramFail(Parser, "strict: tree fallback (%s) in %s",
-                    reason, IrDebugFunc[IrCallDepth - 1]);
+        && IrCallDepth <= IR_CALL_MAX_DEPTH)
+    {
+        IrFuncMeta *Meta = IrCurrentFunc[IrCallDepth - 1] != NULL
+            ? IrFuncMetaGet(IrCurrentFunc[IrCallDepth - 1]) : NULL;
+        if (Meta != NULL) func_name = Meta->Name;
+        if (func_name == NULL) func_name = IrDebugFunc[IrCallDepth - 1];
+        if (func_name != NULL)
+        {
+            ProgramFail(Parser, "strict: tree fallback (%s) in %s",
+                        reason, func_name);
+            return;
+        }
+    }
     ProgramFail(Parser, "strict: tree fallback (%s)", reason);
 }
 
