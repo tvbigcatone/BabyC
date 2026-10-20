@@ -1,0 +1,72 @@
+name: BabyC targeted regression
+on:
+  push:
+    branches:
+      - fix/msvc-c4101-posix
+  pull_request:
+    branches:
+      - main
+jobs:
+  linux-build-and-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential python3 libsqlite3-dev
+      - name: Build
+        id: build
+        run: make -C src -j2
+      - name: Run dual interpreter suite
+        env:
+          BABYC: ${{ github.workspace }}/src/babyc
+        run: bash src/tests/run_suite_dual.sh
+      - name: Run POSIX thread regressions (IR, token, and Linear STRICT)
+        if: always() && steps.build.outcome == 'success'
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd src
+          for mode in ir token linear-strict; do
+            unset BABYC_NO_IR || true
+            unset BABYC_EXEC || true
+            if [[ "$mode" == token ]]; then export BABYC_NO_IR=1; fi
+            if [[ "$mode" == linear-strict ]]; then export BABYC_EXEC=vm_strict; export BABYC_BT=1; fi
+            for spec in \
+              "tests/posix/void_ptr_typed_local.c|BabyPOSIX typed local from void pointer: ok" \
+              "tests/posix/pthread_create_join.c|BabyPOSIX pthread create join: ok" \
+              "tests/posix/pthread_exit_retval.c|BabyPOSIX pthread exit retval: ok" \
+              "tests/posix/guest_exit_zero.c|BabyPOSIX guest worker exit zero: ok"; do
+              file="${spec%%|*}"
+              expected="${spec#*|}"
+              if output="$(./babyc "$file" 2>&1)"; then
+                rc=0
+              else
+                rc=$?
+              fi
+              printf '%s\n' "$output"
+              if [[ "$rc" -ne 0 ]]; then
+                echo "FAIL mode=$mode test=$file exit=$rc"
+                if [[ "$mode" == linear-strict ]]; then
+                  echo "---- analyze $file ----"
+                  ./babyc --analyze "$file" || true
+                fi
+                exit "$rc"
+              fi
+              grep -Fq "$expected" <<<"$output"
+            done
+          done
+  windows-msvc-build:
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [Win32, x64]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure MSBuild
+        uses: microsoft/setup-msbuild@v2
+      - name: Build solution (MSVC warnings enabled)
+        shell: pwsh
+        run: msbuild src/msvc/babyc/babyc.sln /m /p:Configuration=Release /p:Platform=${{ matrix.platform }} /v:minimal

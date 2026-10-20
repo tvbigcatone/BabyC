@@ -195,7 +195,6 @@ static int BabyPosixDirFd(int dirfd)
 static void BabyPosixUnlinkatCall(struct ParseState *Parser,
     struct Value *ReturnValue, struct Value **Param, int NumArgs)
 {
-    int native_dir;
     (void)Parser; (void)NumArgs;
     if (Param[1]->Val->Pointer == NULL) {
         errno = EFAULT; ReturnValue->Val->Integer = -1; return;
@@ -203,6 +202,7 @@ static void BabyPosixUnlinkatCall(struct ParseState *Parser,
 #ifdef WIN32
     errno = ENOSYS; ReturnValue->Val->Integer = -1;
 #else
+    int native_dir;
     native_dir = BabyPosixDirFd((int)Param[0]->Val->Integer);
     if (native_dir < 0 && (int)Param[0]->Val->Integer != -100) {
         ReturnValue->Val->Integer = -1; return;
@@ -215,7 +215,6 @@ static void BabyPosixUnlinkatCall(struct ParseState *Parser,
 static void BabyPosixFaccessatCall(struct ParseState *Parser,
     struct Value *ReturnValue, struct Value **Param, int NumArgs)
 {
-    int native_dir;
     (void)Parser; (void)NumArgs;
     if (Param[1]->Val->Pointer == NULL) {
         errno = EFAULT; ReturnValue->Val->Integer = -1; return;
@@ -223,6 +222,7 @@ static void BabyPosixFaccessatCall(struct ParseState *Parser,
 #ifdef WIN32
     errno = ENOSYS; ReturnValue->Val->Integer = -1;
 #else
+    int native_dir;
     native_dir = BabyPosixDirFd((int)Param[0]->Val->Integer);
     if (native_dir < 0 && (int)Param[0]->Val->Integer != -100) {
         ReturnValue->Val->Integer = -1; return;
@@ -236,7 +236,6 @@ static void BabyPosixFaccessatCall(struct ParseState *Parser,
 static void BabyPosixReadlinkatCall(struct ParseState *Parser,
     struct Value *ReturnValue, struct Value **Param, int NumArgs)
 {
-    int native_dir;
     (void)Parser; (void)NumArgs;
     if (Param[1]->Val->Pointer == NULL ||
         (Param[3]->Val->Integer > 0 && Param[2]->Val->Pointer == NULL)) {
@@ -245,6 +244,7 @@ static void BabyPosixReadlinkatCall(struct ParseState *Parser,
 #ifdef WIN32
     errno = ENOSYS; ReturnValue->Val->Integer = -1;
 #else
+    int native_dir;
     native_dir = BabyPosixDirFd((int)Param[0]->Val->Integer);
     if (native_dir < 0 && (int)Param[0]->Val->Integer != -100) {
         ReturnValue->Val->Integer = -1; return;
@@ -258,7 +258,6 @@ static void BabyPosixReadlinkatCall(struct ParseState *Parser,
 static void BabyPosixSymlinkatCall(struct ParseState *Parser,
     struct Value *ReturnValue, struct Value **Param, int NumArgs)
 {
-    int native_dir;
     (void)Parser; (void)NumArgs;
     if (Param[0]->Val->Pointer == NULL || Param[2]->Val->Pointer == NULL) {
         errno = EFAULT; ReturnValue->Val->Integer = -1; return;
@@ -266,6 +265,7 @@ static void BabyPosixSymlinkatCall(struct ParseState *Parser,
 #ifdef WIN32
     errno = ENOSYS; ReturnValue->Val->Integer = -1;
 #else
+    int native_dir;
     native_dir = BabyPosixDirFd((int)Param[1]->Val->Integer);
     if (native_dir < 0 && (int)Param[1]->Val->Integer != -100) {
         ReturnValue->Val->Integer = -1; return;
@@ -278,7 +278,6 @@ static void BabyPosixSymlinkatCall(struct ParseState *Parser,
 static void BabyPosixLinkatCall(struct ParseState *Parser,
     struct Value *ReturnValue, struct Value **Param, int NumArgs)
 {
-    int olddir, newdir;
     (void)Parser; (void)NumArgs;
     if (Param[1]->Val->Pointer == NULL || Param[3]->Val->Pointer == NULL) {
         errno = EFAULT; ReturnValue->Val->Integer = -1; return;
@@ -286,6 +285,7 @@ static void BabyPosixLinkatCall(struct ParseState *Parser,
 #ifdef WIN32
     errno = ENOSYS; ReturnValue->Val->Integer = -1;
 #else
+    int olddir, newdir;
     olddir = BabyPosixDirFd((int)Param[0]->Val->Integer);
     newdir = BabyPosixDirFd((int)Param[2]->Val->Integer);
     if ((olddir < 0 && (int)Param[0]->Val->Integer != -100) ||
@@ -345,7 +345,6 @@ static void BabyPosixPutenvCall(struct ParseState *Parser,
 static void BabyPosixRenameatCall(struct ParseState *Parser,
     struct Value *ReturnValue, struct Value **Param, int NumArgs)
 {
-    int olddir, newdir;
     (void)Parser; (void)NumArgs;
     if (Param[1]->Val->Pointer == NULL || Param[3]->Val->Pointer == NULL) {
         errno = EFAULT; ReturnValue->Val->Integer = -1; return;
@@ -353,6 +352,7 @@ static void BabyPosixRenameatCall(struct ParseState *Parser,
 #ifdef WIN32
     errno = ENOSYS; ReturnValue->Val->Integer = -1;
 #else
+    int olddir, newdir;
     olddir = BabyPosixDirFd((int)Param[0]->Val->Integer);
     newdir = BabyPosixDirFd((int)Param[2]->Val->Integer);
     if ((olddir < 0 && (int)Param[0]->Val->Integer != -100) ||
@@ -663,11 +663,11 @@ static void BabyPosixExitUnderscoreCall(struct ParseState *Parser,
 static void BabyPosixForkCall(struct ParseState *Parser,
     struct Value *ReturnValue, struct Value **Param, int NumArgs)
 {
-    int gil;
     (void)Parser; (void)Param; (void)NumArgs;
 #ifdef WIN32
     errno = ENOSYS; ReturnValue->Val->Integer = -1;
 #else
+    int gil;
     gil = BabycGuestGIL_UnlockIfHeld();
     ReturnValue->Val->Integer = (long)fork();
     if (ReturnValue->Val->Integer != 0)
@@ -762,12 +762,12 @@ static void BabyPosixMkstempCall(struct ParseState *Parser,
     struct Value *ReturnValue, struct Value **Param, int NumArgs)
 {
     char *tmpl = (char *)Param[0]->Val->Pointer;
-    int native, guest, access;
     (void)Parser; (void)NumArgs;
     if (tmpl == NULL) { errno = EFAULT; ReturnValue->Val->Integer = -1; return; }
 #ifdef WIN32
     errno = ENOSYS; ReturnValue->Val->Integer = -1; return;
 #else
+    int native, guest, access;
     native = mkstemp(tmpl);
     if (native < 0) { ReturnValue->Val->Integer = -1; return; }
     access = BP_FD_READ | BP_FD_WRITE;

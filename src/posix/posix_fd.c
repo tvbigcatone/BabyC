@@ -283,13 +283,13 @@ static void BabyPosixOpenatCall(struct ParseState *p, struct Value *r,
     const char *path = (const char *)a[1]->Val->Pointer;
     int flags = (int)a[2]->Val->Integer;
     int mode = n >= 4 ? (int)a[3]->Val->Integer : 0666;
-    int nativeFlags, native_fd, guest_fd, access, native_dir;
     (void)p;
     if (path == NULL) { errno = EFAULT; r->Val->Integer = -1; return; }
 #ifdef WIN32
-    (void)dirfd; (void)mode; (void)native_dir;
+    (void)dirfd; (void)mode;
     errno = ENOSYS; r->Val->Integer = -1; return;
 #else
+    int nativeFlags, native_fd, guest_fd, access, native_dir;
     nativeFlags = BabyPosixNativeOpenFlags(flags);
     if (nativeFlags < 0) { r->Val->Integer = -1; return; }
     native_dir = BabyPosixFdNativeOfDir(dirfd);
@@ -506,7 +506,7 @@ void BabyPosixPreadCall(struct ParseState *p, struct Value *r,
     int fd = (int)a[0]->Val->Integer;
     long long count = (long long)a[2]->Val->Integer;
     long long offset = (long long)a[3]->Val->Integer;
-    int native_fd, saved_errno;
+    int native_fd;
     (void)p; (void)n;
     if (count < 0 || count > INT_MAX || offset < 0) {
         errno = EINVAL; r->Val->Integer = -1; return;
@@ -521,6 +521,7 @@ void BabyPosixPreadCall(struct ParseState *p, struct Value *r,
     errno = ENOSYS;
     r->Val->Integer = -1;
 #else
+    int saved_errno;
     r->Val->Integer = (long long)pread(native_fd, a[1]->Val->Pointer,
         (size_t)count, (off_t)offset);
     saved_errno = errno;
@@ -535,7 +536,7 @@ void BabyPosixPwriteCall(struct ParseState *p, struct Value *r,
     int fd = (int)a[0]->Val->Integer;
     long long count = (long long)a[2]->Val->Integer;
     long long offset = (long long)a[3]->Val->Integer;
-    int native_fd, saved_errno;
+    int native_fd;
     (void)p; (void)n;
     if (count < 0 || count > INT_MAX || offset < 0) {
         errno = EINVAL; r->Val->Integer = -1; return;
@@ -550,6 +551,7 @@ void BabyPosixPwriteCall(struct ParseState *p, struct Value *r,
     errno = ENOSYS;
     r->Val->Integer = -1;
 #else
+    int saved_errno;
     r->Val->Integer = (long long)pwrite(native_fd, a[1]->Val->Pointer,
         (size_t)count, (off_t)offset);
     saved_errno = errno;

@@ -67,6 +67,8 @@ struct BabyPosixThread {
     void *saved_stack_frame;
     struct StackFrame *saved_top_stack_frame;
     int saved_ir_call_depth;
+    int saved_lin_frame_depth;
+    IrLinThreadContext saved_lin_context;
     int saved_interp;
 };
 
@@ -173,12 +175,16 @@ static void BabyPosixGuestHeapCapture(struct BabyPosixThread *t)
     t->saved_stack_frame = NULL;
     t->saved_top_stack_frame = NULL;
     t->saved_ir_call_depth = 0;
+    t->saved_lin_frame_depth = 0;
+    memset(&t->saved_lin_context, 0, sizeof(t->saved_lin_context));
     if (pc == NULL)
         return;
     t->saved_heap_stack_top = pc->HeapStackTop;
     t->saved_stack_frame = pc->StackFrame;
     t->saved_top_stack_frame = pc->TopStackFrame;
     t->saved_ir_call_depth = IrCallDepth;
+    t->saved_lin_frame_depth = LinFrameDepth();
+    IrLinThreadContextCapture(&t->saved_lin_context);
     t->saved_interp = 1;
 }
 
@@ -188,6 +194,10 @@ static void BabyPosixGuestHeapRestore(struct BabyPosixThread *t)
     struct ValueProxyEntry **link;
     if (!t->saved_interp || pc == NULL)
         return;
+    /* pthread_exit bypasses FnCodeRun's ordinary linear-frame unwind. Restore
+     * that state before dropping IR call frames, matching the normal return
+     * order and preserving the suspended caller's active code/tables. */
+    LinFrameRestoreDepth(t->saved_lin_frame_depth);
     while (IrCallDepth > t->saved_ir_call_depth)
         IrFramePop();
     link = &pc->ValueProxyList;
@@ -202,6 +212,7 @@ static void BabyPosixGuestHeapRestore(struct BabyPosixThread *t)
     pc->HeapStackTop = t->saved_heap_stack_top;
     pc->StackFrame = t->saved_stack_frame;
     pc->TopStackFrame = t->saved_top_stack_frame;
+    IrLinThreadContextRestore(&t->saved_lin_context);
 }
 
 static void BabyPosixRunKeyDtors(unsigned long tslot);

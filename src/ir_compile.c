@@ -5797,7 +5797,6 @@ static void IrAnnotateExpr(IrExpr *E)
 
 static void IrAnnotateExprBody(IrExpr *E)
 {
-    int i;
     int child_all = 1;
     int child_fp = 0;
     if (E == NULL)

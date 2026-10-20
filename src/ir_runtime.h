@@ -166,6 +166,24 @@ extern char *IrGotoTarget;
 /* D1: frame lifecycle (impl in ir_frame.c) */
 IrCallFrame *IrFramePush(struct ParseState *Parser);
 void IrFramePop(void);
+/* Native guest-thread exits must restore the global Linear execution controls
+ * normally restored by FnCodeRun epilogues. */
+typedef struct IrLinThreadContext {
+    struct ParseState *Parser;
+    int StepAbort;
+    int RetSeen;
+    int Div0;
+    int ExecDepth;
+    int BabycExecDepth;
+    int SkippedCall;
+    long long RetVal;
+    unsigned char CallSkip[128];
+} IrLinThreadContext;
+void IrLinThreadContextCapture(IrLinThreadContext *context);
+void IrLinThreadContextRestore(const IrLinThreadContext *context);
+/* Save/restore the linear execution frame stack at native guest-thread exits. */
+int LinFrameDepth(void);
+void LinFrameRestoreDepth(int depth);
 void IrFrameFreeOwned(IrCallFrame *F);
 /* Shared frame-local metadata contract: record slots and obtain a safe scan extent. */
 void IrFrameNoteLocalSlot(IrCallFrame *F, int Slot);

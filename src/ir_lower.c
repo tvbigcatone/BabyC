@@ -885,9 +885,27 @@ int IrVmLinearFeaturesOn(void)
 /* Under vm_strict: any residual tree body after a failed lower is a hard error. */
 void IrVmStrictTreeFallback(struct ParseState *Parser, const char *why)
 {
+    const char *reason = why ? why : "body";
+    const char *func_name = NULL;
     if (!IrVmStrictOn() || Parser == NULL)
         return;
-    ProgramFail(Parser, "strict: tree fallback (%s)", why ? why : "body");
+    /* Keep the normal diagnostic stable; opt-in trace identifies which guest
+     * frame requested fallback, essential for debugging nested callbacks. */
+    if (getenv("BABYC_BT") != NULL && IrCallDepth > 0
+        && IrCallDepth <= IR_CALL_MAX_DEPTH)
+    {
+        IrFuncMeta *Meta = IrCurrentFunc[IrCallDepth - 1] != NULL
+            ? IrFuncMetaGet(IrCurrentFunc[IrCallDepth - 1]) : NULL;
+        if (Meta != NULL) func_name = Meta->Name;
+        if (func_name == NULL) func_name = IrDebugFunc[IrCallDepth - 1];
+        if (func_name != NULL)
+        {
+            ProgramFail(Parser, "strict: tree fallback (%s) in %s",
+                        reason, func_name);
+            return;
+        }
+    }
+    ProgramFail(Parser, "strict: tree fallback (%s)", reason);
 }
 
 /* True if lowered linear code uses memory ops incomplete under experimental
@@ -1082,6 +1100,51 @@ void LinFramePop(void)
     FnActive = F->PrevActive;
     IdxRunPop(&F->Run);
     F->Valid = 0;
+}
+
+/* A native guest thread can terminate through pthread_exit(), bypassing the
+ * ordinary FnCodeRun return path.  Unwind only its linear frames so the
+ * suspended interpreter thread regains its installed code tables and index
+ * runtime state.  The saved depth is captured while holding the guest GIL. */
+void IrLinThreadContextCapture(IrLinThreadContext *context)
+{
+    if (context == NULL) return;
+    context->Parser = LinParser;
+    context->StepAbort = LinStepAbort;
+    context->RetSeen = LinRetSeen;
+    context->Div0 = LinDiv0;
+    context->ExecDepth = LinExecDepth;
+    context->BabycExecDepth = BabycLinExecDepth;
+    context->SkippedCall = LinSkippedCall;
+    context->RetVal = LinRetVal;
+    memcpy(context->CallSkip, CallSkip, sizeof(CallSkip));
+}
+
+void IrLinThreadContextRestore(const IrLinThreadContext *context)
+{
+    if (context == NULL) return;
+    LinParser = context->Parser;
+    LinStepAbort = context->StepAbort;
+    LinRetSeen = context->RetSeen;
+    LinDiv0 = context->Div0;
+    LinExecDepth = context->ExecDepth;
+    BabycLinExecDepth = context->BabycExecDepth;
+    LinSkippedCall = context->SkippedCall;
+    LinRetVal = context->RetVal;
+    memcpy(CallSkip, context->CallSkip, sizeof(CallSkip));
+}
+
+int LinFrameDepth(void)
+{
+    return LinFrameSp;
+}
+
+void LinFrameRestoreDepth(int depth)
+{
+    if (depth < 0) depth = 0;
+    if (depth > LinFrameSp) return;
+    while (LinFrameSp > depth)
+        LinFramePop();
 }
 
 /* Nested compile frame — defined after LinLoop/LinLab. */
@@ -1303,9 +1366,84 @@ static int FnCodeRun(struct ParseState *Parser, FnCodeSlot *S, int was_nested)
 /* Admit void* callback parameters only when each use is explicitly cast to
  * a typed pointer and immediately consumed by dereference, member access, or
  * indexing. This is general AST validation, not a comparator-name fast path. */
+/* VM_TRACE in strict regressions is opt-in and reports the precise eligibility rejection. */
+/* Linear STRICT's pointer-parameter proof is intentionally conservative: it
+ * reasons about uses of the converted local, not source-code spellings. */
+/* A void* callback argument may be converted into a typed pointer local only
+ * when every use of that local is a direct dereference, member access, or
+ * indexing operation. This admits ordinary callbacks such as
+ * "int *p = (int *)arg; *p = ..." without allowing the pointer to escape. */
+static int FnCodeVoidParamLocalUsesSafeStmt(const IrStmt *S, int LocalSlot,
+                                             int Depth);
+static int FnCodeVoidParamLocalUsesSafeExpr(const IrExpr *E, int LocalSlot,
+                                             const IrExpr *Parent, int Depth)
+{
+    int i;
+    if (E == NULL) return 1;
+    if (Depth > 96) return 0;
+    if (E->Kind == IrExIdent && E->LocalSlot == LocalSlot)
+    {
+        if (Parent != NULL && Parent->Kind == IrExUnary
+            && Parent->Op == TokenAsterisk && Parent->Left == E)
+            return 1;
+        if (Parent != NULL && Parent->Kind == IrExMember
+            && Parent->Left == E && Parent->Ident != NULL)
+            return 1;
+        if (Parent != NULL && Parent->Kind == IrExIndex
+            && Parent->Left == E)
+            return 1;
+        /* A typed local may be tested against a null pointer without
+         * exposing or escaping the original void* argument.  The other
+         * operand must be the literal integer null constant (zero); arbitrary
+         * pointer comparisons remain outside this proof. */
+        if (Parent != NULL && Parent->Kind == IrExBinOp
+            && (Parent->Op == TokenEqual || Parent->Op == TokenNotEqual)
+            && ((Parent->Left == E && Parent->Right != NULL
+                 && Parent->Right->Kind == IrExConst
+                 && Parent->Right->ConstVal == 0)
+                || (Parent->Right == E && Parent->Left != NULL
+                    && Parent->Left->Kind == IrExConst
+                    && Parent->Left->ConstVal == 0)))
+            return 1;
+        return 0;
+    }
+    if (!FnCodeVoidParamLocalUsesSafeExpr(E->Left, LocalSlot, E, Depth + 1)
+        || !FnCodeVoidParamLocalUsesSafeExpr(E->Right, LocalSlot, E, Depth + 1))
+        return 0;
+    for (i = 0; E->Args != NULL && i < E->ArgCount; ++i)
+        if (!FnCodeVoidParamLocalUsesSafeExpr(E->Args[i], LocalSlot, E, Depth + 1))
+            return 0;
+    return 1;
+}
+
+static int FnCodeVoidParamLocalUsesSafeStmt(const IrStmt *S, int LocalSlot,
+                                             int Depth)
+{
+    int i;
+    if (S == NULL) return 1;
+    if (Depth > 96) return 0;
+    if (!FnCodeVoidParamLocalUsesSafeExpr(S->Expr, LocalSlot, NULL, 0))
+        return 0;
+    for (i = 0; S->DeclInitExprs != NULL && i < S->DeclInitCount; ++i)
+        if (!FnCodeVoidParamLocalUsesSafeExpr(S->DeclInitExprs[i], LocalSlot,
+                                               NULL, 0))
+            return 0;
+    if (!FnCodeVoidParamLocalUsesSafeStmt(S->ThenStmt, LocalSlot, Depth + 1)
+        || !FnCodeVoidParamLocalUsesSafeStmt(S->ElseStmt, LocalSlot, Depth + 1)
+        || !FnCodeVoidParamLocalUsesSafeStmt(S->BodyStmt, LocalSlot, Depth + 1)
+        || !FnCodeVoidParamLocalUsesSafeStmt(S->InitStmt, LocalSlot, Depth + 1)
+        || !FnCodeVoidParamLocalUsesSafeStmt(S->IncStmt, LocalSlot, Depth + 1))
+        return 0;
+    for (i = 0; S->Stmts != NULL && i < S->StmtCount; ++i)
+        if (!FnCodeVoidParamLocalUsesSafeStmt(S->Stmts[i], LocalSlot, Depth + 1))
+            return 0;
+    return 1;
+}
+
 static int FnCodeVoidParamExprSafe(const IrExpr *E, int Param,
                                    const IrExpr *Parent,
                                    const IrExpr *Grandparent,
+                                   const IrStmt *Body, int TypedLocalInitSlot,
                                    int Depth, int *Seen)
 {
     int i;
@@ -1318,46 +1456,71 @@ static int FnCodeVoidParamExprSafe(const IrExpr *E, int Param,
         if (Parent != NULL && Parent->Kind == IrExUnary
             && Parent->Op == TokenCast && Parent->Left == E
             && (Parent->TypeFlags & IR_TF_PTR) != 0
-            && Parent->ElemSize > 0 && Grandparent != NULL)
+            && Parent->ElemSize > 0)
         {
-            if (Grandparent->Kind == IrExUnary
+            if (Grandparent != NULL && Grandparent->Kind == IrExUnary
                 && Grandparent->Op == TokenAsterisk
                 && Grandparent->Left == Parent)
                 context_ok = 1;
-            else if (Grandparent->Kind == IrExMember
+            else if (Grandparent != NULL && Grandparent->Kind == IrExMember
                      && Grandparent->Left == Parent
                      && Grandparent->Ident != NULL)
                 context_ok = 1;
-            else if (Grandparent->Kind == IrExIndex
+            else if (Grandparent != NULL && Grandparent->Kind == IrExIndex
                      && Grandparent->Left == Parent)
+                context_ok = 1;
+            else if (Grandparent == NULL && TypedLocalInitSlot >= 0
+                     && FnCodeVoidParamLocalUsesSafeStmt(Body,
+                                                         TypedLocalInitSlot, 0))
                 context_ok = 1;
         }
         return context_ok;
     }
-    if (!FnCodeVoidParamExprSafe(E->Left, Param, E, Parent, Depth + 1, Seen)
-        || !FnCodeVoidParamExprSafe(E->Right, Param, E, Parent, Depth + 1, Seen))
+    if (!FnCodeVoidParamExprSafe(E->Left, Param, E, Parent, Body,
+                                 TypedLocalInitSlot, Depth + 1, Seen)
+        || !FnCodeVoidParamExprSafe(E->Right, Param, E, Parent, Body,
+                                    TypedLocalInitSlot, Depth + 1, Seen))
         return 0;
     for (i = 0; E->Args != NULL && i < E->ArgCount; ++i)
-        if (!FnCodeVoidParamExprSafe(E->Args[i], Param, E, Parent, Depth + 1, Seen))
+        if (!FnCodeVoidParamExprSafe(E->Args[i], Param, E, Parent, Body,
+                                     TypedLocalInitSlot, Depth + 1, Seen))
             return 0;
     return 1;
 }
 
 static int FnCodeVoidParamStmtSafe(const IrStmt *S, int Param, int Depth,
-                                   int *Seen)
+                                   int *Seen, const IrStmt *Body)
 {
     int i;
     if (S == NULL) return 1;
     if (Depth > 96) return 0;
-    if (!FnCodeVoidParamExprSafe(S->Expr, Param, NULL, NULL, 0, Seen)
-        || !FnCodeVoidParamStmtSafe(S->ThenStmt, Param, Depth + 1, Seen)
-        || !FnCodeVoidParamStmtSafe(S->ElseStmt, Param, Depth + 1, Seen)
-        || !FnCodeVoidParamStmtSafe(S->BodyStmt, Param, Depth + 1, Seen)
-        || !FnCodeVoidParamStmtSafe(S->InitStmt, Param, Depth + 1, Seen)
-        || !FnCodeVoidParamStmtSafe(S->IncStmt, Param, Depth + 1, Seen))
+    {
+        int expr_local_slot = (S->Kind == IrStDecl && S->DeclIsPtr
+                              && S->LocalSlot >= 0) ? S->LocalSlot : -1;
+        /* Initializers are represented in S->Expr for some declarations and
+         * in DeclInitExprs for others.  Apply the same typed-local proof to
+         * both representations; otherwise equivalent callbacks get different
+         * STRICT eligibility solely from AST storage shape. */
+        if (!FnCodeVoidParamExprSafe(S->Expr, Param, NULL, NULL, Body,
+                                     expr_local_slot, 0, Seen))
+            return 0;
+    }
+    for (i = 0; S->DeclInitExprs != NULL && i < S->DeclInitCount; ++i)
+    {
+        int local_slot = (S->Kind == IrStDecl && S->DeclIsPtr
+                          && S->LocalSlot >= 0) ? S->LocalSlot : -1;
+        if (!FnCodeVoidParamExprSafe(S->DeclInitExprs[i], Param, NULL, NULL,
+                                     Body, local_slot, 0, Seen))
+            return 0;
+    }
+    if (!FnCodeVoidParamStmtSafe(S->ThenStmt, Param, Depth + 1, Seen, Body)
+        || !FnCodeVoidParamStmtSafe(S->ElseStmt, Param, Depth + 1, Seen, Body)
+        || !FnCodeVoidParamStmtSafe(S->BodyStmt, Param, Depth + 1, Seen, Body)
+        || !FnCodeVoidParamStmtSafe(S->InitStmt, Param, Depth + 1, Seen, Body)
+        || !FnCodeVoidParamStmtSafe(S->IncStmt, Param, Depth + 1, Seen, Body))
         return 0;
     for (i = 0; S->Stmts != NULL && i < S->StmtCount; ++i)
-        if (!FnCodeVoidParamStmtSafe(S->Stmts[i], Param, Depth + 1, Seen))
+        if (!FnCodeVoidParamStmtSafe(S->Stmts[i], Param, Depth + 1, Seen, Body))
             return 0;
     return 1;
 }
@@ -1365,7 +1528,9 @@ static int FnCodeVoidParamStmtSafe(const IrStmt *S, int Param, int Depth,
 static int FnCodeVoidParamTypedAccessSafe(const FnCodeSlot *S, int Param)
 {
     int Seen = 0;
-    return S != NULL && FnCodeVoidParamStmtSafe(S->Body, Param, 0, &Seen) && Seen;
+    return S != NULL
+        && FnCodeVoidParamStmtSafe(S->Body, Param, 0, &Seen, S->Body)
+        && Seen;
 }
 
 static int FnCodeIndexedPointerParamsSafe(const FnCodeSlot *S,
@@ -1404,10 +1569,16 @@ static int FnCodeIndexedPointerParamsSafe(const FnCodeSlot *S,
         }
         if (!referenced) continue;
         if (Fr->ParamTyp[p] == NULL || Fr->ParamTyp[p]->Base != TypePointer
-            || Fr->ParamTyp[p]->FromType == NULL) return 0;
+            || Fr->ParamTyp[p]->FromType == NULL)
+        {
+            return 0;
+        }
         if (Fr->ParamTyp[p]->FromType->Base == TypeVoid)
         {
-            if (!FnCodeVoidParamTypedAccessSafe(S, p)) return 0;
+            if (!FnCodeVoidParamTypedAccessSafe(S, p))
+            {
+                return 0;
+            }
             continue;
         }
         switch (Fr->ParamTyp[p]->FromType->Base)
@@ -1419,7 +1590,8 @@ static int FnCodeIndexedPointerParamsSafe(const FnCodeSlot *S,
              * (argv[i] -> void*). Nested p[0][0] must lower via kind-4 + Tok=2;
              * bare *p of char** still refuses (not kind-4 Index). */
             case TypePointer: break;
-            default: return 0;
+            default:
+                return 0;
         }
         for (i = 0; i < S->N; i++)
         {

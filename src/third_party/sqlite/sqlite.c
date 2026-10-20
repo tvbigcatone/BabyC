@@ -196,7 +196,7 @@ static int SqliteNativeCallback(void *arg, int argc, char **argv, char **azColNa
         if (fdef->ParamType != NULL && i < fdef->NumParams)
             PType = fdef->ParamType[i];
         else
-            PType = &ctx->pc->VoidPtrType;
+            PType = ctx->pc->VoidPtrType;
         ParamArray[i] = VariableAllocValueFromType(ctx->pc, &Parser, PType, FALSE, NULL, TRUE);
         if (ParamArray[i] == NULL)
             continue;
