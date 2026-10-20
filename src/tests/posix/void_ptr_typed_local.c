@@ -1,5 +1,5 @@
 /* Linear STRICT regression: a void* callback parameter cast to a typed
- * pointer local is safe when all uses of that local are direct memory access. */
+ * pointer local is safe when null-checked and then dereferenced. */
 #include <stdio.h>
 
 static int cell = 4;
@@ -7,7 +7,8 @@ static int cell = 4;
 static int update(void *arg)
 {
     int *p = (int *)arg;
-    *p = *p + 1;
+    if (p != 0)
+        *p = *p + 1;
     return *p;
 }
 
