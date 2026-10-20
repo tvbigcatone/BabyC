@@ -1500,7 +1500,9 @@ static int FnCodeVoidParamStmtSafe(const IrStmt *S, int Param, int Depth,
 static int FnCodeVoidParamTypedAccessSafe(const FnCodeSlot *S, int Param)
 {
     int Seen = 0;
-
+    return S != NULL
+        && FnCodeVoidParamStmtSafe(S->Body, Param, 0, &Seen, S->Body)
+        && Seen;
 }
 
 static int FnCodeIndexedPointerParamsSafe(const FnCodeSlot *S,
