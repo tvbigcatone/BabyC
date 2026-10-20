@@ -39,8 +39,16 @@ jobs:
               "tests/posix/guest_exit_zero.c|BabyPOSIX guest worker exit zero: ok"; do
               file="${spec%%|*}"
               expected="${spec#*|}"
-              output="$(./babyc "$file" 2>&1)"
+              if output="$(./babyc "$file" 2>&1)"; then
+                rc=0
+              else
+                rc=$?
+              fi
               printf '%s\n' "$output"
+              if [[ "$rc" -ne 0 ]]; then
+                echo "FAIL mode=$mode test=$file exit=$rc"
+                exit "$rc"
+              fi
               grep -Fq "$expected" <<<"$output"
             done
           done
