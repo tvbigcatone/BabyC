@@ -1,0 +1,41 @@
+name: BabyC targeted regression
+on:
+  push:
+    branches:
+      - fix/msvc-c4101-posix
+  pull_request:
+    branches:
+      - main
+jobs:
+  linux-build-and-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential python3 libsqlite3-dev
+      - name: Build
+        run: make -C src -j2
+      - name: Run dual interpreter suite
+        env:
+          BABYC: ${{ github.workspace }}/src/babyc
+        run: bash src/tests/run_suite_dual.sh
+      - name: Run POSIX thread regressions (IR and token path)
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd src
+          for mode in ir token; do
+            if [[ "$mode" == token ]]; then export BABYC_NO_IR=1; else unset BABYC_NO_IR || true; fi
+            for spec in \
+              "tests/posix/pthread_create_join.c|BabyPOSIX pthread create join: ok" \
+              "tests/posix/pthread_exit_retval.c|BabyPOSIX pthread exit retval: ok" \
+              "tests/posix/guest_exit_zero.c|BabyPOSIX guest worker exit zero: ok"; do
+              file="${spec%%|*}"
+              expected="${spec#*|}"
+              output="$(./babyc "$file" 2>&1)"
+              printf '%s\n' "$output"
+              grep -Fq "$expected" <<<"$output"
+            done
+          done
