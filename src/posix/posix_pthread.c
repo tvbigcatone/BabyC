@@ -388,6 +388,9 @@ static void BabyPosixPthreadJoinCall(struct ParseState *Parser,
         rc = pthread_join(t->native, NULL);
 #endif
         BabycGuestGIL_RelockIf(gil);
+        if (getenv("BABYC_VM_TRACE") != NULL)
+            fprintf(stderr, "[pthread-join] slot=%lu rc=%d exit=%p out=%p\\n",
+                    (unsigned long)slot, rc, t->exit_value, (void *)retval);
         if (rc != 0) {
             ReturnValue->Val->Integer = rc;
             return;
@@ -471,12 +474,16 @@ static void BabyPosixPthreadExitCall(struct ParseState *Parser,
             BabyPosixThreadComplete(t, retval);
         }
     }
+    if (getenv("BABYC_VM_TRACE") != NULL)
+        fprintf(stderr, "[pthread-exit] slot=%lu retval=%p\\n", slot, retval);
     (void)BabycGuestGIL_UnlockIfHeld();
 #ifdef WIN32
     _endthreadex(0);
 #else
     pthread_exit(retval);
 #endif
+    if (getenv("BABYC_VM_TRACE") != NULL)
+        fprintf(stderr, "[pthread-exit] native exit unexpectedly returned\\n");
 }
 
 static void BabyPosixPthreadSelfCall(struct ParseState *Parser,
