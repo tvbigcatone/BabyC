@@ -120,14 +120,14 @@ free(SourceStr); /* correction, pas de free en face du malloc de PlatformReadFil
 void PlatformExit(Picoc *pc, int RetVal)
 {
     if (pc == NULL)
-        exit(RetVal != 0 ? RetVal : 1);
+        exit(RetVal);
     pc->PicocExitValue = RetVal;
     if (pc->PicocExitPointSet)
     {
         pc->PicocExitPointSet = 0;
         longjmp(pc->PicocExitBuf, 1); /* match setjmp((pc)->PicocExitBuf) */
     }
-    exit(RetVal != 0 ? RetVal : 1);
+    exit(RetVal);
 }
 
 

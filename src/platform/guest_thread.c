@@ -1,5 +1,6 @@
 #include "guest_thread.h"
 #include "../picoc.h"
+#include "../ir_runtime.h"
 #include <string.h>
 #include <stdint.h>
 
@@ -126,6 +127,10 @@ void *BabycGuestCall(struct Value *FuncValue, void *arg)
     int nparams;
     int count;
     int oldScope;
+    char *saved_heap_stack_top;
+    struct Value *saved_stack_frame;
+    struct Value *saved_top_stack_frame;
+    int saved_ir_call_depth;
     void *result = NULL;
 
     if (pc == NULL || FuncValue == NULL || FuncValue->Val == NULL)
@@ -163,8 +168,31 @@ void *BabycGuestCall(struct Value *FuncValue, void *arg)
     ParamArray[0] = &ArgVal;
     ParamArray[1] = NULL;
 
-    if (PicocPlatformSetExitPoint(pc) != 0)
+    /* Save interpreter ownership before arming the exit point. A guest
+     * exit() longjmps over the normal frame epilogue, so restore stack/IR
+     * state owned by this callback before returning to the native thread. */
+    saved_heap_stack_top = pc->HeapStackTop;
+    saved_stack_frame = pc->StackFrame;
+    saved_top_stack_frame = pc->TopStackFrame;
+    saved_ir_call_depth = IrCallDepth;
+    if (PicocPlatformSetExitPoint(pc) != 0) {
+        struct ValueProxyEntry **link;
+        while (IrCallDepth > saved_ir_call_depth)
+            IrFramePop();
+        link = &pc->ValueProxyList;
+        while (*link != NULL) {
+            struct ValueProxyEntry *entry = *link;
+            if ((char *)entry->Owner >= saved_heap_stack_top) {
+                *link = entry->Next;
+                HeapFreeMem(pc, entry);
+            } else
+                link = &entry->Next;
+        }
+        pc->HeapStackTop = saved_heap_stack_top;
+        pc->StackFrame = saved_stack_frame;
+        pc->TopStackFrame = saved_top_stack_frame;
         return NULL;
+    }
 
     if (FuncValue->Val->FuncDef.Intrinsic != NULL) {
         PicocCallIntrinsic(&Parser, FuncValue->Val->FuncDef.Intrinsic,

@@ -137,7 +137,7 @@ void PicocPlatformScanFile(Picoc *pc, const char *FileName)
 void PlatformExit(Picoc *pc, int RetVal)
 {
     if (pc == NULL)
-        exit(RetVal != 0 ? RetVal : 1);
+        exit(RetVal);
     pc->PicocExitValue = RetVal;
     /* Only longjmp when main/interactive armed the exit point. Unarmed JumpBuf
      * (library embed, partial init) would SEGV; fall back to exit. */
@@ -146,6 +146,6 @@ void PlatformExit(Picoc *pc, int RetVal)
         pc->PicocExitPointSet = 0;
         longjmp(pc->PicocExitBuf, 1);
     }
-    exit(RetVal != 0 ? RetVal : 1);
+    exit(RetVal);
 }
 
