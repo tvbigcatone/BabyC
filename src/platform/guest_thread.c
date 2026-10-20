@@ -131,6 +131,7 @@ void *BabycGuestCall(struct Value *FuncValue, void *arg)
     void *saved_stack_frame;
     struct StackFrame *saved_top_stack_frame;
     int saved_ir_call_depth;
+    int saved_lin_frame_depth;
     void *result = NULL;
 
     if (pc == NULL || FuncValue == NULL || FuncValue->Val == NULL)
@@ -175,8 +176,12 @@ void *BabycGuestCall(struct Value *FuncValue, void *arg)
     saved_stack_frame = pc->StackFrame;
     saved_top_stack_frame = pc->TopStackFrame;
     saved_ir_call_depth = IrCallDepth;
+    saved_lin_frame_depth = LinFrameDepth();
     if (PicocPlatformSetExitPoint(pc) != 0) {
         struct ValueProxyEntry **link;
+        /* exit() longjmps over FnCodeRun's normal return epilogue. Unwind
+         * its linear frame too, before restoring the enclosing IR frames. */
+        LinFrameRestoreDepth(saved_lin_frame_depth);
         while (IrCallDepth > saved_ir_call_depth)
             IrFramePop();
         link = &pc->ValueProxyList;
