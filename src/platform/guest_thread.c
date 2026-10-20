@@ -128,8 +128,8 @@ void *BabycGuestCall(struct Value *FuncValue, void *arg)
     int count;
     int oldScope;
     char *saved_heap_stack_top;
-    struct Value *saved_stack_frame;
-    struct Value *saved_top_stack_frame;
+    void *saved_stack_frame;
+    struct StackFrame *saved_top_stack_frame;
     int saved_ir_call_depth;
     void *result = NULL;
 
