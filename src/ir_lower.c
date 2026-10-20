@@ -1360,6 +1360,10 @@ static int FnCodeVoidParamLocalUsesSafeExpr(const IrExpr *E, int LocalSlot,
                     && Parent->Left->Kind == IrExConst
                     && Parent->Left->ConstVal == 0)))
             return 1;
+        if (getenv("BABYC_VM_TRACE") != NULL)
+            fprintf(stderr, "[ptr-rej] local slot=%d ident=%s parent-kind=%d parent-op=%d\n",
+                    LocalSlot, E->Ident ? E->Ident : "?",
+                    Parent ? (int)Parent->Kind : 0, Parent ? (int)Parent->Op : 0);
         return 0;
     }
     if (!FnCodeVoidParamLocalUsesSafeExpr(E->Left, LocalSlot, E, Depth + 1)
@@ -1474,9 +1478,13 @@ static int FnCodeVoidParamStmtSafe(const IrStmt *S, int Param, int Depth,
 static int FnCodeVoidParamTypedAccessSafe(const FnCodeSlot *S, int Param)
 {
     int Seen = 0;
-    return S != NULL
-        && FnCodeVoidParamStmtSafe(S->Body, Param, 0, &Seen, S->Body)
-        && Seen;
+    int safe;
+    if (S == NULL) return 0;
+    safe = FnCodeVoidParamStmtSafe(S->Body, Param, 0, &Seen, S->Body);
+    if (getenv("BABYC_VM_TRACE") != NULL)
+        fprintf(stderr, "[ptr-proof] param=%d stmt-safe=%d seen=%d\n",
+                Param, safe, Seen);
+    return safe && Seen;
 }
 
 static int FnCodeIndexedPointerParamsSafe(const FnCodeSlot *S,
