@@ -48,7 +48,7 @@ jobs:
               printf '%s\n' "$output"
               if [[ "$rc" -ne 0 ]]; then
                 echo "FAIL mode=$mode test=$file exit=$rc"
-      printf "%s\\n" "$output"
+                printf "%s\\n" "$output"
                 if [[ "$mode" == linear-strict ]]; then
                   echo "---- analyze $file ----"
                   ./babyc --analyze "$file" || true
