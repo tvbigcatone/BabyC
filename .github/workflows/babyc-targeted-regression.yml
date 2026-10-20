@@ -39,3 +39,16 @@ jobs:
               grep -Fq "$expected" <<<"$output"
             done
           done
+  windows-msvc-build:
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [Win32, x64]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure MSBuild
+        uses: microsoft/setup-msbuild@v2
+      - name: Build solution (MSVC warnings enabled)
+        shell: pwsh
+        run: msbuild src/msvc/babyc/babyc.sln /m /p:Configuration=Release /p:Platform=${{ matrix.platform }} /v:minimal
