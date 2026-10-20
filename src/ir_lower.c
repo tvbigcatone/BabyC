@@ -885,9 +885,17 @@ int IrVmLinearFeaturesOn(void)
 /* Under vm_strict: any residual tree body after a failed lower is a hard error. */
 void IrVmStrictTreeFallback(struct ParseState *Parser, const char *why)
 {
+    const char *reason = why ? why : "body";
     if (!IrVmStrictOn() || Parser == NULL)
         return;
-    ProgramFail(Parser, "strict: tree fallback (%s)", why ? why : "body");
+    /* Keep the normal diagnostic stable; opt-in trace identifies which guest
+     * frame requested fallback, essential for debugging nested callbacks. */
+    if (getenv("BABYC_BT") != NULL && IrCallDepth > 0
+        && IrCallDepth <= IR_CALL_MAX_DEPTH
+        && IrDebugFunc[IrCallDepth - 1] != NULL)
+        ProgramFail(Parser, "strict: tree fallback (%s) in %s",
+                    reason, IrDebugFunc[IrCallDepth - 1]);
+    ProgramFail(Parser, "strict: tree fallback (%s)", reason);
 }
 
 /* True if lowered linear code uses memory ops incomplete under experimental
