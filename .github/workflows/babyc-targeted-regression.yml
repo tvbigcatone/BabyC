@@ -32,7 +32,7 @@ jobs:
             unset BABYC_NO_IR || true
             unset BABYC_EXEC || true
             if [[ "$mode" == token ]]; then export BABYC_NO_IR=1; fi
-            if [[ "$mode" == linear-strict ]]; then export BABYC_EXEC=vm_strict; fi
+            if [[ "$mode" == linear-strict ]]; then export BABYC_EXEC=vm_strict; export BABYC_BT=1; fi
             for spec in \
               "tests/posix/void_ptr_typed_local.c|BabyPOSIX typed local from void pointer: ok" \
               "tests/posix/pthread_create_join.c|BabyPOSIX pthread create join: ok" \
