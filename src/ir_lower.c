@@ -1106,6 +1106,34 @@ void LinFramePop(void)
  * ordinary FnCodeRun return path.  Unwind only its linear frames so the
  * suspended interpreter thread regains its installed code tables and index
  * runtime state.  The saved depth is captured while holding the guest GIL. */
+void IrLinThreadContextCapture(IrLinThreadContext *context)
+{
+    if (context == NULL) return;
+    context->Parser = LinParser;
+    context->StepAbort = LinStepAbort;
+    context->RetSeen = LinRetSeen;
+    context->Div0 = LinDiv0;
+    context->ExecDepth = LinExecDepth;
+    context->BabycExecDepth = BabycLinExecDepth;
+    context->SkippedCall = LinSkippedCall;
+    context->RetVal = LinRetVal;
+    memcpy(context->CallSkip, CallSkip, sizeof(CallSkip));
+}
+
+void IrLinThreadContextRestore(const IrLinThreadContext *context)
+{
+    if (context == NULL) return;
+    LinParser = context->Parser;
+    LinStepAbort = context->StepAbort;
+    LinRetSeen = context->RetSeen;
+    LinDiv0 = context->Div0;
+    LinExecDepth = context->ExecDepth;
+    BabycLinExecDepth = context->BabycExecDepth;
+    LinSkippedCall = context->SkippedCall;
+    LinRetVal = context->RetVal;
+    memcpy(CallSkip, context->CallSkip, sizeof(CallSkip));
+}
+
 int LinFrameDepth(void)
 {
     return LinFrameSp;

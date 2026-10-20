@@ -132,6 +132,7 @@ void *BabycGuestCall(struct Value *FuncValue, void *arg)
     struct StackFrame *saved_top_stack_frame;
     int saved_ir_call_depth;
     int saved_lin_frame_depth;
+    IrLinThreadContext saved_lin_context;
     void *result = NULL;
 
     if (pc == NULL || FuncValue == NULL || FuncValue->Val == NULL)
@@ -177,6 +178,7 @@ void *BabycGuestCall(struct Value *FuncValue, void *arg)
     saved_top_stack_frame = pc->TopStackFrame;
     saved_ir_call_depth = IrCallDepth;
     saved_lin_frame_depth = LinFrameDepth();
+    IrLinThreadContextCapture(&saved_lin_context);
     if (PicocPlatformSetExitPoint(pc) != 0) {
         struct ValueProxyEntry **link;
         /* exit() longjmps over FnCodeRun's normal return epilogue. Unwind
@@ -196,6 +198,7 @@ void *BabycGuestCall(struct Value *FuncValue, void *arg)
         pc->HeapStackTop = saved_heap_stack_top;
         pc->StackFrame = saved_stack_frame;
         pc->TopStackFrame = saved_top_stack_frame;
+        IrLinThreadContextRestore(&saved_lin_context);
         return NULL;
     }
 
