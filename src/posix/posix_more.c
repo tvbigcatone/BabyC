@@ -55,12 +55,12 @@ static void BabyPosixSelectCall(struct ParseState *p, struct Value *r,
     struct BabyPosixFdSet *gx = n > 3 ? (struct BabyPosixFdSet *)a[3]->Val->Pointer : NULL;
     struct BabyPosixTimeval { long long tv_sec; long long tv_usec; };
     struct BabyPosixTimeval *gtv = n > 4 ? (struct BabyPosixTimeval *)a[4]->Val->Pointer : NULL;
-    int gil, i, native, maxn, rc;
-    int map[BP_FD_SETSIZE];
 #ifdef WIN32
     (void)p; (void)nfds; (void)gr; (void)gw; (void)gx; (void)gtv; (void)n;
     errno = ENOSYS; r->Val->Integer = -1; return;
 #else
+    int gil, i, native, maxn, rc;
+    int map[BP_FD_SETSIZE];
     fd_set nr, nw, nx;
     struct timeval tv, *tvp;
     (void)p;

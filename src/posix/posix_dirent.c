@@ -202,13 +202,13 @@ static void BabyPosixFdopendirCall(struct ParseState *p, struct Value *r,
                                    struct Value **a, int n)
 {
     int guest = (int)a[0]->Val->Integer;
-    struct BabyPosixDIR *dir;
     (void)p; (void)n;
 #ifdef WIN32
     (void)guest;
     errno = ENOSYS; r->Val->Pointer = NULL;
 #else
     {
+        struct BabyPosixDIR *dir;
         int native = BabyPosixFdNativeOf(guest);
         DIR *d;
         if (native < 0) { r->Val->Pointer = NULL; return; }

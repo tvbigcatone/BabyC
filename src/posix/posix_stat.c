@@ -205,16 +205,16 @@ static void BabyPosixFstatatCall(struct ParseState *p, struct Value *r,
     const char *path = (const char *)a[1]->Val->Pointer;
     struct BabyPosixStat *out = (struct BabyPosixStat *)a[2]->Val->Pointer;
     int flags = (int)a[3]->Val->Integer;
-    int native_dir;
-    struct stat st;
     (void)p; (void)n;
     if (path == NULL || out == NULL) {
         errno = EFAULT; r->Val->Integer = -1; return;
     }
 #ifdef WIN32
-    (void)dirfd; (void)flags; (void)native_dir;
+    (void)dirfd; (void)flags;
     errno = ENOSYS; r->Val->Integer = -1;
 #else
+    int native_dir;
+    struct stat st;
     if (dirfd == -100) native_dir = AT_FDCWD;
     else native_dir = BabyPosixFdNativeOf(dirfd);
     if (native_dir < 0 && dirfd != -100) { r->Val->Integer = -1; return; }
