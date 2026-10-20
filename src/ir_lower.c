@@ -1326,6 +1326,19 @@ static int FnCodeVoidParamLocalUsesSafeExpr(const IrExpr *E, int LocalSlot,
         if (Parent != NULL && Parent->Kind == IrExIndex
             && Parent->Left == E)
             return 1;
+        /* A typed local may be tested against a null pointer without
+         * exposing or escaping the original void* argument.  The other
+         * operand must be the literal integer null constant (zero); arbitrary
+         * pointer comparisons remain outside this proof. */
+        if (Parent != NULL && Parent->Kind == IrExBinOp
+            && (Parent->Op == TokenEqual || Parent->Op == TokenNotEqual)
+            && ((Parent->Left == E && Parent->Right != NULL
+                 && Parent->Right->Kind == IrExConst
+                 && Parent->Right->ConstVal == 0)
+                || (Parent->Right == E && Parent->Left != NULL
+                    && Parent->Left->Kind == IrExConst
+                    && Parent->Left->ConstVal == 0)))
+            return 1;
         return 0;
     }
     if (!FnCodeVoidParamLocalUsesSafeExpr(E->Left, LocalSlot, E, Depth + 1)
