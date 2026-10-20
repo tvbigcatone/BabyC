@@ -16,18 +16,23 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y build-essential python3 libsqlite3-dev
       - name: Build
+        id: build
         run: make -C src -j2
       - name: Run dual interpreter suite
         env:
           BABYC: ${{ github.workspace }}/src/babyc
         run: bash src/tests/run_suite_dual.sh
-      - name: Run POSIX thread regressions (IR and token path)
+      - name: Run POSIX thread regressions (IR, token, and Linear STRICT)
+        if: always() && steps.build.outcome == 'success'
         shell: bash
         run: |
           set -euo pipefail
           cd src
-          for mode in ir token; do
-            if [[ "$mode" == token ]]; then export BABYC_NO_IR=1; else unset BABYC_NO_IR || true; fi
+          for mode in ir token linear-strict; do
+            unset BABYC_NO_IR || true
+            unset BABYC_EXEC || true
+            if [[ "$mode" == token ]]; then export BABYC_NO_IR=1; fi
+            if [[ "$mode" == linear-strict ]]; then export BABYC_EXEC=vm_strict; fi
             for spec in \
               "tests/posix/pthread_create_join.c|BabyPOSIX pthread create join: ok" \
               "tests/posix/pthread_exit_retval.c|BabyPOSIX pthread exit retval: ok" \
