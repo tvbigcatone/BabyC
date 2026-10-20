@@ -1515,10 +1515,20 @@ static int FnCodeIndexedPointerParamsSafe(const FnCodeSlot *S,
         }
         if (!referenced) continue;
         if (Fr->ParamTyp[p] == NULL || Fr->ParamTyp[p]->Base != TypePointer
-            || Fr->ParamTyp[p]->FromType == NULL) return 0;
+            || Fr->ParamTyp[p]->FromType == NULL)
+        {
+            if (getenv("BABYC_VM_TRACE") != NULL)
+                fprintf(stderr, "[ptr-rej] param=%d missing/non-pointer type\n", p);
+            return 0;
+        }
         if (Fr->ParamTyp[p]->FromType->Base == TypeVoid)
         {
-            if (!FnCodeVoidParamTypedAccessSafe(S, p)) return 0;
+            if (!FnCodeVoidParamTypedAccessSafe(S, p))
+            {
+                if (getenv("BABYC_VM_TRACE") != NULL)
+                    fprintf(stderr, "[ptr-rej] param=%d void* typed-local proof failed\n", p);
+                return 0;
+            }
             continue;
         }
         switch (Fr->ParamTyp[p]->FromType->Base)
@@ -1530,7 +1540,11 @@ static int FnCodeIndexedPointerParamsSafe(const FnCodeSlot *S,
              * (argv[i] -> void*). Nested p[0][0] must lower via kind-4 + Tok=2;
              * bare *p of char** still refuses (not kind-4 Index). */
             case TypePointer: break;
-            default: return 0;
+            default:
+                if (getenv("BABYC_VM_TRACE") != NULL)
+                    fprintf(stderr, "[ptr-rej] param=%d unsupported pointee base=%d\n",
+                            p, (int)Fr->ParamTyp[p]->FromType->Base);
+                return 0;
         }
         for (i = 0; i < S->N; i++)
         {
