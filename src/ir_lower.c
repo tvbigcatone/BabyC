@@ -1321,6 +1321,7 @@ static int FnCodeRun(struct ParseState *Parser, FnCodeSlot *S, int was_nested)
 /* Admit void* callback parameters only when each use is explicitly cast to
  * a typed pointer and immediately consumed by dereference, member access, or
  * indexing. This is general AST validation, not a comparator-name fast path. */
+/* VM_TRACE in strict regressions is opt-in and reports the precise eligibility rejection. */
 /* Linear STRICT's pointer-parameter proof is intentionally conservative: it
  * reasons about uses of the converted local, not source-code spellings. */
 /* A void* callback argument may be converted into a typed pointer local only
