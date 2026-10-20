@@ -557,14 +557,6 @@ long long IrCallHostFromRegs(struct ParseState *Parser, struct Value *FuncValue,
     if (ReturnValue->Typ != &Parser->pc->VoidType
         && ReturnValue->Typ->Base != TypeVoid)
         Result = IR_RET_BITS(ReturnValue);
-    {
-        static int TraceOn = -1;
-        if (TraceOn < 0) TraceOn = (getenv("BABYC_VM_TRACE") != NULL) ? 1 : 0;
-        if (TraceOn)
-        fprintf(stderr, "[host-ret] %s result=%lld typ=%d\n",
-            LinHostCallName ? LinHostCallName : "?", Result,
-            ReturnValue->Typ ? ReturnValue->Typ->Base : -1);
-    }
     HeapPopStackFrame(Parser->pc);
     Parser->Mode = SavedMode;
     return Result;

@@ -1377,10 +1377,6 @@ static int FnCodeVoidParamLocalUsesSafeExpr(const IrExpr *E, int LocalSlot,
                     && Parent->Left->Kind == IrExConst
                     && Parent->Left->ConstVal == 0)))
             return 1;
-        if (getenv("BABYC_VM_TRACE") != NULL)
-            fprintf(stderr, "[ptr-rej] local slot=%d ident=%s parent-kind=%d parent-op=%d\n",
-                    LocalSlot, E->Ident ? E->Ident : "?",
-                    Parent ? (int)Parent->Kind : 0, Parent ? (int)Parent->Op : 0);
         return 0;
     }
     if (!FnCodeVoidParamLocalUsesSafeExpr(E->Left, LocalSlot, E, Depth + 1)
@@ -1504,13 +1500,7 @@ static int FnCodeVoidParamStmtSafe(const IrStmt *S, int Param, int Depth,
 static int FnCodeVoidParamTypedAccessSafe(const FnCodeSlot *S, int Param)
 {
     int Seen = 0;
-    int safe;
-    if (S == NULL) return 0;
-    safe = FnCodeVoidParamStmtSafe(S->Body, Param, 0, &Seen, S->Body);
-    if (getenv("BABYC_VM_TRACE") != NULL)
-        fprintf(stderr, "[ptr-proof] param=%d stmt-safe=%d seen=%d\n",
-                Param, safe, Seen);
-    return safe && Seen;
+
 }
 
 static int FnCodeIndexedPointerParamsSafe(const FnCodeSlot *S,
@@ -1551,16 +1541,12 @@ static int FnCodeIndexedPointerParamsSafe(const FnCodeSlot *S,
         if (Fr->ParamTyp[p] == NULL || Fr->ParamTyp[p]->Base != TypePointer
             || Fr->ParamTyp[p]->FromType == NULL)
         {
-            if (getenv("BABYC_VM_TRACE") != NULL)
-                fprintf(stderr, "[ptr-rej] param=%d missing/non-pointer type\n", p);
             return 0;
         }
         if (Fr->ParamTyp[p]->FromType->Base == TypeVoid)
         {
             if (!FnCodeVoidParamTypedAccessSafe(S, p))
             {
-                if (getenv("BABYC_VM_TRACE") != NULL)
-                    fprintf(stderr, "[ptr-rej] param=%d void* typed-local proof failed\n", p);
                 return 0;
             }
             continue;
@@ -1575,9 +1561,6 @@ static int FnCodeIndexedPointerParamsSafe(const FnCodeSlot *S,
              * bare *p of char** still refuses (not kind-4 Index). */
             case TypePointer: break;
             default:
-                if (getenv("BABYC_VM_TRACE") != NULL)
-                    fprintf(stderr, "[ptr-rej] param=%d unsupported pointee base=%d\n",
-                            p, (int)Fr->ParamTyp[p]->FromType->Base);
                 return 0;
         }
         for (i = 0; i < S->N; i++)
