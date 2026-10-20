@@ -1453,8 +1453,17 @@ static int FnCodeVoidParamStmtSafe(const IrStmt *S, int Param, int Depth,
     int i;
     if (S == NULL) return 1;
     if (Depth > 96) return 0;
-    if (!FnCodeVoidParamExprSafe(S->Expr, Param, NULL, NULL, Body, -1, 0, Seen))
-        return 0;
+    {
+        int expr_local_slot = (S->Kind == IrStDecl && S->DeclIsPtr
+                              && S->LocalSlot >= 0) ? S->LocalSlot : -1;
+        /* Initializers are represented in S->Expr for some declarations and
+         * in DeclInitExprs for others.  Apply the same typed-local proof to
+         * both representations; otherwise equivalent callbacks get different
+         * STRICT eligibility solely from AST storage shape. */
+        if (!FnCodeVoidParamExprSafe(S->Expr, Param, NULL, NULL, Body,
+                                     expr_local_slot, 0, Seen))
+            return 0;
+    }
     for (i = 0; S->DeclInitExprs != NULL && i < S->DeclInitCount; ++i)
     {
         int local_slot = (S->Kind == IrStDecl && S->DeclIsPtr
