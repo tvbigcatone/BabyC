@@ -1102,6 +1102,23 @@ void LinFramePop(void)
     F->Valid = 0;
 }
 
+/* A native guest thread can terminate through pthread_exit(), bypassing the
+ * ordinary FnCodeRun return path.  Unwind only its linear frames so the
+ * suspended interpreter thread regains its installed code tables and index
+ * runtime state.  The saved depth is captured while holding the guest GIL. */
+int LinFrameDepth(void)
+{
+    return LinFrameSp;
+}
+
+void LinFrameRestoreDepth(int depth)
+{
+    if (depth < 0) depth = 0;
+    if (depth > LinFrameSp) return;
+    while (LinFrameSp > depth)
+        LinFramePop();
+}
+
 /* Nested compile frame — defined after LinLoop/LinLab. */
 int LowerDepth;
 /* CompileFrameSp → ir_lin_compile.c */

@@ -166,6 +166,9 @@ extern char *IrGotoTarget;
 /* D1: frame lifecycle (impl in ir_frame.c) */
 IrCallFrame *IrFramePush(struct ParseState *Parser);
 void IrFramePop(void);
+/* Save/restore the linear execution frame stack at native guest-thread exits. */
+int LinFrameDepth(void);
+void LinFrameRestoreDepth(int depth);
 void IrFrameFreeOwned(IrCallFrame *F);
 /* Shared frame-local metadata contract: record slots and obtain a safe scan extent. */
 void IrFrameNoteLocalSlot(IrCallFrame *F, int Slot);
