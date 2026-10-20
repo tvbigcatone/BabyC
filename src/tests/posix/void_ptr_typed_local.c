@@ -1,0 +1,22 @@
+/* Linear STRICT regression: a void* callback parameter cast to a typed
+ * pointer local is safe when all uses of that local are direct memory access. */
+#include <stdio.h>
+
+static int cell = 4;
+
+static int update(void *arg)
+{
+    int *p = (int *)arg;
+    *p = *p + 1;
+    return *p;
+}
+
+int main(void)
+{
+    if (update((void *)&cell) != 5 || cell != 5) {
+        printf("FAIL cell=%d\n", cell);
+        return 1;
+    }
+    printf("BabyPOSIX typed local from void pointer: ok\n");
+    return 0;
+}

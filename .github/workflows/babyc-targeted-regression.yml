@@ -34,6 +34,7 @@ jobs:
             if [[ "$mode" == token ]]; then export BABYC_NO_IR=1; fi
             if [[ "$mode" == linear-strict ]]; then export BABYC_EXEC=vm_strict; fi
             for spec in \
+              "tests/posix/void_ptr_typed_local.c|BabyPOSIX typed local from void pointer: ok" \
               "tests/posix/pthread_create_join.c|BabyPOSIX pthread create join: ok" \
               "tests/posix/pthread_exit_retval.c|BabyPOSIX pthread exit retval: ok" \
               "tests/posix/guest_exit_zero.c|BabyPOSIX guest worker exit zero: ok"; do
@@ -47,6 +48,10 @@ jobs:
               printf '%s\n' "$output"
               if [[ "$rc" -ne 0 ]]; then
                 echo "FAIL mode=$mode test=$file exit=$rc"
+                if [[ "$mode" == linear-strict ]]; then
+                  echo "---- analyze $file ----"
+                  ./babyc --analyze "$file" || true
+                fi
                 exit "$rc"
               fi
               grep -Fq "$expected" <<<"$output"
