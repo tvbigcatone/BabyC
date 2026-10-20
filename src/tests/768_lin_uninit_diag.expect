@@ -1,0 +1,3 @@
+    printf("%d\n", x);
+                    ^
+768_lin_uninit_diag.c:6:20 uninitialized variable 'x'

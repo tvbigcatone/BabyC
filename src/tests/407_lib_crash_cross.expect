@@ -1,0 +1,4 @@
+hi
+    memset((void *)0x10, 1, 1);
+                             ^
+407_lib_crash_cross.c:8:29 SEGV inside library function 'memset'

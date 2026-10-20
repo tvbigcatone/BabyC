@@ -1,0 +1,43 @@
+[lin-ir] function=main function_ptr=0x56249e73bb60 instructions=39
+[lin-ir] 0000 op=13 dest=0 a=0 b=0 tok=0 imm=6
+[lin-ir] 0001 op=1 dest=0 a=0 b=0 tok=0 imm=0
+[lin-ir] 0002 op=3 dest=0 a=0 b=0 tok=0 imm=0
+[lin-ir] 0003 op=13 dest=0 a=0 b=0 tok=0 imm=7
+[lin-ir] 0004 op=1 dest=0 a=0 b=0 tok=3 imm=4
+[lin-ir] 0005 op=1 dest=1 a=0 b=0 tok=4 imm=0
+[lin-ir] 0006 op=14 dest=2 a=0 b=2 tok=1 imm=0
+[lin-ir] 0007 op=3 dest=0 a=2 b=0 tok=0 imm=1
+[lin-ir] 0008 op=13 dest=0 a=0 b=0 tok=0 imm=8
+[lin-ir] 0009 op=2 dest=0 a=0 b=0 tok=0 imm=1
+[lin-ir] 0010 op=1 dest=1 a=0 b=0 tok=0 imm=0
+[lin-ir] 0011 op=22 dest=0 a=0 b=1 tok=20 imm=18
+[lin-ir] 0012 op=13 dest=0 a=0 b=0 tok=0 imm=8
+[lin-ir] 0013 op=1 dest=0 a=0 b=0 tok=3 imm=13
+[lin-ir] 0014 op=14 dest=1 a=0 b=1 tok=1 imm=1
+[lin-ir] 0015 op=13 dest=0 a=0 b=0 tok=0 imm=8
+[lin-ir] 0016 op=1 dest=0 a=0 b=0 tok=0 imm=1
+[lin-ir] 0017 op=8 dest=0 a=0 b=0 tok=0 imm=0
+[lin-ir] 0018 op=13 dest=0 a=0 b=0 tok=0 imm=9
+[lin-ir] 0019 op=2 dest=0 a=0 b=0 tok=0 imm=0
+[lin-ir] 0020 op=1 dest=1 a=0 b=0 tok=3 imm=20
+[lin-ir] 0021 op=1 dest=2 a=0 b=0 tok=0 imm=0
+[lin-ir] 0022 op=1 dest=3 a=0 b=0 tok=0 imm=0
+[lin-ir] 0023 op=1 dest=4 a=0 b=0 tok=0 imm=0
+[lin-ir] 0024 op=14 dest=5 a=0 b=5 tok=1 imm=2
+[lin-ir] 0025 op=3 dest=0 a=5 b=0 tok=0 imm=1
+[lin-ir] 0026 op=3 dest=0 a=5 b=0 tok=0 imm=1
+[lin-ir] 0027 op=13 dest=0 a=0 b=0 tok=0 imm=10
+[lin-ir] 0028 op=1 dest=0 a=0 b=0 tok=3 imm=28
+[lin-ir] 0029 op=2 dest=1 a=0 b=0 tok=0 imm=1
+[lin-ir] 0030 op=14 dest=2 a=0 b=2 tok=1 imm=3
+[lin-ir] 0031 op=13 dest=0 a=0 b=0 tok=0 imm=11
+[lin-ir] 0032 op=2 dest=0 a=0 b=0 tok=0 imm=0
+[lin-ir] 0033 op=14 dest=1 a=0 b=1 tok=1 imm=4
+[lin-ir] 0034 op=13 dest=0 a=0 b=0 tok=0 imm=12
+[lin-ir] 0035 op=2 dest=1 a=0 b=0 tok=0 imm=1
+[lin-ir] 0036 op=1 dest=2 a=0 b=0 tok=0 imm=0
+[lin-ir] 0037 op=4 dest=0 a=1 b=2 tok=21 imm=0
+[lin-ir] 0038 op=8 dest=0 a=0 b=0 tok=0 imm=0
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+rc=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0

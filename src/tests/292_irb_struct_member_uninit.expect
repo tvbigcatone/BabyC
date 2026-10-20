@@ -1,0 +1,3 @@
+        t = t + b.x;
+                   ^
+292_irb_struct_member_uninit.c:24:19 uninitialized variable

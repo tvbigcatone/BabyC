@@ -1,0 +1,5 @@
+has_version=1
+new_enough=1
+both_on=1
+at_least_one=1
+missing_absent=1

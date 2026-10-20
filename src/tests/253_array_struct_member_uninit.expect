@@ -1,0 +1,3 @@
+    printf("%d\n", v[1].b);
+                         ^
+253_array_struct_member_uninit.c:7:25 uninitialized variable

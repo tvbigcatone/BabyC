@@ -1,0 +1,3 @@
+    printf("%d\n", a / b);
+                        ^
+207_ir_divzero.c:6:24 division by zero

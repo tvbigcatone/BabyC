@@ -1,0 +1,4 @@
+before
+    converted = sscanf("42", "%q", &value);
+                                         ^
+969_scanf_invalid_conversion.c:8:41 scanf: invalid format conversion '%q' (undefined behavior in C)

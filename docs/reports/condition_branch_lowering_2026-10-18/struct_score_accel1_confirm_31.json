@@ -1,0 +1,18 @@
+{
+  "before": {
+    "median_ms": 1.548,
+    "min_ms": 1.385,
+    "max_ms": 2.845,
+    "runs": 31,
+    "return_code": 0
+  },
+  "after": {
+    "median_ms": 1.489,
+    "min_ms": 1.396,
+    "max_ms": 2.28,
+    "runs": 31,
+    "return_code": 0
+  },
+  "delta_percent": -3.81,
+  "note": "31 alternating paired repetitions; longer-run confirmation of the noisy 15-pair result."
+}

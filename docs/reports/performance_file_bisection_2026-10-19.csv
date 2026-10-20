@@ -1,0 +1,4 @@
+file_reverted,pairs_each,baseline_median_ms,probe_median_ms,ratio_delta_pct,median_paired_delta_pct
+src/ir_lin_exec.c,7,319.672,320.131,0.14,1.72
+src/ir_lin_emit.c,7,321.981,332.65,3.31,4.75
+src/ir_lin_compile.c,7,317.384,334.031,5.25,4.86

@@ -1,0 +1,4 @@
+before
+    free(&value);
+               ^
+965_free_stack_pointer.c:8:15 free of pointer not allocated by malloc/calloc/realloc/strdup (undefined behavior in C)

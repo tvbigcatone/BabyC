@@ -1,0 +1,20 @@
+{
+  "total_checks": 56,
+  "passed": 56,
+  "failed": 0,
+  "cases": [
+    "141_bp_win64",
+    "216_ir_local_recurse",
+    "221_ir_nested_calls_locals",
+    "253_array_struct_member_uninit",
+    "545_ir_struct_array_uninit",
+    "870_vm_recursive_helper_effects",
+    "879_vm_mutual_pointer_recursion"
+  ],
+  "modes": [
+    "bytecode",
+    "linear",
+    "strict",
+    "tree"
+  ]
+}

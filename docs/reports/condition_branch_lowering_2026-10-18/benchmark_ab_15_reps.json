@@ -1,0 +1,370 @@
+{
+  "0_string_scan": {
+    "before": {
+      "ms": [
+        272.967,
+        251.499,
+        267.573,
+        272.784,
+        258.904,
+        271.224,
+        265.106,
+        258.949,
+        252.494,
+        264.886,
+        253.011,
+        276.305,
+        274.404,
+        259.427,
+        259.266
+      ],
+      "median": 264.886,
+      "rc": 0,
+      "output": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+    },
+    "after": {
+      "ms": [
+        247.841,
+        263.19,
+        248.419,
+        268.03,
+        267.879,
+        247.435,
+        248.573,
+        262.308,
+        262.818,
+        249.712,
+        256.823,
+        251.852,
+        261.064,
+        249.69,
+        253.283
+      ],
+      "median": 253.283,
+      "rc": 0,
+      "output": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+    }
+  },
+  "0_string_scan_bounded": {
+    "before": {
+      "ms": [
+        297.402,
+        300.833,
+        305.231,
+        301.786,
+        299.199,
+        302.845,
+        292.987,
+        296.265,
+        296.723,
+        294.895,
+        299.431,
+        297.452,
+        314.842,
+        299.625,
+        321.136
+      ],
+      "median": 299.431,
+      "rc": 0,
+      "output": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+    },
+    "after": {
+      "ms": [
+        302.089,
+        304.983,
+        294.753,
+        299.472,
+        302.026,
+        305.455,
+        312.743,
+        286.339,
+        300.946,
+        296.94,
+        291.175,
+        302.356,
+        296.504,
+        300.386,
+        291.334
+      ],
+      "median": 300.386,
+      "rc": 0,
+      "output": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+    }
+  },
+  "0_struct_score": {
+    "before": {
+      "ms": [
+        66.786,
+        63.27,
+        66.528,
+        62.566,
+        67.009,
+        62.88,
+        66.808,
+        65.887,
+        60.86,
+        62.217,
+        62.214,
+        62.786,
+        62.947,
+        62.228,
+        63.164
+      ],
+      "median": 62.947,
+      "rc": 0,
+      "output": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+    },
+    "after": {
+      "ms": [
+        61.778,
+        69.235,
+        62.837,
+        64.397,
+        60.345,
+        66.641,
+        59.509,
+        59.568,
+        89.983,
+        62.889,
+        62.148,
+        61.937,
+        62.624,
+        62.958,
+        62.562
+      ],
+      "median": 62.624,
+      "rc": 0,
+      "output": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+    }
+  },
+  "0_dfs_rec": {
+    "before": {
+      "ms": [
+        23.61,
+        23.269,
+        23.931,
+        22.88,
+        23.845,
+        22.933,
+        23.424,
+        24.658,
+        23.765,
+        22.989,
+        24.212,
+        25.135,
+        23.661,
+        26.012,
+        24.201
+      ],
+      "median": 23.765,
+      "rc": 0,
+      "output": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n15000"
+    },
+    "after": {
+      "ms": [
+        22.232,
+        22.619,
+        22.173,
+        22.81,
+        22.335,
+        22.386,
+        21.992,
+        22.324,
+        27.025,
+        22.281,
+        23.177,
+        22.116,
+        25.121,
+        22.001,
+        24.589
+      ],
+      "median": 22.335,
+      "rc": 0,
+      "output": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n15000"
+    }
+  },
+  "1_string_scan": {
+    "before": {
+      "ms": [
+        5.053,
+        5.108,
+        4.786,
+        5.018,
+        4.777,
+        5.435,
+        5.892,
+        4.744,
+        4.678,
+        5.3,
+        5.13,
+        5.547,
+        5.308,
+        8.149,
+        4.997
+      ],
+      "median": 5.108,
+      "rc": 0,
+      "output": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+    },
+    "after": {
+      "ms": [
+        5.118,
+        4.805,
+        5.125,
+        4.824,
+        4.939,
+        4.74,
+        4.755,
+        6.842,
+        4.812,
+        4.723,
+        5.188,
+        4.891,
+        5.253,
+        4.966,
+        5.925
+      ],
+      "median": 4.939,
+      "rc": 0,
+      "output": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+    }
+  },
+  "1_string_scan_bounded": {
+    "before": {
+      "ms": [
+        5.88,
+        6.144,
+        6.161,
+        6.214,
+        6.678,
+        5.931,
+        6.521,
+        5.939,
+        6.152,
+        7.222,
+        6.037,
+        6.249,
+        5.922,
+        6.127,
+        6.318
+      ],
+      "median": 6.152,
+      "rc": 0,
+      "output": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+    },
+    "after": {
+      "ms": [
+        6.236,
+        6.252,
+        6.09,
+        6.369,
+        5.894,
+        6.995,
+        5.918,
+        6.126,
+        6.011,
+        6.079,
+        7.178,
+        6.104,
+        6.392,
+        6.074,
+        7.28
+      ],
+      "median": 6.126,
+      "rc": 0,
+      "output": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+    }
+  },
+  "1_struct_score": {
+    "before": {
+      "ms": [
+        1.769,
+        1.781,
+        1.514,
+        1.91,
+        1.622,
+        1.616,
+        1.458,
+        1.667,
+        1.582,
+        1.404,
+        1.848,
+        1.622,
+        1.512,
+        1.505,
+        1.552
+      ],
+      "median": 1.616,
+      "rc": 0,
+      "output": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+    },
+    "after": {
+      "ms": [
+        1.492,
+        1.425,
+        2.615,
+        1.681,
+        1.772,
+        1.522,
+        1.714,
+        1.738,
+        1.51,
+        1.675,
+        2.047,
+        1.714,
+        1.681,
+        1.5,
+        1.775
+      ],
+      "median": 1.681,
+      "rc": 0,
+      "output": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+    }
+  },
+  "1_dfs_rec": {
+    "before": {
+      "ms": [
+        10.234,
+        10.309,
+        10.146,
+        10.345,
+        9.978,
+        10.063,
+        9.741,
+        11.159,
+        10.649,
+        9.932,
+        11.257,
+        9.0,
+        10.274,
+        9.213,
+        10.296
+      ],
+      "median": 10.234,
+      "rc": 0,
+      "output": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n15000"
+    },
+    "after": {
+      "ms": [
+        9.321,
+        9.912,
+        10.431,
+        10.212,
+        11.019,
+        10.602,
+        9.974,
+        10.259,
+        11.157,
+        10.135,
+        10.244,
+        9.595,
+        9.582,
+        10.785,
+        9.758
+      ],
+      "median": 10.212,
+      "rc": 0,
+      "output": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n15000"
+    }
+  }
+}

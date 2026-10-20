@@ -1,0 +1,3 @@
+    free(p);
+          ^
+700_heap_double_free.c:6:10 double free

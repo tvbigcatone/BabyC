@@ -1,0 +1,3 @@
+    return x;
+            ^
+220_ir_local_zero.c:6:12 uninitialized variable 'x'

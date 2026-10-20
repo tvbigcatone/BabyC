@@ -1,0 +1,6 @@
+p null
+q not null
+null != p ok
+10
+30
+100

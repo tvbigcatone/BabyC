@@ -1,0 +1,4 @@
+before
+    printf("%s", text);
+                     ^
+966_printf_null_string.c:7:21 printf: NULL string argument (undefined behavior in C)

@@ -1,0 +1,3 @@
+    return x;
+            ^
+232_fn_local_uninit.c:5:12 uninitialized variable 'x'

@@ -1,0 +1,1017 @@
+{
+  "columns": [
+    "ats_no_accel",
+    "ats_accel",
+    "vm_no_accel",
+    "vm_accel",
+    "python",
+    "gcc"
+  ],
+  "cases": [
+    {
+      "id": "micro.array_sum",
+      "path": "cases/micro/array_sum.c",
+      "times": {
+        "gcc": 0.001820019000007278,
+        "python": 0.16607694699999342,
+        "ats_no_accel": 0.33179666000000907,
+        "ats_accel": 0.002225952000003417,
+        "vm_no_accel": 0.3523197130000142,
+        "vm_accel": 0.0025114110000004075
+      },
+      "status": "OK",
+      "output": "9999000000",
+      "error": ""
+    },
+    {
+      "id": "micro.dfs_rec",
+      "path": "cases/micro/dfs_rec.c",
+      "times": {
+        "gcc": 0.0013396850000049199,
+        "python": 0.019008040999977993,
+        "ats_no_accel": 0.033692411000004086,
+        "ats_accel": 0.009746621999994431,
+        "vm_no_accel": 0.025933468999994602,
+        "vm_accel": 0.021073435000005247
+      },
+      "status": "OK",
+      "output": "15000",
+      "error": ""
+    },
+    {
+      "id": "micro.fib_iter",
+      "path": "cases/micro/fib_iter.c",
+      "times": {
+        "gcc": 0.0013718820000008236,
+        "python": 0.01480671599998118,
+        "ats_no_accel": 0.024285601000002544,
+        "ats_accel": 0.001869612000007237,
+        "vm_no_accel": 0.005210685000008652,
+        "vm_accel": 0.005000432999992199
+      },
+      "status": "OK",
+      "output": "4160200000",
+      "error": ""
+    },
+    {
+      "id": "micro.fib_multiarg",
+      "path": "cases/micro/fib_multiarg.c",
+      "times": {
+        "gcc": 0.001195265999996309,
+        "python": 0.012394549000021016,
+        "ats_no_accel": 0.006392301999994743,
+        "ats_accel": 0.006091593000007833,
+        "vm_no_accel": 0.002634483999997883,
+        "vm_accel": 0.002820591000016748
+      },
+      "status": "OK",
+      "output": "65920",
+      "error": ""
+    },
+    {
+      "id": "micro.isort",
+      "path": "cases/micro/isort.c",
+      "times": {
+        "gcc": 0.00273088299999813,
+        "python": 0.42818627299999434,
+        "ats_no_accel": 0.26181854899999735,
+        "ats_accel": 0.006749838000018826,
+        "vm_no_accel": 0.3084669640000186,
+        "vm_accel": 0.007050408999987212
+      },
+      "status": "OK",
+      "output": "29665",
+      "error": ""
+    },
+    {
+      "id": "micro.isort_decoy",
+      "path": "cases/micro/isort_decoy.c",
+      "times": {
+        "gcc": 0.002517941000007795,
+        "python": null,
+        "ats_no_accel": 0.334075600999995,
+        "ats_accel": 0.3333175209999979,
+        "vm_no_accel": 0.3117714400000011,
+        "vm_accel": 0.3322601929999962
+      },
+      "status": "OK",
+      "output": "29665",
+      "error": ""
+    },
+    {
+      "id": "micro.list_walk",
+      "path": "cases/micro/list_walk.c",
+      "times": {
+        "gcc": 0.0026481809999836514,
+        "python": 0.05386646700000597,
+        "ats_no_accel": 0.1244299419999777,
+        "ats_accel": 0.004422007000016492,
+        "vm_no_accel": 0.002333035999981803,
+        "vm_accel": 0.003633780000001252
+      },
+      "status": "DIFF",
+      "output": "599700000",
+      "error": "vm_no_accel output mismatch vs ref"
+    },
+    {
+      "id": "micro.matmul_small",
+      "path": "cases/micro/matmul_small.c",
+      "times": {
+        "gcc": 0.0011960369999997056,
+        "python": 0.020264257999997426,
+        "ats_no_accel": 0.027213184000004276,
+        "ats_accel": 0.0019756890000053318,
+        "vm_no_accel": 0.03224494899998831,
+        "vm_accel": 0.0033502759999919363
+      },
+      "status": "OK",
+      "output": "2733800",
+      "error": ""
+    },
+    {
+      "id": "micro.string_scan",
+      "path": "cases/micro/string_scan.c",
+      "times": {
+        "gcc": 0.004367510999998103,
+        "python": 0.2653580030000171,
+        "ats_no_accel": 0.5412256209999953,
+        "ats_accel": 0.027412371999986362,
+        "vm_no_accel": 0.5817678620000208,
+        "vm_accel": 0.02936785900001837
+      },
+      "status": "OK",
+      "output": "380000",
+      "error": ""
+    },
+    {
+      "id": "micro.string_scan_bounded",
+      "path": "cases/micro/string_scan_bounded.c",
+      "times": {
+        "gcc": 0.0054553079999948295,
+        "python": null,
+        "ats_no_accel": 0.5945068450000122,
+        "ats_accel": 0.029813313000005337,
+        "vm_no_accel": 0.5968681699999934,
+        "vm_accel": 0.02290155000000027
+      },
+      "status": "OK",
+      "output": "380000",
+      "error": ""
+    },
+    {
+      "id": "micro.struct_score",
+      "path": "cases/micro/struct_score.c",
+      "times": {
+        "gcc": 0.003253403999991633,
+        "python": 0.061587999000010996,
+        "ats_no_accel": 0.19054450899997732,
+        "ats_accel": 0.003022470000018984,
+        "vm_no_accel": 0.19542169000001763,
+        "vm_accel": 0.003044264000010344
+      },
+      "status": "OK",
+      "output": "7500000",
+      "error": ""
+    },
+    {
+      "id": "classic.collatz",
+      "path": "cases/classic/collatz.c",
+      "times": {
+        "gcc": 0.003343992000026219,
+        "python": 0.08173252700001399,
+        "ats_no_accel": 0.11860126300001639,
+        "ats_accel": 0.10245297500000561,
+        "vm_no_accel": 0.0735028980000152,
+        "vm_accel": 0.058721835000000056
+      },
+      "status": "OK",
+      "output": "658436 261",
+      "error": ""
+    },
+    {
+      "id": "classic.crc",
+      "path": "cases/classic/crc.c",
+      "times": {
+        "gcc": 0.0013812779999966551,
+        "python": 0.017437983999997186,
+        "ats_no_accel": 0.01042411400001697,
+        "ats_accel": 0.005260361000011926,
+        "vm_no_accel": 0.006228269000018827,
+        "vm_accel": 0.006025020999999242
+      },
+      "status": "OK",
+      "output": "1017892610",
+      "error": ""
+    },
+    {
+      "id": "classic.fib_rec",
+      "path": "cases/classic/fib_rec.c",
+      "times": {
+        "gcc": 0.0012834739999902922,
+        "python": 0.0199592369999948,
+        "ats_no_accel": 0.0017101690000060898,
+        "ats_accel": 0.0017545640000093954,
+        "vm_no_accel": 0.001536348000001908,
+        "vm_accel": 0.0014608239999915895
+      },
+      "status": "OK",
+      "output": "75025",
+      "error": ""
+    },
+    {
+      "id": "classic.fib_rec_count",
+      "path": "cases/classic/fib_rec_count.c",
+      "times": {
+        "gcc": 0.0011845199999811484,
+        "python": 0.027574543000014273,
+        "ats_no_accel": 0.06995957399999497,
+        "ats_accel": 0.07017319400000588,
+        "vm_no_accel": 0.011945083000000523,
+        "vm_accel": 0.012349830000005113
+      },
+      "status": "OK",
+      "output": "75025\n242785",
+      "error": ""
+    },
+    {
+      "id": "classic.gcd",
+      "path": "cases/classic/gcd.c",
+      "times": {
+        "gcc": 0.0024872980000054667,
+        "python": 0.026219940999993696,
+        "ats_no_accel": 0.05199766300000874,
+        "ats_accel": 0.05175168499999927,
+        "vm_no_accel": 0.038431226999989576,
+        "vm_accel": 0.024192456000008633
+      },
+      "status": "OK",
+      "output": "225965",
+      "error": ""
+    },
+    {
+      "id": "classic.hello",
+      "path": "cases/classic/hello.c",
+      "times": {
+        "gcc": 0.0011453630000062276,
+        "python": 0.017134344999988116,
+        "ats_no_accel": 0.002658537999991495,
+        "ats_accel": 0.0020164850000128354,
+        "vm_no_accel": 0.001520917000021882,
+        "vm_accel": 0.0016006000000174936
+      },
+      "status": "OK",
+      "output": "hi",
+      "error": ""
+    },
+    {
+      "id": "classic.isort",
+      "path": "cases/classic/isort.c",
+      "times": {
+        "gcc": 0.001750207000014825,
+        "python": 0.06739765200001102,
+        "ats_no_accel": 0.09686752800001841,
+        "ats_accel": 0.0942897500000015,
+        "vm_no_accel": 0.044926945000014484,
+        "vm_accel": 0.04307171199999971
+      },
+      "status": "OK",
+      "output": "8 65515 652681",
+      "error": ""
+    },
+    {
+      "id": "classic.list",
+      "path": "cases/classic/list.c",
+      "times": {
+        "gcc": 0.003100907000003872,
+        "python": 0.04878822999998533,
+        "ats_no_accel": 0.10554852999999298,
+        "ats_accel": 0.10754644400000757,
+        "vm_no_accel": 0.06280414299999393,
+        "vm_accel": 0.06663469100001862
+      },
+      "status": "OK",
+      "output": "797750",
+      "error": ""
+    },
+    {
+      "id": "classic.mandel",
+      "path": "cases/classic/mandel.c",
+      "times": {
+        "gcc": 0.0018662399999982426,
+        "python": 0.05476967399999921,
+        "ats_no_accel": 0.07303528899998923,
+        "ats_accel": 0.08988756599998737,
+        "vm_no_accel": 0.07322410599999785,
+        "vm_accel": 0.0802707059999932
+      },
+      "status": "OK",
+      "output": "2185",
+      "error": ""
+    },
+    {
+      "id": "classic.matmul",
+      "path": "cases/classic/matmul.c",
+      "times": {
+        "gcc": 0.001276504999992767,
+        "python": 0.054987839000006034,
+        "ats_no_accel": 0.08759394200001225,
+        "ats_accel": 0.03967091699999514,
+        "vm_no_accel": 0.05283253599998261,
+        "vm_accel": 0.052898548999991135
+      },
+      "status": "OK",
+      "output": "295327",
+      "error": ""
+    },
+    {
+      "id": "classic.sieve",
+      "path": "cases/classic/sieve.c",
+      "times": {
+        "gcc": 0.002186971000014637,
+        "python": 0.1242795489999935,
+        "ats_no_accel": 0.22192387399999802,
+        "ats_accel": 0.16100532499999076,
+        "vm_no_accel": 0.12069138700002213,
+        "vm_accel": 0.032128190999998196
+      },
+      "status": "OK",
+      "output": "41538",
+      "error": ""
+    },
+    {
+      "id": "classic.strproc",
+      "path": "cases/classic/strproc.c",
+      "times": {
+        "gcc": 0.0018075109999813321,
+        "python": 0.06000862100000859,
+        "ats_no_accel": 0.08954458999997428,
+        "ats_accel": 0.05161949199998617,
+        "vm_no_accel": 0.044727648000019826,
+        "vm_accel": 0.04374909800000637
+      },
+      "status": "OK",
+      "output": "242367",
+      "error": ""
+    },
+    {
+      "id": "classic.structs",
+      "path": "cases/classic/structs.c",
+      "times": {
+        "gcc": 0.002793078000024707,
+        "python": 0.04736372299998948,
+        "ats_no_accel": 0.11170837599999572,
+        "ats_accel": 0.1130965309999965,
+        "vm_no_accel": 0.05726415199998769,
+        "vm_accel": 0.058872990999986996
+      },
+      "status": "OK",
+      "output": "894781",
+      "error": ""
+    },
+    {
+      "id": "classic.tri",
+      "path": "cases/classic/tri.c",
+      "times": {
+        "gcc": 0.0010665220000021236,
+        "python": 0.02589766399998439,
+        "ats_no_accel": 0.07680760200000236,
+        "ats_accel": 0.07848472599999923,
+        "vm_no_accel": 0.015911530000010998,
+        "vm_accel": 0.01596015900000225
+      },
+      "status": "OK",
+      "output": "55667",
+      "error": ""
+    },
+    {
+      "id": "variant.bubble",
+      "path": "cases/variant/bubble.c",
+      "times": {
+        "gcc": 0.0013698939999926552,
+        "python": 0.0214374980000116,
+        "ats_no_accel": 0.038160185000009506,
+        "ats_accel": 0.0392929239999944,
+        "vm_no_accel": 0.060737778999993,
+        "vm_accel": 0.03898539799999412
+      },
+      "status": "OK",
+      "output": "211 65460 525213",
+      "error": ""
+    },
+    {
+      "id": "variant.collatz",
+      "path": "cases/variant/collatz.c",
+      "times": {
+        "gcc": 0.0016241790000037781,
+        "python": 0.0637544539999908,
+        "ats_no_accel": 0.09689251000000354,
+        "ats_accel": 0.08735989199999494,
+        "vm_no_accel": 0.07066042299999253,
+        "vm_accel": 0.06555423399998972
+      },
+      "status": "OK",
+      "output": "387940",
+      "error": ""
+    },
+    {
+      "id": "variant.gcd",
+      "path": "cases/variant/gcd.c",
+      "times": {
+        "gcc": 0.0020775739999976395,
+        "python": 0.021645691999992778,
+        "ats_no_accel": 0.036218184000006204,
+        "ats_accel": 0.040767665999993596,
+        "vm_no_accel": 0.016505609000006416,
+        "vm_accel": 0.016631638999996312
+      },
+      "status": "OK",
+      "output": "139848",
+      "error": ""
+    },
+    {
+      "id": "variant.hashtab",
+      "path": "cases/variant/hashtab.c",
+      "times": {
+        "gcc": 0.0012123780000194984,
+        "python": 0.025907619999998133,
+        "ats_no_accel": 0.020814283999982308,
+        "ats_accel": 0.02136741500001449,
+        "vm_no_accel": 0.013681130999998459,
+        "vm_accel": 0.013587175999987267
+      },
+      "status": "OK",
+      "output": "2500 7500",
+      "error": ""
+    },
+    {
+      "id": "variant.lcs",
+      "path": "cases/variant/lcs.c",
+      "times": {
+        "gcc": 0.0019500839999864183,
+        "python": 0.04333993099999134,
+        "ats_no_accel": 0.08592102000000068,
+        "ats_accel": 0.037621938999990334,
+        "vm_no_accel": 0.04228468700000576,
+        "vm_accel": 0.04582001399998603
+      },
+      "status": "OK",
+      "output": "384",
+      "error": ""
+    },
+    {
+      "id": "variant.mandel",
+      "path": "cases/variant/mandel.c",
+      "times": {
+        "gcc": 0.0012461089999931119,
+        "python": 0.018706942000022764,
+        "ats_no_accel": 0.038398430999990296,
+        "ats_accel": 0.038456903999986025,
+        "vm_no_accel": 0.03877842800000053,
+        "vm_accel": 0.043400912999999264
+      },
+      "status": "OK",
+      "output": "80893",
+      "error": ""
+    },
+    {
+      "id": "variant.matmul",
+      "path": "cases/variant/matmul.c",
+      "times": {
+        "gcc": 0.0010975019999932556,
+        "python": 0.0559905960000151,
+        "ats_no_accel": 0.09753384399999732,
+        "ats_accel": 0.05214527199998997,
+        "vm_no_accel": 0.04237122800000748,
+        "vm_accel": 0.044570553999989215
+      },
+      "status": "OK",
+      "output": "18932",
+      "error": ""
+    },
+    {
+      "id": "variant.nqueens",
+      "path": "cases/variant/nqueens.c",
+      "times": {
+        "gcc": 0.0016709429999934855,
+        "python": 0.015449081000014075,
+        "ats_no_accel": 0.02013002800001118,
+        "ats_accel": 0.03126783999999816,
+        "vm_no_accel": 0.011457656999994015,
+        "vm_accel": 0.011443882999998323
+      },
+      "status": "OK",
+      "output": "352",
+      "error": ""
+    },
+    {
+      "id": "variant.selsort",
+      "path": "cases/variant/selsort.c",
+      "times": {
+        "gcc": 0.001482159999994792,
+        "python": 0.02135746199999744,
+        "ats_no_accel": 0.06272602100000313,
+        "ats_accel": 0.018185909999999694,
+        "vm_no_accel": 0.03035856000002468,
+        "vm_accel": 0.030098143999993
+      },
+      "status": "OK",
+      "output": "332 65503 670509",
+      "error": ""
+    },
+    {
+      "id": "variant.sieve",
+      "path": "cases/variant/sieve.c",
+      "times": {
+        "gcc": 0.0032574029999921095,
+        "python": 0.13685216199999672,
+        "ats_no_accel": 0.16637628700001983,
+        "ats_accel": 0.1643016609999961,
+        "vm_no_accel": 0.1208893900000021,
+        "vm_accel": 0.11802446599998007
+      },
+      "status": "OK",
+      "output": "33860",
+      "error": ""
+    },
+    {
+      "id": "variant.structs",
+      "path": "cases/variant/structs.c",
+      "times": {
+        "gcc": 0.001826690000001463,
+        "python": 0.022719762999997783,
+        "ats_no_accel": 0.05610069799999451,
+        "ats_accel": 0.05073846400000548,
+        "vm_no_accel": 0.05482418700000835,
+        "vm_accel": 0.05334791499998914
+      },
+      "status": "OK",
+      "output": "826980",
+      "error": ""
+    },
+    {
+      "id": "variant.wordcount",
+      "path": "cases/variant/wordcount.c",
+      "times": {
+        "gcc": 0.0014577670000051057,
+        "python": 0.01995917200000008,
+        "ats_no_accel": 0.01828676299999188,
+        "ats_accel": 0.0115857399999868,
+        "vm_no_accel": 0.00975411100000656,
+        "vm_accel": 0.009729037999989032
+      },
+      "status": "OK",
+      "output": "4174 27 830279 30000",
+      "error": ""
+    },
+    {
+      "id": "real.i01_collatz",
+      "path": "cases/real/i01_collatz.c",
+      "times": {
+        "gcc": 0.013322943999980907,
+        "python": 0.38624929899998506,
+        "ats_no_accel": 0.9402159339999798,
+        "ats_accel": 0.8712730610000108,
+        "vm_no_accel": 0.40404566099999784,
+        "vm_accel": 0.46784464499998535
+      },
+      "status": "OK",
+      "output": "52527 339 6134916",
+      "error": ""
+    },
+    {
+      "id": "real.i02_nqueens",
+      "path": "cases/real/i02_nqueens.c",
+      "times": {
+        "gcc": 0.007905619000013075,
+        "python": 0.24533168099998193,
+        "ats_no_accel": 0.7149424460000091,
+        "ats_accel": 0.7134384180000097,
+        "vm_no_accel": 0.19701517999999396,
+        "vm_accel": 0.19583027999999558
+      },
+      "status": "OK",
+      "output": "14200",
+      "error": ""
+    },
+    {
+      "id": "real.i03_primes",
+      "path": "cases/real/i03_primes.c",
+      "times": {
+        "gcc": 0.00889973400001054,
+        "python": 0.17464565499997775,
+        "ats_no_accel": 0.530767333,
+        "ats_accel": 0.5376547099999982,
+        "vm_no_accel": 0.2585129929999823,
+        "vm_accel": 0.2824357700000064
+      },
+      "status": "OK",
+      "output": "17984 1709600813",
+      "error": ""
+    },
+    {
+      "id": "real.i04_gcd_table",
+      "path": "cases/real/i04_gcd_table.c",
+      "times": {
+        "gcc": 0.019538589999996248,
+        "python": 0.25910654899999486,
+        "ats_no_accel": 0.71342710899998,
+        "ats_accel": 0.6720133110000006,
+        "vm_no_accel": 0.27966462300000217,
+        "vm_accel": 0.2816738120000082
+      },
+      "status": "OK",
+      "output": "2764816 389499",
+      "error": ""
+    },
+    {
+      "id": "real.i05_hash_unsigned",
+      "path": "cases/real/i05_hash_unsigned.c",
+      "times": {
+        "gcc": 0.0021352899999840247,
+        "python": 0.265843096999987,
+        "ats_no_accel": 0.5037382160000163,
+        "ats_accel": 0.4540363710000008,
+        "vm_no_accel": 0.1945459469999946,
+        "vm_accel": 0.23011886800000525
+      },
+      "status": "OK",
+      "output": "3743007946 622953552",
+      "error": ""
+    },
+    {
+      "id": "real.i06_tak",
+      "path": "cases/real/i06_tak.c",
+      "times": {
+        "gcc": 0.014347939999993287,
+        "python": 0.2780293080000149,
+        "ats_no_accel": 1.2792706019999969,
+        "ats_accel": 1.3371252839999954,
+        "vm_no_accel": 0.31847958599999515,
+        "vm_accel": 0.331808671999994
+      },
+      "status": "OK",
+      "output": "2400",
+      "error": ""
+    },
+    {
+      "id": "real.a01_sieve",
+      "path": "cases/real/a01_sieve.c",
+      "times": {
+        "gcc": 0.0053421949999972185,
+        "python": 0.2864293559999851,
+        "ats_no_accel": 0.4000597210000194,
+        "ats_accel": 0.4040884720000122,
+        "vm_no_accel": 0.3381702700000062,
+        "vm_accel": 0.0058232819999943786
+      },
+      "status": "OK",
+      "output": "92938 53433406131",
+      "error": ""
+    },
+    {
+      "id": "real.a02_qsort",
+      "path": "cases/real/a02_qsort.c",
+      "times": {
+        "gcc": 0.0091839190000087,
+        "python": 0.1581789150000077,
+        "ats_no_accel": 0.5493181200000095,
+        "ats_accel": 0.5830054969999878,
+        "vm_no_accel": 0.3212366189999898,
+        "vm_accel": 0.2921840989999964
+      },
+      "status": "OK",
+      "output": "1 6553811808",
+      "error": ""
+    },
+    {
+      "id": "real.a03_heapsort",
+      "path": "cases/real/a03_heapsort.c",
+      "times": {
+        "gcc": 0.010104106000000002,
+        "python": 0.27933340600000633,
+        "ats_no_accel": 1.1551759089999791,
+        "ats_accel": 1.1805856209999774,
+        "vm_no_accel": 0.48725205300002017,
+        "vm_accel": 0.46900376600001437
+      },
+      "status": "OK",
+      "output": "1 3930663163",
+      "error": ""
+    },
+    {
+      "id": "real.a04_matmul",
+      "path": "cases/real/a04_matmul.c",
+      "times": {
+        "gcc": 0.0017602360000239514,
+        "python": 0.22413192199999799,
+        "ats_no_accel": 0.4113696839999932,
+        "ats_accel": 0.1422430289999852,
+        "vm_no_accel": 0.17472218799997563,
+        "vm_accel": 0.17397993299999825
+      },
+      "status": "OK",
+      "output": "205749 67876160",
+      "error": ""
+    },
+    {
+      "id": "real.a05_lcs",
+      "path": "cases/real/a05_lcs.c",
+      "times": {
+        "gcc": 0.003054111000011517,
+        "python": 0.2430227069999944,
+        "ats_no_accel": 0.46287185500000305,
+        "ats_accel": 0.18988789700000552,
+        "vm_no_accel": 0.18085827800001653,
+        "vm_accel": 0.18825386099999264
+      },
+      "status": "OK",
+      "output": "552",
+      "error": ""
+    },
+    {
+      "id": "real.a06_knapsack",
+      "path": "cases/real/a06_knapsack.c",
+      "times": {
+        "gcc": 0.002968602999999348,
+        "python": 0.2521981920000087,
+        "ats_no_accel": 0.4783578050000017,
+        "ats_accel": 0.45507595700001957,
+        "vm_no_accel": 0.2232417960000248,
+        "vm_accel": 0.2525404450000224
+      },
+      "status": "OK",
+      "output": "19019",
+      "error": ""
+    },
+    {
+      "id": "real.a07_crc32",
+      "path": "cases/real/a07_crc32.c",
+      "times": {
+        "gcc": 0.005261804000042503,
+        "python": 0.2124370239999962,
+        "ats_no_accel": 0.4040962209999748,
+        "ats_accel": 0.27177047500003937,
+        "vm_no_accel": 0.2746460909999655,
+        "vm_accel": 0.28271724600000425
+      },
+      "status": "OK",
+      "output": "2651755396 1264658305",
+      "error": ""
+    },
+    {
+      "id": "real.a08_text",
+      "path": "cases/real/a08_text.c",
+      "times": {
+        "gcc": 0.005267946999993001,
+        "python": 0.19942249399997536,
+        "ats_no_accel": 0.407646638000017,
+        "ats_accel": 0.3578261690000204,
+        "vm_no_accel": 0.41724078499998996,
+        "vm_accel": 0.3638691159999894
+      },
+      "status": "OK",
+      "output": "41502 59 9 11737 203097790",
+      "error": ""
+    },
+    {
+      "id": "real.a09_life",
+      "path": "cases/real/a09_life.c",
+      "times": {
+        "gcc": 0.0030367640000008578,
+        "python": 0.2618498530000011,
+        "ats_no_accel": 0.8716395229999989,
+        "ats_accel": 0.7866553229999909,
+        "vm_no_accel": 0.5444502540000258,
+        "vm_accel": 0.5430961729999808
+      },
+      "status": "OK",
+      "output": "102 637",
+      "error": ""
+    },
+    {
+      "id": "real.a10_bsearch",
+      "path": "cases/real/a10_bsearch.c",
+      "times": {
+        "gcc": 0.015758806000008008,
+        "python": 0.30149086900001976,
+        "ats_no_accel": 0.6094544479999513,
+        "ats_accel": 0.5871276390000162,
+        "vm_no_accel": 0.492606439000042,
+        "vm_accel": 0.5303790749999848
+      },
+      "status": "OK",
+      "output": "50733 280314384 833",
+      "error": ""
+    },
+    {
+      "id": "real.a11_bfs",
+      "path": "cases/real/a11_bfs.c",
+      "times": {
+        "gcc": 0.01575066999998853,
+        "python": 0.2114435839999942,
+        "ats_no_accel": 0.8010077870000032,
+        "ats_accel": 0.7551860340000189,
+        "vm_no_accel": 0.7634218640000086,
+        "vm_accel": 0.7872134099999926
+      },
+      "status": "OK",
+      "output": "16 477744 5160",
+      "error": ""
+    },
+    {
+      "id": "real.a12_fact",
+      "path": "cases/real/a12_fact.c",
+      "times": {
+        "gcc": 0.004333755999994082,
+        "python": 0.2512012359999858,
+        "ats_no_accel": 0.41429815599997255,
+        "ats_accel": 0.15749297999997225,
+        "vm_no_accel": 0.20606486599996288,
+        "vm_accel": 0.20955290199998444
+      },
+      "status": "OK",
+      "output": "1434 23382 6549345 3316",
+      "error": ""
+    },
+    {
+      "id": "real.repro_vm_output_lost",
+      "path": "cases/real/repro_vm_output_lost.c",
+      "times": {
+        "gcc": 0.0011127660000056494,
+        "python": null,
+        "ats_no_accel": 0.0015277329999889844,
+        "ats_accel": 0.0014907180000136577,
+        "vm_no_accel": 0.0015479170000389786,
+        "vm_accel": 0.0016392769999811208
+      },
+      "status": "OK",
+      "output": "endj1 endj2 endi 0 3",
+      "error": ""
+    },
+    {
+      "id": "stress.call_loop",
+      "path": "cases/stress/call_loop.c",
+      "times": {
+        "gcc": 0.0017029710000429077,
+        "python": null,
+        "ats_no_accel": 0.6765887459999931,
+        "ats_accel": 0.6468620200000146,
+        "vm_no_accel": 0.3508989939999765,
+        "vm_accel": 0.3524392929999749
+      },
+      "status": "OK",
+      "output": "2000000 0",
+      "error": ""
+    },
+    {
+      "id": "stress.fib_global",
+      "path": "cases/stress/fib_global.c",
+      "times": {
+        "gcc": 0.002894133999973292,
+        "python": null,
+        "ats_no_accel": 0.8030182819999823,
+        "ats_accel": 0.8367110020000155,
+        "vm_no_accel": 0.10624519499998542,
+        "vm_accel": 0.10196811499997693
+      },
+      "status": "OK",
+      "output": "832040 2692537",
+      "error": ""
+    },
+    {
+      "id": "stress.fib_multiarg",
+      "path": "cases/stress/fib_multiarg.c",
+      "times": {
+        "gcc": 0.0010996540000292043,
+        "python": null,
+        "ats_no_accel": 0.001808525000001282,
+        "ats_accel": 0.0017293010000116738,
+        "vm_no_accel": 0.00152089599998817,
+        "vm_accel": 0.0016285359999983484
+      },
+      "status": "OK",
+      "output": "832040",
+      "error": ""
+    },
+    {
+      "id": "stress.fib_ptr",
+      "path": "cases/stress/fib_ptr.c",
+      "times": {
+        "gcc": 0.002673229999970772,
+        "python": 0.17630288399999472,
+        "ats_no_accel": 0.7953776909999988,
+        "ats_accel": 0.8150504519999799,
+        "vm_no_accel": 0.11166218800002525,
+        "vm_accel": 0.1011095280000518
+      },
+      "status": "OK",
+      "output": "832040 2692537",
+      "error": ""
+    },
+    {
+      "id": "stress.string_scan_nosc",
+      "path": "cases/stress/string_scan_nosc.c",
+      "times": {
+        "gcc": 0.004951329999983045,
+        "python": null,
+        "ats_no_accel": 0.5507779050000181,
+        "ats_accel": 0.023169074000009005,
+        "vm_no_accel": 0.5508114959999943,
+        "vm_accel": 0.028595226999982515
+      },
+      "status": "OK",
+      "output": "380000",
+      "error": ""
+    },
+    {
+      "id": "stress.cat_bit_compound",
+      "path": "cases/stress/cat_bit_compound.c",
+      "times": {
+        "gcc": 0.005748320000009244,
+        "python": null,
+        "ats_no_accel": 0.7477397409999753,
+        "ats_accel": 0.5252674380000144,
+        "vm_no_accel": 0.3122579989999963,
+        "vm_accel": 0.3153255130000048
+      },
+      "status": "OK",
+      "output": "49795",
+      "error": ""
+    },
+    {
+      "id": "stress.cat_do_while",
+      "path": "cases/stress/cat_do_while.c",
+      "times": {
+        "gcc": 0.0017847060000235615,
+        "python": null,
+        "ats_no_accel": 2.54252068400001,
+        "ats_accel": 2.4413299799999777,
+        "vm_no_accel": 0.05109761900001786,
+        "vm_accel": 0.050506878000021516
+      },
+      "status": "OK",
+      "output": "1515000000",
+      "error": ""
+    },
+    {
+      "id": "stress.cat_global_index",
+      "path": "cases/stress/cat_global_index.c",
+      "times": {
+        "gcc": 0.0015348229999858631,
+        "python": null,
+        "ats_no_accel": 0.5781149609999829,
+        "ats_accel": 0.07824241399998755,
+        "vm_no_accel": 0.22786966899997196,
+        "vm_accel": 0.11685347700000648
+      },
+      "status": "OK",
+      "output": "737378304",
+      "error": ""
+    },
+    {
+      "id": "stress.cat_leaf_call",
+      "path": "cases/stress/cat_leaf_call.c",
+      "times": {
+        "gcc": 0.0018797179999978653,
+        "python": null,
+        "ats_no_accel": 0.6722941140000103,
+        "ats_accel": 0.6765054449999752,
+        "vm_no_accel": 0.33955628799998294,
+        "vm_accel": 0.35393681799996557
+      },
+      "status": "OK",
+      "output": "2000000 0",
+      "error": ""
+    },
+    {
+      "id": "stress.cat_param_assign",
+      "path": "cases/stress/cat_param_assign.c",
+      "times": {
+        "gcc": 0.001621763999992254,
+        "python": null,
+        "ats_no_accel": 0.17022972499995603,
+        "ats_accel": 0.17201606999998376,
+        "vm_no_accel": 0.08991935099999182,
+        "vm_accel": 0.07802935699999125
+      },
+      "status": "OK",
+      "output": "1219183488",
+      "error": ""
+    },
+    {
+      "id": "stress.cat_param_read",
+      "path": "cases/stress/cat_param_read.c",
+      "times": {
+        "gcc": 0.0014118540000254143,
+        "python": null,
+        "ats_no_accel": 0.28425679800000125,
+        "ats_accel": 0.27155343600003334,
+        "vm_no_accel": 0.10668805800003156,
+        "vm_accel": 0.11291499999998678
+      },
+      "status": "OK",
+      "output": "-1173578384 0",
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+len 3
+to_semi 1 ch ;
+after 1
+back b
+ok

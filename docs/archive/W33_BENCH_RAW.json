@@ -1,0 +1,244 @@
+{
+  "date": "2026-10-11",
+  "method": "one warm-up plus nine timed samples; end-to-end wall-clock; output oracle and compact runs counter enforced",
+  "workload": "src/tests/849_vm_compact_loop_bench.c",
+  "expected_output": "200000 700000",
+  "baseline": {
+    "tree": {
+      "median_ms": 32.575,
+      "min_ms": 29.308,
+      "max_ms": 38.945,
+      "n": 9,
+      "samples_ms": [
+        31.954,
+        32.807,
+        30.786,
+        35.636,
+        29.308,
+        31.881,
+        32.575,
+        34.696,
+        38.945
+      ]
+    },
+    "linear": {
+      "median_ms": 18.068,
+      "min_ms": 15.783,
+      "max_ms": 24.348,
+      "n": 9,
+      "samples_ms": [
+        18.557,
+        20.947,
+        15.783,
+        18.001,
+        18.557,
+        17.652,
+        17.793,
+        24.348,
+        18.068
+      ]
+    },
+    "compact": {
+      "median_ms": 18.349,
+      "min_ms": 16.954,
+      "max_ms": 22.735,
+      "n": 9,
+      "samples_ms": [
+        22.735,
+        22.601,
+        18.349,
+        19.801,
+        17.702,
+        19.514,
+        16.954,
+        17.417,
+        18.298
+      ]
+    }
+  },
+  "current": {
+    "tree": {
+      "median_ms": 31.621,
+      "min_ms": 29.646,
+      "max_ms": 34.255,
+      "n": 9,
+      "samples_ms": [
+        33.247,
+        34.239,
+        31.621,
+        29.943,
+        33.049,
+        34.255,
+        30.044,
+        29.646,
+        31.461
+      ]
+    },
+    "linear": {
+      "median_ms": 16.552,
+      "min_ms": 14.776,
+      "max_ms": 19.721,
+      "n": 9,
+      "samples_ms": [
+        17.369,
+        19.721,
+        16.552,
+        15.235,
+        15.466,
+        17.964,
+        14.776,
+        15.18,
+        16.988
+      ]
+    },
+    "compact": {
+      "median_ms": 16.627,
+      "min_ms": 15.346,
+      "max_ms": 17.968,
+      "n": 9,
+      "samples_ms": [
+        15.738,
+        16.627,
+        17.968,
+        15.346,
+        17.335,
+        16.471,
+        17.12,
+        17.432,
+        15.7
+      ]
+    }
+  },
+  "regression_workloads": {
+    "bench/isort.c": {
+      "baseline_tree": {
+        "median_ms": 8.041,
+        "min_ms": 7.446,
+        "max_ms": 8.669,
+        "samples_ms": [
+          7.833,
+          7.953,
+          8.317,
+          8.052,
+          8.041,
+          8.669,
+          7.446
+        ],
+        "output": "29665"
+      },
+      "baseline_vm": {
+        "median_ms": 7.847,
+        "min_ms": 6.931,
+        "max_ms": 11.917,
+        "samples_ms": [
+          7.906,
+          11.917,
+          7.079,
+          7.847,
+          6.931,
+          7.629,
+          8.023
+        ],
+        "output": "29665"
+      },
+      "current_tree": {
+        "median_ms": 8.892,
+        "min_ms": 7.751,
+        "max_ms": 14.598,
+        "samples_ms": [
+          7.751,
+          11.678,
+          11.147,
+          8.655,
+          8.892,
+          8.286,
+          14.598
+        ],
+        "output": "29665"
+      },
+      "current_vm": {
+        "median_ms": 9.256,
+        "min_ms": 7.919,
+        "max_ms": 18.588,
+        "samples_ms": [
+          8.546,
+          9.256,
+          18.588,
+          7.919,
+          9.577,
+          17.707,
+          8.183
+        ],
+        "output": "29665"
+      }
+    },
+    "bench/matmul_small.c": {
+      "baseline_tree": {
+        "median_ms": 3.054,
+        "min_ms": 2.811,
+        "max_ms": 8.549,
+        "samples_ms": [
+          3.054,
+          2.928,
+          8.549,
+          2.811,
+          3.254,
+          4.617,
+          3.008
+        ],
+        "output": "2733800"
+      },
+      "baseline_vm": {
+        "median_ms": 3.445,
+        "min_ms": 2.668,
+        "max_ms": 9.95,
+        "samples_ms": [
+          3.573,
+          6.507,
+          2.706,
+          3.445,
+          9.95,
+          2.668,
+          2.903
+        ],
+        "output": "2733800"
+      },
+      "current_tree": {
+        "median_ms": 2.901,
+        "min_ms": 2.572,
+        "max_ms": 4.078,
+        "samples_ms": [
+          4.078,
+          2.746,
+          2.836,
+          3.092,
+          2.901,
+          2.991,
+          2.572
+        ],
+        "output": "2733800"
+      },
+      "current_vm": {
+        "median_ms": 3.913,
+        "min_ms": 2.746,
+        "max_ms": 5.358,
+        "samples_ms": [
+          4.299,
+          5.358,
+          2.746,
+          4.793,
+          2.851,
+          3.913,
+          3.526
+        ],
+        "output": "2733800"
+      }
+    }
+  },
+  "verification": {
+    "clean_gcc_build_current": "PASS; zero warnings",
+    "standard_suite": "842 passed, 0 failed, 23 skipped",
+    "bytecode_vm_gate": "PASS; fixture 907 attempts=1,runs=1; strict no fallback",
+    "baseline_build": "PASS; one pre-existing ParseState declaration warning"
+  }
+}

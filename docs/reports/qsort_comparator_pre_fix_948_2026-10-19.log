@@ -1,0 +1,102 @@
+[vm-try] body=0x55ce278d3100 depth=1 kind=2
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+[vm-try] body=0x55ce278cf040 depth=2 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=3 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=4 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=5 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=6 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=7 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=8 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=9 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=10 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=11 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=12 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=13 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=14 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=15 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=16 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=17 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=18 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=19 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=20 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=21 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=22 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=23 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=24 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x55ce278cf040 depth=25 kind=2
+#include <stdio.h>
+^
+948_qsort_stable.c:1:0 strict: tree fallback (body)
+[host-ret] qsort result=0 typ=0
+    for (i = 0; i < 12; i++) printf("%d:%d ", r[i].k, r[i].tag);
+                                   ^
+948_qsort_stable.c:15:35 strict: tree fallback (body)

@@ -1,0 +1,4 @@
+before
+    qsort(values, 2, sizeof(values[0]), 0);
+                                         ^
+964_qsort_null_comparator.c:8:41 qsort: comparator is NULL or invalid (undefined behavior in C)

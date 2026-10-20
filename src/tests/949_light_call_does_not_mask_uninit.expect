@@ -1,0 +1,3 @@
+int outer(void) { int x; inner(); return x; }
+                                          ^
+949_light_call_does_not_mask_uninit.c:3:42 uninitialized variable 'x'

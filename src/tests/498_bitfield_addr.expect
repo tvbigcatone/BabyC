@@ -1,0 +1,3 @@
+  int *p = &s.a;
+               ^
+498_bitfield_addr.c:5:15 cannot take address of bitfield

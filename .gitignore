@@ -1,0 +1,7 @@
+.vs/
+[Dd]ebug/
+[Rr]elease/
+*.exe
+*.bak
+*.obj
+*.o

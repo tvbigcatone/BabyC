@@ -1,0 +1,628 @@
+{
+  "fib": {
+    "tree": {
+      "baseline_ms": 2.26,
+      "current_ms": 2.375,
+      "delta_pct": 5.06,
+      "baseline_samples_ms": [
+        2.174,
+        3.491,
+        2.86,
+        2.26,
+        2.036,
+        2.12,
+        2.233,
+        2.521,
+        2.437
+      ],
+      "current_samples_ms": [
+        2.522,
+        2.348,
+        2.735,
+        2.518,
+        2.051,
+        2.375,
+        2.13,
+        2.493,
+        2.298
+      ],
+      "outputs_match": true,
+      "compact_counters": null
+    },
+    "linear": {
+      "baseline_ms": 5.775,
+      "current_ms": 6.056,
+      "delta_pct": 4.87,
+      "baseline_samples_ms": [
+        9.391,
+        5.76,
+        6.72,
+        6.269,
+        7.67,
+        5.775,
+        5.359,
+        5.488,
+        5.667
+      ],
+      "current_samples_ms": [
+        5.727,
+        6.674,
+        5.851,
+        6.056,
+        5.61,
+        6.056,
+        5.468,
+        6.946,
+        6.414
+      ],
+      "outputs_match": true,
+      "compact_counters": null
+    },
+    "compact": {
+      "baseline_ms": 5.627,
+      "current_ms": 5.783,
+      "delta_pct": 2.78,
+      "baseline_samples_ms": [
+        5.101,
+        5.627,
+        7.041,
+        6.174,
+        5.631,
+        5.246,
+        5.467,
+        6.076,
+        5.283
+      ],
+      "current_samples_ms": [
+        5.664,
+        5.529,
+        5.797,
+        5.753,
+        6.472,
+        6.45,
+        5.398,
+        6.07,
+        5.783
+      ],
+      "outputs_match": true,
+      "compact_counters": {
+        "baseline": [
+          1,
+          0
+        ],
+        "current": [
+          1,
+          0
+        ]
+      }
+    }
+  },
+  "array_sum": {
+    "tree": {
+      "baseline_ms": 4.092,
+      "current_ms": 3.678,
+      "delta_pct": -10.13,
+      "baseline_samples_ms": [
+        3.361,
+        4.668,
+        3.884,
+        5.128,
+        4.31,
+        4.357,
+        3.606,
+        4.016,
+        4.092
+      ],
+      "current_samples_ms": [
+        3.963,
+        9.735,
+        3.62,
+        3.888,
+        3.589,
+        3.678,
+        3.444,
+        4.336,
+        3.485
+      ],
+      "outputs_match": true,
+      "compact_counters": null
+    },
+    "linear": {
+      "baseline_ms": 3.792,
+      "current_ms": 3.703,
+      "delta_pct": -2.35,
+      "baseline_samples_ms": [
+        3.835,
+        3.792,
+        5.15,
+        3.786,
+        3.816,
+        3.61,
+        4.975,
+        3.727,
+        3.512
+      ],
+      "current_samples_ms": [
+        3.424,
+        3.831,
+        3.744,
+        4.999,
+        4.127,
+        3.628,
+        3.559,
+        3.703,
+        3.574
+      ],
+      "outputs_match": true,
+      "compact_counters": null
+    },
+    "compact": {
+      "baseline_ms": 3.843,
+      "current_ms": 3.852,
+      "delta_pct": 0.22,
+      "baseline_samples_ms": [
+        5.384,
+        3.989,
+        3.773,
+        3.843,
+        3.681,
+        3.592,
+        5.242,
+        3.806,
+        3.876
+      ],
+      "current_samples_ms": [
+        3.852,
+        3.897,
+        3.663,
+        3.945,
+        3.655,
+        4.405,
+        3.681,
+        3.685,
+        3.92
+      ],
+      "outputs_match": true,
+      "compact_counters": {
+        "baseline": [
+          0,
+          0
+        ],
+        "current": [
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "list_walk": {
+    "tree": {
+      "baseline_ms": 4.957,
+      "current_ms": 5.057,
+      "delta_pct": 2.01,
+      "baseline_samples_ms": [
+        4.957,
+        7.291,
+        7.378,
+        4.582,
+        5.244,
+        4.655,
+        6.695,
+        4.3,
+        4.625
+      ],
+      "current_samples_ms": [
+        4.614,
+        4.943,
+        5.106,
+        5.668,
+        5.866,
+        4.756,
+        5.057,
+        4.462,
+        5.56
+      ],
+      "outputs_match": true,
+      "compact_counters": null
+    },
+    "linear": {
+      "baseline_ms": 4.261,
+      "current_ms": 4.354,
+      "delta_pct": 2.19,
+      "baseline_samples_ms": [
+        3.942,
+        4.232,
+        5.433,
+        4.44,
+        3.982,
+        4.761,
+        4.261,
+        4.681,
+        4.254
+      ],
+      "current_samples_ms": [
+        4.641,
+        4.873,
+        4.048,
+        4.497,
+        4.306,
+        3.977,
+        4.23,
+        5.273,
+        4.354
+      ],
+      "outputs_match": true,
+      "compact_counters": null
+    },
+    "compact": {
+      "baseline_ms": 4.398,
+      "current_ms": 4.341,
+      "delta_pct": -1.29,
+      "baseline_samples_ms": [
+        3.925,
+        4.398,
+        4.719,
+        4.342,
+        4.82,
+        4.236,
+        4.09,
+        5.312,
+        9.011
+      ],
+      "current_samples_ms": [
+        4.068,
+        3.912,
+        4.572,
+        4.401,
+        4.319,
+        4.814,
+        4.276,
+        4.341,
+        4.352
+      ],
+      "outputs_match": true,
+      "compact_counters": {
+        "baseline": [
+          1,
+          0
+        ],
+        "current": [
+          1,
+          0
+        ]
+      }
+    }
+  },
+  "dfs_rec": {
+    "tree": {
+      "baseline_ms": 13.687,
+      "current_ms": 13.656,
+      "delta_pct": -0.22,
+      "baseline_samples_ms": [
+        13.381,
+        13.129,
+        15.322,
+        12.87,
+        13.411,
+        15.161,
+        13.687,
+        16.384,
+        13.827
+      ],
+      "current_samples_ms": [
+        12.983,
+        12.59,
+        12.774,
+        13.784,
+        17.455,
+        13.656,
+        13.702,
+        13.593,
+        13.983
+      ],
+      "outputs_match": true,
+      "compact_counters": null
+    },
+    "linear": {
+      "baseline_ms": 23.33,
+      "current_ms": 21.268,
+      "delta_pct": -8.84,
+      "baseline_samples_ms": [
+        23.33,
+        24.2,
+        21.966,
+        27.795,
+        22.241,
+        23.814,
+        21.97,
+        21.08,
+        23.807
+      ],
+      "current_samples_ms": [
+        20.623,
+        21.268,
+        25.5,
+        21.311,
+        21.8,
+        21.085,
+        20.725,
+        21.067,
+        21.638
+      ],
+      "outputs_match": true,
+      "compact_counters": null
+    },
+    "compact": {
+      "baseline_ms": 22.167,
+      "current_ms": 22.333,
+      "delta_pct": 0.75,
+      "baseline_samples_ms": [
+        24.343,
+        25.567,
+        23.759,
+        21.433,
+        31.348,
+        22.012,
+        22.167,
+        21.127,
+        21.192
+      ],
+      "current_samples_ms": [
+        21.595,
+        27.323,
+        21.292,
+        20.878,
+        22.563,
+        22.732,
+        22.333,
+        21.535,
+        22.375
+      ],
+      "outputs_match": true,
+      "compact_counters": {
+        "baseline": [
+          1,
+          0
+        ],
+        "current": [
+          1,
+          0
+        ]
+      }
+    }
+  },
+  "isort": {
+    "tree": {
+      "baseline_ms": 8.385,
+      "current_ms": 10.271,
+      "delta_pct": 22.5,
+      "baseline_samples_ms": [
+        7.822,
+        11.958,
+        8.094,
+        7.549,
+        8.385,
+        11.389,
+        11.876,
+        10.308,
+        8.37
+      ],
+      "current_samples_ms": [
+        7.398,
+        8.875,
+        8.808,
+        10.595,
+        9.679,
+        11.475,
+        41.958,
+        16.838,
+        10.271
+      ],
+      "outputs_match": true,
+      "compact_counters": null
+    },
+    "linear": {
+      "baseline_ms": 7.767,
+      "current_ms": 9.174,
+      "delta_pct": 18.11,
+      "baseline_samples_ms": [
+        7.385,
+        9.912,
+        7.681,
+        7.617,
+        10.749,
+        11.149,
+        7.741,
+        10.172,
+        7.767
+      ],
+      "current_samples_ms": [
+        7.958,
+        7.558,
+        11.111,
+        11.989,
+        9.174,
+        9.569,
+        7.773,
+        7.525,
+        9.961
+      ],
+      "outputs_match": true,
+      "compact_counters": null
+    },
+    "compact": {
+      "baseline_ms": 7.587,
+      "current_ms": 7.724,
+      "delta_pct": 1.81,
+      "baseline_samples_ms": [
+        7.6,
+        7.31,
+        7.366,
+        6.919,
+        8.615,
+        7.587,
+        7.539,
+        9.376,
+        7.638
+      ],
+      "current_samples_ms": [
+        6.713,
+        7.584,
+        10.646,
+        7.11,
+        11.236,
+        10.549,
+        7.724,
+        8.052,
+        7.502
+      ],
+      "outputs_match": true,
+      "compact_counters": {
+        "baseline": [
+          1,
+          0
+        ],
+        "current": [
+          1,
+          0
+        ]
+      }
+    }
+  },
+  "matmul_small": {
+    "tree": {
+      "baseline_ms": 2.868,
+      "current_ms": 3.313,
+      "delta_pct": 15.54,
+      "baseline_samples_ms": [
+        2.868,
+        2.447,
+        3.598,
+        2.885,
+        3.673,
+        2.804,
+        2.897,
+        2.644,
+        2.507
+      ],
+      "current_samples_ms": [
+        3.558,
+        3.507,
+        2.575,
+        2.848,
+        3.786,
+        4.603,
+        2.625,
+        2.658,
+        3.313
+      ],
+      "outputs_match": true,
+      "compact_counters": null
+    },
+    "linear": {
+      "baseline_ms": 2.864,
+      "current_ms": 2.912,
+      "delta_pct": 1.67,
+      "baseline_samples_ms": [
+        2.45,
+        2.688,
+        2.895,
+        2.669,
+        3.361,
+        2.864,
+        2.66,
+        3.557,
+        3.11
+      ],
+      "current_samples_ms": [
+        2.912,
+        3.404,
+        2.675,
+        2.55,
+        3.123,
+        2.591,
+        3.17,
+        2.509,
+        3.477
+      ],
+      "outputs_match": true,
+      "compact_counters": null
+    },
+    "compact": {
+      "baseline_ms": 3.125,
+      "current_ms": 2.961,
+      "delta_pct": -5.25,
+      "baseline_samples_ms": [
+        3.22,
+        2.747,
+        2.944,
+        3.223,
+        2.586,
+        2.492,
+        3.231,
+        5.436,
+        3.125
+      ],
+      "current_samples_ms": [
+        3.706,
+        4.65,
+        2.778,
+        2.611,
+        2.406,
+        2.961,
+        3.23,
+        3.312,
+        2.596
+      ],
+      "outputs_match": true,
+      "compact_counters": {
+        "baseline": [
+          0,
+          0
+        ],
+        "current": [
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "compact_positive_904": {
+    "median_ms": 2.521,
+    "samples_ms": [
+      2.766,
+      2.521,
+      2.648,
+      2.277,
+      2.298,
+      2.605,
+      2.06,
+      2.342,
+      2.528
+    ],
+    "counters": [
+      1,
+      1
+    ],
+    "output": "126 127 -128 -128\n254 255 0 0\n32766 32767 -32768 -32768\n65534 65535 0 0"
+  },
+  "compact_positive_831": {
+    "median_ms": 3.065,
+    "samples_ms": [
+      2.243,
+      2.665,
+      3.065,
+      3.229,
+      3.287,
+      5.343,
+      3.103,
+      2.461,
+      2.352
+    ],
+    "counters": [
+      1,
+      1
+    ],
+    "output": "65535 32768 -17 14"
+  }
+}

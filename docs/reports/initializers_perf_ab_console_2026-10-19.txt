@@ -1,0 +1,10 @@
+AB string_scan:accel0 pairs=7 baseline_med=312.169ms candidate_med=292.843ms delta_med=-6.19% paired_med=-6.37% IQR=-6.61%..-5.88% OUTPUT=380000
+AB string_scan:accel1 pairs=7 baseline_med=5.710ms candidate_med=5.674ms delta_med=-0.63% paired_med=-1.20% IQR=-7.19%..+2.01% OUTPUT=380000
+AB string_scan_bounded:accel0 pairs=7 baseline_med=378.058ms candidate_med=366.728ms delta_med=-3.00% paired_med=-4.02% IQR=-4.71%..-0.84% OUTPUT=380000
+AB string_scan_bounded:accel1 pairs=7 baseline_med=7.319ms candidate_med=7.171ms delta_med=-2.03% paired_med=-1.20% IQR=-5.96%..+2.33% OUTPUT=380000
+AB struct_score:accel0 pairs=7 baseline_med=71.663ms candidate_med=64.897ms delta_med=-9.44% paired_med=-9.92% IQR=-13.52%..-8.15% OUTPUT=7500000
+AB struct_score:accel1 pairs=7 baseline_med=1.526ms candidate_med=1.482ms delta_med=-2.88% paired_med=-6.14% IQR=-31.78%..+2.30% OUTPUT=7500000
+AB dfs_rec:accel0 pairs=7 baseline_med=25.225ms candidate_med=24.763ms delta_med=-1.83% paired_med=-3.68% IQR=-3.79%..+0.49% OUTPUT=15000
+AB dfs_rec:accel1 pairs=7 baseline_med=10.033ms candidate_med=10.095ms delta_med=+0.62% paired_med=+0.03% IQR=-5.21%..+3.91% OUTPUT=15000
+CSV_SAMPLES /mnt/data/initializer_work/extract_base/babyc/docs/reports/initializers_perf_ab_samples_2026-10-19.csv
+CSV_SUMMARY /mnt/data/initializer_work/extract_base/babyc/docs/reports/initializers_perf_ab_summary_2026-10-19.csv

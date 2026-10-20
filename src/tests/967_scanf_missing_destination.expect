@@ -1,0 +1,4 @@
+before
+    result = sscanf("42", "%d");
+                              ^
+967_scanf_missing_destination.c:7:30 scanf: format requires 1 destination arguments but only 0 supplied (undefined behavior in C)

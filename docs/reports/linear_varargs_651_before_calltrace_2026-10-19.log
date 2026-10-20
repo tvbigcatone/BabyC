@@ -1,0 +1,29 @@
+[call] sqlite3_open enabled=1
+[fp] enter call leftKind=-1 args=2 CallN=0
+[call] printf enabled=1
+[fp] enter call leftKind=-1 args=1 CallN=0
+[call] direct check FV=0x556e19e726f0
+[call] type check FV->Typ=0x7ffd1825cc40
+[call] BodyIr check
+[call] ident=printf left=-1
+[call] host arg check
+[call] args=1
+[call] success
+[call] sqlite3_exec enabled=1
+[fp] enter call leftKind=-1 args=5 CallN=1
+[call] printf enabled=1
+[fp] enter call leftKind=-1 args=2 CallN=1
+[call] direct check FV=0x556e19e726f0
+[call] type check FV->Typ=0x7ffd1825cc40
+[call] BodyIr check
+[call] ident=printf left=-1
+[call] host arg check
+[call] args=2
+[call] success
+[call] sqlite3_close enabled=1
+[fp] enter call leftKind=-1 args=1 CallN=2
+[babyc-exec-profile] compile_reject=lower body_kind=2 n=25 ok=1 skipped_call=1 calls=2
+/* Intrinsic varargs: sqlite3_exec(..., NULL,NULL,NULL) on 64-bit must not SEGV. */
+                      ^
+651_sqlite_exec_null_varargs.c:1:21 strict: tree fallback (body)
+[babyc-bytecode-vm-prod] attempts=0 runs=0

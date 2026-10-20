@@ -1,0 +1,7 @@
+AB string_scan:accel0 pairs=7 baseline_med=321.591ms candidate_med=294.284ms delta_med=-8.49% paired_med=-7.55% IQR=-8.16%..-6.75% OUTPUT=380000
+AB string_scan:accel1 pairs=7 baseline_med=5.995ms candidate_med=5.727ms delta_med=-4.46% paired_med=-4.62% IQR=-16.03%..-1.06% OUTPUT=380000
+AB string_scan_bounded:accel0 pairs=7 baseline_med=379.832ms candidate_med=363.759ms delta_med=-4.23% paired_med=-3.95% IQR=-5.59%..-2.67% OUTPUT=380000
+AB string_scan_bounded:accel1 pairs=21 baseline_med=8.193ms candidate_med=8.495ms delta_med=+3.69% paired_med=-2.41% IQR=-6.31%..+8.59% OUTPUT=380000
+AB struct_score:accel0 pairs=7 baseline_med=74.825ms candidate_med=71.939ms delta_med=-3.86% paired_med=-6.95% IQR=-9.54%..+0.22% OUTPUT=7500000
+AB struct_score:accel1 pairs=21 baseline_med=1.624ms candidate_med=1.574ms delta_med=-3.07% paired_med=-3.59% IQR=-9.28%..+7.81% OUTPUT=7500000
+AB dfs_rec:accel0 pairs=7 baseline_med=26.622ms candidate_med=25.832ms delta_med=-2.97% paired_med=-4.95% IQR=-6.93%..-1.24% OUTPUT=15000

@@ -1,0 +1,234 @@
+[vm-try] body=0x55cec793e340 depth=1 kind=2
+[lin-ir] function=main function_ptr=0x55cec79353f0 instructions=159
+[lin-ir] 0000 op=13 dest=0 a=0 b=0 tok=0 imm=14
+[lin-ir] 0001 op=15 dest=0 a=4 b=0 tok=7 imm=0
+[lin-ir] 0002 op=13 dest=0 a=0 b=0 tok=0 imm=15
+[lin-ir] 0003 op=15 dest=0 a=8 b=0 tok=7 imm=1
+[lin-ir] 0004 op=13 dest=0 a=0 b=0 tok=0 imm=16
+[lin-ir] 0005 op=13 dest=0 a=0 b=0 tok=0 imm=16
+[lin-ir] 0006 op=1 dest=0 a=0 b=0 tok=0 imm=7
+[lin-ir] 0007 op=3 dest=0 a=0 b=0 tok=0 imm=3
+[lin-ir] 0008 op=13 dest=0 a=0 b=0 tok=0 imm=16
+[lin-ir] 0009 op=1 dest=0 a=0 b=0 tok=0 imm=0
+[lin-ir] 0010 op=3 dest=0 a=0 b=0 tok=0 imm=4
+[lin-ir] 0011 op=13 dest=0 a=0 b=0 tok=0 imm=17
+[lin-ir] 0012 op=13 dest=0 a=0 b=0 tok=0 imm=17
+[lin-ir] 0013 op=1 dest=0 a=0 b=0 tok=0 imm=0
+[lin-ir] 0014 op=3 dest=0 a=0 b=0 tok=0 imm=2
+[lin-ir] 0015 op=3 dest=0 a=0 b=0 tok=0 imm=2
+[lin-ir] 0016 op=2 dest=1 a=0 b=0 tok=0 imm=2
+[lin-ir] 0017 op=1 dest=2 a=0 b=0 tok=0 imm=6
+[lin-ir] 0018 op=22 dest=0 a=1 b=2 tok=25 imm=42
+[lin-ir] 0019 op=13 dest=0 a=0 b=0 tok=0 imm=17
+[lin-ir] 0020 op=2 dest=2 a=0 b=0 tok=0 imm=2
+[lin-ir] 0021 op=1 dest=3 a=0 b=0 tok=0 imm=5
+[lin-ir] 0022 op=4 dest=1 a=2 b=3 tok=30 imm=0
+[lin-ir] 0023 op=1 dest=3 a=0 b=0 tok=0 imm=6
+[lin-ir] 0024 op=4 dest=0 a=1 b=3 tok=32 imm=0
+[lin-ir] 0025 op=2 dest=1 a=0 b=0 tok=0 imm=1
+[lin-ir] 0026 op=1 dest=3 a=0 b=0 tok=0 imm=8
+[lin-ir] 0027 op=4 dest=4 a=2 b=3 tok=30 imm=0
+[lin-ir] 0028 op=4 dest=5 a=1 b=4 tok=28 imm=2
+[lin-ir] 0029 op=12 dest=0 a=0 b=5 tok=2 imm=4
+[lin-ir] 0030 op=13 dest=0 a=0 b=0 tok=0 imm=17
+[lin-ir] 0031 op=2 dest=0 a=0 b=0 tok=0 imm=2
+[lin-ir] 0032 op=2 dest=1 a=0 b=0 tok=0 imm=1
+[lin-ir] 0033 op=1 dest=2 a=0 b=0 tok=0 imm=8
+[lin-ir] 0034 op=4 dest=3 a=0 b=2 tok=30 imm=0
+[lin-ir] 0035 op=4 dest=4 a=1 b=3 tok=28 imm=2
+[lin-ir] 0036 op=17 dest=5 a=4 b=0 tok=0 imm=4
+[lin-ir] 0037 op=12 dest=0 a=0 b=5 tok=2 imm=4
+[lin-ir] 0038 op=13 dest=0 a=0 b=0 tok=0 imm=17
+[lin-ir] 0039 op=2 dest=0 a=0 b=0 tok=0 imm=2
+[lin-ir] 0040 op=18 dest=1 a=2 b=0 tok=0 imm=1
+[lin-ir] 0041 op=6 dest=0 a=0 b=0 tok=0 imm=16
+[lin-ir] 0042 op=13 dest=0 a=0 b=0 tok=0 imm=19
+[lin-ir] 0043 op=2 dest=0 a=0 b=0 tok=0 imm=0
+[lin-ir] 0044 op=1 dest=1 a=0 b=0 tok=0 imm=8
+[lin-ir] 0045 op=1 dest=2 a=0 b=0 tok=0 imm=4
+[lin-ir] 0046 op=1 dest=3 a=0 b=0 tok=5 imm=94346599940544
+[lin-ir] 0047 op=14 dest=4 a=0 b=4 tok=1 imm=0
+[lin-ir] 0048 op=13 dest=0 a=0 b=0 tok=0 imm=20
+[lin-ir] 0049 op=13 dest=0 a=0 b=0 tok=0 imm=20
+[lin-ir] 0050 op=1 dest=0 a=0 b=0 tok=0 imm=0
+[lin-ir] 0051 op=3 dest=0 a=0 b=0 tok=0 imm=2
+[lin-ir] 0052 op=3 dest=0 a=0 b=0 tok=0 imm=2
+[lin-ir] 0053 op=2 dest=1 a=0 b=0 tok=0 imm=2
+[lin-ir] 0054 op=1 dest=2 a=0 b=0 tok=0 imm=8
+[lin-ir] 0055 op=22 dest=0 a=1 b=2 tok=25 imm=65
+[lin-ir] 0056 op=13 dest=0 a=0 b=0 tok=0 imm=20
+[lin-ir] 0057 op=1 dest=0 a=0 b=0 tok=3 imm=57
+[lin-ir] 0058 op=2 dest=1 a=0 b=0 tok=0 imm=2
+[lin-ir] 0059 op=11 dest=2 a=1 b=0 tok=0 imm=0
+[lin-ir] 0060 op=14 dest=3 a=0 b=2 tok=1 imm=1
+[lin-ir] 0061 op=13 dest=0 a=0 b=0 tok=0 imm=20
+[lin-ir] 0062 op=2 dest=0 a=0 b=0 tok=0 imm=2
+[lin-ir] 0063 op=18 dest=1 a=2 b=0 tok=0 imm=1
+[lin-ir] 0064 op=6 dest=0 a=0 b=0 tok=0 imm=53
+[lin-ir] 0065 op=13 dest=0 a=0 b=0 tok=0 imm=21
+[lin-ir] 0066 op=1 dest=0 a=0 b=0 tok=3 imm=66
+[lin-ir] 0067 op=14 dest=1 a=0 b=1 tok=1 imm=2
+[lin-ir] 0068 op=13 dest=0 a=0 b=0 tok=0 imm=23
+[lin-ir] 0069 op=1 dest=0 a=0 b=0 tok=4 imm=3
+[lin-ir] 0070 op=2 dest=1 a=0 b=0 tok=0 imm=0
+[lin-ir] 0071 op=1 dest=2 a=0 b=0 tok=0 imm=8
+[lin-ir] 0072 op=1 dest=3 a=0 b=0 tok=0 imm=4
+[lin-ir] 0073 op=1 dest=4 a=0 b=0 tok=5 imm=94346599940544
+[lin-ir] 0074 op=14 dest=5 a=0 b=5 tok=1 imm=3
+[lin-ir] 0075 op=3 dest=0 a=5 b=0 tok=0 imm=4
+[lin-ir] 0076 op=3 dest=0 a=5 b=0 tok=0 imm=4
+[lin-ir] 0077 op=13 dest=0 a=0 b=0 tok=0 imm=24
+[lin-ir] 0078 op=1 dest=0 a=0 b=0 tok=3 imm=78
+[lin-ir] 0079 op=2 dest=1 a=0 b=0 tok=0 imm=4
+[lin-ir] 0080 op=7 dest=0 a=1 b=0 tok=0 imm=90
+[lin-ir] 0081 op=2 dest=3 a=0 b=0 tok=0 imm=4
+[lin-ir] 0082 op=2 dest=4 a=0 b=0 tok=0 imm=0
+[lin-ir] 0083 op=4 dest=5 a=3 b=4 tok=29 imm=0
+[lin-ir] 0084 op=1 dest=6 a=0 b=0 tok=0 imm=4
+[lin-ir] 0085 op=4 dest=7 a=5 b=6 tok=31 imm=0
+[lin-ir] 0086 op=5 dest=8 a=7 b=0 tok=38 imm=257
+[lin-ir] 0087 op=1 dest=9 a=0 b=0 tok=0 imm=0
+[lin-ir] 0088 op=4 dest=2 a=8 b=9 tok=28 imm=2
+[lin-ir] 0089 op=6 dest=0 a=0 b=0 tok=0 imm=95
+[lin-ir] 0090 op=1 dest=11 a=0 b=0 tok=0 imm=0
+[lin-ir] 0091 op=1 dest=12 a=0 b=0 tok=0 imm=1
+[lin-ir] 0092 op=4 dest=10 a=11 b=12 tok=29 imm=0
+[lin-ir] 0093 op=1 dest=11 a=0 b=0 tok=0 imm=0
+[lin-ir] 0094 op=4 dest=2 a=10 b=11 tok=28 imm=2
+[lin-ir] 0095 op=14 dest=3 a=0 b=2 tok=1 imm=4
+[lin-ir] 0096 op=13 dest=0 a=0 b=0 tok=0 imm=25
+[lin-ir] 0097 op=1 dest=0 a=0 b=0 tok=0 imm=4
+[lin-ir] 0098 op=3 dest=0 a=0 b=0 tok=0 imm=3
+[lin-ir] 0099 op=3 dest=0 a=0 b=0 tok=0 imm=3
+[lin-ir] 0100 op=13 dest=0 a=0 b=0 tok=0 imm=26
+[lin-ir] 0101 op=1 dest=0 a=0 b=0 tok=4 imm=3
+[lin-ir] 0102 op=2 dest=1 a=0 b=0 tok=0 imm=0
+[lin-ir] 0103 op=1 dest=2 a=0 b=0 tok=0 imm=8
+[lin-ir] 0104 op=1 dest=3 a=0 b=0 tok=0 imm=4
+[lin-ir] 0105 op=1 dest=4 a=0 b=0 tok=5 imm=94346599940544
+[lin-ir] 0106 op=14 dest=5 a=0 b=5 tok=1 imm=5
+[lin-ir] 0107 op=3 dest=0 a=5 b=0 tok=0 imm=4
+[lin-ir] 0108 op=3 dest=0 a=5 b=0 tok=0 imm=4
+[lin-ir] 0109 op=13 dest=0 a=0 b=0 tok=0 imm=27
+[lin-ir] 0110 op=1 dest=0 a=0 b=0 tok=3 imm=110
+[lin-ir] 0111 op=2 dest=1 a=0 b=0 tok=0 imm=4
+[lin-ir] 0112 op=7 dest=0 a=1 b=0 tok=0 imm=122
+[lin-ir] 0113 op=2 dest=3 a=0 b=0 tok=0 imm=4
+[lin-ir] 0114 op=2 dest=4 a=0 b=0 tok=0 imm=0
+[lin-ir] 0115 op=4 dest=5 a=3 b=4 tok=29 imm=0
+[lin-ir] 0116 op=1 dest=6 a=0 b=0 tok=0 imm=4
+[lin-ir] 0117 op=4 dest=7 a=5 b=6 tok=31 imm=0
+[lin-ir] 0118 op=5 dest=8 a=7 b=0 tok=38 imm=257
+[lin-ir] 0119 op=1 dest=9 a=0 b=0 tok=0 imm=0
+[lin-ir] 0120 op=4 dest=2 a=8 b=9 tok=28 imm=2
+[lin-ir] 0121 op=6 dest=0 a=0 b=0 tok=0 imm=127
+[lin-ir] 0122 op=1 dest=11 a=0 b=0 tok=0 imm=0
+[lin-ir] 0123 op=1 dest=12 a=0 b=0 tok=0 imm=1
+[lin-ir] 0124 op=4 dest=10 a=11 b=12 tok=29 imm=0
+[lin-ir] 0125 op=1 dest=11 a=0 b=0 tok=0 imm=0
+[lin-ir] 0126 op=4 dest=2 a=10 b=11 tok=28 imm=2
+[lin-ir] 0127 op=14 dest=3 a=0 b=2 tok=1 imm=6
+[lin-ir] 0128 op=13 dest=0 a=0 b=0 tok=0 imm=29
+[lin-ir] 0129 op=2 dest=0 a=0 b=0 tok=0 imm=1
+[lin-ir] 0130 op=1 dest=1 a=0 b=0 tok=0 imm=6
+[lin-ir] 0131 op=1 dest=2 a=0 b=0 tok=0 imm=8
+[lin-ir] 0132 op=1 dest=3 a=0 b=0 tok=5 imm=94346599942944
+[lin-ir] 0133 op=14 dest=4 a=0 b=4 tok=1 imm=7
+[lin-ir] 0134 op=13 dest=0 a=0 b=0 tok=0 imm=30
+[lin-ir] 0135 op=13 dest=0 a=0 b=0 tok=0 imm=30
+[lin-ir] 0136 op=1 dest=0 a=0 b=0 tok=0 imm=0
+[lin-ir] 0137 op=3 dest=0 a=0 b=0 tok=0 imm=2
+[lin-ir] 0138 op=3 dest=0 a=0 b=0 tok=0 imm=2
+[lin-ir] 0139 op=2 dest=1 a=0 b=0 tok=0 imm=2
+[lin-ir] 0140 op=1 dest=2 a=0 b=0 tok=0 imm=6
+[lin-ir] 0141 op=22 dest=0 a=1 b=2 tok=25 imm=153
+[lin-ir] 0142 op=13 dest=0 a=0 b=0 tok=0 imm=30
+[lin-ir] 0143 op=1 dest=0 a=0 b=0 tok=3 imm=143
+[lin-ir] 0144 op=2 dest=1 a=0 b=0 tok=0 imm=2
+[lin-ir] 0145 op=11 dest=2 a=1 b=0 tok=1 imm=1
+[lin-ir] 0146 op=2 dest=3 a=0 b=0 tok=0 imm=2
+[lin-ir] 0147 op=11 dest=4 a=3 b=0 tok=1 imm=2
+[lin-ir] 0148 op=14 dest=5 a=0 b=3 tok=1 imm=8
+[lin-ir] 0149 op=13 dest=0 a=0 b=0 tok=0 imm=30
+[lin-ir] 0150 op=2 dest=0 a=0 b=0 tok=0 imm=2
+[lin-ir] 0151 op=18 dest=1 a=2 b=0 tok=0 imm=1
+[lin-ir] 0152 op=6 dest=0 a=0 b=0 tok=0 imm=139
+[lin-ir] 0153 op=13 dest=0 a=0 b=0 tok=0 imm=31
+[lin-ir] 0154 op=1 dest=0 a=0 b=0 tok=3 imm=154
+[lin-ir] 0155 op=14 dest=1 a=0 b=1 tok=1 imm=9
+[lin-ir] 0156 op=13 dest=0 a=0 b=0 tok=0 imm=32
+[lin-ir] 0157 op=1 dest=0 a=0 b=0 tok=0 imm=0
+[lin-ir] 0158 op=8 dest=0 a=0 b=0 tok=0 imm=0
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[lin-ir] function=cmp_int function_ptr=0x55cec79341c0 instructions=7
+[lin-ir] 0000 op=13 dest=0 a=0 b=0 tok=0 imm=9
+[lin-ir] 0001 op=2 dest=1 a=0 b=0 tok=0 imm=-1
+[lin-ir] 0002 op=11 dest=2 a=1 b=0 tok=2 imm=4
+[lin-ir] 0003 op=2 dest=3 a=0 b=0 tok=0 imm=-2
+[lin-ir] 0004 op=11 dest=4 a=3 b=0 tok=2 imm=4
+[lin-ir] 0005 op=4 dest=0 a=2 b=4 tok=29 imm=0
+[lin-ir] 0006 op=8 dest=0 a=0 b=0 tok=0 imm=0
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[host-ret] qsort result=0 typ=0
+[host-ret] printf result=2 typ=1
+0 [host-ret] printf result=2 typ=1
+1 [host-ret] printf result=2 typ=1
+2 [host-ret] printf result=2 typ=1
+3 [host-ret] printf result=2 typ=1
+5 [host-ret] printf result=2 typ=1
+7 [host-ret] printf result=2 typ=1
+8 [host-ret] printf result=2 typ=1
+9 
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[host-ret] bsearch result=94346599982564 typ=14
+5
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[vm-try] body=0x55cec79349b0 depth=2 kind=2
+[host-ret] bsearch result=0 typ=14
+-1
+[vm-try] body=0x55cec79352a0 depth=2 kind=2
+[lin-ir] function=cmp_rec function_ptr=0x55cec7934b20 instructions=7
+[lin-ir] 0000 op=13 dest=0 a=0 b=0 tok=0 imm=10
+[lin-ir] 0001 op=2 dest=1 a=0 b=0 tok=0 imm=-1
+[lin-ir] 0002 op=11 dest=2 a=1 b=0 tok=2 imm=4
+[lin-ir] 0003 op=2 dest=3 a=0 b=0 tok=0 imm=-2
+[lin-ir] 0004 op=11 dest=4 a=3 b=0 tok=2 imm=4
+[lin-ir] 0005 op=4 dest=0 a=2 b=4 tok=29 imm=0
+[lin-ir] 0006 op=8 dest=0 a=0 b=0 tok=0 imm=0
+[vm-try] body=0x55cec79352a0 depth=2 kind=2
+[vm-try] body=0x55cec79352a0 depth=2 kind=2
+[vm-try] body=0x55cec79352a0 depth=2 kind=2
+[vm-try] body=0x55cec79352a0 depth=2 kind=2
+[vm-try] body=0x55cec79352a0 depth=2 kind=2
+[vm-try] body=0x55cec79352a0 depth=2 kind=2
+[vm-try] body=0x55cec79352a0 depth=2 kind=2
+[vm-try] body=0x55cec79352a0 depth=2 kind=2
+[host-ret] qsort result=0 typ=0
+[host-ret] printf result=4 typ=1
+0:0 [host-ret] printf result=4 typ=1
+1:5 [host-ret] printf result=4 typ=1
+2:4 [host-ret] printf result=4 typ=1
+3:3 [host-ret] printf result=4 typ=1
+4:2 [host-ret] printf result=4 typ=1
+5:1 
+[babyc-cov] lin_inst=655 tree_stmt=0 tree_expr=0 fncode_body=32 tree_body=0
+[babyc-exec-profile] attempts=32 body_runs=32 body_run_fail=0 reject_depth=0 reject_ptr=0 reject_small=0 compile_fail=0 ineligible=0 tiny_tree=0 run_nested=31 run_top=1 ptr_index_admit=31 local_add_fuse=0 index_copy_fuse=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0

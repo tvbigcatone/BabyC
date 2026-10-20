@@ -1,0 +1,220 @@
+COMMAND: cd src/tests && env BABYC_PATH=tree BABYC_ACCEL=0 ../babyc 873_alignment_extended.c
+EXIT_CODE=0 OUTPUT_MATCH_EXPECT=True
+RAW_OUTPUT_BEGIN
+1 9 4.75 5 5 17 25
+42 43
+RAW_OUTPUT_END
+
+COMMAND: cd src/tests && env BABYC_PATH=tree BABYC_ACCEL=1 ../babyc 873_alignment_extended.c
+EXIT_CODE=0 OUTPUT_MATCH_EXPECT=True
+RAW_OUTPUT_BEGIN
+1 9 4.75 5 5 17 25
+42 43
+RAW_OUTPUT_END
+
+COMMAND: cd src/tests && env BABYC_PATH=linear BABYC_ACCEL=0 BABYC_STRICT=1 BABYC_DUMP_LIN=1 BABYC_VM_PROFILE=1 ../babyc 873_alignment_extended.c
+EXIT_CODE=0 OUTPUT_MATCH_EXPECT=True
+RAW_OUTPUT_BEGIN
+[lin-ir] function=main function_ptr=0x55573d94b0f0 instructions=80
+[lin-ir] 0000 op=13 dest=0 a=0 b=0 tok=0 imm=14
+[lin-ir] 0001 op=1 dest=0 a=0 b=0 tok=0 imm=1
+[lin-ir] 0002 op=12 dest=0 a=0 b=0 tok=1 imm=0
+[lin-ir] 0003 op=13 dest=0 a=0 b=0 tok=0 imm=15
+[lin-ir] 0004 op=1 dest=0 a=0 b=0 tok=0 imm=8
+[lin-ir] 0005 op=12 dest=0 a=0 b=0 tok=1 imm=1
+[lin-ir] 0006 op=13 dest=0 a=0 b=0 tok=0 imm=16
+[lin-ir] 0007 op=11 dest=0 a=0 b=0 tok=5 imm=2
+[lin-ir] 0008 op=17 dest=1 a=0 b=0 tok=0 imm=4
+[lin-ir] 0009 op=11 dest=2 a=1 b=0 tok=2 imm=4
+[lin-ir] 0010 op=1 dest=3 a=0 b=0 tok=0 imm=1
+[lin-ir] 0011 op=4 dest=4 a=2 b=3 tok=28 imm=0
+[lin-ir] 0012 op=12 dest=0 a=4 b=1 tok=2 imm=4
+[lin-ir] 0013 op=13 dest=0 a=0 b=0 tok=0 imm=17
+[lin-ir] 0014 op=1 dest=0 a=0 b=0 tok=2 imm=14
+[lin-ir] 0015 op=12 dest=0 a=0 b=0 tok=1 imm=3
+[lin-ir] 0016 op=13 dest=0 a=0 b=0 tok=0 imm=18
+[lin-ir] 0017 op=11 dest=0 a=0 b=0 tok=1 imm=4
+[lin-ir] 0018 op=1 dest=1 a=0 b=0 tok=2 imm=18
+[lin-ir] 0019 op=4 dest=2 a=0 b=1 tok=28 imm=4
+[lin-ir] 0020 op=12 dest=0 a=2 b=0 tok=1 imm=5
+[lin-ir] 0021 op=13 dest=0 a=0 b=0 tok=0 imm=19
+[lin-ir] 0022 op=1 dest=0 a=0 b=0 tok=0 imm=93833183670104
+[lin-ir] 0023 op=12 dest=0 a=0 b=0 tok=1 imm=6
+[lin-ir] 0024 op=13 dest=0 a=0 b=0 tok=0 imm=20
+[lin-ir] 0025 op=1 dest=0 a=0 b=0 tok=0 imm=4
+[lin-ir] 0026 op=12 dest=0 a=0 b=0 tok=1 imm=7
+[lin-ir] 0027 op=13 dest=0 a=0 b=0 tok=0 imm=21
+[lin-ir] 0028 op=11 dest=0 a=0 b=0 tok=5 imm=8
+[lin-ir] 0029 op=17 dest=1 a=0 b=0 tok=0 imm=24
+[lin-ir] 0030 op=11 dest=2 a=1 b=0 tok=2 imm=4
+[lin-ir] 0031 op=1 dest=3 a=0 b=0 tok=0 imm=1
+[lin-ir] 0032 op=4 dest=4 a=2 b=3 tok=28 imm=0
+[lin-ir] 0033 op=12 dest=0 a=4 b=1 tok=2 imm=4
+[lin-ir] 0034 op=13 dest=0 a=0 b=0 tok=0 imm=22
+[lin-ir] 0035 op=1 dest=0 a=0 b=0 tok=0 imm=5
+[lin-ir] 0036 op=12 dest=0 a=0 b=0 tok=1 imm=9
+[lin-ir] 0037 op=13 dest=0 a=0 b=0 tok=0 imm=23
+[lin-ir] 0038 op=1 dest=0 a=0 b=0 tok=0 imm=17
+[lin-ir] 0039 op=12 dest=0 a=0 b=0 tok=1 imm=10
+[lin-ir] 0040 op=13 dest=0 a=0 b=0 tok=0 imm=24
+[lin-ir] 0041 op=1 dest=0 a=0 b=0 tok=0 imm=23
+[lin-ir] 0042 op=12 dest=0 a=0 b=0 tok=1 imm=11
+[lin-ir] 0043 op=13 dest=0 a=0 b=0 tok=0 imm=25
+[lin-ir] 0044 op=11 dest=1 a=0 b=0 tok=1 imm=12
+[lin-ir] 0045 op=1 dest=2 a=0 b=0 tok=0 imm=2
+[lin-ir] 0046 op=4 dest=0 a=1 b=2 tok=28 imm=0
+[lin-ir] 0047 op=12 dest=0 a=0 b=0 tok=1 imm=13
+[lin-ir] 0048 op=13 dest=0 a=0 b=0 tok=0 imm=26
+[lin-ir] 0049 op=1 dest=0 a=0 b=0 tok=0 imm=41
+[lin-ir] 0050 op=10 dest=0 a=0 b=0 tok=0 imm=0
+[lin-ir] 0051 op=13 dest=0 a=0 b=0 tok=0 imm=27
+[lin-ir] 0052 op=11 dest=1 a=0 b=0 tok=1 imm=14
+[lin-ir] 0053 op=11 dest=2 a=1 b=0 tok=2 imm=4
+[lin-ir] 0054 op=1 dest=3 a=0 b=0 tok=0 imm=1
+[lin-ir] 0055 op=4 dest=0 a=2 b=3 tok=28 imm=0
+[lin-ir] 0056 op=11 dest=1 a=0 b=0 tok=1 imm=15
+[lin-ir] 0057 op=12 dest=0 a=0 b=1 tok=2 imm=4
+[lin-ir] 0058 op=13 dest=0 a=0 b=0 tok=0 imm=28
+[lin-ir] 0059 op=9 dest=0 a=0 b=0 tok=0 imm=0
+[lin-ir] 0060 op=10 dest=0 a=0 b=0 tok=0 imm=1
+[lin-ir] 0061 op=13 dest=0 a=0 b=0 tok=0 imm=29
+[lin-ir] 0062 op=9 dest=0 a=0 b=0 tok=0 imm=1
+[lin-ir] 0063 op=16 dest=0 a=0 b=0 tok=0 imm=1
+[lin-ir] 0064 op=13 dest=0 a=0 b=0 tok=0 imm=30
+[lin-ir] 0065 op=1 dest=0 a=0 b=0 tok=3 imm=65
+[lin-ir] 0066 op=9 dest=1 a=0 b=0 tok=1 imm=2
+[lin-ir] 0067 op=11 dest=2 a=1 b=0 tok=2 imm=1
+[lin-ir] 0068 op=11 dest=3 a=0 b=0 tok=1 imm=16
+[lin-ir] 0069 op=11 dest=4 a=0 b=0 tok=1 imm=17
+[lin-ir] 0070 op=11 dest=5 a=0 b=0 tok=1 imm=18
+[lin-ir] 0071 op=11 dest=6 a=0 b=0 tok=1 imm=19
+[lin-ir] 0072 op=11 dest=7 a=0 b=0 tok=1 imm=20
+[lin-ir] 0073 op=11 dest=8 a=0 b=0 tok=1 imm=21
+[lin-ir] 0074 op=14 dest=9 a=0 b=8 tok=1 imm=0
+[lin-ir] 0075 op=13 dest=0 a=0 b=0 tok=0 imm=31
+[lin-ir] 0076 op=1 dest=0 a=0 b=0 tok=3 imm=76
+[lin-ir] 0077 op=9 dest=1 a=0 b=0 tok=0 imm=0
+[lin-ir] 0078 op=9 dest=2 a=0 b=0 tok=0 imm=1
+[lin-ir] 0079 op=14 dest=3 a=0 b=3 tok=1 imm=1
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+1 9 4.75 5 5 17 25
+42 43
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+RAW_OUTPUT_END
+
+COMMAND: cd src/tests && env BABYC_PATH=linear BABYC_ACCEL=1 BABYC_STRICT=1 BABYC_DUMP_LIN=1 BABYC_VM_PROFILE=1 ../babyc 873_alignment_extended.c
+EXIT_CODE=0 OUTPUT_MATCH_EXPECT=True
+RAW_OUTPUT_BEGIN
+[lin-ir] function=main function_ptr=0x563a75e5d0f0 instructions=80
+[lin-ir] 0000 op=13 dest=0 a=0 b=0 tok=0 imm=14
+[lin-ir] 0001 op=1 dest=0 a=0 b=0 tok=0 imm=1
+[lin-ir] 0002 op=12 dest=0 a=0 b=0 tok=1 imm=0
+[lin-ir] 0003 op=13 dest=0 a=0 b=0 tok=0 imm=15
+[lin-ir] 0004 op=1 dest=0 a=0 b=0 tok=0 imm=8
+[lin-ir] 0005 op=12 dest=0 a=0 b=0 tok=1 imm=1
+[lin-ir] 0006 op=13 dest=0 a=0 b=0 tok=0 imm=16
+[lin-ir] 0007 op=11 dest=0 a=0 b=0 tok=5 imm=2
+[lin-ir] 0008 op=17 dest=1 a=0 b=0 tok=0 imm=4
+[lin-ir] 0009 op=11 dest=2 a=1 b=0 tok=2 imm=4
+[lin-ir] 0010 op=1 dest=3 a=0 b=0 tok=0 imm=1
+[lin-ir] 0011 op=4 dest=4 a=2 b=3 tok=28 imm=0
+[lin-ir] 0012 op=12 dest=0 a=4 b=1 tok=2 imm=4
+[lin-ir] 0013 op=13 dest=0 a=0 b=0 tok=0 imm=17
+[lin-ir] 0014 op=1 dest=0 a=0 b=0 tok=2 imm=14
+[lin-ir] 0015 op=12 dest=0 a=0 b=0 tok=1 imm=3
+[lin-ir] 0016 op=13 dest=0 a=0 b=0 tok=0 imm=18
+[lin-ir] 0017 op=11 dest=0 a=0 b=0 tok=1 imm=4
+[lin-ir] 0018 op=1 dest=1 a=0 b=0 tok=2 imm=18
+[lin-ir] 0019 op=4 dest=2 a=0 b=1 tok=28 imm=4
+[lin-ir] 0020 op=12 dest=0 a=2 b=0 tok=1 imm=5
+[lin-ir] 0021 op=13 dest=0 a=0 b=0 tok=0 imm=19
+[lin-ir] 0022 op=1 dest=0 a=0 b=0 tok=0 imm=94809086087000
+[lin-ir] 0023 op=12 dest=0 a=0 b=0 tok=1 imm=6
+[lin-ir] 0024 op=13 dest=0 a=0 b=0 tok=0 imm=20
+[lin-ir] 0025 op=1 dest=0 a=0 b=0 tok=0 imm=4
+[lin-ir] 0026 op=12 dest=0 a=0 b=0 tok=1 imm=7
+[lin-ir] 0027 op=13 dest=0 a=0 b=0 tok=0 imm=21
+[lin-ir] 0028 op=11 dest=0 a=0 b=0 tok=5 imm=8
+[lin-ir] 0029 op=17 dest=1 a=0 b=0 tok=0 imm=24
+[lin-ir] 0030 op=11 dest=2 a=1 b=0 tok=2 imm=4
+[lin-ir] 0031 op=1 dest=3 a=0 b=0 tok=0 imm=1
+[lin-ir] 0032 op=4 dest=4 a=2 b=3 tok=28 imm=0
+[lin-ir] 0033 op=12 dest=0 a=4 b=1 tok=2 imm=4
+[lin-ir] 0034 op=13 dest=0 a=0 b=0 tok=0 imm=22
+[lin-ir] 0035 op=1 dest=0 a=0 b=0 tok=0 imm=5
+[lin-ir] 0036 op=12 dest=0 a=0 b=0 tok=1 imm=9
+[lin-ir] 0037 op=13 dest=0 a=0 b=0 tok=0 imm=23
+[lin-ir] 0038 op=1 dest=0 a=0 b=0 tok=0 imm=17
+[lin-ir] 0039 op=12 dest=0 a=0 b=0 tok=1 imm=10
+[lin-ir] 0040 op=13 dest=0 a=0 b=0 tok=0 imm=24
+[lin-ir] 0041 op=1 dest=0 a=0 b=0 tok=0 imm=23
+[lin-ir] 0042 op=12 dest=0 a=0 b=0 tok=1 imm=11
+[lin-ir] 0043 op=13 dest=0 a=0 b=0 tok=0 imm=25
+[lin-ir] 0044 op=11 dest=1 a=0 b=0 tok=1 imm=12
+[lin-ir] 0045 op=1 dest=2 a=0 b=0 tok=0 imm=2
+[lin-ir] 0046 op=4 dest=0 a=1 b=2 tok=28 imm=0
+[lin-ir] 0047 op=12 dest=0 a=0 b=0 tok=1 imm=13
+[lin-ir] 0048 op=13 dest=0 a=0 b=0 tok=0 imm=26
+[lin-ir] 0049 op=1 dest=0 a=0 b=0 tok=0 imm=41
+[lin-ir] 0050 op=10 dest=0 a=0 b=0 tok=0 imm=0
+[lin-ir] 0051 op=13 dest=0 a=0 b=0 tok=0 imm=27
+[lin-ir] 0052 op=11 dest=1 a=0 b=0 tok=1 imm=14
+[lin-ir] 0053 op=11 dest=2 a=1 b=0 tok=2 imm=4
+[lin-ir] 0054 op=1 dest=3 a=0 b=0 tok=0 imm=1
+[lin-ir] 0055 op=4 dest=0 a=2 b=3 tok=28 imm=0
+[lin-ir] 0056 op=11 dest=1 a=0 b=0 tok=1 imm=15
+[lin-ir] 0057 op=12 dest=0 a=0 b=1 tok=2 imm=4
+[lin-ir] 0058 op=13 dest=0 a=0 b=0 tok=0 imm=28
+[lin-ir] 0059 op=9 dest=0 a=0 b=0 tok=0 imm=0
+[lin-ir] 0060 op=10 dest=0 a=0 b=0 tok=0 imm=1
+[lin-ir] 0061 op=13 dest=0 a=0 b=0 tok=0 imm=29
+[lin-ir] 0062 op=9 dest=0 a=0 b=0 tok=0 imm=1
+[lin-ir] 0063 op=16 dest=0 a=0 b=0 tok=0 imm=1
+[lin-ir] 0064 op=13 dest=0 a=0 b=0 tok=0 imm=30
+[lin-ir] 0065 op=1 dest=0 a=0 b=0 tok=3 imm=65
+[lin-ir] 0066 op=9 dest=1 a=0 b=0 tok=1 imm=2
+[lin-ir] 0067 op=11 dest=2 a=1 b=0 tok=2 imm=1
+[lin-ir] 0068 op=11 dest=3 a=0 b=0 tok=1 imm=16
+[lin-ir] 0069 op=11 dest=4 a=0 b=0 tok=1 imm=17
+[lin-ir] 0070 op=11 dest=5 a=0 b=0 tok=1 imm=18
+[lin-ir] 0071 op=11 dest=6 a=0 b=0 tok=1 imm=19
+[lin-ir] 0072 op=11 dest=7 a=0 b=0 tok=1 imm=20
+[lin-ir] 0073 op=11 dest=8 a=0 b=0 tok=1 imm=21
+[lin-ir] 0074 op=14 dest=9 a=0 b=8 tok=1 imm=0
+[lin-ir] 0075 op=13 dest=0 a=0 b=0 tok=0 imm=31
+[lin-ir] 0076 op=1 dest=0 a=0 b=0 tok=3 imm=76
+[lin-ir] 0077 op=9 dest=1 a=0 b=0 tok=0 imm=0
+[lin-ir] 0078 op=9 dest=2 a=0 b=0 tok=0 imm=1
+[lin-ir] 0079 op=14 dest=3 a=0 b=3 tok=1 imm=1
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+1 9 4.75 5 5 17 25
+42 43
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+RAW_OUTPUT_END
+
+COMMAND: cd src/tests && env BABYC_PATH=tree BABYC_ACCEL=0 ../babyc 1011_nested_embedded_volatile_inc.c
+EXIT_CODE=0 OUTPUT_MATCH_EXPECT=True
+RAW_OUTPUT_BEGIN
+5 3 5 9 7 9
+RAW_OUTPUT_END
+
+COMMAND: cd src/tests && env BABYC_PATH=tree BABYC_ACCEL=1 ../babyc 1011_nested_embedded_volatile_inc.c
+EXIT_CODE=0 OUTPUT_MATCH_EXPECT=True
+RAW_OUTPUT_BEGIN
+5 3 5 9 7 9
+RAW_OUTPUT_END
+
+COMMAND: cd src/tests && env BABYC_PATH=linear BABYC_ACCEL=0 BABYC_STRICT=1 ../babyc 1011_nested_embedded_volatile_inc.c
+EXIT_CODE=0 OUTPUT_MATCH_EXPECT=True
+RAW_OUTPUT_BEGIN
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+5 3 5 9 7 9
+RAW_OUTPUT_END
+
+COMMAND: cd src/tests && env BABYC_PATH=linear BABYC_ACCEL=1 BABYC_STRICT=1 ../babyc 1011_nested_embedded_volatile_inc.c
+EXIT_CODE=0 OUTPUT_MATCH_EXPECT=True
+RAW_OUTPUT_BEGIN
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+5 3 5 9 7 9
+RAW_OUTPUT_END
+

@@ -1,0 +1,7 @@
+=== babyc analyze ===
+  tok   f  (380_analyze_mode.c:4)
+  tok   main  (380_analyze_mode.c:6)
+---
+user functions: 0  BodyIR: 0  token-fallback: 0  (0% IR)
+compile counters: ir=0 token=0
+=== end analyze ===

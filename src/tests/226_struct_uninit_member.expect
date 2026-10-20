@@ -1,0 +1,3 @@
+    printf("%d\n", s.a);
+                      ^
+226_struct_uninit_member.c:6:22 uninitialized variable

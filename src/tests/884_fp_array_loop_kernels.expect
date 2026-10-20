@@ -1,0 +1,5 @@
+fill: 0.500000 1.500000
+sum=3.000000
+sum*n=9.000000
+global sum=36.000000
+global const fill sum=16.000000

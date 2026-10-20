@@ -1,0 +1,71 @@
+COMMAND: BABYC_PATH=tree BABYC_STRICT=0 BABYC_ACCEL=0 python3 tools/run_numbered_matrix.py --path tree --accel 0
+CONFIG tree_accel0 TOTAL=1021
+CUMULATIVE 100/1021: PASSED=100 FAILED=0 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 200/1021: PASSED=200 FAILED=0 TIMEOUT=0 SKIPPED=0
+FAIL 265/1021 266_long_int_promotion rc=0 elapsed=0.004s
+  EXPECT: 'x+int 3001000000\nx*int 93000000000\nx+short 3000000005\nx*char 9000000000\n(x*31)+y 93001000000\nx+=y 3001000000\nlong+int 1000000007'
+  ACTUAL: 'x+int 3001000000\nx*int -1489280512\nx+short 3000000005\nx*char 410065408\n(x*31)+y -1488280512\nx+=y 3001000000\nlong+int 1000000007'
+FAIL 282/1021 283_bigblock_bodyir rc=0 elapsed=2.198s
+  EXPECT: '2000271000000'
+  ACTUAL: '-1183759936'
+CUMULATIVE 300/1021: PASSED=298 FAILED=2 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 400/1021: PASSED=398 FAILED=2 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 500/1021: PASSED=498 FAILED=2 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 600/1021: PASSED=598 FAILED=2 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 700/1021: PASSED=698 FAILED=2 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 800/1021: PASSED=798 FAILED=2 TIMEOUT=0 SKIPPED=0
+FAIL 814/1021 820_vm_wide_const_ops rc=0 elapsed=0.119s
+  EXPECT: '3647257754'
+  ACTUAL: '-647709542'
+FAIL 815/1021 821_vm_lcg_array_fill rc=0 elapsed=0.004s
+  EXPECT: '2079'
+  ACTUAL: '1610'
+FAIL 816/1021 822_vm_printf_call_arg rc=0 elapsed=0.003s
+  EXPECT: '64 6 68'
+  ACTUAL: '-3 6 68'
+FAIL 826/1021 832_real_a02_qsort rc=0 elapsed=0.067s
+  EXPECT: '1 394209342'
+  ACTUAL: '1 -959754'
+FAIL 827/1021 833_real_a03_heapsort rc=0 elapsed=0.089s
+  EXPECT: '1 245467165'
+  ACTUAL: '1 4399550'
+FAIL 830/1021 836_real_a05_lcs rc=0 elapsed=0.021s
+  EXPECT: '96'
+  ACTUAL: '78'
+FAIL 832/1021 838_real_a06_knapsack rc=1 elapsed=0.009s
+  EXPECT: '6537'
+  ACTUAL: 'cand = dp[w - wt[i]] + val[i];\n                     ^\n838_real_a06_knapsack.c:26:21 array index 4048 out of bounds (size 4001)'
+FAIL 834/1021 840_real_a07_crc32 rc=0 elapsed=0.023s
+  EXPECT: '3911803490 2523368886'
+  ACTUAL: '3383242808 1824239924'
+FAIL 835/1021 841_real_a08_text rc=1 elapsed=0.008s
+  EXPECT: '849 41 9 253 4025014'
+  ACTUAL: "freq[txt[i] - 'a']++;\n                     ^\n841_real_a08_text.c:88:21 array index -7 out of bounds (size 26)"
+FAIL 836/1021 842_real_a09_life rc=0 elapsed=0.126s
+  EXPECT: '360 2100'
+  ACTUAL: '293 1794'
+FAIL 838/1021 844_real_a10_bsearch rc=0 elapsed=0.093s
+  EXPECT: '5062 16788678 71'
+  ACTUAL: '3011 11734394 42'
+FAIL 840/1021 846_real_a11_bfs rc=0 elapsed=0.005s
+  EXPECT: '2 3714 175'
+  ACTUAL: '1 11 8'
+CUMULATIVE 900/1021: PASSED=886 FAILED=14 TIMEOUT=0 SKIPPED=0
+FAIL 920/1021 928_w30_signed_unsigned_char rc=0 elapsed=0.001s
+  EXPECT: '1 0'
+  ACTUAL: '0 1'
+CUMULATIVE 1000/1021: PASSED=985 FAILED=15 TIMEOUT=0 SKIPPED=0
+FAIL 1010/1021 1018_integer_promotions_signedness rc=0 elapsed=0.003s
+  EXPECT: 'prom=-3,-50,256,-1,250\ncmp=0,0,1,1,1 tern=9'
+  ACTUAL: 'prom=-3,-50,256,-1,250\ncmp=0,0,1,1,0 tern=9'
+FAIL 1016/1021 1024_integer_type_matrix rc=0 elapsed=0.003s
+  EXPECT: '3 260 1 1\n1 5 1 1\n1 1 1'
+  ACTUAL: '3 260 1 1\n1 5 1 1\n0 0 1'
+FAIL 1019/1021 1027_integer_type_matrix rc=0 elapsed=0.002s
+  EXPECT: '1 1 3 35\n1 0 6'
+  ACTUAL: '1 1 3 35\n0 0 6'
+CUMULATIVE 1021/1021: PASSED=1003 FAILED=18 TIMEOUT=0 SKIPPED=0
+SUMMARY tree_accel0: PASSED=1003 FAILED=18 TIMEOUT=0 SKIPPED=0 TOTAL=1021 SECONDS=7.84
+TREE_FALLBACK_GATE: disabled
+COVERAGE_TOTALS: disabled
+FAILURES: 266_long_int_promotion.c 283_bigblock_bodyir.c 820_vm_wide_const_ops.c 821_vm_lcg_array_fill.c 822_vm_printf_call_arg.c 832_real_a02_qsort.c 833_real_a03_heapsort.c 836_real_a05_lcs.c 838_real_a06_knapsack.c 840_real_a07_crc32.c 841_real_a08_text.c 842_real_a09_life.c 844_real_a10_bsearch.c 846_real_a11_bfs.c 928_w30_signed_unsigned_char.c 1018_integer_promotions_signedness.c 1024_integer_type_matrix.c 1027_integer_type_matrix.c

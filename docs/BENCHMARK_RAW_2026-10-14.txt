@@ -1,0 +1,23 @@
+BabyC compact VM benchmark data — 2026-10-14
+Source: src/tests/849_vm_compact_loop_bench.c
+Expected output: '200000 700000'
+Metric: end-to-end wall time, including startup, parsing/lowering, and execution.
+One warm-up excluded from each batch.
+
+BATCH A: python3 tools/bench_vm_compact.py --rounds 9
+Tree: median=23.622 min=21.912 max=27.399 n=9
+samples_ms=22.973,23.022,25.594,23.081,27.399,23.911,24.010,21.912,23.622
+Linear VM: median=15.096 min=14.094 max=18.656 n=9
+samples_ms=14.326,15.930,16.367,14.094,16.127,14.145,14.394,18.656,15.096
+Compact VM: median=16.266 min=14.300 max=16.897 n=9
+samples_ms=15.715,16.681,16.338,16.857,16.897,15.073,14.633,16.266,14.300
+
+BATCH B: python3 tools/bench_vm_compact.py --rounds 15
+Tree: median=30.538 min=21.512 max=39.196 n=15
+samples_ms=26.677,22.892,22.954,34.907,39.196,31.037,30.538,35.138,34.375,23.116,23.748,31.077,22.560,21.512,32.538
+Linear VM: median=16.118 min=13.616 max=24.855 n=15
+samples_ms=18.736,16.118,15.654,18.207,24.855,20.046,18.608,14.192,14.056,14.346,17.355,14.817,16.915,13.616,14.070
+Compact VM: median=17.950 min=14.888 max=27.663 n=15
+samples_ms=14.888,16.865,17.950,18.185,27.663,21.057,23.834,15.562,26.826,16.666,24.772,18.501,15.256,15.130,15.702
+
+Both batches' compact execution was validated by the benchmark script. The observed variability is material; compare medians directionally and avoid overinterpreting small percentage differences.

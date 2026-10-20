@@ -1,0 +1,3 @@
+    printf("%d\n", s.a[2]);
+                      ^
+257_member_array_uninit.c:8:22 uninitialized variable

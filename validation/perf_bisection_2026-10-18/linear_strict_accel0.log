@@ -1,0 +1,10 @@
+IR tranche 1-125: PASS=122 FAIL=3 TIMEOUT=0; cumul PASS=122/125; elapsed=0.2s
+IR tranche 126-250: PASS=124 FAIL=1 TIMEOUT=0; cumul PASS=246/250; elapsed=0.4s
+IR tranche 251-375: PASS=124 FAIL=1 TIMEOUT=0; cumul PASS=370/375; elapsed=1.8s
+IR tranche 376-500: PASS=123 FAIL=2 TIMEOUT=0; cumul PASS=493/500; elapsed=2.0s
+IR tranche 501-625: PASS=122 FAIL=3 TIMEOUT=0; cumul PASS=615/625; elapsed=2.2s
+IR tranche 626-750: PASS=124 FAIL=1 TIMEOUT=0; cumul PASS=739/750; elapsed=2.4s
+IR tranche 751-875: PASS=122 FAIL=3 TIMEOUT=0; cumul PASS=861/875; elapsed=3.6s
+IR tranche 876-996: PASS=118 FAIL=3 TIMEOUT=0; cumul PASS=979/996; elapsed=3.9s
+IR SUMMARY PASS=979 FAIL=17 TIMEOUT=0 TOTAL=996 SECONDS=3.9
+IR FAILURES: 047_grep 058_macro_bug 062_initializers 126_csmith_modulo_zero 288_heap_size_classes 395_array_fn_loop_local_global 454_complex_dispatch 606_storm_inc_dec_member_call 609_storm_enum_union_fptr 618_inc_member_call_arg 651_sqlite_exec_null_varargs 789_vm_pointer_fallback 873_alignment_extended 874_array_member_storage 893_vm_struct_return_effect_fallback 947_qsort_bsearch 948_qsort_stable

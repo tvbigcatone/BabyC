@@ -1,0 +1,229 @@
+{
+  "method": "7 alternating paired runs; Linear STRICT; same host; child user+system CPU time; exact stdout equality required",
+  "results": [
+    {
+      "benchmark": "string_scan",
+      "accel": 0,
+      "pairs": 7,
+      "metric": "child user+system CPU milliseconds",
+      "phase6_ms": [
+        438.907,
+        860.247,
+        607.696,
+        456.089,
+        444.323,
+        463.518,
+        467.236
+      ],
+      "gap2_ms": [
+        488.944,
+        595.842,
+        616.143,
+        550.581,
+        439.514,
+        439.696,
+        482.206
+      ],
+      "phase6_median_ms": 463.518,
+      "gap2_median_ms": 488.944,
+      "change_pct": 5.49,
+      "output": "380000"
+    },
+    {
+      "benchmark": "string_scan_bounded",
+      "accel": 0,
+      "pairs": 7,
+      "metric": "child user+system CPU milliseconds",
+      "phase6_ms": [
+        582.974,
+        587.204,
+        601.301,
+        579.509,
+        620.093,
+        568.374,
+        583.617
+      ],
+      "gap2_ms": [
+        570.048,
+        609.813,
+        577.255,
+        582.036,
+        574.644,
+        581.127,
+        597.836
+      ],
+      "phase6_median_ms": 583.617,
+      "gap2_median_ms": 581.127,
+      "change_pct": -0.43,
+      "output": "380000"
+    },
+    {
+      "benchmark": "struct_score",
+      "accel": 0,
+      "pairs": 7,
+      "metric": "child user+system CPU milliseconds",
+      "phase6_ms": [
+        102.763,
+        100.69,
+        98.882,
+        97.839,
+        107.277,
+        97.79,
+        97.467
+      ],
+      "gap2_ms": [
+        102.542,
+        95.58,
+        94.916,
+        106.42,
+        104.287,
+        101.519,
+        92.482
+      ],
+      "phase6_median_ms": 98.882,
+      "gap2_median_ms": 101.519,
+      "change_pct": 2.67,
+      "output": "7500000"
+    },
+    {
+      "benchmark": "dfs_rec",
+      "accel": 0,
+      "pairs": 7,
+      "metric": "child user+system CPU milliseconds",
+      "phase6_ms": [
+        36.769,
+        38.046,
+        30.519,
+        43.835,
+        43.429,
+        37.813,
+        43.191
+      ],
+      "gap2_ms": [
+        35.317,
+        27.567,
+        31.289,
+        41.001,
+        42.627,
+        41.488,
+        36.291
+      ],
+      "phase6_median_ms": 38.046,
+      "gap2_median_ms": 36.291,
+      "change_pct": -4.61,
+      "output": "15000"
+    },
+    {
+      "benchmark": "string_scan",
+      "accel": 1,
+      "pairs": 7,
+      "metric": "child user+system CPU milliseconds",
+      "phase6_ms": [
+        8.184,
+        8.338,
+        11.196,
+        7.62,
+        11.444,
+        11.045,
+        8.63
+      ],
+      "gap2_ms": [
+        9.528,
+        8.885,
+        9.529,
+        7.999,
+        7.511,
+        8.792,
+        10.452
+      ],
+      "phase6_median_ms": 8.63,
+      "gap2_median_ms": 8.885,
+      "change_pct": 2.95,
+      "output": "380000"
+    },
+    {
+      "benchmark": "string_scan_bounded",
+      "accel": 1,
+      "pairs": 7,
+      "metric": "child user+system CPU milliseconds",
+      "phase6_ms": [
+        10.774,
+        14.86,
+        22.789,
+        9.16,
+        9.267,
+        9.109,
+        8.536
+      ],
+      "gap2_ms": [
+        10.318,
+        9.923,
+        13.762,
+        8.854,
+        10.596,
+        11.276,
+        9.752
+      ],
+      "phase6_median_ms": 9.267,
+      "gap2_median_ms": 10.318,
+      "change_pct": 11.34,
+      "output": "380000"
+    },
+    {
+      "benchmark": "struct_score",
+      "accel": 1,
+      "pairs": 7,
+      "metric": "child user+system CPU milliseconds",
+      "phase6_ms": [
+        3.59,
+        2.525,
+        2.388,
+        3.068,
+        1.885,
+        5.738,
+        2.685
+      ],
+      "gap2_ms": [
+        2.302,
+        2.712,
+        3.219,
+        2.206,
+        2.416,
+        2.514,
+        3.319
+      ],
+      "phase6_median_ms": 2.685,
+      "gap2_median_ms": 2.514,
+      "change_pct": -6.37,
+      "output": "7500000"
+    },
+    {
+      "benchmark": "dfs_rec",
+      "accel": 1,
+      "pairs": 7,
+      "metric": "child user+system CPU milliseconds",
+      "phase6_ms": [
+        17.467,
+        15.404,
+        16.474,
+        19.801,
+        22.749,
+        16.641,
+        13.644
+      ],
+      "gap2_ms": [
+        14.246,
+        14.963,
+        16.707,
+        18.371,
+        12.707,
+        13.944,
+        18.186
+      ],
+      "phase6_median_ms": 16.641,
+      "gap2_median_ms": 14.963,
+      "change_pct": -10.08,
+      "output": "15000"
+    }
+  ]
+}

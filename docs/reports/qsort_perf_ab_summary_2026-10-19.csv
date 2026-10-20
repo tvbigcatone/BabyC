@@ -1,0 +1,9 @@
+benchmark,accel,pairs,baseline_median_ms,candidate_median_ms,median_time_delta_pct,median_paired_delta_pct,paired_delta_q1_pct,paired_delta_q3_pct,output_identical
+string_scan,0,7,323.864630,312.716941,-3.442083,-1.745074,-6.510609,-0.773249,True
+string_scan,1,7,6.009146,5.948567,-1.008113,-3.632892,-6.391241,30.945004,True
+string_scan_bounded,0,7,380.220920,368.000648,-3.213993,-4.253074,-8.426745,-3.446687,True
+string_scan_bounded,1,7,6.476489,6.426956,-0.764813,-1.476885,-4.043231,-0.624052,True
+struct_score,0,7,71.119685,67.966036,-4.434284,-4.948270,-6.581651,-2.275886,True
+struct_score,1,7,2.317645,2.370073,2.262124,3.831186,-11.429469,8.946495,True
+dfs_rec,0,7,24.885103,24.197284,-2.763979,-3.015267,-4.665515,-0.226539,True
+dfs_rec,1,7,10.186127,10.126719,-0.583225,0.122058,-3.643441,16.957372,True

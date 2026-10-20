@@ -1,0 +1,70 @@
+COMMAND: BABYC_PATH=linear BABYC_STRICT=1 BABYC_ACCEL=0 BABYC_DUMP_LIN=1 BABYC_VM_TRACE=1 BABYC_VM_PROFILE=1 ../babyc 058_macro_bug.c
+--- stdout ---
+Macro test: 1 13 13.500000 3 
+--- stderr ---
+[vm-try] body=0x5563ed0d50f0 depth=1 kind=2
+[lin-ir] function=main function_ptr=0x5563ed0d2970 instructions=61
+[lin-ir] 0000 op=13 dest=0 a=0 b=0 tok=0 imm=7
+[lin-ir] 0001 op=1 dest=1 a=0 b=0 tok=0 imm=1
+[lin-ir] 0002 op=1 dest=2 a=0 b=0 tok=0 imm=2
+[lin-ir] 0003 op=4 dest=0 a=1 b=2 tok=22 imm=0
+[lin-ir] 0004 op=7 dest=0 a=0 b=0 tok=0 imm=9
+[lin-ir] 0005 op=1 dest=2 a=0 b=0 tok=0 imm=1
+[lin-ir] 0006 op=1 dest=3 a=0 b=0 tok=0 imm=0
+[lin-ir] 0007 op=4 dest=1 a=2 b=3 tok=28 imm=2
+[lin-ir] 0008 op=6 dest=0 a=0 b=0 tok=0 imm=12
+[lin-ir] 0009 op=1 dest=4 a=0 b=0 tok=0 imm=2
+[lin-ir] 0010 op=1 dest=5 a=0 b=0 tok=0 imm=0
+[lin-ir] 0011 op=4 dest=1 a=4 b=5 tok=28 imm=2
+[lin-ir] 0012 op=5 dest=6 a=1 b=0 tok=38 imm=2
+[lin-ir] 0013 op=3 dest=0 a=6 b=0 tok=0 imm=0
+[lin-ir] 0014 op=13 dest=0 a=0 b=0 tok=0 imm=8
+[lin-ir] 0015 op=1 dest=0 a=0 b=0 tok=0 imm=14
+[lin-ir] 0016 op=3 dest=0 a=0 b=0 tok=0 imm=1
+[lin-ir] 0017 op=13 dest=0 a=0 b=0 tok=0 imm=9
+[lin-ir] 0018 op=13 dest=0 a=0 b=0 tok=0 imm=10
+[lin-ir] 0019 op=2 dest=1 a=0 b=0 tok=0 imm=1
+[lin-ir] 0020 op=1 dest=2 a=0 b=0 tok=2 imm=20
+[lin-ir] 0021 op=5 dest=3 a=1 b=0 tok=38 imm=2
+[lin-ir] 0022 op=4 dest=0 a=3 b=2 tok=22 imm=6
+[lin-ir] 0023 op=7 dest=0 a=0 b=0 tok=0 imm=29
+[lin-ir] 0024 op=2 dest=3 a=0 b=0 tok=0 imm=1
+[lin-ir] 0025 op=5 dest=4 a=3 b=0 tok=38 imm=2
+[lin-ir] 0026 op=1 dest=5 a=0 b=0 tok=0 imm=0
+[lin-ir] 0027 op=4 dest=2 a=4 b=5 tok=28 imm=2
+[lin-ir] 0028 op=6 dest=0 a=0 b=0 tok=0 imm=32
+[lin-ir] 0029 op=1 dest=6 a=0 b=0 tok=2 imm=29
+[lin-ir] 0030 op=1 dest=7 a=0 b=0 tok=0 imm=0
+[lin-ir] 0031 op=4 dest=2 a=6 b=7 tok=28 imm=2
+[lin-ir] 0032 op=3 dest=0 a=2 b=0 tok=0 imm=2
+[lin-ir] 0033 op=3 dest=0 a=2 b=0 tok=0 imm=2
+[lin-ir] 0034 op=13 dest=0 a=0 b=0 tok=0 imm=11
+[lin-ir] 0035 op=2 dest=1 a=0 b=0 tok=0 imm=1
+[lin-ir] 0036 op=1 dest=2 a=0 b=0 tok=0 imm=13
+[lin-ir] 0037 op=4 dest=0 a=1 b=2 tok=22 imm=0
+[lin-ir] 0038 op=7 dest=0 a=0 b=0 tok=0 imm=42
+[lin-ir] 0039 op=2 dest=3 a=0 b=0 tok=0 imm=1
+[lin-ir] 0040 op=17 dest=2 a=3 b=0 tok=0 imm=0
+[lin-ir] 0041 op=6 dest=0 a=0 b=0 tok=0 imm=45
+[lin-ir] 0042 op=1 dest=5 a=0 b=0 tok=0 imm=13
+[lin-ir] 0043 op=1 dest=6 a=0 b=0 tok=0 imm=0
+[lin-ir] 0044 op=4 dest=2 a=5 b=6 tok=28 imm=2
+[lin-ir] 0045 op=3 dest=0 a=2 b=0 tok=0 imm=1
+[lin-ir] 0046 op=3 dest=0 a=2 b=0 tok=0 imm=1
+[lin-ir] 0047 op=13 dest=0 a=0 b=0 tok=0 imm=13
+[lin-ir] 0048 op=1 dest=0 a=0 b=0 tok=2 imm=49
+[lin-ir] 0049 op=3 dest=0 a=0 b=0 tok=0 imm=3
+[lin-ir] 0050 op=13 dest=0 a=0 b=0 tok=0 imm=14
+[lin-ir] 0051 op=2 dest=0 a=0 b=0 tok=0 imm=3
+[lin-ir] 0052 op=5 dest=1 a=0 b=0 tok=38 imm=1
+[lin-ir] 0053 op=3 dest=0 a=1 b=0 tok=0 imm=4
+[lin-ir] 0054 op=13 dest=0 a=0 b=0 tok=0 imm=16
+[lin-ir] 0055 op=1 dest=0 a=0 b=0 tok=3 imm=56
+[lin-ir] 0056 op=2 dest=1 a=0 b=0 tok=0 imm=0
+[lin-ir] 0057 op=2 dest=2 a=0 b=0 tok=0 imm=1
+[lin-ir] 0058 op=2 dest=3 a=0 b=0 tok=0 imm=2
+[lin-ir] 0059 op=2 dest=4 a=0 b=0 tok=0 imm=4
+[lin-ir] 0060 op=14 dest=5 a=0 b=5 tok=1 imm=0
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+[host-ret] printf result=30 typ=1
+[babyc-bytecode-vm-prod] attempts=0 runs=0

@@ -1,0 +1,36 @@
+series,benchmark,accel,n_pairs,baseline_median_ms,candidate_median_ms,ratio_of_medians_delta_pct,median_of_paired_deltas_pct,paired_q1_delta_pct,paired_q3_delta_pct,measurement,output
+original_final_wall,string_scan,0,7,327.652,307.187,-6.246,-6.741,-7.748,-4.718,wall-clock; CPU 1 pinned; AB/BA alternate,380000
+original_final_wall,string_scan_bounded,0,7,397.104,397.311,0.052,-1.082,-2.131,-0.094,wall-clock; CPU 1 pinned; AB/BA alternate,380000
+original_final_wall,struct_score,0,7,81.115,74.417,-8.258,-7.28,-8.933,-6.309,wall-clock; CPU 1 pinned; AB/BA alternate,7500000
+original_final_wall,dfs_rec,0,7,28.826,27.623,-4.173,-5.113,-7.051,-1.052,wall-clock; CPU 1 pinned; AB/BA alternate,15000
+original_final_wall,string_scan,1,7,7.426,7.629,2.727,-1.613,-4.129,8.301,wall-clock; CPU 1 pinned; AB/BA alternate,380000
+original_final_wall,string_scan_bounded,1,7,9.631,9.296,-3.488,-8.573,-9.967,-1.565,wall-clock; CPU 1 pinned; AB/BA alternate,380000
+original_final_wall,struct_score,1,7,4.262,4.388,2.956,-4.081,-12.424,7.268,wall-clock; CPU 1 pinned; AB/BA alternate,7500000
+original_final_wall,dfs_rec,1,7,13.641,14.624,7.202,3.703,-2.922,4.726,wall-clock; CPU 1 pinned; AB/BA alternate,15000
+original_final_wall_ms,string_scan,0,7,345.745,321.759,-6.937,-7.337,-7.711,-6.142,wall or child CPU time; CPU 1 pinned; AB/BA alternate,380000
+original_final_cpu_ms,string_scan,0,7,343.173,319.035,-7.034,-7.24,-7.681,-6.145,wall or child CPU time; CPU 1 pinned; AB/BA alternate,380000
+original_final_wall_ms,string_scan_bounded,0,7,397.422,394.191,-0.813,-2.515,-2.837,-0.4,wall or child CPU time; CPU 1 pinned; AB/BA alternate,380000
+original_final_cpu_ms,string_scan_bounded,0,7,394.98,392.248,-0.692,-2.43,-2.835,-0.387,wall or child CPU time; CPU 1 pinned; AB/BA alternate,380000
+original_final_wall_ms,struct_score,0,7,77.631,72.531,-6.57,-6.388,-7.152,-4.347,wall or child CPU time; CPU 1 pinned; AB/BA alternate,7500000
+original_final_cpu_ms,struct_score,0,7,75.464,70.358,-6.766,-6.403,-7.126,-4.659,wall or child CPU time; CPU 1 pinned; AB/BA alternate,7500000
+original_final_wall_ms,dfs_rec,0,7,29.307,27.514,-6.118,-1.045,-6.124,11.003,wall or child CPU time; CPU 1 pinned; AB/BA alternate,15000
+original_final_cpu_ms,dfs_rec,0,7,27.428,25.861,-5.713,-1.538,-6.346,7.433,wall or child CPU time; CPU 1 pinned; AB/BA alternate,15000
+original_final_wall_ms,string_scan,1,7,8.914,9.41,5.564,7.086,2.981,7.28,wall or child CPU time; CPU 1 pinned; AB/BA alternate,380000
+original_final_cpu_ms,string_scan,1,7,7.617,7.926,4.057,6.38,2.123,9.556,wall or child CPU time; CPU 1 pinned; AB/BA alternate,380000
+original_final_wall_ms,string_scan_bounded,1,7,9.278,9.916,6.876,8.59,-0.469,12.464,wall or child CPU time; CPU 1 pinned; AB/BA alternate,380000
+original_final_cpu_ms,string_scan_bounded,1,7,8.202,8.755,6.742,7.09,0.148,8.472,wall or child CPU time; CPU 1 pinned; AB/BA alternate,380000
+original_final_wall_ms,struct_score,1,7,4.878,4.902,0.492,-9.077,-17.493,6.929,wall or child CPU time; CPU 1 pinned; AB/BA alternate,7500000
+original_final_cpu_ms,struct_score,1,7,3.65,3.577,-2.0,-0.564,-14.829,5.78,wall or child CPU time; CPU 1 pinned; AB/BA alternate,7500000
+original_final_wall_ms,dfs_rec,1,7,13.618,13.387,-1.696,-3.842,-7.306,6.344,wall or child CPU time; CPU 1 pinned; AB/BA alternate,15000
+original_final_cpu_ms,dfs_rec,1,7,12.265,11.98,-2.324,-3.636,-8.881,7.463,wall or child CPU time; CPU 1 pinned; AB/BA alternate,15000
+scaled10_accel1_wall,string_scan,1,21,41.983376,42.40956,1.015,0.578,-1.643,2.793,10x iteration copy outside delta; wall or child CPU; CPU 1 pinned; AB/BA alternate,3800000
+scaled10_accel1_cpu,string_scan,1,21,39.83999999999998,40.40300000000002,1.413,0.044,-1.471,2.071,10x iteration copy outside delta; wall or child CPU; CPU 1 pinned; AB/BA alternate,3800000
+scaled10_accel1_wall,string_scan_bounded,1,21,53.967162,53.506273,-0.854,-0.766,-4.903,2.784,10x iteration copy outside delta; wall or child CPU; CPU 1 pinned; AB/BA alternate,3800000
+scaled10_accel1_cpu,string_scan_bounded,1,21,51.07799999999996,51.0310000000003,-0.092,-1.229,-4.14,3.132,10x iteration copy outside delta; wall or child CPU; CPU 1 pinned; AB/BA alternate,3800000
+scaled10_accel1_wall_ms,struct_score,1,7,7.013,7.567,7.902,6.972,1.387,15.555,10x iteration copy outside delta; wall or child CPU; CPU 1 pinned; AB/BA alternate,75000000
+scaled10_accel1_cpu_ms,struct_score,1,7,6.068,6.465,6.543,1.598,-0.661,15.858,10x iteration copy outside delta; wall or child CPU; CPU 1 pinned; AB/BA alternate,75000000
+scaled10_accel1_cpu,struct_score,1,21,5.675,5.706,0.546,-1.668,-5.834,5.579,10x iteration copy outside delta; wall or child CPU; CPU 1 pinned; AB/BA alternate,75000000
+scaled10_accel1_wall_ms,dfs_rec,1,7,95.101,92.168,-3.083,-3.897,-5.776,0.246,10x iteration copy outside delta; wall or child CPU; CPU 1 pinned; AB/BA alternate,150000
+scaled10_accel1_cpu_ms,dfs_rec,1,7,92.958,89.944,-3.242,-4.139,-6.126,0.073,10x iteration copy outside delta; wall or child CPU; CPU 1 pinned; AB/BA alternate,150000
+scaled_accel1_dfs21_wall,dfs_rec,1,21,85.551,85.524,-0.032,0.568,-1.254,2.686,wall-clock; pinned CPU 1; ×10 fixture; 21 AB/BA pairs,150000
+scaled_accel1_dfs21_cpu,dfs_rec,1,21,83.426,82.877,-0.658,0.298,-1.331,2.583,child CPU-time; pinned CPU 1; ×10 fixture; 21 AB/BA pairs,150000

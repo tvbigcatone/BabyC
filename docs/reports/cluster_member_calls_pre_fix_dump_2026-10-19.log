@@ -1,0 +1,43 @@
+Commands used on the reconstructed pre-fix cumulative build:
+  BABYC_PATH=linear BABYC_STRICT=1 BABYC_ACCEL=0 BABYC_DUMP_LIN=1 src/babyc src/tests/<test>.c
+Environment was cleared of inherited BABYC_* variables except those shown. All four commands exited 1 due to the strict body fallback.
+
+=== 606_storm_inc_dec_member_call: pre-fix ===
+RC=1
+STDOUT:
+#include <stdio.h>
+                  ^
+606_storm_inc_dec_member_call.c:1:18 strict: tree fallback (body)
+No [lin-ir] body dump was emitted; rejection occurred before the body IR was available.
+
+=== 618_inc_member_call_arg: pre-fix ===
+RC=1
+STDOUT:
+#include <stdio.h>
+                  ^
+618_inc_member_call_arg.c:1:18 strict: tree fallback (body)
+No [lin-ir] body dump was emitted; rejection occurred before the body IR was available.
+
+=== 609_storm_enum_union_fptr: pre-fix ===
+RC=1
+STDOUT:
+  op=INC; u.fp=(op==INC)?&inc:&dec; v=10; v=(*u.fp)(v); printf("%d\n",v);
+                     ^
+609_storm_enum_union_fptr.c:8:21 strict: tree fallback (body)
+Relevant pre-fix IR dump rows:
+[lin-ir] 0052 op=1 dest=4 a=0 b=0 tok=0 imm=93997477866456
+[lin-ir] 0056 op=1 dest=6 a=0 b=0 tok=0 imm=93997477868264
+These Tok=0 immediates encoded the function value payload address rather than the function Value identity expected by indirect-call slots.
+
+=== 454_complex_dispatch: pre-fix ===
+RC=1
+STDOUT:
+#include <stdio.h>
+                  ^
+454_complex_dispatch.c:1:18 strict: tree fallback (body)
+No [lin-ir] body dump was emitted; strict lowering rejected the body.
+
+Final post-fix 609 dump from the rebuilt cumulative candidate:
+[lin-ir] 0052 op=1 dest=4 a=0 b=0 tok=5 imm=94835777559440
+[lin-ir] 0056 op=1 dest=6 a=0 b=0 tok=5 imm=94835777561248
+Final output: 11\n10\n; RC=0; no tree fallback. The address-like immediates vary by process because they encode in-process Value* identities; the semantic correction is Tok=0 -> Tok=5.

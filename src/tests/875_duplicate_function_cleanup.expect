@@ -1,0 +1,3 @@
+int duplicate_cleanup_target(void) { return 2; }
+                                               ^
+875_duplicate_function_cleanup.c:3:46 'duplicate_cleanup_target' is already defined

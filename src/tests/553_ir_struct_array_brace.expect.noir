@@ -1,0 +1,3 @@
+  struct P b[] = { 10, 20, 30, 40 };
+                   ^
+553_ir_struct_array_brace.c:5:18 can't assign struct P from int

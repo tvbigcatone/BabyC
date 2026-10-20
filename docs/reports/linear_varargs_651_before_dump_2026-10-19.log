@@ -1,0 +1,7 @@
+[vm-try] body=0x55fb69ff0570 depth=1 kind=2
+[babyc-exec-profile] compile_reject=lower body_kind=2 n=25 ok=1 skipped_call=1 calls=2
+[vm-rej] compile-null
+/* Intrinsic varargs: sqlite3_exec(..., NULL,NULL,NULL) on 64-bit must not SEGV. */
+                      ^
+651_sqlite_exec_null_varargs.c:1:21 strict: tree fallback (body)
+[babyc-bytecode-vm-prod] attempts=0 runs=0

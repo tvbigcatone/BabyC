@@ -1,0 +1,4 @@
+memmove=ababcd
+    memcpy(&a[2], a, 4); /* must stop: overlapping memcpy is undefined in C */
+                      ^
+084_memcpy_overlap.c:12:22 memcpy source and destination regions overlap (undefined behavior in C)

@@ -1,0 +1,3 @@
+    p[2] = 3;
+             ^
+698_heap_write_past_end.c:6:13 write past end of allocated block (offset 8, size 8)

@@ -1,0 +1,274 @@
+{
+  "0_string_scan": {
+    "baseline": {
+      "ms": [
+        287.936,
+        291.68,
+        280.575,
+        290.268,
+        270.961,
+        271.273,
+        263.988
+      ],
+      "median": 280.575,
+      "status": {
+        "rc": 0,
+        "out": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000\n"
+      }
+    },
+    "current": {
+      "ms": [
+        254.171,
+        271.086,
+        259.153,
+        261.897,
+        263.171,
+        281.997,
+        264.751
+      ],
+      "median": 263.171,
+      "status": {
+        "rc": 0,
+        "out": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000\n"
+      }
+    }
+  },
+  "0_string_scan_bounded": {
+    "baseline": {
+      "ms": [
+        322.109,
+        307.599,
+        325.957,
+        306.645,
+        304.991,
+        303.695,
+        303.869
+      ],
+      "median": 306.645,
+      "status": {
+        "rc": 0,
+        "out": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000\n"
+      }
+    },
+    "current": {
+      "ms": [
+        304.851,
+        305.603,
+        298.784,
+        303.415,
+        311.152,
+        304.258,
+        305.959
+      ],
+      "median": 304.851,
+      "status": {
+        "rc": 0,
+        "out": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000\n"
+      }
+    }
+  },
+  "0_struct_score": {
+    "baseline": {
+      "ms": [
+        62.393,
+        65.11,
+        63.758,
+        61.924,
+        63.449,
+        65.64,
+        132.593
+      ],
+      "median": 63.758,
+      "status": {
+        "rc": 0,
+        "out": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000\n"
+      }
+    },
+    "current": {
+      "ms": [
+        62.337,
+        64.377,
+        63.091,
+        64.436,
+        64.132,
+        64.582,
+        64.669
+      ],
+      "median": 64.377,
+      "status": {
+        "rc": 0,
+        "out": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000\n"
+      }
+    }
+  },
+  "0_dfs_rec": {
+    "baseline": {
+      "ms": [
+        27.194,
+        23.027,
+        25.015,
+        26.716,
+        26.911,
+        27.504,
+        55.888
+      ],
+      "median": 26.911,
+      "status": {
+        "rc": 0,
+        "out": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n15000\n"
+      }
+    },
+    "current": {
+      "ms": [
+        23.674,
+        26.14,
+        24.749,
+        30.133,
+        26.03,
+        29.645,
+        32.646
+      ],
+      "median": 26.14,
+      "status": {
+        "rc": 0,
+        "out": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n15000\n"
+      }
+    }
+  },
+  "1_string_scan": {
+    "baseline": {
+      "ms": [
+        6.092,
+        5.061,
+        16.206,
+        4.781,
+        5.6,
+        4.861,
+        6.345
+      ],
+      "median": 5.6,
+      "status": {
+        "rc": 0,
+        "out": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000\n"
+      }
+    },
+    "current": {
+      "ms": [
+        5.973,
+        5.326,
+        5.019,
+        6.6,
+        4.853,
+        6.246,
+        4.857
+      ],
+      "median": 5.326,
+      "status": {
+        "rc": 0,
+        "out": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000\n"
+      }
+    }
+  },
+  "1_string_scan_bounded": {
+    "baseline": {
+      "ms": [
+        13.808,
+        10.803,
+        6.141,
+        5.937,
+        5.726,
+        6.116,
+        5.99
+      ],
+      "median": 6.116,
+      "status": {
+        "rc": 0,
+        "out": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000\n"
+      }
+    },
+    "current": {
+      "ms": [
+        7.64,
+        6.743,
+        6.446,
+        5.95,
+        6.173,
+        5.82,
+        5.912
+      ],
+      "median": 6.173,
+      "status": {
+        "rc": 0,
+        "out": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000\n"
+      }
+    }
+  },
+  "1_struct_score": {
+    "baseline": {
+      "ms": [
+        3.244,
+        1.753,
+        2.139,
+        1.574,
+        1.561,
+        1.472,
+        1.489
+      ],
+      "median": 1.574,
+      "status": {
+        "rc": 0,
+        "out": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000\n"
+      }
+    },
+    "current": {
+      "ms": [
+        3.2,
+        1.61,
+        1.662,
+        1.621,
+        1.541,
+        1.472,
+        1.681
+      ],
+      "median": 1.621,
+      "status": {
+        "rc": 0,
+        "out": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000\n"
+      }
+    }
+  },
+  "1_dfs_rec": {
+    "baseline": {
+      "ms": [
+        10.794,
+        9.611,
+        9.0,
+        10.663,
+        9.207,
+        10.334,
+        10.021
+      ],
+      "median": 10.021,
+      "status": {
+        "rc": 0,
+        "out": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n15000\n"
+      }
+    },
+    "current": {
+      "ms": [
+        10.062,
+        9.655,
+        10.184,
+        9.531,
+        11.594,
+        9.427,
+        10.996
+      ],
+      "median": 10.062,
+      "status": {
+        "rc": 0,
+        "out": "[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n15000\n"
+      }
+    }
+  }
+}

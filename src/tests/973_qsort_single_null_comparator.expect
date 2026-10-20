@@ -1,0 +1,3 @@
+    qsort(&value, 1, sizeof(value), NULL);
+                                        ^
+973_qsort_single_null_comparator.c:6:40 qsort: comparator is NULL or invalid (undefined behavior in C)

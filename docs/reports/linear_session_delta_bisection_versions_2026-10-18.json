@@ -1,0 +1,622 @@
+{
+  "CSE_LOADINDEX": {
+    "string_scan": {
+      "baseline": {
+        "ms": [
+          350.802,
+          341.447,
+          320.835,
+          283.865,
+          273.233,
+          260.199,
+          264.095
+        ],
+        "median": 283.865,
+        "rc": 0,
+        "output": "rimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+      },
+      "variant": {
+        "ms": [
+          322.924,
+          307.446,
+          281.843,
+          277.214,
+          276.452,
+          281.967,
+          261.773
+        ],
+        "median": 281.843,
+        "rc": 0,
+        "output": "rimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+      }
+    },
+    "struct_score": {
+      "baseline": {
+        "ms": [
+          61.69,
+          61.23,
+          60.088,
+          60.312,
+          61.66,
+          62.041,
+          69.47
+        ],
+        "median": 61.66,
+        "rc": 0,
+        "output": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+      },
+      "variant": {
+        "ms": [
+          61.179,
+          64.464,
+          61.389,
+          61.549,
+          60.772,
+          71.402,
+          63.255
+        ],
+        "median": 61.549,
+        "rc": 0,
+        "output": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+      }
+    }
+  },
+  "CSE_LOOP_ROOT": {
+    "string_scan": {
+      "baseline": {
+        "ms": [
+          277.742,
+          268.151,
+          266.304,
+          264.036,
+          289.138,
+          301.539,
+          261.959
+        ],
+        "median": 268.151,
+        "rc": 0,
+        "output": "rimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+      },
+      "variant": {
+        "ms": [
+          263.928,
+          265.264,
+          269.469,
+          261.683,
+          258.017,
+          279.081,
+          265.817
+        ],
+        "median": 265.264,
+        "rc": 0,
+        "output": "rimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+      }
+    },
+    "struct_score": {
+      "baseline": {
+        "ms": [
+          63.597,
+          65.864,
+          62.807,
+          66.041,
+          63.663,
+          61.743,
+          62.581
+        ],
+        "median": 63.597,
+        "rc": 0,
+        "output": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+      },
+      "variant": {
+        "ms": [
+          67.639,
+          63.181,
+          62.215,
+          62.096,
+          65.512,
+          62.873,
+          62.557
+        ],
+        "median": 62.873,
+        "rc": 0,
+        "output": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+      }
+    }
+  },
+  "CSE_LOOP_IMPLEMENTATION": {
+    "string_scan": {
+      "baseline": {
+        "ms": [
+          269.889,
+          285.795,
+          271.961,
+          262.808,
+          274.967,
+          257.864,
+          267.636
+        ],
+        "median": 269.889,
+        "rc": 0,
+        "output": "rimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+      },
+      "variant": {
+        "ms": [
+          276.204,
+          285.559,
+          268.929,
+          275.323,
+          268.91,
+          277.094,
+          281.839
+        ],
+        "median": 276.204,
+        "rc": 0,
+        "output": "rimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+      }
+    },
+    "struct_score": {
+      "baseline": {
+        "ms": [
+          63.609,
+          63.627,
+          62.375,
+          60.499,
+          60.958,
+          61.678,
+          61.79
+        ],
+        "median": 61.79,
+        "rc": 0,
+        "output": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+      },
+      "variant": {
+        "ms": [
+          60.839,
+          67.732,
+          61.305,
+          60.251,
+          60.974,
+          64.514,
+          60.109
+        ],
+        "median": 60.974,
+        "rc": 0,
+        "output": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+      }
+    }
+  },
+  "LOOP_CSE_CHECKPOINT": {
+    "string_scan": {
+      "baseline": {
+        "ms": [
+          270.427,
+          273.606,
+          269.946,
+          264.553,
+          255.366,
+          263.634,
+          272.968
+        ],
+        "median": 269.946,
+        "rc": 0,
+        "output": "rimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+      },
+      "variant": {
+        "ms": [
+          304.324,
+          275.08,
+          268.986,
+          255.708,
+          262.165,
+          256.25,
+          263.052
+        ],
+        "median": 263.052,
+        "rc": 0,
+        "output": "rimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+      }
+    },
+    "struct_score": {
+      "baseline": {
+        "ms": [
+          59.993,
+          60.304,
+          60.111,
+          61.335,
+          60.628,
+          60.355,
+          60.084
+        ],
+        "median": 60.304,
+        "rc": 0,
+        "output": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+      },
+      "variant": {
+        "ms": [
+          60.252,
+          59.918,
+          59.5,
+          60.939,
+          62.27,
+          60.116,
+          60.282
+        ],
+        "median": 60.252,
+        "rc": 0,
+        "output": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+      }
+    }
+  },
+  "LOOP_WRITESET": {
+    "string_scan": {
+      "baseline": {
+        "ms": [
+          276.68,
+          262.612,
+          274.035,
+          260.21,
+          278.664,
+          264.394,
+          262.153
+        ],
+        "median": 264.394,
+        "rc": 0,
+        "output": "rimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+      },
+      "variant": {
+        "ms": [
+          335.312,
+          281.557,
+          262.705,
+          274.415,
+          261.937,
+          291.609,
+          276.484
+        ],
+        "median": 276.484,
+        "rc": 0,
+        "output": "rimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+      }
+    },
+    "struct_score": {
+      "baseline": {
+        "ms": [
+          63.331,
+          68.06,
+          62.895,
+          61.125,
+          64.86,
+          61.493,
+          65.404
+        ],
+        "median": 63.331,
+        "rc": 0,
+        "output": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+      },
+      "variant": {
+        "ms": [
+          60.702,
+          64.037,
+          60.634,
+          64.154,
+          61.909,
+          66.212,
+          60.343
+        ],
+        "median": 61.909,
+        "rc": 0,
+        "output": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+      }
+    }
+  },
+  "LOOP_WRITE_INDEX_ROOTFIX": {
+    "string_scan": {
+      "baseline": {
+        "ms": [
+          265.088,
+          267.227,
+          275.131,
+          256.501,
+          257.346,
+          262.347,
+          272.561
+        ],
+        "median": 265.088,
+        "rc": 0,
+        "output": "rimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+      },
+      "variant": {
+        "ms": [
+          256.262,
+          268.561,
+          266.555,
+          269.114,
+          271.471,
+          261.414,
+          260.181
+        ],
+        "median": 266.555,
+        "rc": 0,
+        "output": "rimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+      }
+    },
+    "struct_score": {
+      "baseline": {
+        "ms": [
+          59.409,
+          60.784,
+          61.259,
+          59.461,
+          62.497,
+          62.051,
+          69.43
+        ],
+        "median": 61.259,
+        "rc": 0,
+        "output": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+      },
+      "variant": {
+        "ms": [
+          60.423,
+          60.17,
+          60.791,
+          59.98,
+          66.25,
+          67.138,
+          64.167
+        ],
+        "median": 60.791,
+        "rc": 0,
+        "output": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+      }
+    }
+  },
+  "LOOP_REGRESSION_ROOTFIX": {
+    "string_scan": {
+      "baseline": {
+        "ms": [
+          281.318,
+          285.522,
+          276.355,
+          281.652,
+          268.89,
+          287.32,
+          275.495
+        ],
+        "median": 281.318,
+        "rc": 0,
+        "output": "rimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+      },
+      "variant": {
+        "ms": [
+          308.09,
+          288.658,
+          294.936,
+          287.408,
+          304.254,
+          279.69,
+          276.305
+        ],
+        "median": 288.658,
+        "rc": 0,
+        "output": "rimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+      }
+    },
+    "struct_score": {
+      "baseline": {
+        "ms": [
+          67.426,
+          61.889,
+          61.142,
+          60.447,
+          61.45,
+          67.585,
+          64.322
+        ],
+        "median": 61.889,
+        "rc": 0,
+        "output": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+      },
+      "variant": {
+        "ms": [
+          65.949,
+          62.154,
+          62.711,
+          63.573,
+          62.797,
+          65.418,
+          65.014
+        ],
+        "median": 63.573,
+        "rc": 0,
+        "output": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+      }
+    }
+  },
+  "REGISTER_LIVENESS": {
+    "string_scan": {
+      "baseline": {
+        "ms": [
+          262.613,
+          285.434,
+          284.475,
+          274.487,
+          264.904,
+          271.222,
+          261.142
+        ],
+        "median": 271.222,
+        "rc": 0,
+        "output": "rimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+      },
+      "variant": {
+        "ms": [
+          269.898,
+          276.367,
+          277.62,
+          251.268,
+          289.524,
+          265.14,
+          276.845
+        ],
+        "median": 276.367,
+        "rc": 0,
+        "output": "rimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+      }
+    },
+    "struct_score": {
+      "baseline": {
+        "ms": [
+          60.811,
+          65.962,
+          60.195,
+          66.527,
+          61.067,
+          62.038,
+          60.665
+        ],
+        "median": 61.067,
+        "rc": 0,
+        "output": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+      },
+      "variant": {
+        "ms": [
+          73.894,
+          61.535,
+          65.822,
+          65.075,
+          64.16,
+          60.379,
+          62.759
+        ],
+        "median": 64.16,
+        "rc": 0,
+        "output": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+      }
+    }
+  },
+  "LIVENESS_FOLLOWUP": {
+    "string_scan": {
+      "baseline": {
+        "ms": [
+          268.091,
+          265.353,
+          276.73,
+          278.111,
+          338.202,
+          262.436,
+          271.59
+        ],
+        "median": 271.59,
+        "rc": 0,
+        "output": "rimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+      },
+      "variant": {
+        "ms": [
+          275.951,
+          264.394,
+          298.176,
+          258.976,
+          346.582,
+          268.689,
+          273.923
+        ],
+        "median": 273.923,
+        "rc": 0,
+        "output": "rimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+      }
+    },
+    "struct_score": {
+      "baseline": {
+        "ms": [
+          62.31,
+          61.553,
+          65.302,
+          65.033,
+          71.15,
+          61.859,
+          63.146
+        ],
+        "median": 63.146,
+        "rc": 0,
+        "output": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+      },
+      "variant": {
+        "ms": [
+          64.193,
+          71.847,
+          69.71,
+          67.513,
+          62.831,
+          78.959,
+          63.804
+        ],
+        "median": 67.513,
+        "rc": 0,
+        "output": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+      }
+    }
+  },
+  "FRAME_CSE_LIVENESS": {
+    "string_scan": {
+      "baseline": {
+        "ms": [
+          388.777,
+          402.677,
+          334.72,
+          262.233,
+          286.996,
+          265.258,
+          295.077
+        ],
+        "median": 295.077,
+        "rc": 0,
+        "output": "rimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+      },
+      "variant": {
+        "ms": [
+          487.558,
+          470.485,
+          297.933,
+          303.795,
+          296.61,
+          304.198,
+          299.063
+        ],
+        "median": 303.795,
+        "rc": 0,
+        "output": "rimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000"
+      }
+    },
+    "struct_score": {
+      "baseline": {
+        "ms": [
+          59.868,
+          60.299,
+          60.56,
+          60.683,
+          66.611,
+          70.918,
+          68.683
+        ],
+        "median": 60.683,
+        "rc": 0,
+        "output": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+      },
+      "variant": {
+        "ms": [
+          72.294,
+          70.191,
+          70.608,
+          75.147,
+          73.783,
+          74.868,
+          87.646
+        ],
+        "median": 73.783,
+        "rc": 0,
+        "output": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+0 string_scan {'baseline': 269.229, 'current': 257.924}
+0 string_scan_bounded {'baseline': 310.103, 'current': 289.644}
+0 struct_score {'baseline': 62.758, 'current': 61.953}
+0 dfs_rec {'baseline': 24.734, 'current': 23.883}
+1 string_scan {'baseline': 5.928, 'current': 5.864}
+1 string_scan_bounded {'baseline': 7.226, 'current': 7.159}
+1 struct_score {'baseline': 1.777, 'current': 1.577}
+1 dfs_rec {'baseline': 10.292, 'current': 10.354}

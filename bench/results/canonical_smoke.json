@@ -1,0 +1,43 @@
+{
+  "columns": [
+    "tree_no_accel",
+    "tree_accel",
+    "linear_no_accel",
+    "linear_accel",
+    "bytecode_no_accel",
+    "bytecode_accel",
+    "python",
+    "gcc"
+  ],
+  "engine_columns": [
+    "tree_no_accel",
+    "tree_accel",
+    "linear_no_accel",
+    "linear_accel",
+    "bytecode_no_accel",
+    "bytecode_accel"
+  ],
+  "reference_columns": [
+    "python",
+    "gcc"
+  ],
+  "cases": [
+    {
+      "id": "micro.fib_iter",
+      "path": "cases/micro/fib_iter.c",
+      "times": {
+        "gcc": 0.0007138570000506661,
+        "python": 0.6512217150000197,
+        "tree_no_accel": 0.0019381319999638436,
+        "tree_accel": 0.0012126870000201961,
+        "linear_no_accel": 0.0016700329999821406,
+        "linear_accel": 0.011446491000015158,
+        "bytecode_no_accel": 0.0016827729999704388,
+        "bytecode_accel": 0.011763173999952414
+      },
+      "status": "OK",
+      "output": "4160200000",
+      "error": ""
+    }
+  ]
+}

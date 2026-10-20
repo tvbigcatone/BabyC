@@ -1,0 +1,3 @@
+    int converted = sscanf("hello", "%Ls", text);
+                                               ^
+971_scanf_invalid_length.c:5:47 scanf: invalid length modifier for %s (undefined behavior in C)

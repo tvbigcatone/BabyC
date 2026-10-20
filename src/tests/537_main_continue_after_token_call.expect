@@ -1,0 +1,6 @@
+BEFORE_EXTRACT
+  Estratte dal DB  : 5
+BEFORE_CLOSE_DB
+AFTER_EXTRACT
+  chiamate         : 5
+  Esito            : OK

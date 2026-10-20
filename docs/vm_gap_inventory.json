@@ -1,0 +1,32 @@
+{
+  "total": 851,
+  "both_ok": 828,
+  "vm_mismatch": [
+    "168_ptr_while.c",
+    "171_ptr_index_loop.c",
+    "182_ptr_arith_basic.c",
+    "183_ptr_walk_sum.c",
+    "188_ptr_cmp_array.c",
+    "193_while_ptr_cond.c",
+    "243_array_decay.c",
+    "255_multidim_cell_uninit.c",
+    "257_member_array_uninit.c",
+    "355_int_ptr_walk.c",
+    "357_int_ptr_arith.c",
+    "361_int_ptr_scan_bound.c",
+    "408_addrof_ptr_arith.c",
+    "417_ptr_one_past_and_oob.c",
+    "427_store_through_p_plus.c",
+    "432_comma_ptr_sidefx.c",
+    "610_storm_nested_loop_ternary_rec.c",
+    "656_fp_miss_ptr_walk.c",
+    "688_index_commute.c",
+    "719_malloc_ptr_offset_store.c",
+    "728_heap_store_lost.c",
+    "752_f5_ptr_arith.c",
+    "754_soft_deref_after_pplus.c"
+  ],
+  "vm_timeout": [],
+  "both_fail": [],
+  "vm_ok_tree_fail": []
+}

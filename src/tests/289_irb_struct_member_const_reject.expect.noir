@@ -1,0 +1,3 @@
+        b.x = i;
+               ^
+289_irb_struct_member_const_reject.c:20:15 assignment of read-only variable

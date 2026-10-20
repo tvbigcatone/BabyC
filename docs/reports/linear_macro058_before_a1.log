@@ -1,0 +1,11 @@
+COMMAND: BABYC_PATH=linear BABYC_STRICT=1 BABYC_ACCEL=1 BABYC_DUMP_LIN=1 BABYC_VM_TRACE=1 BABYC_VM_PROFILE=1 ../babyc 058_macro_bug.c
+--- stdout ---
+#include "stdio.h"
+      ^
+058_macro_bug.c:1:6 strict: tree fallback (body)
+--- stderr ---
+[vm-try] body=0x55df10a820f0 depth=1 kind=2
+[babyc-exec-profile] lower_reject stmt_kind=1 line=10 expr_kind=4 expr_op=0
+[babyc-exec-profile] compile_reject=lower body_kind=2 n=0 ok=0 skipped_call=0 calls=0
+[vm-rej] compile-null
+[babyc-bytecode-vm-prod] attempts=0 runs=0

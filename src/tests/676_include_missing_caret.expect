@@ -1,0 +1,3 @@
+#include <no_such_header_xyzzy.h>
+           ^
+676_include_missing_caret.c:3:11 can't read file no_such_header_xyzzy.h

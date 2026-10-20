@@ -1,0 +1,12 @@
+Commands (run from src/tests after clean build):
+  env BABYC_PATH=tree BABYC_ACCEL=0 ../babyc 873_alignment_extended.c
+  env BABYC_PATH=tree BABYC_ACCEL=1 ../babyc 873_alignment_extended.c
+  env BABYC_PATH=linear BABYC_STRICT=1 BABYC_ACCEL=0 BABYC_DUMP_LIN=1 BABYC_VM_PROFILE=1 ../babyc 873_alignment_extended.c
+  env BABYC_PATH=linear BABYC_STRICT=1 BABYC_ACCEL=1 BABYC_DUMP_LIN=1 BABYC_VM_PROFILE=1 ../babyc 873_alignment_extended.c
+Expected output for all four runs:
+1 9 4.75 5 5 17 25
+42 43
+
+New regression test 1011_nested_embedded_volatile_inc.c, same four modes:
+5 3 5 9 7 9
+Exit status: 0 in all eight targeted runs. No fallback message in Linear STRICT.

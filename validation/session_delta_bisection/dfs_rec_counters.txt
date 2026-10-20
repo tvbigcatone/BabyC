@@ -1,0 +1,2 @@
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+[babyc-counters] install=5001 install_same=0 compile_calls=2 compile_builds=2 lower_calls=36 writescan_nodes=295 lin_exec=15001 frame_regs=15001

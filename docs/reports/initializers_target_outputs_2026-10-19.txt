@@ -1,0 +1,20 @@
+# Targeted outputs from final source build
+
+## 062_initializers — Tree reference
+Command: BABYC_PATH=tree, ACCEL=0/1, `src/babyc src/tests/062_initializers.c`
+Result: exit code 0, stdout byte-for-byte equal to `src/tests/062_initializers.expect`.
+
+## 062_initializers — Linear STRICT
+Commands:
+```
+env -i PATH="$PATH" HOME="$HOME" BABYC_PATH=linear BABYC_STRICT=1 BABYC_ACCEL=0 src/babyc src/tests/062_initializers.c
+env -i PATH="$PATH" HOME="$HOME" BABYC_PATH=linear BABYC_STRICT=1 BABYC_ACCEL=1 src/babyc src/tests/062_initializers.c
+```
+Both exit code 0, stdout byte-for-byte equal to the pre-existing `.expect` (1270 bytes). Neither output contains `strict: tree fallback`, `compile_reject`, `lower_reject`, or `[vm-rej]`.
+
+## 1012_global_array_size_row_decay — Tree and Linear STRICT
+All four combinations Tree/Linear STRICT x ACCEL=0/1 exit code 0 and print:
+```
+8 cat a dog o
+```
+The test exercises `sizeof(grid)`, decay of `grid[i]` to a row pointer, and a scalar access to `grid[i][1]`.

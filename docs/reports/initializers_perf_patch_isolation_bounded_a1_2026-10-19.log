@@ -1,0 +1,22 @@
+PAIR 01 prior=6.968ms candidate=5.703ms delta=-18.16%
+PAIR 02 prior=6.910ms candidate=6.835ms delta=-1.09%
+PAIR 03 prior=5.848ms candidate=6.991ms delta=+19.53%
+PAIR 04 prior=5.730ms candidate=6.959ms delta=+21.44%
+PAIR 05 prior=6.890ms candidate=7.871ms delta=+14.24%
+PAIR 06 prior=7.283ms candidate=7.972ms delta=+9.47%
+PAIR 07 prior=8.284ms candidate=7.574ms delta=-8.57%
+PAIR 08 prior=8.407ms candidate=10.209ms delta=+21.43%
+PAIR 09 prior=9.333ms candidate=7.508ms delta=-19.56%
+PAIR 10 prior=7.434ms candidate=7.221ms delta=-2.87%
+PAIR 11 prior=7.040ms candidate=7.109ms delta=+0.98%
+PAIR 12 prior=6.887ms candidate=6.882ms delta=-0.08%
+PAIR 13 prior=7.067ms candidate=7.362ms delta=+4.18%
+PAIR 14 prior=6.991ms candidate=7.044ms delta=+0.77%
+PAIR 15 prior=6.978ms candidate=6.969ms delta=-0.12%
+PAIR 16 prior=5.941ms candidate=7.173ms delta=+20.73%
+PAIR 17 prior=7.285ms candidate=6.891ms delta=-5.41%
+PAIR 18 prior=7.161ms candidate=6.096ms delta=-14.87%
+PAIR 19 prior=6.955ms candidate=5.838ms delta=-16.06%
+PAIR 20 prior=7.411ms candidate=7.011ms delta=-5.40%
+PAIR 21 prior=6.990ms candidate=6.978ms delta=-0.17%
+SUMMARY pairs=21 prior_med=6.991ms candidate_med=7.011ms raw_delta=+0.29% paired_med=-0.12% IQR=-5.41%..+9.47%

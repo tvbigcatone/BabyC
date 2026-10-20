@@ -1,0 +1,20 @@
+COMMAND: BABYC_PATH=linear BABYC_STRICT=0 BABYC_ACCEL=0 python3 tools/run_numbered_matrix.py --path linear --accel 0 --require-no-tree-fallback
+CONFIG linear_accel0 TOTAL=1009
+CUMULATIVE 100/1009: PASSED=100 FAILED=0 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 200/1009: PASSED=200 FAILED=0 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 300/1009: PASSED=300 FAILED=0 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 400/1009: PASSED=400 FAILED=0 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 500/1009: PASSED=500 FAILED=0 TIMEOUT=0 SKIPPED=0
+FAIL 531/1009 535_main_continue_after_extract rc=0 elapsed=0.013s
+  EXPECT: '============================================================\n                    MESSAGES MANAGER\n============================================================\n  Azione           : extractFromDB\n------------------------------------------------------------\n  Estratte dal DB  : 716\n  Pass-through     : 0\n  Scartate (no id) : 0\n  Record totali    : 716  (file: 717 linee)\n  Warning          : 0\n============================================================\n                       RISULTATO\n============================================================\n  Tempo esecuzione : 0 ms\n  Esito            : OK\n============================================================'
+  ACTUAL: '============================================================\n                    MESSAGES MANAGER\n============================================================\n  Azione           : extractFromDB\n------------------------------------------------------------\n  Estratte dal DB  : 716\n  Pass-through     : 0\n  Scartate (no id) : 0\n  Record totali    : 716  (file: 717 linee)\n  Warning          : 0\n============================================================\n                       RISULTATO\n============================================================\n  Tempo esecuzione : 1 ms\n  Esito            : OK\n============================================================'
+CUMULATIVE 600/1009: PASSED=599 FAILED=1 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 700/1009: PASSED=699 FAILED=1 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 800/1009: PASSED=799 FAILED=1 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 900/1009: PASSED=899 FAILED=1 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 1000/1009: PASSED=999 FAILED=1 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 1009/1009: PASSED=1008 FAILED=1 TIMEOUT=0 SKIPPED=0
+SUMMARY linear_accel0: PASSED=1008 FAILED=1 TIMEOUT=0 SKIPPED=0 TOTAL=1009 SECONDS=13.46
+TREE_FALLBACK_GATE: enabled violations=0 tree_body=0
+COVERAGE_TOTALS: tests_reported=995 lin_inst=365206505 tree_stmt=0 tree_expr=0 fncode_body=1023 tree_body=0
+FAILURES: 535_main_continue_after_extract.c

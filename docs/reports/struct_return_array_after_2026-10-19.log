@@ -1,0 +1,60 @@
+[vm-try] body=0x559b4f46b860 depth=1 kind=2
+[call] make_effect enabled=1
+[call] direct check FV=0x559b4f468c90
+[call] type check FV->Typ=0x7ffe7c326000
+[call] BodyIr check
+[call] ident=make_effect left=-1
+[call] args=1
+[call] success
+[call] printf enabled=1
+[call] direct check FV=0x559b4f467420
+[call] type check FV->Typ=0x7ffe7c326000
+[call] BodyIr check
+[call] ident=printf left=-1
+[call] host arg check
+[call] args=4
+[call] success
+[lin-ir] function=main function_ptr=0x559b4f46a3a0 instructions=20
+[lin-ir] 0000 op=13 dest=0 a=0 b=0 tok=0 imm=12
+[lin-ir] 0001 op=15 dest=0 a=8 b=0 tok=7 imm=0
+[lin-ir] 0002 op=13 dest=0 a=0 b=0 tok=0 imm=13
+[lin-ir] 0003 op=1 dest=0 a=0 b=0 tok=0 imm=7
+[lin-ir] 0004 op=14 dest=1 a=0 b=1 tok=0 imm=0
+[lin-ir] 0005 op=1 dest=2 a=0 b=0 tok=0 imm=0
+[lin-ir] 0006 op=2 dest=3 a=0 b=0 tok=0 imm=0
+[lin-ir] 0007 op=1 dest=4 a=0 b=0 tok=0 imm=8
+[lin-ir] 0008 op=4 dest=5 a=2 b=4 tok=30 imm=0
+[lin-ir] 0009 op=4 dest=6 a=3 b=5 tok=28 imm=2
+[lin-ir] 0010 op=12 dest=0 a=1 b=6 tok=3 imm=8
+[lin-ir] 0011 op=13 dest=0 a=0 b=0 tok=0 imm=14
+[lin-ir] 0012 op=1 dest=0 a=0 b=0 tok=3 imm=12
+[lin-ir] 0013 op=11 dest=1 a=0 b=0 tok=1 imm=0
+[lin-ir] 0014 op=11 dest=2 a=0 b=0 tok=1 imm=1
+[lin-ir] 0015 op=9 dest=3 a=0 b=0 tok=0 imm=0
+[lin-ir] 0016 op=14 dest=4 a=0 b=4 tok=1 imm=1
+[lin-ir] 0017 op=13 dest=0 a=0 b=0 tok=0 imm=15
+[lin-ir] 0018 op=1 dest=0 a=0 b=0 tok=0 imm=0
+[lin-ir] 0019 op=8 dest=0 a=0 b=0 tok=0 imm=0
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+[lin-ir] function=make_effect function_ptr=0x559b4f468c90 instructions=18
+[lin-ir] 0000 op=13 dest=0 a=0 b=0 tok=0 imm=5
+[lin-ir] 0001 op=15 dest=0 a=0 b=0 tok=8 imm=0
+[lin-ir] 0002 op=13 dest=0 a=0 b=0 tok=0 imm=6
+[lin-ir] 0003 op=2 dest=0 a=0 b=0 tok=0 imm=-1
+[lin-ir] 0004 op=1 dest=1 a=0 b=0 tok=0 imm=0
+[lin-ir] 0005 op=22 dest=0 a=0 b=1 tok=24 imm=9
+[lin-ir] 0006 op=13 dest=0 a=0 b=0 tok=0 imm=6
+[lin-ir] 0007 op=9 dest=0 a=0 b=0 tok=0 imm=0
+[lin-ir] 0008 op=16 dest=0 a=0 b=0 tok=0 imm=0
+[lin-ir] 0009 op=13 dest=0 a=0 b=0 tok=0 imm=7
+[lin-ir] 0010 op=2 dest=0 a=0 b=0 tok=0 imm=-1
+[lin-ir] 0011 op=12 dest=0 a=0 b=0 tok=1 imm=0
+[lin-ir] 0012 op=13 dest=0 a=0 b=0 tok=0 imm=8
+[lin-ir] 0013 op=9 dest=0 a=0 b=0 tok=0 imm=0
+[lin-ir] 0014 op=12 dest=0 a=0 b=0 tok=1 imm=1
+[lin-ir] 0015 op=13 dest=0 a=0 b=0 tok=0 imm=9
+[lin-ir] 0016 op=2 dest=0 a=0 b=0 tok=0 imm=0
+[lin-ir] 0017 op=8 dest=0 a=0 b=0 tok=0 imm=0
+7 1 1
+[host-ret] printf result=6 typ=1
+[babyc-bytecode-vm-prod] attempts=0 runs=0

@@ -1,0 +1,7 @@
+array=cavallo
+punct=cane
+punct=gatto
+array=Cavallo
+    animal_punct[0] = 'r';
+                 ^
+686_string_literal_write.c:19:17 assignment of read-only location (string literal)

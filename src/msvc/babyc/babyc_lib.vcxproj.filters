@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\clibrary.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\debug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\expression.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\heap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\platform\library_msvc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\parse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\platform.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\platform\platform_msvc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\table.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\type.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\variable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib\ctype.c">
+      <Filter>Source Files\cstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib\errno.c">
+      <Filter>Source Files\cstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib\math.c">
+      <Filter>Source Files\cstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib\stdbool.c">
+      <Filter>Source Files\cstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib\stdint.c">
+      <Filter>Source Files\cstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib\stdio.c">
+      <Filter>Source Files\cstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib\stdlib.c">
+      <Filter>Source Files\cstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib\string.c">
+      <Filter>Source Files\cstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib\time.c">
+      <Filter>Source Files\cstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib_ext\tools.c">
+      <Filter>Source Files\cstdlib_ext</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib_ext\win.c">
+      <Filter>Source Files\cstdlib_ext</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\sqlite\sqlite.c">
+      <Filter>Source Files\third_party\sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\sqlite\sqlite3.c">
+      <Filter>Source Files\third_party\sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\inih\ini.c">
+      <Filter>Source Files\third_party\inih</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\inih\babyc_ini.c">
+      <Filter>Source Files\third_party\inih</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\getopt\getopt.c">
+      <Filter>Source Files\third_party\getopt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\getopt\babyc_getopt.c">
+      <Filter>Source Files\third_party\getopt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\ezxml\ezxml.c">
+      <Filter>Source Files\third_party\ezxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\ezxml\babyc_ezxml.c">
+      <Filter>Source Files\third_party\ezxml</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\cstdlib_ext\winerror_defs.h">
+      <Filter>Source Files\cstdlib_ext</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\interpreter.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\babyc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\platform.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\sqlite\sqlite3.h">
+      <Filter>Source Files\third_party\sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\inih\ini.h">
+      <Filter>Source Files\third_party\inih</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\getopt\getopt.h">
+      <Filter>Source Files\third_party\getopt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\ezxml\ezxml.h">
+      <Filter>Source Files\third_party\ezxml</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4526de31-a4ce-4dcf-bbcf-06d47512025c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cstdlib">
+      <UniqueIdentifier>{b0e89efd-e9a9-4a66-86bb-3a5c8d5a96e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cstdlib_ext">
+      <UniqueIdentifier>{5256bb43-d96e-4694-ad36-cb1cb5d6022b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\third_party">
+      <UniqueIdentifier>{ba0497eb-dabb-4391-929c-f49c218abaa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\third_party\sqlite">
+      <UniqueIdentifier>{b2bcfb62-4405-41cd-9a04-39f26ee1ba83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\third_party\inih">
+      <UniqueIdentifier>{14f14e2f-0289-449d-8660-97132582e64e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\third_party\getopt">
+      <UniqueIdentifier>{1417d761-b9c4-41e7-bbb7-c64967a80f6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\third_party\ezxml">
+      <UniqueIdentifier>{d99ed3ca-0a3a-4b32-a868-eee5faab91c1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

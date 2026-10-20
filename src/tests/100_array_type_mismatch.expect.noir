@@ -1,0 +1,4 @@
+ok 10 20 30 sizeof=12
+    int dst_bad[] = src_bad;
+                           ^
+100_array_type_mismatch.c:31:27 can't assign int[] from char[3]

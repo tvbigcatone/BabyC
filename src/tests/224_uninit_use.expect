@@ -1,0 +1,3 @@
+    printf("%d\n", a);
+                    ^
+224_uninit_use.c:5:20 uninitialized variable 'a'

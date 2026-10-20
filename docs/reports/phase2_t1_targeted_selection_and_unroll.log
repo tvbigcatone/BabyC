@@ -1,0 +1,220 @@
+
+=== 024_type_coercion strict=0 accel=0 ===
+[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+char: a
+char: b
+char: c
+int: 97
+int: 98
+int: 99
+float: 97.000000
+float: 98.000000
+float: 99.000000
+a 98 99.000000
+a 98 99.000000
+a 98 99.000000
+97 97
+97 97
+97.000000 97.000000
+[babyc-cov] lin_inst=36 tree_stmt=0 tree_expr=0 fncode_body=10 tree_body=0
+[babyc-exec-profile] attempts=10 body_runs=10 body_run_fail=0 reject_depth=0 reject_ptr=0 reject_small=0 compile_fail=0 ineligible=0 tiny_tree=0 run_nested=0 run_top=10 ptr_index_admit=0 local_add_fuse=0 index_copy_fuse=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+rc=0
+
+=== 024_type_coercion strict=0 accel=1 ===
+[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+char: a
+char: b
+char: c
+int: 97
+int: 98
+int: 99
+float: 97.000000
+float: 98.000000
+float: 99.000000
+a 98 99.000000
+a 98 99.000000
+a 98 99.000000
+97 97
+97 97
+97.000000 97.000000
+[babyc-cov] lin_inst=36 tree_stmt=0 tree_expr=0 fncode_body=10 tree_body=0
+[babyc-exec-profile] attempts=10 body_runs=10 body_run_fail=0 reject_depth=0 reject_ptr=0 reject_small=0 compile_fail=0 ineligible=0 tiny_tree=0 run_nested=0 run_top=10 ptr_index_admit=0 local_add_fuse=0 index_copy_fuse=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+rc=0
+
+=== 024_type_coercion strict=1 accel=0 ===
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+char: a
+char: b
+char: c
+int: 97
+int: 98
+int: 99
+float: 97.000000
+float: 98.000000
+float: 99.000000
+a 98 99.000000
+a 98 99.000000
+a 98 99.000000
+97 97
+97 97
+97.000000 97.000000
+[babyc-cov] lin_inst=36 tree_stmt=0 tree_expr=0 fncode_body=10 tree_body=0
+[babyc-exec-profile] attempts=10 body_runs=10 body_run_fail=0 reject_depth=0 reject_ptr=0 reject_small=0 compile_fail=0 ineligible=0 tiny_tree=0 run_nested=0 run_top=10 ptr_index_admit=0 local_add_fuse=0 index_copy_fuse=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+rc=0
+
+=== 024_type_coercion strict=1 accel=1 ===
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+char: a
+char: b
+char: c
+int: 97
+int: 98
+int: 99
+float: 97.000000
+float: 98.000000
+float: 99.000000
+a 98 99.000000
+a 98 99.000000
+a 98 99.000000
+97 97
+97 97
+97.000000 97.000000
+[babyc-cov] lin_inst=36 tree_stmt=0 tree_expr=0 fncode_body=10 tree_body=0
+[babyc-exec-profile] attempts=10 body_runs=10 body_run_fail=0 reject_depth=0 reject_ptr=0 reject_small=0 compile_fail=0 ineligible=0 tiny_tree=0 run_nested=0 run_top=10 ptr_index_admit=0 local_add_fuse=0 index_copy_fuse=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+rc=0
+
+=== 841_real_a08_text strict=0 accel=0 ===
+[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+849 41 9 253 4025014
+[babyc-cov] lin_inst=698393 tree_stmt=0 tree_expr=0 fncode_body=1 tree_body=0
+[babyc-exec-profile] attempts=1 body_runs=1 body_run_fail=0 reject_depth=0 reject_ptr=0 reject_small=0 compile_fail=0 ineligible=0 tiny_tree=0 run_nested=0 run_top=1 ptr_index_admit=0 local_add_fuse=0 index_copy_fuse=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+rc=0
+
+=== 841_real_a08_text strict=0 accel=1 ===
+[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+849 41 9 253 4025014
+[babyc-cov] lin_inst=589166 tree_stmt=0 tree_expr=0 fncode_body=1 tree_body=0
+[babyc-exec-profile] attempts=1 body_runs=1 body_run_fail=0 reject_depth=0 reject_ptr=0 reject_small=0 compile_fail=0 ineligible=0 tiny_tree=0 run_nested=0 run_top=1 ptr_index_admit=0 local_add_fuse=0 index_copy_fuse=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+rc=0
+
+=== 841_real_a08_text strict=1 accel=0 ===
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+849 41 9 253 4025014
+[babyc-cov] lin_inst=698393 tree_stmt=0 tree_expr=0 fncode_body=1 tree_body=0
+[babyc-exec-profile] attempts=1 body_runs=1 body_run_fail=0 reject_depth=0 reject_ptr=0 reject_small=0 compile_fail=0 ineligible=0 tiny_tree=0 run_nested=0 run_top=1 ptr_index_admit=0 local_add_fuse=0 index_copy_fuse=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+rc=0
+
+=== 841_real_a08_text strict=1 accel=1 ===
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+849 41 9 253 4025014
+[babyc-cov] lin_inst=589166 tree_stmt=0 tree_expr=0 fncode_body=1 tree_body=0
+[babyc-exec-profile] attempts=1 body_runs=1 body_run_fail=0 reject_depth=0 reject_ptr=0 reject_small=0 compile_fail=0 ineligible=0 tiny_tree=0 run_nested=0 run_top=1 ptr_index_admit=0 local_add_fuse=0 index_copy_fuse=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+rc=0
+
+=== 945_sibling_for_same_name strict=0 accel=0 ===
+[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+primes<=100: 25
+sum=360
+[babyc-cov] lin_inst=4547 tree_stmt=0 tree_expr=0 fncode_body=1 tree_body=0
+[babyc-exec-profile] attempts=1 body_runs=1 body_run_fail=0 reject_depth=0 reject_ptr=0 reject_small=0 compile_fail=0 ineligible=0 tiny_tree=0 run_nested=0 run_top=1 ptr_index_admit=0 local_add_fuse=0 index_copy_fuse=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+rc=0
+
+=== 945_sibling_for_same_name strict=0 accel=1 ===
+[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+primes<=100: 25
+sum=360
+[babyc-cov] lin_inst=3470 tree_stmt=0 tree_expr=0 fncode_body=1 tree_body=0
+[babyc-exec-profile] attempts=1 body_runs=1 body_run_fail=0 reject_depth=0 reject_ptr=0 reject_small=0 compile_fail=0 ineligible=0 tiny_tree=0 run_nested=0 run_top=1 ptr_index_admit=0 local_add_fuse=0 index_copy_fuse=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+rc=0
+
+=== 945_sibling_for_same_name strict=1 accel=0 ===
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+primes<=100: 25
+sum=360
+[babyc-cov] lin_inst=4547 tree_stmt=0 tree_expr=0 fncode_body=1 tree_body=0
+[babyc-exec-profile] attempts=1 body_runs=1 body_run_fail=0 reject_depth=0 reject_ptr=0 reject_small=0 compile_fail=0 ineligible=0 tiny_tree=0 run_nested=0 run_top=1 ptr_index_admit=0 local_add_fuse=0 index_copy_fuse=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+rc=0
+
+=== 945_sibling_for_same_name strict=1 accel=1 ===
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+primes<=100: 25
+sum=360
+[babyc-cov] lin_inst=3473 tree_stmt=0 tree_expr=0 fncode_body=1 tree_body=0
+[babyc-exec-profile] attempts=1 body_runs=1 body_run_fail=0 reject_depth=0 reject_ptr=0 reject_small=0 compile_fail=0 ineligible=0 tiny_tree=0 run_nested=0 run_top=1 ptr_index_admit=0 local_add_fuse=0 index_copy_fuse=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+rc=0
+
+=== 623_multidim_3d strict=0 accel=0 ===
+[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+0 123 1476
+[babyc-cov] lin_inst=1395 tree_stmt=0 tree_expr=0 fncode_body=1 tree_body=0
+[babyc-exec-profile] attempts=1 body_runs=1 body_run_fail=0 reject_depth=0 reject_ptr=0 reject_small=0 compile_fail=0 ineligible=0 tiny_tree=0 run_nested=0 run_top=1 ptr_index_admit=0 local_add_fuse=0 index_copy_fuse=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+rc=0
+
+=== 623_multidim_3d strict=0 accel=1 ===
+[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+0 123 1476
+[babyc-cov] lin_inst=53 tree_stmt=0 tree_expr=0 fncode_body=1 tree_body=0
+[babyc-exec-profile] attempts=1 body_runs=1 body_run_fail=0 reject_depth=0 reject_ptr=0 reject_small=0 compile_fail=0 ineligible=0 tiny_tree=0 run_nested=0 run_top=1 ptr_index_admit=0 local_add_fuse=0 index_copy_fuse=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+rc=0
+
+=== 623_multidim_3d strict=1 accel=0 ===
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+0 123 1476
+[babyc-cov] lin_inst=1395 tree_stmt=0 tree_expr=0 fncode_body=1 tree_body=0
+[babyc-exec-profile] attempts=1 body_runs=1 body_run_fail=0 reject_depth=0 reject_ptr=0 reject_small=0 compile_fail=0 ineligible=0 tiny_tree=0 run_nested=0 run_top=1 ptr_index_admit=0 local_add_fuse=0 index_copy_fuse=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+rc=0
+
+=== 623_multidim_3d strict=1 accel=1 ===
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+0 123 1476
+[babyc-cov] lin_inst=53 tree_stmt=0 tree_expr=0 fncode_body=1 tree_body=0
+[babyc-exec-profile] attempts=1 body_runs=1 body_run_fail=0 reject_depth=0 reject_ptr=0 reject_small=0 compile_fail=0 ineligible=0 tiny_tree=0 run_nested=0 run_top=1 ptr_index_admit=0 local_add_fuse=0 index_copy_fuse=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+rc=0
+
+=== 630_global_2d_index strict=0 accel=0 ===
+[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+c00=4 c03=16 c30=16 c33=64
+[babyc-cov] lin_inst=2587 tree_stmt=0 tree_expr=0 fncode_body=1 tree_body=0
+[babyc-exec-profile] attempts=1 body_runs=1 body_run_fail=0 reject_depth=0 reject_ptr=0 reject_small=0 compile_fail=0 ineligible=0 tiny_tree=0 run_nested=0 run_top=1 ptr_index_admit=0 local_add_fuse=0 index_copy_fuse=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+rc=0
+
+=== 630_global_2d_index strict=0 accel=1 ===
+[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+c00=4 c03=16 c30=16 c33=64
+[babyc-cov] lin_inst=49 tree_stmt=0 tree_expr=0 fncode_body=1 tree_body=0
+[babyc-exec-profile] attempts=1 body_runs=1 body_run_fail=0 reject_depth=0 reject_ptr=0 reject_small=0 compile_fail=0 ineligible=0 tiny_tree=0 run_nested=0 run_top=1 ptr_index_admit=0 local_add_fuse=0 index_copy_fuse=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+rc=0
+
+=== 630_global_2d_index strict=1 accel=0 ===
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+c00=4 c03=16 c30=16 c33=64
+[babyc-cov] lin_inst=2587 tree_stmt=0 tree_expr=0 fncode_body=1 tree_body=0
+[babyc-exec-profile] attempts=1 body_runs=1 body_run_fail=0 reject_depth=0 reject_ptr=0 reject_small=0 compile_fail=0 ineligible=0 tiny_tree=0 run_nested=0 run_top=1 ptr_index_admit=0 local_add_fuse=0 index_copy_fuse=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+rc=0
+
+=== 630_global_2d_index strict=1 accel=1 ===
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+c00=4 c03=16 c30=16 c33=64
+[babyc-cov] lin_inst=49 tree_stmt=0 tree_expr=0 fncode_body=1 tree_body=0
+[babyc-exec-profile] attempts=1 body_runs=1 body_run_fail=0 reject_depth=0 reject_ptr=0 reject_small=0 compile_fail=0 ineligible=0 tiny_tree=0 run_nested=0 run_top=1 ptr_index_admit=0 local_add_fuse=0 index_copy_fuse=0
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+rc=0

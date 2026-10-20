@@ -1,0 +1,11 @@
+=== Temporary diagnostic instrumentation after nested-index eligibility was fixed ===
+[vm-try] body=0x55698e4332f0 depth=1 kind=2
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+[lin-ptr-index-reject] line=1488 p=1 i=161 op=2
+[vm-rej] ptr-indexed
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+
+=== process output ===
+/*
+  ^
+047_grep.c:1:2 strict: tree fallback (body)

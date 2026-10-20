@@ -1,0 +1,589 @@
+benchmark,accel,pair,first_order,binary,returncode,wall_seconds,child_cpu_seconds,stdout_sha256,stdout
+string_scan,0,1,047,047,0,0.5639763080016564,0.549577,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,1,047,candidate,0,0.8941335349991277,0.8842089999999999,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,2,candidate,candidate,0,0.9387998500005779,0.9290520000000002,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,2,candidate,047,0,1.026586698999381,1.0083449999999998,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,3,047,047,0,1.0742427629993472,1.0579229999999993,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,3,047,candidate,0,0.7673754330007796,0.7533090000000007,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,4,candidate,candidate,0,0.9317768239998259,0.9166979999999993,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,4,candidate,047,0,0.7613439779997861,0.7508840000000001,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,5,047,047,0,0.8695881849998841,0.852868,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,5,047,candidate,0,0.5377791769988107,0.5323019999999996,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,6,candidate,candidate,0,0.5417563609989884,0.5377390000000002,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,6,candidate,047,0,0.5424930509998376,0.535464000000001,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,7,047,047,0,0.5511918880001758,0.5436639999999997,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,7,047,candidate,0,0.5511759279997932,0.5440470000000008,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,8,candidate,candidate,0,1.9025302109985205,1.8706889999999998,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,8,candidate,047,0,1.4117218100000173,1.3937050000000004,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,9,047,047,0,1.5755543329996726,1.551613,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,9,047,candidate,0,1.1772463569996034,1.1030209999999996,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,10,candidate,candidate,0,0.6156733929983602,0.6107990000000004,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,10,candidate,047,0,0.7193506110015733,0.7127560000000001,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,11,047,047,0,1.0058607860009943,0.9887589999999997,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,11,047,candidate,0,0.7267055209995306,0.7154430000000009,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,12,candidate,candidate,0,1.1027984060001472,1.0574069999999995,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,12,candidate,047,0,1.054372599999624,1.0484850000000003,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,13,047,047,0,0.8882773710010952,0.8803140000000004,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,13,047,candidate,0,0.7885564620009973,0.7819380000000009,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,14,candidate,candidate,0,0.6081222060001892,0.6049630000000004,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,14,candidate,047,0,0.8594680330006668,0.8525110000000005,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,15,047,047,0,1.0635550459992373,1.0491709999999983,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,15,047,candidate,0,0.8285455149998597,0.8257610000000012,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,16,candidate,candidate,0,0.693385839000257,0.6873529999999977,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,16,candidate,047,0,0.5237422720001632,0.5229399999999969,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,17,047,047,0,0.8441244989990082,0.8425309999999995,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,17,047,candidate,0,0.792983531999198,0.7901550000000006,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,18,candidate,candidate,0,0.7234411659992475,0.7153150000000014,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,18,candidate,047,0,0.7104541649987368,0.7091659999999985,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,19,047,047,0,0.6488624690009601,0.6459229999999994,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,19,047,candidate,0,0.7182067619996815,0.6748940000000014,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,20,candidate,candidate,0,0.7373189869995258,0.6960429999999997,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,20,candidate,047,0,0.5374621249993652,0.5347830000000018,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,21,047,047,0,0.7132395860007819,0.7055619999999978,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,0,21,047,candidate,0,0.64244400500138,0.6372309999999997,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+struct_score,1,1,candidate,candidate,0,0.005514692998985993,0.004667999999997896,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,1,candidate,047,0,0.006044192999979714,0.005248000000000808,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,2,047,047,0,0.010623689000567538,0.010036000000000378,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,2,047,candidate,0,0.005842507000124897,0.004731000000000041,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,3,candidate,candidate,0,0.007054506000713445,0.0066099999999988945,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,3,candidate,047,0,0.005032975999711198,0.0046309999999987195,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,4,047,047,0,0.00619365200145694,0.005842000000000125,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,4,047,candidate,0,0.005847618998814141,0.005471999999996369,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,5,candidate,candidate,0,0.005258492999928421,0.00485400000000058,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,5,candidate,047,0,0.005636709000100382,0.005283000000001037,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,6,047,047,0,0.005350144001567969,0.004784000000001676,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,6,047,candidate,0,0.006070064000596176,0.005558000000001506,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,7,candidate,candidate,0,0.005217156998696737,0.004917999999998202,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,7,candidate,047,0,0.004817300001377589,0.004587999999996484,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,8,047,047,0,0.004475376001209952,0.00414799999999893,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,8,047,candidate,0,0.004970414998751949,0.004426999999998404,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,9,candidate,candidate,0,0.005185476000406197,0.004372999999999738,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,9,candidate,047,0,0.0046912469988456,0.004061999999999788,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,10,047,047,0,0.005097309000120731,0.004717999999995559,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,10,047,candidate,0,0.004743595998661476,0.004444999999999144,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,11,candidate,candidate,0,0.00579773000026762,0.005075000000000163,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,11,candidate,047,0,0.004788117999851238,0.004293999999996689,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,12,047,047,0,0.006034939000528539,0.0055789999999995565,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,12,047,candidate,0,0.007645009000043501,0.004979000000001843,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,13,candidate,candidate,0,0.0046612799997092225,0.004311999999998317,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,13,candidate,047,0,0.006348913000692846,0.00490900000000094,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,14,047,047,0,0.004867462001129752,0.004530999999999175,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,14,047,candidate,0,0.004749345000163885,0.004499999999999282,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+string_scan,1,1,047,047,0,0.010421221999422414,0.009634999999999998,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,1,047,candidate,0,0.01018681099958485,0.009228,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,2,candidate,candidate,0,0.009552454999720794,0.009150000000000005,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,2,candidate,047,0,0.00971984399984649,0.008989999999999998,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,3,047,047,0,0.010185676999753923,0.009503999999999992,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,3,047,candidate,0,0.011073382000176935,0.009761000000000006,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,4,candidate,candidate,0,0.010722478000388946,0.010449,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,4,candidate,047,0,0.009268998001061846,0.008509000000000003,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,5,047,047,0,0.010930053000265616,0.010676999999999992,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,5,047,candidate,0,0.013378583000303479,0.012516,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,6,candidate,candidate,0,0.011029274999600602,0.010547,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,6,candidate,047,0,0.010480468999958248,0.010094000000000006,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,7,047,047,0,0.010939685998891946,0.009754999999999986,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,7,047,candidate,0,0.009841981000136002,0.009556000000000009,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,0,1,047,047,0,0.8868449569999939,0.8736109999999998,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,0,1,047,candidate,0,1.0423083170007885,1.0349060000000003,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,0,2,candidate,candidate,0,1.0363709199991717,0.9678539999999998,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,0,2,candidate,047,0,2.1212412229997426,1.9622390000000003,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,0,3,047,047,0,1.0945457640009408,1.0420850000000002,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,0,3,047,candidate,0,1.0308129040004133,0.9694919999999989,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,0,4,candidate,candidate,0,1.0287138060011785,1.018879000000001,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,0,4,candidate,047,0,1.1995518839994475,1.193524000000001,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,0,5,047,047,0,0.8900530559985782,0.8709159999999994,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,0,5,047,candidate,0,0.9269794459996774,0.9261289999999995,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,0,6,candidate,candidate,0,0.6509737810010847,0.6493830000000003,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,0,6,candidate,047,0,1.0152452109996375,1.0089299999999994,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,0,7,047,047,0,0.9073831450004946,0.9062819999999991,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,0,7,047,candidate,0,0.8317648689990165,0.8282760000000025,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,1,047,047,0,0.11774795500059554,0.112395,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,1,047,candidate,0,0.017961737999939942,0.017492999999999995,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,2,candidate,candidate,0,0.018345791000683676,0.017748000000000014,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,2,candidate,047,0,0.022121011999843176,0.02072899999999997,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,3,047,047,0,0.010364379000748158,0.01006600000000002,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,3,047,candidate,0,0.02268476200151781,0.022374999999999978,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,4,candidate,candidate,0,0.011717950999809545,0.011098000000000025,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,4,candidate,047,0,0.016497061998961726,0.015118999999999994,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,5,047,047,0,0.011328189000778366,0.011086999999999986,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,5,047,candidate,0,0.015457931998753338,0.014326999999999979,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,6,candidate,candidate,0,0.03435859000092023,0.032638000000000056,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,6,candidate,047,0,0.014231498000299325,0.01296699999999995,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,7,047,047,0,0.023238829000547412,0.02279600000000004,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,7,047,candidate,0,0.012502284000220243,0.012158999999999975,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+struct_score,0,1,047,047,0,0.29433737600083987,0.293321,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,1,047,candidate,0,0.12882642499971553,0.126803,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,2,candidate,candidate,0,0.15419001699956425,0.14778299999999994,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,2,candidate,047,0,0.14269440200041572,0.13915599999999995,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,3,047,047,0,0.13926624699888634,0.13661200000000007,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,3,047,candidate,0,0.15363491700009035,0.15015500000000004,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,4,candidate,candidate,0,0.19207175699921208,0.1906859999999999,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,4,candidate,047,0,0.15087440500064986,0.14604200000000023,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,5,047,047,0,0.21603556199988816,0.21480199999999994,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,5,047,candidate,0,0.1838597080004547,0.18001099999999992,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,6,candidate,candidate,0,0.18401500700019824,0.181697,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,6,candidate,047,0,0.16918647900092765,0.16553899999999988,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,7,047,047,0,0.22764176499913447,0.22586700000000004,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,7,047,candidate,0,0.13142110199987656,0.13002599999999997,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,15,047,047,0,0.006520523000290268,0.005183999999999999,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,15,047,candidate,0,0.005847897999046836,0.005148999999999999,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,16,candidate,candidate,0,0.006243318000997533,0.005819999999999999,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,16,candidate,047,0,0.005665320999469259,0.005409999999999998,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,17,047,047,0,0.0058152969995717285,0.005581000000000003,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,17,047,candidate,0,0.0055898350001371,0.005141,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,18,candidate,candidate,0,0.005905580001126509,0.005145999999999998,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,18,candidate,047,0,0.0053881660005572485,0.005149000000000001,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,19,047,047,0,0.01075120300083654,0.010343000000000005,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,19,047,candidate,0,0.008999220000987407,0.007896999999999994,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,20,candidate,candidate,0,0.006553618999532773,0.0062369999999999925,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,20,candidate,047,0,0.005172532999495161,0.004572000000000007,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,21,047,047,0,0.00480921300004411,0.004557999999999993,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,1,21,047,candidate,0,0.005830408999827341,0.005158999999999997,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+dfs_rec,0,1,047,047,0,0.1006043649995263,0.094614,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,1,047,candidate,0,0.09935422500166169,0.096755,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,2,candidate,candidate,0,0.10020152700053586,0.09784899999999996,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,2,candidate,047,0,0.09465865499987558,0.09122600000000003,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,3,047,047,0,0.10731922700142604,0.105657,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,3,047,candidate,0,0.1490160499997728,0.144802,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,4,candidate,candidate,0,0.1523986620013602,0.14860300000000004,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,4,candidate,047,0,0.14112477199887508,0.13686399999999987,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,5,047,047,0,0.1583294730007765,0.15235200000000004,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,5,047,candidate,0,0.06408076700063248,0.06303499999999995,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,6,candidate,candidate,0,0.14284822599984182,0.14145100000000022,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,6,candidate,047,0,0.07086685799913539,0.06831300000000007,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,7,047,047,0,0.14076842600115924,0.1396989999999998,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,7,047,candidate,0,0.12460514400117972,0.12060500000000007,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,1,047,047,0,0.07671125200067763,0.076148,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,1,047,candidate,0,0.6706948199989711,0.38010599999999994,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,2,candidate,candidate,0,0.0670524960005423,0.048568000000000056,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,2,candidate,047,0,0.05678293699929782,0.05460799999999999,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,3,047,047,0,0.03062917799979914,0.029293000000000013,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,3,047,candidate,0,0.06555544399998325,0.0642029999999999,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,4,candidate,candidate,0,0.030189978000635165,0.02890999999999999,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,4,candidate,047,0,0.05510552800114965,0.05307200000000001,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,5,047,047,0,0.029217478000646224,0.02821000000000007,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,5,047,candidate,0,0.03170404999946186,0.029855999999999994,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,6,candidate,candidate,0,0.04169499700037704,0.04070499999999999,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,6,candidate,047,0,0.04932574800113798,0.047355000000000036,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,7,047,047,0,0.0795639250009117,0.072125,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,7,047,candidate,0,0.11850200799926824,0.1134449999999998,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,8,047,047,0,0.5743701430001238,0.42750999999999995,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,8,047,candidate,0,0.296509800999047,0.28828299999999996,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,9,candidate,candidate,0,0.10851902699869242,0.10379000000000005,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,9,candidate,047,0,0.11569722999956866,0.11520000000000008,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,10,047,047,0,0.23036540300017805,0.22987899999999983,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,10,047,candidate,0,0.17304792199865915,0.17257800000000012,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,11,candidate,candidate,0,0.1756141009991552,0.17142900000000005,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,11,candidate,047,0,0.09557515400047123,0.09259400000000007,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,12,047,047,0,0.2244464440009324,0.22236499999999992,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,12,047,candidate,0,0.20495833099994343,0.1970280000000002,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,13,candidate,candidate,0,0.2360081059996446,0.23122199999999982,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,13,candidate,047,0,0.2821051669998269,0.24538599999999988,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,14,047,047,0,0.11724587600110681,0.1112409999999997,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,0,14,047,candidate,0,0.1183395419993758,0.11640600000000045,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,8,047,047,0,0.02473054100119043,0.023583,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,8,047,candidate,0,0.026062454999191687,0.023711000000000003,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,9,candidate,candidate,0,0.020610432999092154,0.019632999999999998,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,9,candidate,047,0,0.019919987998946453,0.019063999999999998,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,10,047,047,0,0.026069597999594407,0.025574999999999987,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,10,047,candidate,0,0.07213066400072421,0.07144700000000002,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,11,candidate,candidate,0,0.025784778999877744,0.025303999999999993,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,11,candidate,047,0,0.04554738300066674,0.04383000000000001,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,12,047,047,0,0.029669649000425125,0.028686999999999963,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,12,047,candidate,0,0.04270157099927019,0.03975699999999999,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,13,candidate,candidate,0,0.02599741999983962,0.02562100000000006,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,13,candidate,047,0,0.023201665999295074,0.022316999999999976,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,14,047,047,0,0.022235614000237547,0.022004000000000024,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,14,047,candidate,0,0.024029992999203387,0.023799999999999988,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+string_scan,1,8,candidate,candidate,0,0.02743674799967266,0.024508,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,8,candidate,047,0,0.031385501999466214,0.029723999999999997,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,9,047,047,0,0.020319470999311307,0.018782,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,9,047,candidate,0,0.020205196999086183,0.019829999999999997,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,10,candidate,candidate,0,0.03650488200037216,0.03583599999999999,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,10,candidate,047,0,0.014808709000135423,0.013316999999999989,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,11,047,047,0,0.02830599099979736,0.025742,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,11,047,candidate,0,0.01355877599962696,0.013212000000000008,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,12,candidate,candidate,0,0.026167441999859875,0.024253999999999977,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,12,candidate,047,0,0.015143703998546698,0.014450000000000005,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,13,047,047,0,0.03426462700008415,0.033157000000000006,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,13,047,candidate,0,0.017864023000583984,0.017340999999999995,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,14,candidate,candidate,0,0.01439599100012856,0.014010000000000022,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,14,candidate,047,0,0.01262713800133497,0.012077999999999992,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,15,047,047,0,0.025495242000033613,0.02489699999999999,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,15,047,candidate,0,0.012042513999404036,0.011730999999999978,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,16,candidate,candidate,0,0.0144664150011522,0.014159000000000019,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,16,candidate,047,0,0.011329060000207392,0.010690999999999978,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,17,047,047,0,0.014759718998902827,0.01444000000000005,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,17,047,candidate,0,0.011798135999924853,0.010901999999999967,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,18,candidate,candidate,0,0.011660689999189344,0.011365999999999987,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,18,candidate,047,0,0.015251617000103579,0.014229000000000006,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,19,047,047,0,0.01647196700105269,0.015759000000000023,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,19,047,candidate,0,0.01187562499944761,0.011309000000000013,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,20,candidate,candidate,0,0.021139784001206863,0.02034599999999999,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,20,candidate,047,0,0.011346776000209502,0.010730999999999963,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,21,047,047,0,0.013748665000093752,0.012474999999999986,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan,1,21,047,candidate,0,0.017338937999738846,0.01657400000000006,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,8,candidate,candidate,0,0.01286790199992538,0.01238700000000037,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,8,candidate,047,0,0.015603911999278353,0.013579000000000008,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,9,047,047,0,0.012010427999484818,0.011344999999999938,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,9,047,candidate,0,0.015232285000820411,0.01407999999999976,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,10,candidate,candidate,0,0.015109076999578974,0.014256999999999742,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,10,candidate,047,0,0.01763593399846286,0.016194000000000375,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,11,047,047,0,0.01719296300143469,0.01608199999999993,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,11,047,candidate,0,0.013230328999270569,0.012492999999999976,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,12,candidate,candidate,0,0.012928475998705835,0.012495000000000034,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,12,candidate,047,0,0.018481558998246328,0.016946000000000017,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,13,047,047,0,0.01656419999926584,0.016354000000000313,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,13,047,candidate,0,0.012920510998810641,0.011632999999999893,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,14,candidate,candidate,0,0.015738190999400103,0.015509000000000328,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,14,candidate,047,0,0.015307204999771784,0.015033000000000074,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,15,047,047,0,0.012456886999643757,0.011634000000000144,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,15,047,candidate,0,0.024370936000195798,0.02340999999999993,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,16,candidate,candidate,0,0.016017769999962184,0.01495599999999997,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,16,candidate,047,0,0.016460380998978508,0.015183000000000169,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,17,047,047,0,0.01598944599936658,0.013763999999999665,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,17,047,candidate,0,0.013923993999924278,0.01346399999999981,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,18,candidate,candidate,0,0.02120978700077103,0.019280000000000075,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,18,candidate,047,0,0.01603559799877985,0.015474999999999794,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,19,047,047,0,0.01847117299985257,0.015062999999999938,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,19,047,candidate,0,0.015685454000049504,0.014908999999999839,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,20,candidate,candidate,0,0.018727722999756224,0.01843700000000026,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,20,candidate,047,0,0.020449097000891925,0.019368000000000274,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,21,047,047,0,0.017540291000841535,0.015144999999999742,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+string_scan_bounded,1,21,047,candidate,0,0.01719509999929869,0.016952999999999996,54df2654dad2651d0eef14236d95524e6514d15c771d2cedf146a8ea1a364192,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+380000"
+struct_score,0,8,candidate,candidate,0,0.20411067200075195,0.198231,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,8,candidate,047,0,0.16459174800002074,0.159692,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,9,047,047,0,0.16306255299969052,0.15929899999999997,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,9,047,candidate,0,0.18974744199840643,0.18661899999999995,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,10,candidate,candidate,0,0.20533026799967047,0.2035140000000001,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,10,candidate,047,0,0.2484121800007415,0.22276399999999988,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,11,047,047,0,0.15874941399852105,0.15679100000000004,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,11,047,candidate,0,0.19342440100081149,0.18976599999999993,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,12,candidate,candidate,0,0.1706581529997493,0.16929199999999991,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,12,candidate,047,0,0.15413390899993828,0.1514310000000001,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,13,047,047,0,0.7648870149987488,0.7312379999999999,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,13,047,candidate,0,0.14242747699972824,0.138224,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,14,candidate,candidate,0,0.16698262599857117,0.15688000000000002,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,14,candidate,047,0,0.12738150599943765,0.12578999999999968,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,15,047,047,0,0.358971178999127,0.3085780000000001,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,15,047,candidate,0,0.1560550840003998,0.1522079999999996,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,16,candidate,candidate,0,0.65346591999878,0.44255400000000017,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,16,candidate,047,0,0.12865124699965236,0.12706499999999984,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,17,047,047,0,0.6827263979994314,0.6750699999999992,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,17,047,candidate,0,0.44310161599969433,0.4419180000000008,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,18,candidate,candidate,0,0.12670085600075254,0.12515699999999927,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,18,candidate,047,0,0.7142639519988734,0.7109979999999996,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,19,047,047,0,0.7087674630001857,0.6456360000000003,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,19,047,candidate,0,0.6920728759996564,0.6900640000000005,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,20,candidate,candidate,0,0.3598788359995524,0.3572919999999997,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,20,candidate,047,0,0.49972105199958605,0.49749900000000097,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,21,047,047,0,0.1547312589991634,0.15250500000000017,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+struct_score,0,21,047,candidate,0,0.6577993060000153,0.6512599999999993,722493c9d2cb9dd089760005558f0af6b9c988e51ea42faaab05c3801d5cb546,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+7500000"
+dfs_rec,1,15,047,047,0,0.037425881000672234,0.0362920000000031,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,15,047,candidate,0,0.02765847000046051,0.027138999999998692,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,16,candidate,candidate,0,0.020343039999715984,0.019966000000000594,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,16,candidate,047,0,0.04295675100001972,0.04113800000000056,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,17,047,047,0,0.020135488000960322,0.019843999999999973,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,17,047,candidate,0,0.06241516299996874,0.05847400000000125,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,18,candidate,candidate,0,0.024273958999401657,0.023790000000003086,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,18,candidate,047,0,0.323102509999444,0.3216130000000006,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,19,047,047,0,0.04653515099926153,0.04002900000000187,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,19,047,candidate,0,0.03340899300019373,0.031762000000001844,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,20,candidate,candidate,0,0.11774218599930464,0.1161989999999995,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,20,candidate,047,0,0.03173040200090327,0.029149000000000758,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,21,047,047,0,0.06126579000010679,0.040904000000001606,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"
+dfs_rec,1,21,047,candidate,0,0.03536545799943269,0.03296399999999711,63b612b25d7aff494599097d163c2a8a96d2f640c2483a03efd154e091094586,"[babyc] PATH=linear STRICT=0 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic â¤8 args)
+15000"

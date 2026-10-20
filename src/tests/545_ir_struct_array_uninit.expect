@@ -1,0 +1,4 @@
+1 2
+  printf("%d\n", v[2].a);
+                       ^
+545_ir_struct_array_uninit.c:8:23 uninitialized variable

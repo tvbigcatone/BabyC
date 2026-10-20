@@ -1,0 +1,9 @@
+benchmark,accel,pairs,baseline_median_ms,candidate_median_ms,median_delta_pct,paired_median_delta_pct,paired_delta_q1_pct,paired_delta_q3_pct,output
+string_scan,0,7,429.96,414.656,-3.56,-1.16,-1.79,-0.31,380000
+string_scan,1,7,9.054,9.056,0.02,0.69,0.32,2.12,380000
+string_scan_bounded,0,7,396.576,408.439,2.99,-0.44,-0.85,0.89,380000
+string_scan_bounded,1,7,11.048,11.379,3.0,2.88,0.55,3.04,380000
+struct_score,0,7,144.885,143.885,-0.69,-0.43,-0.89,-0.14,7500000
+struct_score,1,7,2.486,2.512,1.04,0.49,-1.28,1.51,7500000
+dfs_rec,0,7,24.653,25.185,2.16,1.73,1.48,4.84,15000
+dfs_rec,1,7,8.528,8.935,4.77,3.89,1.04,5.59,15000

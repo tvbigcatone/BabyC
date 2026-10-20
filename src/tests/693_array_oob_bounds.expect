@@ -1,0 +1,3 @@
+    printf("%d\n", a[i]);
+                    ^
+693_array_oob_bounds.c:8:20 array index 3 out of bounds (size 3)

@@ -1,0 +1,3 @@
+    char pad[4352];
+                  ^
+576_host_stack_deep.c:6:18 stack overflow (local variables / call frames exceed stack size)

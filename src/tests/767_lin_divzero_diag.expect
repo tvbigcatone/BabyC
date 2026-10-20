@@ -1,0 +1,3 @@
+        x = x / z;
+                 ^
+767_lin_divzero_diag.c:6:17 division by zero

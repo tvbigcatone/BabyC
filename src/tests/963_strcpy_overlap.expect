@@ -1,0 +1,4 @@
+before
+    strcpy(text + 1, text);
+                         ^
+963_strcpy_overlap.c:8:25 strcpy source and destination overlap (undefined behavior in C)

@@ -1,0 +1,3 @@
+  printf("%d\n", (int)sizeof(s.a));
+                                ^
+500_bitfield_sizeof.c:5:32 sizeof applied to a bitfield

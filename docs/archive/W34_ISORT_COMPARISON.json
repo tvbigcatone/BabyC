@@ -1,0 +1,224 @@
+{
+  "turn": "W34",
+  "source": "bench/isort.c and bench/isort_v2.c",
+  "method": "17 paired, alternating baseline/current runs per mode, CPU affinity on CPU 0; end-to-end wall-clock",
+  "comparison": {
+    "isort_default": {
+      "baseline": {
+        "median_ms": 26.893,
+        "min_ms": 13.991,
+        "max_ms": 47.203,
+        "outputs": [
+          "29665"
+        ],
+        "rcs": [
+          0
+        ]
+      },
+      "current": {
+        "median_ms": 26.72,
+        "min_ms": 19.415,
+        "max_ms": 66.019,
+        "outputs": [
+          "29665"
+        ],
+        "rcs": [
+          0
+        ]
+      },
+      "delta_pct": -0.64
+    },
+    "isort_tree": {
+      "baseline": {
+        "median_ms": 27.681,
+        "min_ms": 22.707,
+        "max_ms": 38.516,
+        "outputs": [
+          "29665"
+        ],
+        "rcs": [
+          0
+        ]
+      },
+      "current": {
+        "median_ms": 24.219,
+        "min_ms": 20.265,
+        "max_ms": 33.881,
+        "outputs": [
+          "29665"
+        ],
+        "rcs": [
+          0
+        ]
+      },
+      "delta_pct": -12.51
+    },
+    "isort_vm": {
+      "baseline": {
+        "median_ms": 25.931,
+        "min_ms": 20.136,
+        "max_ms": 34.518,
+        "outputs": [
+          "29665"
+        ],
+        "rcs": [
+          0
+        ]
+      },
+      "current": {
+        "median_ms": 25.017,
+        "min_ms": 16.727,
+        "max_ms": 39.912,
+        "outputs": [
+          "29665"
+        ],
+        "rcs": [
+          0
+        ]
+      },
+      "delta_pct": -3.52
+    },
+    "isort_v2_default": {
+      "baseline": {
+        "median_ms": 446.079,
+        "min_ms": 394.564,
+        "max_ms": 790.994,
+        "outputs": [
+          "29665"
+        ],
+        "rcs": [
+          0
+        ]
+      },
+      "current": {
+        "median_ms": 18.732,
+        "min_ms": 13.868,
+        "max_ms": 28.697,
+        "outputs": [
+          "29665"
+        ],
+        "rcs": [
+          0
+        ]
+      },
+      "delta_pct": -95.8
+    },
+    "isort_v2_tree": {
+      "baseline": {
+        "median_ms": 482.641,
+        "min_ms": 426.036,
+        "max_ms": 615.542,
+        "outputs": [
+          "29665"
+        ],
+        "rcs": [
+          0
+        ]
+      },
+      "current": {
+        "median_ms": 19.479,
+        "min_ms": 12.226,
+        "max_ms": 25.111,
+        "outputs": [
+          "29665"
+        ],
+        "rcs": [
+          0
+        ]
+      },
+      "delta_pct": -95.96
+    },
+    "isort_v2_vm": {
+      "baseline": {
+        "median_ms": 458.073,
+        "min_ms": 425.512,
+        "max_ms": 563.494,
+        "outputs": [
+          "29665"
+        ],
+        "rcs": [
+          0
+        ]
+      },
+      "current": {
+        "median_ms": 16.21,
+        "min_ms": 13.832,
+        "max_ms": 21.519,
+        "outputs": [
+          "29665"
+        ],
+        "rcs": [
+          0
+        ]
+      },
+      "delta_pct": -96.46
+    }
+  },
+  "fastpath_control": {
+    "source": "bench/isort_v2.c",
+    "runs_per_mode": 11,
+    "reference_output": "29665",
+    "outputs": {
+      "shape_enabled": "29665",
+      "shape_disabled": "29665"
+    },
+    "median_ms": {
+      "shape_enabled": 14.304303000244545,
+      "shape_disabled": 374.1239270002552
+    },
+    "min_ms": {
+      "shape_enabled": 7.782353999573388,
+      "shape_disabled": 341.2279829999534
+    },
+    "max_ms": {
+      "shape_enabled": 26.266133000717673,
+      "shape_disabled": 766.0060469997916
+    },
+    "samples_ms": {
+      "shape_enabled": [
+        22.15238499957195,
+        7.782353999573388,
+        14.304303000244545,
+        26.266133000717673,
+        9.69016199996986,
+        8.499794999806909,
+        19.0507310007888,
+        9.09180100006779,
+        22.440150999500474,
+        15.018758000223897,
+        7.882967999648827
+      ],
+      "shape_disabled": [
+        358.773580000161,
+        729.9193509998076,
+        342.5362949992632,
+        341.2279829999534,
+        374.1239270002552,
+        686.8897249996735,
+        360.2920900002573,
+        766.0060469997916,
+        341.6127749997031,
+        747.9626370004553,
+        701.6080390003481
+      ]
+    },
+    "disabled_over_enabled_speedup": 26.154642207583215,
+    "interpretation": "end-to-end wall clock; shape-disabled is a control, not a separate implementation"
+  },
+  "correctness": {
+    "gcc_reference_output": "29665",
+    "baseline_and_current_outputs_match": true,
+    "isort_v2_shape_enabled_vs_disabled_match": true,
+    "return_codes_all_zero": true
+  },
+  "validation": {
+    "clean_gcc_build": "PASS",
+    "gcc_warnings": 0,
+    "standard_suite": {
+      "passed": 842,
+      "failed": 0,
+      "skipped": 23
+    },
+    "bytecode_vm_suite": "PASS"
+  }
+}

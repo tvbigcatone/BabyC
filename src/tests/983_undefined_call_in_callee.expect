@@ -1,0 +1,4 @@
+g 0
+        r = foo(3, r) + 2;
+                          ^
+983_undefined_call_in_callee.c:9:26 'foo' is undefined

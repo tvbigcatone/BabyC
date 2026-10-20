@@ -1,0 +1,75 @@
+# Bench results
+
+```
+case                         ATS_no   ATS_acc     VM_no    VM_acc    python       gcc  status
+---------------------------------------------------------------------------------------------
+micro.array_sum               0.332     0.002     0.352     0.003     0.166     0.002      OK
+micro.dfs_rec                 0.034     0.010     0.026     0.021     0.019     0.001      OK
+micro.fib_iter                0.024     0.002     0.005     0.005     0.015     0.001      OK
+micro.fib_multiarg            0.006     0.006     0.003     0.003     0.012     0.001      OK
+micro.isort                   0.262     0.007     0.308     0.007     0.428     0.003      OK
+micro.isort_decoy             0.334     0.333     0.312     0.332         —     0.003      OK
+micro.list_walk               0.124     0.004     0.002     0.004     0.054     0.003    DIFF
+micro.matmul_small            0.027     0.002     0.032     0.003     0.020     0.001      OK
+micro.string_scan             0.541     0.027     0.582     0.029     0.265     0.004      OK
+micro.string_scan_bounded     0.595     0.030     0.597     0.023         —     0.005      OK
+micro.struct_score            0.191     0.003     0.195     0.003     0.062     0.003      OK
+classic.collatz               0.119     0.102     0.074     0.059     0.082     0.003      OK
+classic.crc                   0.010     0.005     0.006     0.006     0.017     0.001      OK
+classic.fib_rec               0.002     0.002     0.002     0.001     0.020     0.001      OK
+classic.fib_rec_count         0.070     0.070     0.012     0.012     0.028     0.001      OK
+classic.gcd                   0.052     0.052     0.038     0.024     0.026     0.002      OK
+classic.hello                 0.003     0.002     0.002     0.002     0.017     0.001      OK
+classic.isort                 0.097     0.094     0.045     0.043     0.067     0.002      OK
+classic.list                  0.106     0.108     0.063     0.067     0.049     0.003      OK
+classic.mandel                0.073     0.090     0.073     0.080     0.055     0.002      OK
+classic.matmul                0.088     0.040     0.053     0.053     0.055     0.001      OK
+classic.sieve                 0.222     0.161     0.121     0.032     0.124     0.002      OK
+classic.strproc               0.090     0.052     0.045     0.044     0.060     0.002      OK
+classic.structs               0.112     0.113     0.057     0.059     0.047     0.003      OK
+classic.tri                   0.077     0.078     0.016     0.016     0.026     0.001      OK
+variant.bubble                0.038     0.039     0.061     0.039     0.021     0.001      OK
+variant.collatz               0.097     0.087     0.071     0.066     0.064     0.002      OK
+variant.gcd                   0.036     0.041     0.017     0.017     0.022     0.002      OK
+variant.hashtab               0.021     0.021     0.014     0.014     0.026     0.001      OK
+variant.lcs                   0.086     0.038     0.042     0.046     0.043     0.002      OK
+variant.mandel                0.038     0.038     0.039     0.043     0.019     0.001      OK
+variant.matmul                0.098     0.052     0.042     0.045     0.056     0.001      OK
+variant.nqueens               0.020     0.031     0.011     0.011     0.015     0.002      OK
+variant.selsort               0.063     0.018     0.030     0.030     0.021     0.001      OK
+variant.sieve                 0.166     0.164     0.121     0.118     0.137     0.003      OK
+variant.structs               0.056     0.051     0.055     0.053     0.023     0.002      OK
+variant.wordcount             0.018     0.012     0.010     0.010     0.020     0.001      OK
+real.i01_collatz              0.940     0.871     0.404     0.468     0.386     0.013      OK
+real.i02_nqueens              0.715     0.713     0.197     0.196     0.245     0.008      OK
+real.i03_primes               0.531     0.538     0.259     0.282     0.175     0.009      OK
+real.i04_gcd_table            0.713     0.672     0.280     0.282     0.259     0.020      OK
+real.i05_hash_unsigned        0.504     0.454     0.195     0.230     0.266     0.002      OK
+real.i06_tak                  1.279     1.337     0.318     0.332     0.278     0.014      OK
+real.a01_sieve                0.400     0.404     0.338     0.006     0.286     0.005      OK
+real.a02_qsort                0.549     0.583     0.321     0.292     0.158     0.009      OK
+real.a03_heapsort             1.155     1.181     0.487     0.469     0.279     0.010      OK
+real.a04_matmul               0.411     0.142     0.175     0.174     0.224     0.002      OK
+real.a05_lcs                  0.463     0.190     0.181     0.188     0.243     0.003      OK
+real.a06_knapsack             0.478     0.455     0.223     0.253     0.252     0.003      OK
+real.a07_crc32                0.404     0.272     0.275     0.283     0.212     0.005      OK
+real.a08_text                 0.408     0.358     0.417     0.364     0.199     0.005      OK
+real.a09_life                 0.872     0.787     0.544     0.543     0.262     0.003      OK
+real.a10_bsearch              0.609     0.587     0.493     0.530     0.301     0.016      OK
+real.a11_bfs                  0.801     0.755     0.763     0.787     0.211     0.016      OK
+real.a12_fact                 0.414     0.157     0.206     0.210     0.251     0.004      OK
+real.repro_vm_output_lost     0.002     0.001     0.002     0.002         —     0.001      OK
+stress.call_loop              0.677     0.647     0.351     0.352         —     0.002      OK
+stress.fib_global             0.803     0.837     0.106     0.102         —     0.003      OK
+stress.fib_multiarg           0.002     0.002     0.002     0.002         —     0.001      OK
+stress.fib_ptr                0.795     0.815     0.112     0.101     0.176     0.003      OK
+stress.string_scan_nosc       0.551     0.023     0.551     0.029         —     0.005      OK
+stress.cat_bit_compound       0.748     0.525     0.312     0.315         —     0.006      OK
+stress.cat_do_while           2.543     2.441     0.051     0.051         —     0.002      OK
+stress.cat_global_index       0.578     0.078     0.228     0.117         —     0.002      OK
+stress.cat_leaf_call          0.672     0.677     0.340     0.354         —     0.002      OK
+stress.cat_param_assign       0.170     0.172     0.090     0.078         —     0.002      OK
+stress.cat_param_read         0.284     0.272     0.107     0.113         —     0.001      OK
+---------------------------------------------------------------------------------------------
+OK=66  FAIL/DIFF/MISSING=1  total=67
+```

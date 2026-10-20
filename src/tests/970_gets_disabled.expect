@@ -1,0 +1,4 @@
+before
+    gets(input);
+              ^
+970_gets_disabled.c:6:14 gets: disabled because the interface cannot bound destination writes; use fgets instead

@@ -1,0 +1,15 @@
+=== Temporary diagnostic instrumentation while localizing IrExprIntegerOk rejection ===
+[vm-try] body=0x563c6f6d82f0 depth=1 kind=2
+[lin-elig-reject] expr line=3099 kind=7 op=0 ident=- src=488 char=29 left=7 right=1
+[lin-elig-reject] expr line=3209 kind=3 op=20 ident=- src=488 char=33 left=7 right=1
+[lin-elig-reject] expr line=3210 kind=3 op=16 ident=- src=488 char=33 left=3 right=3
+[lin-elig-reject] expr line=3209 kind=3 op=16 ident=- src=488 char=53 left=3 right=3
+[lin-elig-reject] stmt line=3354 kind=3 src=488 char=5 expr=3 decl=- arr=0 ptr=0 fptr=0 from=-1
+[lin-elig-reject] stmt line=3362 kind=2 src=561 char=0 expr=-1 decl=- arr=0 ptr=0 fptr=0 from=-1
+[vm-rej] compile-null
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+
+=== process output ===
+/*
+  ^
+047_grep.c:1:2 strict: tree fallback (body)

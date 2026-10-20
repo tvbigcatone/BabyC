@@ -1,0 +1,3 @@
+    x = x + y;
+          ^
+795_vm_fused_uninit_guard.c:4:9 uninitialized variable 'x'

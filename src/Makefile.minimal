@@ -1,0 +1,15 @@
+# Micro / minimal footprint: no WITH_CSTDLIB_EXT (no cstdlib_ext)
+CC=gcc
+CFLAGS=-Wall -O2 -DUNIX_HOST -DBABYC_MICRO -DVER=\"bench\" -Wno-incompatible-pointer-types -Wno-pointer-sign -Wno-unused-function -Wno-unused-variable
+LIBS=-lm
+TARGET=picoc
+SRCS=picoc.c table.c lex.c parse.c expression.c heap.c type.c variable.c clibrary.c platform.c include.c debug.c ir_stubs.c \
+	platform/platform_unix.c platform/library_unix.c \
+	cstdlib/stdio.c cstdlib/math.c cstdlib/string.c cstdlib/stdlib.c \
+	cstdlib/time.c cstdlib/errno.c cstdlib/ctype.c cstdlib/stdbool.c cstdlib/stdint.c cstdlib/unistd.c cstdlib/printf_format.c cstdlib/mini_printf.c
+OBJS=$(SRCS:.c=.o)
+all: $(TARGET)
+$(TARGET): $(OBJS)
+	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS) $(LIBS)
+clean:
+	rm -f $(OBJS) $(TARGET)

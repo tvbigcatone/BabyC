@@ -1,0 +1,74 @@
+[
+  {
+    "benchmark": "string_scan",
+    "accel": 0,
+    "same_dump_and_output": true,
+    "A_rc": 0,
+    "B_rc": 0,
+    "A_lines": 73,
+    "B_lines": 73
+  },
+  {
+    "benchmark": "string_scan",
+    "accel": 1,
+    "same_dump_and_output": true,
+    "A_rc": 0,
+    "B_rc": 0,
+    "A_lines": 83,
+    "B_lines": 83
+  },
+  {
+    "benchmark": "string_scan_bounded",
+    "accel": 0,
+    "same_dump_and_output": true,
+    "A_rc": 0,
+    "B_rc": 0,
+    "A_lines": 83,
+    "B_lines": 83
+  },
+  {
+    "benchmark": "string_scan_bounded",
+    "accel": 1,
+    "same_dump_and_output": true,
+    "A_rc": 0,
+    "B_rc": 0,
+    "A_lines": 93,
+    "B_lines": 93
+  },
+  {
+    "benchmark": "struct_score",
+    "accel": 0,
+    "same_dump_and_output": true,
+    "A_rc": 0,
+    "B_rc": 0,
+    "A_lines": 51,
+    "B_lines": 51
+  },
+  {
+    "benchmark": "struct_score",
+    "accel": 1,
+    "same_dump_and_output": true,
+    "A_rc": 0,
+    "B_rc": 0,
+    "A_lines": 55,
+    "B_lines": 55
+  },
+  {
+    "benchmark": "dfs_rec",
+    "accel": 0,
+    "same_dump_and_output": true,
+    "A_rc": 0,
+    "B_rc": 0,
+    "A_lines": 146,
+    "B_lines": 146
+  },
+  {
+    "benchmark": "dfs_rec",
+    "accel": 1,
+    "same_dump_and_output": true,
+    "A_rc": 0,
+    "B_rc": 0,
+    "A_lines": 146,
+    "B_lines": 146
+  }
+]

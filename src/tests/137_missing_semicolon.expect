@@ -1,0 +1,3 @@
+    y = 10;
+    ^
+137_missing_semicolon.c:14:0 identifier not expected here

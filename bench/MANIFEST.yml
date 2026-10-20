@@ -1,0 +1,290 @@
+# BabyC unified bench manifest (W29rc migration)
+# Columns (always): ats_no_accel, ats_accel, vm_no_accel, vm_accel, python, gcc
+#
+# tags: micro|classic|variant|real|stress + optional shape|recursion|anti-kernel|…
+# gates: used by --gate filter
+
+version: 1
+defaults:
+  runs: 5
+  timeout: 120
+  memo_off: true   # always BABYC_NO_MEMO=1
+
+cases:
+  # ── micro ──────────────────────────────────────────────
+  - id: micro.array_sum
+    path: cases/micro/array_sum.c
+    tags: [micro]
+    gates: [all, micro]
+  - id: micro.dfs_rec
+    path: cases/micro/dfs_rec.c
+    tags: [micro, recursion]
+    gates: [all, micro]
+  - id: micro.fib_iter
+    path: cases/micro/fib_iter.c
+    tags: [micro]
+    gates: [all, micro]
+  - id: micro.fib_multiarg
+    path: cases/micro/fib_multiarg.c
+    tags: [micro]
+    gates: [all, micro]
+  - id: micro.isort
+    path: cases/micro/isort.c
+    tags: [micro, shape, insert-shift]
+    gates: [all, micro, shape, honest]
+  - id: micro.isort_decoy
+    path: cases/micro/isort_decoy.c
+    tags: [micro, shape, decoy]
+    gates: [all, micro, shape, honest]
+  - id: micro.list_walk
+    path: cases/micro/list_walk.c
+    tags: [micro]
+    gates: [all, micro]
+  - id: micro.matmul_small
+    path: cases/micro/matmul_small.c
+    tags: [micro]
+    gates: [all, micro]
+  - id: micro.string_scan
+    path: cases/micro/string_scan.c
+    tags: [micro, shape, ptr-scan]
+    gates: [all, micro, shape, honest]
+  - id: micro.string_scan_bounded
+    path: cases/micro/string_scan_bounded.c
+    tags: [micro, shape, ptr-scan]
+    gates: [all, micro, shape, honest]
+  - id: micro.struct_score
+    path: cases/micro/struct_score.c
+    tags: [micro]
+    gates: [all, micro]
+
+  # ── classic (ex serie1) ────────────────────────────────
+  - id: classic.collatz
+    path: cases/classic/collatz.c
+    tags: [classic]
+    gates: [all, classic, perf]
+  - id: classic.crc
+    path: cases/classic/crc.c
+    tags: [classic]
+    gates: [all, classic, perf]
+  - id: classic.fib_rec
+    path: cases/classic/fib_rec.c
+    tags: [classic, recursion]
+    gates: [all, classic, perf]
+  - id: classic.fib_rec_count
+    path: cases/classic/fib_rec_count.c
+    tags: [classic, recursion]
+    gates: [all, classic, perf]
+  - id: classic.gcd
+    path: cases/classic/gcd.c
+    tags: [classic]
+    gates: [all, classic]
+  - id: classic.hello
+    path: cases/classic/hello.c
+    tags: [classic, smoke]
+    gates: [all, classic]
+  - id: classic.isort
+    path: cases/classic/isort.c
+    tags: [classic]
+    gates: [all, classic, perf]
+  - id: classic.list
+    path: cases/classic/list.c
+    tags: [classic]
+    gates: [all, classic]
+  - id: classic.mandel
+    path: cases/classic/mandel.c
+    tags: [classic]
+    gates: [all, classic]
+  - id: classic.matmul
+    path: cases/classic/matmul.c
+    tags: [classic]
+    gates: [all, classic, perf]
+  - id: classic.sieve
+    path: cases/classic/sieve.c
+    tags: [classic]
+    gates: [all, classic, perf]
+  - id: classic.strproc
+    path: cases/classic/strproc.c
+    tags: [classic]
+    gates: [all, classic]
+  - id: classic.structs
+    path: cases/classic/structs.c
+    tags: [classic]
+    gates: [all, classic, perf]
+  - id: classic.tri
+    path: cases/classic/tri.c
+    tags: [classic]
+    gates: [all, classic, perf]
+
+  # ── variant (ex serie2, crc deduped) ───────────────────
+  - id: variant.bubble
+    path: cases/variant/bubble.c
+    tags: [variant]
+    gates: [all, variant]
+  - id: variant.collatz
+    path: cases/variant/collatz.c
+    tags: [variant]
+    gates: [all, variant]
+  - id: variant.gcd
+    path: cases/variant/gcd.c
+    tags: [variant]
+    gates: [all, variant]
+  - id: variant.hashtab
+    path: cases/variant/hashtab.c
+    tags: [variant]
+    gates: [all, variant]
+  - id: variant.lcs
+    path: cases/variant/lcs.c
+    tags: [variant]
+    gates: [all, variant]
+  - id: variant.mandel
+    path: cases/variant/mandel.c
+    tags: [variant]
+    gates: [all, variant]
+  - id: variant.matmul
+    path: cases/variant/matmul.c
+    tags: [variant]
+    gates: [all, variant]
+  - id: variant.nqueens
+    path: cases/variant/nqueens.c
+    tags: [variant, recursion]
+    gates: [all, variant]
+  - id: variant.selsort
+    path: cases/variant/selsort.c
+    tags: [variant]
+    gates: [all, variant]
+  - id: variant.sieve
+    path: cases/variant/sieve.c
+    tags: [variant]
+    gates: [all, variant]
+  - id: variant.structs
+    path: cases/variant/structs.c
+    tags: [variant]
+    gates: [all, variant]
+  - id: variant.wordcount
+    path: cases/variant/wordcount.c
+    tags: [variant]
+    gates: [all, variant]
+
+  # ── real ───────────────────────────────────────────────
+  - id: real.i01_collatz
+    path: cases/real/i01_collatz.c
+    tags: [real, integer]
+    gates: [all, real]
+  - id: real.i02_nqueens
+    path: cases/real/i02_nqueens.c
+    tags: [real, integer, recursion]
+    gates: [all, real]
+  - id: real.i03_primes
+    path: cases/real/i03_primes.c
+    tags: [real, integer]
+    gates: [all, real]
+  - id: real.i04_gcd_table
+    path: cases/real/i04_gcd_table.c
+    tags: [real, integer, recursion]
+    gates: [all, real]
+  - id: real.i05_hash_unsigned
+    path: cases/real/i05_hash_unsigned.c
+    tags: [real, integer]
+    gates: [all, real]
+  - id: real.i06_tak
+    path: cases/real/i06_tak.c
+    tags: [real, integer, recursion]
+    gates: [all, real]
+  - id: real.a01_sieve
+    path: cases/real/a01_sieve.c
+    tags: [real, array]
+    gates: [all, real]
+  - id: real.a02_qsort
+    path: cases/real/a02_qsort.c
+    tags: [real, array]
+    gates: [all, real]
+  - id: real.a03_heapsort
+    path: cases/real/a03_heapsort.c
+    tags: [real, array]
+    gates: [all, real]
+  - id: real.a04_matmul
+    path: cases/real/a04_matmul.c
+    tags: [real, array]
+    gates: [all, real]
+  - id: real.a05_lcs
+    path: cases/real/a05_lcs.c
+    tags: [real, array]
+    gates: [all, real]
+  - id: real.a06_knapsack
+    path: cases/real/a06_knapsack.c
+    tags: [real, array]
+    gates: [all, real]
+  - id: real.a07_crc32
+    path: cases/real/a07_crc32.c
+    tags: [real, array]
+    gates: [all, real]
+  - id: real.a08_text
+    path: cases/real/a08_text.c
+    tags: [real, array]
+    gates: [all, real]
+  - id: real.a09_life
+    path: cases/real/a09_life.c
+    tags: [real, array]
+    gates: [all, real]
+  - id: real.a10_bsearch
+    path: cases/real/a10_bsearch.c
+    tags: [real, array]
+    gates: [all, real]
+  - id: real.a11_bfs
+    path: cases/real/a11_bfs.c
+    tags: [real, array]
+    gates: [all, real]
+  - id: real.a12_fact
+    path: cases/real/a12_fact.c
+    tags: [real, array]
+    gates: [all, real]
+  - id: real.repro_vm_output_lost
+    path: cases/real/repro_vm_output_lost.c
+    tags: [real, repro]
+    gates: [all, real, stress]
+
+  # ── stress (ex noscorciabili + s3) ─────────────────────
+  - id: stress.call_loop
+    path: cases/stress/call_loop.c
+    tags: [stress, anti-kernel]
+    gates: [all, stress, vm, honest]
+  - id: stress.fib_global
+    path: cases/stress/fib_global.c
+    tags: [stress, anti-kernel, recursion]
+    gates: [all, stress, vm]
+  - id: stress.fib_multiarg
+    path: cases/stress/fib_multiarg.c
+    tags: [stress, anti-kernel, recursion]
+    gates: [all, stress, vm]
+  - id: stress.fib_ptr
+    path: cases/stress/fib_ptr.c
+    tags: [stress, anti-kernel, recursion]
+    gates: [all, stress, vm]
+  - id: stress.string_scan_nosc
+    path: cases/stress/string_scan_nosc.c
+    tags: [stress]
+    gates: [all, stress]
+  - id: stress.cat_bit_compound
+    path: cases/stress/cat_bit_compound.c
+    tags: [stress, vm-gate]
+    gates: [all, stress, vm]
+  - id: stress.cat_do_while
+    path: cases/stress/cat_do_while.c
+    tags: [stress, vm-gate]
+    gates: [all, stress, vm]
+  - id: stress.cat_global_index
+    path: cases/stress/cat_global_index.c
+    tags: [stress, vm-gate]
+    gates: [all, stress, vm]
+  - id: stress.cat_leaf_call
+    path: cases/stress/cat_leaf_call.c
+    tags: [stress, vm-gate]
+    gates: [all, stress, vm]
+  - id: stress.cat_param_assign
+    path: cases/stress/cat_param_assign.c
+    tags: [stress, vm-gate]
+    gates: [all, stress, vm]
+  - id: stress.cat_param_read
+    path: cases/stress/cat_param_read.c
+    tags: [stress, vm-gate]
+    gates: [all, stress, vm]

@@ -1,0 +1,5 @@
+strcmp(a,b)=0
+strcmp(a,c)=32
+strcmp(c,a)=-32
+strncmp(a,c,1)=0
+strncmp(a,c,2)=32

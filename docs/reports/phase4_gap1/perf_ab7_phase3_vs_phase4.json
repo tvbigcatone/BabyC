@@ -1,0 +1,221 @@
+{
+  "method": "7 alternating paired runs; Linear STRICT; same host; Phase 3 baseline vs Phase 4 candidate",
+  "results": [
+    {
+      "benchmark": "string_scan",
+      "accel": 0,
+      "runs_each": 7,
+      "phase3_ms": [
+        653.913,
+        555.98,
+        387.565,
+        383.351,
+        378.147,
+        359.39,
+        410.521
+      ],
+      "phase4_ms": [
+        546.739,
+        618.966,
+        410.95,
+        389.522,
+        398.694,
+        365.867,
+        396.574
+      ],
+      "phase3_median_ms": 387.565,
+      "phase4_median_ms": 398.694,
+      "change_pct": 2.87,
+      "output": "380000"
+    },
+    {
+      "benchmark": "string_scan_bounded",
+      "accel": 0,
+      "runs_each": 7,
+      "phase3_ms": [
+        535.176,
+        601.932,
+        577.457,
+        628.021,
+        588.279,
+        595.701,
+        554.739
+      ],
+      "phase4_ms": [
+        581.043,
+        658.921,
+        580.642,
+        587.459,
+        690.103,
+        667.699,
+        539.117
+      ],
+      "phase3_median_ms": 588.279,
+      "phase4_median_ms": 587.459,
+      "change_pct": -0.14,
+      "output": "380000"
+    },
+    {
+      "benchmark": "struct_score",
+      "accel": 0,
+      "runs_each": 7,
+      "phase3_ms": [
+        124.518,
+        111.26,
+        120.849,
+        97.047,
+        136.996,
+        100.142,
+        106.299
+      ],
+      "phase4_ms": [
+        104.696,
+        123.52,
+        114.352,
+        110.416,
+        106.133,
+        114.857,
+        106.62
+      ],
+      "phase3_median_ms": 111.26,
+      "phase4_median_ms": 110.416,
+      "change_pct": -0.76,
+      "output": "7500000"
+    },
+    {
+      "benchmark": "dfs_rec",
+      "accel": 0,
+      "runs_each": 7,
+      "phase3_ms": [
+        37.991,
+        41.117,
+        42.324,
+        40.879,
+        34.956,
+        37.829,
+        46.239
+      ],
+      "phase4_ms": [
+        37.688,
+        41.769,
+        56.784,
+        36.804,
+        45.377,
+        34.932,
+        48.669
+      ],
+      "phase3_median_ms": 40.879,
+      "phase4_median_ms": 41.769,
+      "change_pct": 2.18,
+      "output": "15000"
+    },
+    {
+      "benchmark": "string_scan",
+      "accel": 1,
+      "runs_each": 7,
+      "phase3_ms": [
+        11.035,
+        9.943,
+        12.018,
+        10.997,
+        23.137,
+        7.435,
+        9.794
+      ],
+      "phase4_ms": [
+        6.696,
+        9.096,
+        10.878,
+        9.156,
+        10.018,
+        8.988,
+        9.369
+      ],
+      "phase3_median_ms": 10.997,
+      "phase4_median_ms": 9.156,
+      "change_pct": -16.74,
+      "output": "380000"
+    },
+    {
+      "benchmark": "string_scan_bounded",
+      "accel": 1,
+      "runs_each": 7,
+      "phase3_ms": [
+        13.989,
+        16.473,
+        12.647,
+        19.432,
+        12.663,
+        10.899,
+        15.814
+      ],
+      "phase4_ms": [
+        11.842,
+        11.824,
+        10.697,
+        19.991,
+        17.473,
+        14.293,
+        12.728
+      ],
+      "phase3_median_ms": 13.989,
+      "phase4_median_ms": 12.728,
+      "change_pct": -9.01,
+      "output": "380000"
+    },
+    {
+      "benchmark": "struct_score",
+      "accel": 1,
+      "runs_each": 7,
+      "phase3_ms": [
+        5.052,
+        2.266,
+        3.401,
+        3.22,
+        2.357,
+        4.071,
+        3.115
+      ],
+      "phase4_ms": [
+        3.253,
+        3.123,
+        3.166,
+        4.263,
+        2.354,
+        4.026,
+        2.005
+      ],
+      "phase3_median_ms": 3.22,
+      "phase4_median_ms": 3.166,
+      "change_pct": -1.68,
+      "output": "7500000"
+    },
+    {
+      "benchmark": "dfs_rec",
+      "accel": 1,
+      "runs_each": 7,
+      "phase3_ms": [
+        18.495,
+        16.804,
+        18.444,
+        15.529,
+        18.245,
+        20.806,
+        18.725
+      ],
+      "phase4_ms": [
+        25.81,
+        17.684,
+        21.778,
+        22.229,
+        16.627,
+        18.609,
+        17.995
+      ],
+      "phase3_median_ms": 18.444,
+      "phase4_median_ms": 18.609,
+      "change_pct": 0.89,
+      "output": "15000"
+    }
+  ]
+}

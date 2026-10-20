@@ -1,0 +1,230 @@
+{
+  "count": 28,
+  "passed": 28,
+  "results": [
+    {
+      "case": "141_bp_win64",
+      "mode": "tree",
+      "match": true,
+      "returncode": 0,
+      "stdout": "10000",
+      "stderr": ""
+    },
+    {
+      "case": "141_bp_win64",
+      "mode": "linear",
+      "match": true,
+      "returncode": 0,
+      "stdout": "10000",
+      "stderr": "[babyc] BABYC_EXEC=vm experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)"
+    },
+    {
+      "case": "141_bp_win64",
+      "mode": "bytecode",
+      "match": true,
+      "returncode": 0,
+      "stdout": "10000",
+      "stderr": "[babyc] BABYC_EXEC=vm experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n[babyc-bytecode-vm-prod] attempts=1 runs=0"
+    },
+    {
+      "case": "141_bp_win64",
+      "mode": "strict",
+      "match": true,
+      "returncode": 0,
+      "stdout": "10000",
+      "stderr": "[babyc] BABYC_EXEC=vm_strict experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)"
+    },
+    {
+      "case": "216_ir_local_recurse",
+      "mode": "tree",
+      "match": true,
+      "returncode": 0,
+      "stdout": "15",
+      "stderr": ""
+    },
+    {
+      "case": "216_ir_local_recurse",
+      "mode": "linear",
+      "match": true,
+      "returncode": 0,
+      "stdout": "15",
+      "stderr": "[babyc] BABYC_EXEC=vm experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)"
+    },
+    {
+      "case": "216_ir_local_recurse",
+      "mode": "bytecode",
+      "match": true,
+      "returncode": 0,
+      "stdout": "15",
+      "stderr": "[babyc] BABYC_EXEC=vm experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n[babyc-bytecode-vm-prod] attempts=1 runs=0"
+    },
+    {
+      "case": "216_ir_local_recurse",
+      "mode": "strict",
+      "match": true,
+      "returncode": 0,
+      "stdout": "15",
+      "stderr": "[babyc] BABYC_EXEC=vm_strict experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)"
+    },
+    {
+      "case": "221_ir_nested_calls_locals",
+      "mode": "tree",
+      "match": true,
+      "returncode": 0,
+      "stdout": "11",
+      "stderr": ""
+    },
+    {
+      "case": "221_ir_nested_calls_locals",
+      "mode": "linear",
+      "match": true,
+      "returncode": 0,
+      "stdout": "11",
+      "stderr": "[babyc] BABYC_EXEC=vm experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)"
+    },
+    {
+      "case": "221_ir_nested_calls_locals",
+      "mode": "bytecode",
+      "match": true,
+      "returncode": 0,
+      "stdout": "11",
+      "stderr": "[babyc] BABYC_EXEC=vm experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n[babyc-bytecode-vm-prod] attempts=1 runs=0"
+    },
+    {
+      "case": "221_ir_nested_calls_locals",
+      "mode": "strict",
+      "match": true,
+      "returncode": 0,
+      "stdout": "11",
+      "stderr": "[babyc] BABYC_EXEC=vm_strict experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)"
+    },
+    {
+      "case": "253_array_struct_member_uninit",
+      "mode": "tree",
+      "match": true,
+      "returncode": 1,
+      "stdout": "printf(\"%d\\n\", v[1].b);\n                         ^\n253_array_struct_member_uninit.c:7:25 uninitialized variable",
+      "stderr": ""
+    },
+    {
+      "case": "253_array_struct_member_uninit",
+      "mode": "linear",
+      "match": true,
+      "returncode": 1,
+      "stdout": "printf(\"%d\\n\", v[1].b);\n                         ^\n253_array_struct_member_uninit.c:7:25 uninitialized variable",
+      "stderr": "[babyc] BABYC_EXEC=vm experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)"
+    },
+    {
+      "case": "253_array_struct_member_uninit",
+      "mode": "bytecode",
+      "match": true,
+      "returncode": 1,
+      "stdout": "printf(\"%d\\n\", v[1].b);\n                         ^\n253_array_struct_member_uninit.c:7:25 uninitialized variable",
+      "stderr": "[babyc] BABYC_EXEC=vm experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n[babyc-bytecode-vm-prod] attempts=1 runs=0"
+    },
+    {
+      "case": "253_array_struct_member_uninit",
+      "mode": "strict",
+      "match": true,
+      "returncode": 1,
+      "stdout": "printf(\"%d\\n\", v[1].b);\n                         ^\n253_array_struct_member_uninit.c:7:25 uninitialized variable",
+      "stderr": "[babyc] BABYC_EXEC=vm_strict experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)"
+    },
+    {
+      "case": "545_ir_struct_array_uninit",
+      "mode": "tree",
+      "match": true,
+      "returncode": 1,
+      "stdout": "1 2\n  printf(\"%d\\n\", v[2].a);\n                       ^\n545_ir_struct_array_uninit.c:8:23 uninitialized variable",
+      "stderr": ""
+    },
+    {
+      "case": "545_ir_struct_array_uninit",
+      "mode": "linear",
+      "match": true,
+      "returncode": 1,
+      "stdout": "1 2\n  printf(\"%d\\n\", v[2].a);\n                       ^\n545_ir_struct_array_uninit.c:8:23 uninitialized variable",
+      "stderr": "[babyc] BABYC_EXEC=vm experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)"
+    },
+    {
+      "case": "545_ir_struct_array_uninit",
+      "mode": "bytecode",
+      "match": true,
+      "returncode": 1,
+      "stdout": "1 2\n  printf(\"%d\\n\", v[2].a);\n                       ^\n545_ir_struct_array_uninit.c:8:23 uninitialized variable",
+      "stderr": "[babyc] BABYC_EXEC=vm experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n[babyc-bytecode-vm-prod] attempts=1 runs=0"
+    },
+    {
+      "case": "545_ir_struct_array_uninit",
+      "mode": "strict",
+      "match": true,
+      "returncode": 1,
+      "stdout": "1 2\n  printf(\"%d\\n\", v[2].a);\n                       ^\n545_ir_struct_array_uninit.c:8:23 uninitialized variable",
+      "stderr": "[babyc] BABYC_EXEC=vm_strict experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)"
+    },
+    {
+      "case": "870_vm_recursive_helper_effects",
+      "mode": "tree",
+      "match": true,
+      "returncode": 0,
+      "stdout": "200 604 604",
+      "stderr": ""
+    },
+    {
+      "case": "870_vm_recursive_helper_effects",
+      "mode": "linear",
+      "match": true,
+      "returncode": 0,
+      "stdout": "200 604 604",
+      "stderr": "[babyc] BABYC_EXEC=vm experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)"
+    },
+    {
+      "case": "870_vm_recursive_helper_effects",
+      "mode": "bytecode",
+      "match": true,
+      "returncode": 0,
+      "stdout": "200 604 604",
+      "stderr": "[babyc] BABYC_EXEC=vm experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n[babyc-bytecode-vm-prod] attempts=1 runs=0"
+    },
+    {
+      "case": "870_vm_recursive_helper_effects",
+      "mode": "strict",
+      "match": true,
+      "returncode": 0,
+      "stdout": "200 604 604",
+      "stderr": "[babyc] BABYC_EXEC=vm_strict experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)"
+    },
+    {
+      "case": "879_vm_mutual_pointer_recursion",
+      "mode": "tree",
+      "match": true,
+      "returncode": 0,
+      "stdout": "46 23 6",
+      "stderr": ""
+    },
+    {
+      "case": "879_vm_mutual_pointer_recursion",
+      "mode": "linear",
+      "match": true,
+      "returncode": 0,
+      "stdout": "46 23 6",
+      "stderr": "[babyc] BABYC_EXEC=vm experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)"
+    },
+    {
+      "case": "879_vm_mutual_pointer_recursion",
+      "mode": "bytecode",
+      "match": true,
+      "returncode": 0,
+      "stdout": "46 23 6",
+      "stderr": "[babyc-exec-profile] compile_reject=lower body_kind=2 n=17 ok=1 skipped_call=1 calls=1\n[babyc] BABYC_EXEC=vm experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n[babyc-bytecode-vm-prod] attempts=0 runs=0"
+    },
+    {
+      "case": "879_vm_mutual_pointer_recursion",
+      "mode": "strict",
+      "match": true,
+      "returncode": 0,
+      "stdout": "46 23 6",
+      "stderr": "[babyc] BABYC_EXEC=vm_strict experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)"
+    }
+  ]
+}

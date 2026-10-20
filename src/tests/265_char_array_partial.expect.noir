@@ -1,0 +1,4 @@
+AB0
+    printf("%c\n", b[3]);
+                       ^
+265_char_array_partial.c:9:23 uninitialized variable

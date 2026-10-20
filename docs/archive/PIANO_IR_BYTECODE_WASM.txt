@@ -1,0 +1,35 @@
+Piano: debugger sul path IR/bytecode
+Data: 2026-10-04. Il default resta l'albero. Il debugger non si accende senza flag. L'obiettivo è un protocollo stabile, poi un plugin VS Code. Non un TUI finto.
+Oggi il debug è testo su stderr, solo se BABYC_DEBUG=1.
+
+IrLinLine porta il numero di riga. Non viene emesso se il flag è spento.
+BABYC_BREAK=N ferma su quella riga e stampa i primi locali.
+BABYC_STEP=1 ferma ogni LINE. next nel file BABYC_DEBUG_IN arma lo stop quando IrCallDepth torna minore o uguale.
+BABYC_FINISH=1 ferma quando una LINE torna sotto la profondità massima vista.
+BABYC_BT=1 stampa #depth nome file:riga. main c'è. f in lin19 resta ? se il path che alza il frame non registra il nome.
+Lo stdin non si legge in suite. Solo BABYC_DEBUG_TTY=1 e terminale vero.
+Il bytecode è shadow. IrVmCommit confronta, non sostituisce l'albero. FastCond/FastInc rifiutati: toglierli manda isort in segfault.
+
+Un solo evento, due trasporti. L'IR emette lo stop. Il bytecode, quando esegue, emette lo stesso stop. Il plugin non parla con l'albero.
+textstopped reason=breakpoint|step|finish thread=1
+frame depth name file line
+locals name value type
+Prima come righe su stderr. Poi come JSON su un socket. Il plugin legge il JSON, non il testo.
+D1. Togliere le stampe sparse. Una funzione IrDebugStop(reason, file, line, depth) usata da IrLinLine e dal path annidato. Il nome si registra in IrFramePush, non nei singoli caller. bt legge solo quello stack. Se il nome manca, resta ?. I locali si leggono dal frame, sola lettura. Verifica: lin19 stampa main e f. Senza flag, lin15 stampa 7. Suite dual 728/0.
+D2. BABYC_DEBUG=1 ferma alla prima LINE di main. continue nel file BABYC_DEBUG_IN riparte. Non si legge stdin.
+D3. Lo shadow emette lo stesso evento, non una seconda stampa. Se lo statement è rifiutato, l'evento resta sull'IR e non si finge un PC bytecode. Quando il VM esegue, il PC è l'indice dell'opcode LINE. Non si salta l'albero.
+D4. JSON line protocol su BABYC_DEBUG_PORT, solo col flag. Richieste: setBreakpoints, continue, next, stepIn, finish, stackTrace, scopes, variables. Risposte: stopped, stack, locals. Sottoinsieme di DAP, non DAP completo. Niente evaluate: un'espressione valutata eseguirebbe l'albero e sporca lo shadow. Un frame è {"id":1,"name":"f","file":"lin19.c","line":1,"depth":2,"pc":-1}. pc=-1 se lo stop non viene dal bytecode.
+D5. Estensione VS Code che lancia babyc con BABYC_DEBUG=1 e BABYC_DEBUG_PORT. Adapter TypeScript, socket. Breakpoint su file:line. Stack dal protocollo. Locali in sola lettura. Se il path è rifiutato, la UI marca ir invece di bytecode. Il plugin non entra nel tronco C. D5 non parte prima di D4.
+Non si fonde il bytecode sull'albero per avere il debugger. Non si toglie FastCond solo per avere più LINE. Non si legge stdin nella suite. Non si valuta un'espressione arbitraria prima che lo shadow sia l'esecutore.
+Piano: layer di interscambio WASM
+Data: 2026-10-04. Non è il passo successivo. Il bytecode BabyC è uno shadow, non l'esecutore. Questo piano parte dopo che il VM esegue i cicli caldi al posto dell'albero.
+VmWord è un opcode nostro, 8 byte, non un formato standard. Le chiamate host sono no-op. FastCond e FastInc sono rifiutati. IrVmCommit confronta e non scrive il frame. Finché questo è vero, un export WASM sarebbe un dump parziale, non un programma eseguibile.
+Due direzioni, un solo modello di memoria. Export: VmWord validato diventa un modulo WASM, solo gli statement con runs>0 e mismatch=0. Import: un modulo entra in un loader nostro e viene eseguito dall'executor nostro, non da un runtime WASM esterno. Il default C non cambia. WASM è il formato di scambio, non il formato interno.
+WASM ha un binary stabile, una memoria lineare e un testo .wat. JVM e CIL portano un object model che BabyC non ha. Il costo è il controllo strutturato: il nostro Jmp/BrZ e il goto non sono WASM. Vanno ricostruiti in blocchi, oppure l'export rifiuta il goto.
+W0. Non si scrive un byte WASM prima che il VM esegua un loop senza FastCond e il risultato coincida con l'albero. Una chiamata host ha un nome: printf oggi è no-op e in WASM diventa un import, non una stampa finta. Un modulo parziale si marca incomplete.
+W1. Writer da VmWord a WASM binary, più il .wat. Locale intero a i64, immediato a i64.const, binario intero a add/sub/mul/div_s/rem_s/and/or/xor/shl/shr_s, BrZ a br_if, memoria lineare per gli array già abbassati. LINE non entra nel modulo. Rifiuti espliciti: goto non strutturato, puntatore non scalare, host call senza firma, statement con runs=0.
+W2. Loader da WASM a VmWord, poi l'executor nostro. Accettato: i32/i64, const, binari interi, confronti, br/br_if/return, memoria lineare, import di funzione con nome. Rifiutato, senza esecuzione parziale: f32/f64, call_indirect, tabelle, eccezioni, SIMD, GC, threads, memoria condivisa. Se l'opcode non ha un VmWord, il modulo è rifiutato.
+W3. Export di un programma nostro, import dello stesso modulo, esecuzione nostra, confronto con l'albero. Un .wasm fuori sottoinsieme fallisce prima di eseguire.
+W4. Solo a giro chiuso ha senso un tool esterno. Il debugger non legge WASM: legge LINE e pc. L'export può allegare una source map pc -> file:line, separata dal modulo.
+Non si sostituisce VmWord con WASM. Non si esporta isort. Non si esegue un modulo arbitrario. Non si aggiunge un runtime WASM nel tronco.
+Ordine: W0 VM esecutore sui cicli non rifiutati, W1 export, W2 import, W3 giro chiuso, W4 dopo.

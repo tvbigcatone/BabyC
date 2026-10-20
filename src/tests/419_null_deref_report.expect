@@ -1,0 +1,3 @@
+    printf("%d\n", *p);
+                     ^
+419_null_deref_report.c:5:21 NULL pointer dereference

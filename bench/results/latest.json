@@ -1,0 +1,42 @@
+{
+  "columns": [
+    "ats_no_accel",
+    "ats_accel",
+    "vm_no_accel",
+    "vm_accel",
+    "python",
+    "gcc"
+  ],
+  "cases": [
+    {
+      "id": "classic.structs",
+      "path": "cases/classic/structs.c",
+      "times": {
+        "gcc": null,
+        "python": null,
+        "ats_no_accel": 0.09421015399993848,
+        "ats_accel": 0.08702193299995997,
+        "vm_no_accel": 0.055601748999833944,
+        "vm_accel": 0.055407917000138696
+      },
+      "status": "OK",
+      "output": "894781",
+      "error": ""
+    },
+    {
+      "id": "variant.structs",
+      "path": "cases/variant/structs.c",
+      "times": {
+        "gcc": null,
+        "python": null,
+        "ats_no_accel": 0.03569210600016959,
+        "ats_accel": 0.038070279999828927,
+        "vm_no_accel": 0.03780695400018885,
+        "vm_accel": 0.03696224999976039
+      },
+      "status": "OK",
+      "output": "826980",
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+old_number,new_number,old_test,new_test,status_2026_10_19
+46,47,046_grep,047_grep,RESIDUAL
+57,58,057_macro_bug,058_macro_bug,RESIDUAL
+61,62,061_initializers,062_initializers,RESIDUAL
+121,126,121_csmith_modulo_zero,126_csmith_modulo_zero,RESIDUAL
+441,454,441_complex_dispatch,454_complex_dispatch,FIXED
+610,606,610_storm_inc_dec_member_call,606_storm_inc_dec_member_call,FIXED
+613,609,613_storm_enum_union_fptr,609_storm_enum_union_fptr,FIXED
+622,618,622_inc_member_call_arg,618_inc_member_call_arg,FIXED
+661,651,661_sqlite_exec_null_varargs,651_sqlite_exec_null_varargs,RESIDUAL
+942,873,942_alignment_extended,873_alignment_extended,FIXED_2026-10-19
+959,893,959_vm_struct_return_effect_fallback,893_vm_struct_return_effect_fallback,FIXED_2026-10-19
+1033,947,1033_qsort_bsearch,947_qsort_bsearch,FIXED
+1034,948,1034_qsort_stable,948_qsort_stable,FIXED

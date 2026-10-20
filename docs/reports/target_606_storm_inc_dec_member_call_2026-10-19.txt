@@ -1,0 +1,19 @@
+=== 606_storm_inc_dec_member_call ===
+--- MODE=tree ---
+RC=0
+STDOUT=a -4|b 4|c 42|d 21|e 24|f -24|
+STDERR=
+FALLBACK_FOUND=0
+UNINIT_FOUND=0
+--- MODE=linear0 ---
+RC=0
+STDOUT=a -4|b 4|c 42|d 21|e 24|f -24|
+STDERR=[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)|
+FALLBACK_FOUND=0
+UNINIT_FOUND=0
+--- MODE=linear1 ---
+RC=0
+STDOUT=a -4|b 4|c 42|d 21|e 24|f -24|
+STDERR=[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)|
+FALLBACK_FOUND=0
+UNINIT_FOUND=0

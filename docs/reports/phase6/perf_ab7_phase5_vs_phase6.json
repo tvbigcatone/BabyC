@@ -1,0 +1,229 @@
+{
+  "method": "7 alternating paired runs; Linear STRICT; same host; child user+system CPU time; exact stdout equality required",
+  "results": [
+    {
+      "benchmark": "string_scan",
+      "accel": 0,
+      "pairs": 7,
+      "metric": "child user+system CPU milliseconds (RUSAGE_CHILDREN delta)",
+      "phase5_ms": [
+        371.781,
+        395.452,
+        377.163,
+        404.245,
+        426.282,
+        336.622,
+        376.632
+      ],
+      "phase6_ms": [
+        463.55,
+        442.426,
+        406.88,
+        388.786,
+        391.054,
+        383.646,
+        405.139
+      ],
+      "phase5_median_ms": 377.163,
+      "phase6_median_ms": 405.139,
+      "change_pct": 7.42,
+      "output": "380000"
+    },
+    {
+      "benchmark": "string_scan_bounded",
+      "accel": 0,
+      "pairs": 7,
+      "metric": "child user+system CPU milliseconds (RUSAGE_CHILDREN delta)",
+      "phase5_ms": [
+        440.532,
+        459.283,
+        423.22,
+        377.141,
+        563.381,
+        514.263,
+        494.173
+      ],
+      "phase6_ms": [
+        474.06,
+        456.764,
+        468.507,
+        515.532,
+        586.501,
+        539.268,
+        519.338
+      ],
+      "phase5_median_ms": 459.283,
+      "phase6_median_ms": 515.532,
+      "change_pct": 12.25,
+      "output": "380000"
+    },
+    {
+      "benchmark": "struct_score",
+      "accel": 0,
+      "pairs": 7,
+      "metric": "child user+system CPU milliseconds (RUSAGE_CHILDREN delta)",
+      "phase5_ms": [
+        84.883,
+        80.801,
+        90.966,
+        81.163,
+        85.974,
+        76.96,
+        71.988
+      ],
+      "phase6_ms": [
+        80.993,
+        87.263,
+        93.564,
+        84.29,
+        84.28,
+        91.838,
+        78.608
+      ],
+      "phase5_median_ms": 81.163,
+      "phase6_median_ms": 84.29,
+      "change_pct": 3.85,
+      "output": "7500000"
+    },
+    {
+      "benchmark": "dfs_rec",
+      "accel": 0,
+      "pairs": 7,
+      "metric": "child user+system CPU milliseconds (RUSAGE_CHILDREN delta)",
+      "phase5_ms": [
+        33.731,
+        36.42,
+        32.537,
+        37.375,
+        33.829,
+        31.393,
+        38.84
+      ],
+      "phase6_ms": [
+        40.074,
+        39.981,
+        46.655,
+        31.702,
+        32.177,
+        28.286,
+        31.03
+      ],
+      "phase5_median_ms": 33.829,
+      "phase6_median_ms": 32.177,
+      "change_pct": -4.88,
+      "output": "15000"
+    },
+    {
+      "benchmark": "string_scan",
+      "accel": 1,
+      "pairs": 7,
+      "metric": "child user+system CPU milliseconds (RUSAGE_CHILDREN delta)",
+      "phase5_ms": [
+        6.971,
+        6.92,
+        6.55,
+        6.195,
+        8.65,
+        7.651,
+        6.871
+      ],
+      "phase6_ms": [
+        7.014,
+        7.531,
+        6.791,
+        6.217,
+        7.082,
+        7.206,
+        5.831
+      ],
+      "phase5_median_ms": 6.92,
+      "phase6_median_ms": 7.014,
+      "change_pct": 1.36,
+      "output": "380000"
+    },
+    {
+      "benchmark": "string_scan_bounded",
+      "accel": 1,
+      "pairs": 7,
+      "metric": "child user+system CPU milliseconds (RUSAGE_CHILDREN delta)",
+      "phase5_ms": [
+        8.473,
+        9.763,
+        6.718,
+        6.805,
+        7.523,
+        8.335,
+        8.545
+      ],
+      "phase6_ms": [
+        7.453,
+        8.05,
+        7.48,
+        6.116,
+        9.187,
+        6.235,
+        8.128
+      ],
+      "phase5_median_ms": 8.335,
+      "phase6_median_ms": 7.48,
+      "change_pct": -10.26,
+      "output": "380000"
+    },
+    {
+      "benchmark": "struct_score",
+      "accel": 1,
+      "pairs": 7,
+      "metric": "child user+system CPU milliseconds (RUSAGE_CHILDREN delta)",
+      "phase5_ms": [
+        2.816,
+        2.363,
+        1.972,
+        2.511,
+        1.472,
+        2.604,
+        3.592
+      ],
+      "phase6_ms": [
+        1.733,
+        1.765,
+        1.628,
+        1.427,
+        1.832,
+        2.088,
+        3.604
+      ],
+      "phase5_median_ms": 2.511,
+      "phase6_median_ms": 1.765,
+      "change_pct": -29.71,
+      "output": "7500000"
+    },
+    {
+      "benchmark": "dfs_rec",
+      "accel": 1,
+      "pairs": 7,
+      "metric": "child user+system CPU milliseconds (RUSAGE_CHILDREN delta)",
+      "phase5_ms": [
+        14.675,
+        13.642,
+        14.309,
+        22.836,
+        10.382,
+        15.459,
+        15.856
+      ],
+      "phase6_ms": [
+        13.298,
+        17.537,
+        30.771,
+        20.94,
+        11.474,
+        11.689,
+        15.767
+      ],
+      "phase5_median_ms": 14.675,
+      "phase6_median_ms": 15.767,
+      "change_pct": 7.44,
+      "output": "15000"
+    }
+  ]
+}

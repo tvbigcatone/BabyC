@@ -1,0 +1,4 @@
+before
+    return isalpha(-2);
+                     ^
+962_ctype_invalid_arg.c:7:21 isalpha: argument must be EOF or an unsigned-char value (0..UCHAR_MAX)

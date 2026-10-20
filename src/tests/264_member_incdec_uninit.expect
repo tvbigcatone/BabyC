@@ -1,0 +1,4 @@
+2
+    s.m++;
+       ^
+264_member_incdec_uninit.c:9:7 uninitialized variable

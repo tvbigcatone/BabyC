@@ -1,0 +1,54 @@
+COMMAND: BABYC_PATH=linear BABYC_STRICT=1 BABYC_ACCEL=0 python3 tools/run_numbered_matrix.py --path linear --accel 0 --strict
+CONFIG linear_accel0_STRICT TOTAL=1001
+FAIL 47/1001 047_grep rc=1 elapsed=0.003s
+  EXPECT: '?GREP-E-No arguments\nUsage: grep [-cfnv] pattern [file ...].  grep ? for help'
+  ACTUAL: '/*\n  ^\n047_grep.c:1:2 strict: tree fallback (body)'
+FAIL 58/1001 058_macro_bug rc=1 elapsed=0.002s
+  EXPECT: 'Macro test: 1 13 13.500000 3'
+  ACTUAL: '#include "stdio.h"\n      ^\n058_macro_bug.c:1:6 strict: tree fallback (body)'
+FAIL 62/1001 062_initializers rc=1 elapsed=0.003s
+  EXPECT: "Hello, World!\na='abcd' (10)\nb='efg' (4)\nx=[0 1 2 0 0 0 0 0 0 0 ]\ny=[3 4 5 6 ]\np=[\n    1 2 3 0 \n    4 5 0 0 \n    6 7 0 0 \n  ]\nq=[\n    1 2 3 9 \n    8 7 6 5 \n    4 0 0 0 \n  ]\nr=[\n    1 2 3 0 0     4 5 0 0 0     6 7 0 0 0     0 0 0 0 0     \n    2 4 0 0 0     6 8 0 0 0     0 0 0 0 0     0 0 0 0 0     \n    0 0 0 0 0     0 0 0 0 0     0 0 0 0 0     0 0 0 0 0     \n  ]\ns=[\n    1 2 3 0 0     0 0 0 0 0     0 0 0 0 0     0 0 0 0 0     \n    4 5 0 0 0     0 0 0 0 0     0 0 0 0 0     0 0 0 0 0     \n    6 7 0 0 0     0 0 0 0 0     0 0 0 0 0     0 0 0 0 0     \n  ]\nt=[\n    1 2 3 9 8     7 6 5 1 2     3 9 8 7 6     5 1 2 3 9     \n    8 7 6 5 1     2 3 9 8 7     6 5 0 0 0     0 0 0 0 0     \n    0 0 0 0 0     0 0 0 0 0     0 0 0 0 0     0 0 0 0 0     \n  ]\nsoko1=\n  #####     #\n###   #      \n#.@$  #     $\n### $.#      \n#.##$ #     #\n# # . ##     \n#$ *$$.#    *\n#   .  #     \n########    #\nsoko2=\n  #####     #\n###   #      \n#.@$  #     $\n### $.#      \n#.##$ #     #\n# # . ##     \n#$ *$$.#    *\n#   .  #     \n########    #\n1 2 3 0 \n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n292508558 1 -1915013732 -1 \n292508558 1 -1915013732 -1 \n292508558 1 -1915013732 -1 \n292508558 1 -1915013732 -1 \n292508558 1 -1"
+  ACTUAL: '#include <stdio.h>\n                  ^\n062_initializers.c:1:18 strict: tree fallback (body)'
+CUMULATIVE 100/1001: PASSED=97 FAILED=3 TIMEOUT=0 SKIPPED=0
+FAIL 126/1001 126_csmith_modulo_zero rc=1 elapsed=0.002s
+  EXPECT: 'if (((uint64_t)(((((uint16_t)g_102 * (uint16_t)(g_32 = (((((l_532 = (((uint16_t)((((uint16_t)(--p_3) << (uint16_t)g_48.f6) >= g_32) <= ((int32_t)((((uint16_t)((g_200 = (((g_48.f1 ^= ((1L ^ (((l_528 = (l_527 = ((int16_t)((((((int16_t)p_5 * (int16_t)((uint32_t)((int32_t)(l_521[3][2] != (l_522[4] = l_521[3][2])) % (int32_t)((uint16_t)(-(uint16_t)l_526) % (uint16_t)p_6)) - (uint32_t)p_4)) != p_6) <= 0x15E5) , &g_144) != &g_144) / (int16_t)g_52))) & 8UL) == 9L)) & 0x31F7)) > 0L) , g_48.f8)) <= 0xE38AB67088FAEE93LL) << (uint16_t)p_6) || 4294967292UL) , 0xF6C187DE) + (int32_t)p_4)) << (uint16_t)g_48.f6) , 0xDB8C250E7B4AEB2BLL)) | 0xCA817D1E21DFAE80LL) >= g_48.f0) || g_374) != g_48.f5))) ^ g_293) , 0x48E2) <= 0x4D04) + (uint64_t)p_5))\n                                                                                                                                                                                                                                                                                                                                                                      ^\n126_csmith_modulo_zero.c:93:357 modulo by zero'
+  ACTUAL: '/* Regression from csmith-like code: expression evaluates to modulo by zero.\n                     ^\n126_csmith_modulo_zero.c:1:21 strict: tree fallback (body)'
+CUMULATIVE 200/1001: PASSED=196 FAILED=4 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 300/1001: PASSED=296 FAILED=4 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 400/1001: PASSED=396 FAILED=4 TIMEOUT=0 SKIPPED=0
+FAIL 450/1001 454_complex_dispatch rc=1 elapsed=0.001s
+  EXPECT: '14\n60\n5\n22'
+  ACTUAL: '#include <stdio.h>\n                  ^\n454_complex_dispatch.c:1:18 strict: tree fallback (body)'
+CUMULATIVE 500/1001: PASSED=495 FAILED=5 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 600/1001: PASSED=595 FAILED=5 TIMEOUT=0 SKIPPED=0
+FAIL 602/1001 606_storm_inc_dec_member_call rc=1 elapsed=0.001s
+  EXPECT: 'a -4\nb 4\nc 42\nd 21\ne 24\nf -24'
+  ACTUAL: '#include <stdio.h>\n                  ^\n606_storm_inc_dec_member_call.c:1:18 strict: tree fallback (body)'
+FAIL 605/1001 609_storm_enum_union_fptr rc=1 elapsed=0.001s
+  EXPECT: '11\n10'
+  ACTUAL: 'op=INC; u.fp=(op==INC)?&inc:&dec; v=10; v=(*u.fp)(v); printf("%d\\n",v);\n                     ^\n609_storm_enum_union_fptr.c:8:21 strict: tree fallback (body)'
+FAIL 614/1001 618_inc_member_call_arg rc=1 elapsed=0.001s
+  EXPECT: '-4\n4\n22\n11\n10\n5'
+  ACTUAL: '#include <stdio.h>\n                  ^\n618_inc_member_call_arg.c:1:18 strict: tree fallback (body)'
+FAIL 647/1001 651_sqlite_exec_null_varargs rc=1 elapsed=0.003s
+  EXPECT: 'rc=0'
+  ACTUAL: '/* Intrinsic varargs: sqlite3_exec(..., NULL,NULL,NULL) on 64-bit must not SEGV. */\n                      ^\n651_sqlite_exec_null_varargs.c:1:21 strict: tree fallback (body)'
+CUMULATIVE 700/1001: PASSED=691 FAILED=9 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 800/1001: PASSED=791 FAILED=9 TIMEOUT=0 SKIPPED=0
+FAIL 867/1001 873_alignment_extended rc=1 elapsed=0.001s
+  EXPECT: '1 9 4.75 5 5 17 25\n42 43'
+  ACTUAL: '#include <stdio.h>\n      ^\n873_alignment_extended.c:1:6 strict: tree fallback (body)'
+FAIL 887/1001 893_vm_struct_return_effect_fallback rc=1 elapsed=0.002s
+  EXPECT: '7 1 1'
+  ACTUAL: '#include <stdio.h>\n                  ^\n893_vm_struct_return_effect_fallback.c:1:18 strict: tree fallback (body)'
+CUMULATIVE 900/1001: PASSED=889 FAILED=11 TIMEOUT=0 SKIPPED=0
+FAIL 939/1001 947_qsort_bsearch rc=1 elapsed=0.002s
+  EXPECT: '0 1 2 3 5 7 8 9 \n5\n-1\n0:0 1:5 2:4 3:3 4:2 5:1'
+  ACTUAL: "#include <stdio.h>\n^\n947_qsort_bsearch.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n947_qsort_bsearch.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n947_qsort_bsearch.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n947_qsort_bsearch.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n947_qsort_bsearch.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n947_qsort_bsearch.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n947_qsort_bsearch.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n947_qsort_bsearch.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n947_qsort_bsearch.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n947_qsort_bsearch.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n947_qsort_bsearch.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n947_qsort_bsearch.c:1:0 strict: tree fallback (body)\n0 0 0 0 0 0 0 0 \n    p = bsearch(&key, v, 8, sizeof(int), cmp_int);\n               ^\n947_qsort_bsearch.c:23:15 uninitialized variable '?'"
+FAIL 940/1001 948_qsort_stable rc=1 elapsed=0.002s
+  EXPECT: '0:0 0:3 0:6 0:9 1:1 1:4 1:7 1:10 2:2 2:5 2:8 2:11'
+  ACTUAL: '#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n#include <stdio.h>\n^\n948_qsort_stable.c:1:0 strict: tree fallback (body)\n    for (i = 0; i < 12; i++) printf("%d:%d ", r['
+CUMULATIVE 1000/1001: PASSED=987 FAILED=13 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 1001/1001: PASSED=988 FAILED=13 TIMEOUT=0 SKIPPED=0
+SUMMARY linear_accel0_STRICT: PASSED=988 FAILED=13 TIMEOUT=0 SKIPPED=0 TOTAL=1001 SECONDS=4.24
+FAILURES: 047_grep.c 058_macro_bug.c 062_initializers.c 126_csmith_modulo_zero.c 454_complex_dispatch.c 606_storm_inc_dec_member_call.c 609_storm_enum_union_fptr.c 618_inc_member_call_arg.c 651_sqlite_exec_null_varargs.c 873_alignment_extended.c 893_vm_struct_return_effect_fallback.c 947_qsort_bsearch.c 948_qsort_stable.c

@@ -1,0 +1,12 @@
+Linear dump structural comparison: incoming 651 vs candidate 047 fix
+Command for each binary: BABYC_PATH=linear BABYC_ACCEL={0,1} BABYC_STRICT=0 BABYC_DUMP_LIN=1 babyc bench/cases/micro/<benchmark>.c
+The comparison retains all [lin-ir] lines and removes only function_ptr=0x... addresses.
+A/B stdout hashes match in all eight combinations.
+string_scan ACCEL=0: structural instruction dump identical after address normalization; emitted function instructions total=69.
+string_scan ACCEL=1: structural instruction dump identical after address normalization; emitted function instructions total=79.
+string_scan_bounded ACCEL=0: structural instruction dump identical after address normalization; emitted function instructions total=79.
+string_scan_bounded ACCEL=1: structural instruction dump identical after address normalization; emitted function instructions total=89.
+struct_score ACCEL=0: structural instruction dump identical after address normalization; emitted function instructions total=47.
+struct_score ACCEL=1: structural instruction dump identical after address normalization; emitted function instructions total=51.
+dfs_rec ACCEL=0: structural instruction dump identical after address normalization; emitted function instructions total=141.
+dfs_rec ACCEL=1: structural instruction dump identical after address normalization; emitted function instructions total=141.

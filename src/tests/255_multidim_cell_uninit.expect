@@ -1,0 +1,3 @@
+    printf("%d\n", m[0][2]);
+                          ^
+255_multidim_cell_uninit.c:6:26 uninitialized variable

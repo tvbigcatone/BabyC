@@ -1,0 +1,103 @@
+{
+  "method": "Seven alternating AB/BA pairs per benchmark and ACCEL setting; one warm-up per binary/config; runs pinned to one available CPU; each output and exit code validated. Default Tree engine, BABYC_PATH=tree.",
+  "baseline": "/mnt/data/babyc_work/prior_candidate/babyc/src/babyc",
+  "candidate": "/mnt/data/babyc_work/tree/babyc/src/babyc",
+  "results": [
+    {
+      "benchmark": "string_scan",
+      "accel": 0,
+      "pairs": 7,
+      "baseline_median_ms": 420.293,
+      "candidate_median_ms": 424.756,
+      "median_delta_pct": 1.06,
+      "paired_median_delta_pct": -0.72,
+      "paired_delta_q1_pct": -2.78,
+      "paired_delta_q3_pct": 2.01,
+      "output": "380000"
+    },
+    {
+      "benchmark": "string_scan",
+      "accel": 1,
+      "pairs": 7,
+      "baseline_median_ms": 9.644,
+      "candidate_median_ms": 9.714,
+      "median_delta_pct": 0.73,
+      "paired_median_delta_pct": -1.28,
+      "paired_delta_q1_pct": -2.96,
+      "paired_delta_q3_pct": 1.55,
+      "output": "380000"
+    },
+    {
+      "benchmark": "string_scan_bounded",
+      "accel": 0,
+      "pairs": 7,
+      "baseline_median_ms": 407.537,
+      "candidate_median_ms": 413.019,
+      "median_delta_pct": 1.35,
+      "paired_median_delta_pct": 0.32,
+      "paired_delta_q1_pct": -1.12,
+      "paired_delta_q3_pct": 1.69,
+      "output": "380000"
+    },
+    {
+      "benchmark": "string_scan_bounded",
+      "accel": 1,
+      "pairs": 7,
+      "baseline_median_ms": 10.436,
+      "candidate_median_ms": 10.454,
+      "median_delta_pct": 0.17,
+      "paired_median_delta_pct": 0.35,
+      "paired_delta_q1_pct": -5.32,
+      "paired_delta_q3_pct": 1.89,
+      "output": "380000"
+    },
+    {
+      "benchmark": "struct_score",
+      "accel": 0,
+      "pairs": 7,
+      "baseline_median_ms": 145.106,
+      "candidate_median_ms": 144.797,
+      "median_delta_pct": -0.21,
+      "paired_median_delta_pct": 0.23,
+      "paired_delta_q1_pct": -1.44,
+      "paired_delta_q3_pct": 0.93,
+      "output": "7500000"
+    },
+    {
+      "benchmark": "struct_score",
+      "accel": 1,
+      "pairs": 7,
+      "baseline_median_ms": 2.469,
+      "candidate_median_ms": 2.494,
+      "median_delta_pct": 1.01,
+      "paired_median_delta_pct": 1.71,
+      "paired_delta_q1_pct": -1.64,
+      "paired_delta_q3_pct": 2.48,
+      "output": "7500000"
+    },
+    {
+      "benchmark": "dfs_rec",
+      "accel": 0,
+      "pairs": 7,
+      "baseline_median_ms": 24.878,
+      "candidate_median_ms": 25.369,
+      "median_delta_pct": 1.97,
+      "paired_median_delta_pct": 0.45,
+      "paired_delta_q1_pct": -3.06,
+      "paired_delta_q3_pct": 3.33,
+      "output": "15000"
+    },
+    {
+      "benchmark": "dfs_rec",
+      "accel": 1,
+      "pairs": 7,
+      "baseline_median_ms": 7.993,
+      "candidate_median_ms": 8.178,
+      "median_delta_pct": 2.31,
+      "paired_median_delta_pct": -0.28,
+      "paired_delta_q1_pct": -8.86,
+      "paired_delta_q3_pct": 2.4,
+      "output": "15000"
+    }
+  ]
+}

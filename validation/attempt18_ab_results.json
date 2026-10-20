@@ -1,0 +1,226 @@
+[
+  {
+    "benchmark": "string_scan",
+    "accel": 0,
+    "pairs": 7,
+    "attempt15_median_ms": 437.383,
+    "attempt18_median_ms": 410.261,
+    "ratio": 0.938,
+    "outputs_equal": true,
+    "samples_attempt15": [
+      416.225,
+      484.414,
+      460.647,
+      437.383,
+      432.917,
+      515.166,
+      432.844
+    ],
+    "samples_attempt18": [
+      428.385,
+      396.102,
+      410.261,
+      608.879,
+      487.809,
+      406.218,
+      382.648
+    ],
+    "failures": []
+  },
+  {
+    "benchmark": "string_scan_bounded",
+    "accel": 0,
+    "pairs": 7,
+    "attempt15_median_ms": 395.465,
+    "attempt18_median_ms": 389.427,
+    "ratio": 0.9847,
+    "outputs_equal": true,
+    "samples_attempt15": [
+      385.728,
+      375.487,
+      384.653,
+      395.465,
+      399.735,
+      400.885,
+      414.96
+    ],
+    "samples_attempt18": [
+      373.103,
+      351.814,
+      359.067,
+      410.889,
+      389.427,
+      550.978,
+      390.427
+    ],
+    "failures": []
+  },
+  {
+    "benchmark": "struct_score",
+    "accel": 0,
+    "pairs": 7,
+    "attempt15_median_ms": 161.192,
+    "attempt18_median_ms": 164.856,
+    "ratio": 1.0227,
+    "outputs_equal": true,
+    "samples_attempt15": [
+      166.077,
+      152.44,
+      151.975,
+      160.711,
+      161.192,
+      164.607,
+      168.322
+    ],
+    "samples_attempt18": [
+      156.974,
+      174.225,
+      166.432,
+      159.079,
+      164.856,
+      145.691,
+      166.707
+    ],
+    "failures": []
+  },
+  {
+    "benchmark": "dfs_rec",
+    "accel": 0,
+    "pairs": 7,
+    "attempt15_median_ms": 24.782,
+    "attempt18_median_ms": 25.617,
+    "ratio": 1.0337,
+    "outputs_equal": true,
+    "samples_attempt15": [
+      25.672,
+      25.243,
+      24.776,
+      24.782,
+      24.664,
+      24.324,
+      27.819
+    ],
+    "samples_attempt18": [
+      27.085,
+      37.152,
+      25.578,
+      25.862,
+      24.9,
+      25.617,
+      25.324
+    ],
+    "failures": []
+  },
+  {
+    "benchmark": "string_scan",
+    "accel": 1,
+    "pairs": 7,
+    "attempt15_median_ms": 9.12,
+    "attempt18_median_ms": 9.38,
+    "ratio": 1.0285,
+    "outputs_equal": true,
+    "samples_attempt15": [
+      8.92,
+      10.454,
+      9.12,
+      9.2,
+      8.726,
+      8.383,
+      9.146
+    ],
+    "samples_attempt18": [
+      12.659,
+      9.064,
+      10.498,
+      9.38,
+      9.11,
+      8.944,
+      9.551
+    ],
+    "failures": []
+  },
+  {
+    "benchmark": "string_scan_bounded",
+    "accel": 1,
+    "pairs": 7,
+    "attempt15_median_ms": 10.168,
+    "attempt18_median_ms": 11.164,
+    "ratio": 1.098,
+    "outputs_equal": true,
+    "samples_attempt15": [
+      9.856,
+      10.168,
+      10.272,
+      11.016,
+      9.922,
+      11.317,
+      9.463
+    ],
+    "samples_attempt18": [
+      10.142,
+      10.128,
+      11.193,
+      12.089,
+      11.783,
+      10.24,
+      11.164
+    ],
+    "failures": []
+  },
+  {
+    "benchmark": "struct_score",
+    "accel": 1,
+    "pairs": 7,
+    "attempt15_median_ms": 1.286,
+    "attempt18_median_ms": 1.361,
+    "ratio": 1.0587,
+    "outputs_equal": true,
+    "samples_attempt15": [
+      1.432,
+      1.285,
+      1.464,
+      1.249,
+      1.286,
+      1.279,
+      1.312
+    ],
+    "samples_attempt18": [
+      1.327,
+      1.361,
+      1.675,
+      1.516,
+      1.427,
+      1.346,
+      1.263
+    ],
+    "failures": []
+  },
+  {
+    "benchmark": "dfs_rec",
+    "accel": 1,
+    "pairs": 7,
+    "attempt15_median_ms": 7.091,
+    "attempt18_median_ms": 8.022,
+    "ratio": 1.1312,
+    "outputs_equal": true,
+    "samples_attempt15": [
+      6.72,
+      7.362,
+      6.909,
+      8.146,
+      7.091,
+      8.223,
+      7.02
+    ],
+    "samples_attempt18": [
+      8.852,
+      7.29,
+      8.022,
+      7.297,
+      8.352,
+      7.438,
+      8.385
+    ],
+    "failures": []
+  }
+]

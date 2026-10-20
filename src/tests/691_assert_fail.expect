@@ -1,0 +1,3 @@
+    assert(x == 7);
+                 ^
+691_assert_fail.c:5:17 assertion failed

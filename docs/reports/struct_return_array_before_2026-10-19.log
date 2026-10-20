@@ -1,0 +1,22 @@
+[vm-try] body=0x55a63841a860 depth=1 kind=2
+[call] make_effect enabled=1
+[call] direct check FV=0x55a638417c90
+[call] type check FV->Typ=0x7ffc2e4ab0b0
+[call] BodyIr check
+[call] ident=make_effect left=-1
+[call] args=1
+[call] success
+[call] printf enabled=1
+[call] direct check FV=0x55a638416420
+[call] type check FV->Typ=0x7ffc2e4ab0b0
+[call] BodyIr check
+[call] ident=printf left=-1
+[call] host arg check
+[call] args=4
+[call] success
+[babyc-exec-profile] compile_reject=lower body_kind=2 n=19 ok=1 skipped_call=1 calls=2
+[vm-rej] compile-null
+#include <stdio.h>
+                  ^
+893_vm_struct_return_effect_fallback.c:1:18 strict: tree fallback (body)
+[babyc-bytecode-vm-prod] attempts=0 runs=0

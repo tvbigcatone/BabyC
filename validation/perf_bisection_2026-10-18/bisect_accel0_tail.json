@@ -1,0 +1,82 @@
+{
+  "F1P0S0": {
+    "struct_score": {
+      "ms": [
+        69.958,
+        75.798
+      ],
+      "median": 72.878,
+      "rc": 0,
+      "out": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+    },
+    "dfs_rec": {
+      "ms": [
+        25.4,
+        26.988
+      ],
+      "median": 26.194,
+      "rc": 0,
+      "out": "erimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n15000"
+    }
+  },
+  "F1P0S1": {
+    "struct_score": {
+      "ms": [
+        68.917,
+        74.603
+      ],
+      "median": 71.75999999999999,
+      "rc": 0,
+      "out": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+    },
+    "dfs_rec": {
+      "ms": [
+        24.936,
+        26.905
+      ],
+      "median": 25.9205,
+      "rc": 0,
+      "out": "erimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n15000"
+    }
+  },
+  "F1P1S0": {
+    "struct_score": {
+      "ms": [
+        71.661,
+        73.799
+      ],
+      "median": 72.73,
+      "rc": 0,
+      "out": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+    },
+    "dfs_rec": {
+      "ms": [
+        25.634,
+        28.065
+      ],
+      "median": 26.8495,
+      "rc": 0,
+      "out": "erimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n15000"
+    }
+  },
+  "F1P1S1": {
+    "struct_score": {
+      "ms": [
+        70.37,
+        74.358
+      ],
+      "median": 72.364,
+      "rc": 0,
+      "out": "imental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000"
+    },
+    "dfs_rec": {
+      "ms": [
+        25.894,
+        27.523
+      ],
+      "median": 26.7085,
+      "rc": 0,
+      "out": "erimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n15000"
+    }
+  }
+}

@@ -1,0 +1,3 @@
+int get_first(int *p) { return p[0]; }
+                                     ^
+952_tree_pointer_param_read_uninit.c:1:36 uninitialized variable

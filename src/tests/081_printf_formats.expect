@@ -1,0 +1,8 @@
+int    : 42  (hex: 0x0000002A)
+float  : 3.14  (sci: 3.14e+00)
+string : hello
+char   : h  (code: 104)
+  row 0 :      0
+  row 1 :      1
+  row 2 :      4
+  row 3 :      9

@@ -1,0 +1,14 @@
+
+ns ha dimensione 4 e quindi contiene 4 elementi:
+ 'A' con codice ASCII 65
+ 'B' con codice ASCII 66
+ 'C' con codice ASCII 67
+ 'D' con codice ASCII 68
+
+s ha dimensione 5 e quindi contiene 5 elementi:
+ 'A' con codice ASCII 65
+ 'B' con codice ASCII 66
+ 'C' con codice ASCII 67
+ 'D' con codice ASCII 68
+ '' con codice ASCII 0
+

@@ -1,0 +1,3 @@
+    char pad[16384];
+                   ^
+131_stack_overflow_msg.c:10:19 stack overflow (local variables / call frames exceed stack size)

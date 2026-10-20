@@ -1,0 +1,3 @@
+    int big[600000];
+                   ^
+379_stack_overflow_huge_local.c:5:19 stack overflow (local variables / call frames exceed stack size)

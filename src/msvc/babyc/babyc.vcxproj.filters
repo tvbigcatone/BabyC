@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{D10C4B2E-7B2D-4E30-9D0A-5B6A6D1A4101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\POSIX">
+      <UniqueIdentifier>{D10C4B2E-7B2D-4E30-9D0A-5B6A6D1A4102}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cstdlib">
+      <UniqueIdentifier>{9cc822ce-c7ed-4deb-93d2-ab0077cfe681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cstdlib_ext">
+      <UniqueIdentifier>{e51f9368-2e7c-41df-af42-5754697fa230}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tihrd_party">
+      <UniqueIdentifier>{6d487bda-f9a5-49fb-a468-5b2eaaf9b1f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tihrd_party\ezxml">
+      <UniqueIdentifier>{e112b332-c9ff-4059-9391-31271effad44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tihrd_party\getopt">
+      <UniqueIdentifier>{acac4f55-fc24-4d82-a703-692a39de92b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tihrd_party\inih">
+      <UniqueIdentifier>{90ca90d9-021c-419e-b5bd-22421f9b79c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tihrd_party\sqlite">
+      <UniqueIdentifier>{ed06200a-2291-421a-9831-183ecaef06f7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\clibrary.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\debug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\expression.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\heap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\parse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\platform.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\table.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\type.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\variable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib\ctype.c">
+      <Filter>Source Files\cstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib\errno.c">
+      <Filter>Source Files\cstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib\math.c">
+      <Filter>Source Files\cstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib\stdbool.c">
+      <Filter>Source Files\cstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib\stdio.c">
+      <Filter>Source Files\cstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib\stdlib.c">
+      <Filter>Source Files\cstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib\string.c">
+      <Filter>Source Files\cstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib\time.c">
+      <Filter>Source Files\cstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\posix\posix_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\posix\posix_unistd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\posix\posix_fd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\posix\posix_dirent.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\posix\posix_stat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\posix\posix_misc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\posix\posix_more.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\posix\posix_cover.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\platform\library_msvc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\platform\platform_msvc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib\stdint.c">
+      <Filter>Source Files\cstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib_ext\tools.c">
+      <Filter>Source Files\cstdlib_ext</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib_ext\win.c">
+      <Filter>Source Files\cstdlib_ext</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\picoc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib\printf_format.c">
+      <Filter>Source Files\cstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ir_exec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\ezxml\babyc_ezxml.c">
+      <Filter>Source Files\tihrd_party\ezxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\ezxml\ezxml.c">
+      <Filter>Source Files\tihrd_party\ezxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\getopt\getopt.c">
+      <Filter>Source Files\tihrd_party\getopt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\inih\babyc_ini.c">
+      <Filter>Source Files\tihrd_party\inih</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\inih\ini.c">
+      <Filter>Source Files\tihrd_party\inih</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\sqlite\sqlite.c">
+      <Filter>Source Files\tihrd_party\sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\sqlite\sqlite3.c">
+      <Filter>Source Files\tihrd_party\sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\getopt\babyc_getopt.c">
+      <Filter>Source Files\tihrd_party\getopt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ir_compile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib_ext\stdarg.c">
+      <Filter>Source Files\cstdlib_ext</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib_ext\ctype_ext.c">
+      <Filter>Source Files\cstdlib_ext</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib_ext\assert.c">
+      <Filter>Source Files\cstdlib_ext</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cstdlib_ext\limits.c">
+      <Filter>Source Files\cstdlib_ext</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ir_call.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ir_eval.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ir_fast.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ir_frame.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ir_mem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ir_ops.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ir_shadow.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ir_stmt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ir_token_loop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ir_fncode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ir_lin_light.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ir_lin_exec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ir_lin_ptr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ir_lin_compile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ir_lin_emit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ir_lower.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ir_verify.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ir_vm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\posix\posix_pthread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\platform\guest_thread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\diagnostic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ir_storage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\posix\posix_time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\posix\posix_unistd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\posix\posix_fd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\posix\posix_dirent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cstdlib_ext\winerror_defs.h">
+      <Filter>Source Files\cstdlib_ext</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\interpreter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\babyc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\ezxml\ezxml.h">
+      <Filter>Source Files\tihrd_party\ezxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\getopt\getopt.h">
+      <Filter>Source Files\tihrd_party\getopt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\inih\ini.h">
+      <Filter>Source Files\tihrd_party\inih</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\sqlite\sqlite3.h">
+      <Filter>Source Files\tihrd_party\sqlite</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\tests\posix\experimental\pthread_key_tls.c">
+      <Filter>Tests\POSIX</Filter>
+    </None>
+    <None Include="..\..\tests\posix\experimental\hash_if_full.c">
+      <Filter>Tests\POSIX</Filter>
+    </None>
+    <None Include="..\..\tests\posix\experimental\select_poll.c">
+      <Filter>Tests\POSIX</Filter>
+    </None>
+    <None Include="..\..\tests\posix\experimental\cover_headers.c">
+      <Filter>Tests\POSIX</Filter>
+    </None>
+    <None Include="..\..\tests\posix\experimental\ffs_32.c">
+      <Filter>Tests\POSIX</Filter>
+    </None>
+    <None Include="..\..\tests\posix\experimental\pthread_key_mutexattr.c">
+      <Filter>Tests\POSIX</Filter>
+    </None>
+  </ItemGroup>
+</Project>

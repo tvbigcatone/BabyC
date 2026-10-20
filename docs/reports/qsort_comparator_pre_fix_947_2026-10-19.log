@@ -1,0 +1,63 @@
+[vm-try] body=0x56182d632340 depth=1 kind=2
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+[vm-try] body=0x56182d6289b0 depth=2 kind=2
+#include <stdio.h>
+^
+947_qsort_bsearch.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x56182d6289b0 depth=3 kind=2
+#include <stdio.h>
+^
+947_qsort_bsearch.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x56182d6289b0 depth=4 kind=2
+#include <stdio.h>
+^
+947_qsort_bsearch.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x56182d6289b0 depth=5 kind=2
+#include <stdio.h>
+^
+947_qsort_bsearch.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x56182d6289b0 depth=6 kind=2
+#include <stdio.h>
+^
+947_qsort_bsearch.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x56182d6289b0 depth=7 kind=2
+#include <stdio.h>
+^
+947_qsort_bsearch.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x56182d6289b0 depth=8 kind=2
+#include <stdio.h>
+^
+947_qsort_bsearch.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x56182d6289b0 depth=9 kind=2
+#include <stdio.h>
+^
+947_qsort_bsearch.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x56182d6289b0 depth=10 kind=2
+#include <stdio.h>
+^
+947_qsort_bsearch.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x56182d6289b0 depth=11 kind=2
+#include <stdio.h>
+^
+947_qsort_bsearch.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x56182d6289b0 depth=12 kind=2
+#include <stdio.h>
+^
+947_qsort_bsearch.c:1:0 strict: tree fallback (body)
+[vm-try] body=0x56182d6289b0 depth=13 kind=2
+#include <stdio.h>
+^
+947_qsort_bsearch.c:1:0 strict: tree fallback (body)
+[host-ret] qsort result=0 typ=0
+[host-ret] printf result=2 typ=1
+0 [host-ret] printf result=2 typ=1
+0 [host-ret] printf result=2 typ=1
+0 [host-ret] printf result=2 typ=1
+0 [host-ret] printf result=2 typ=1
+0 [host-ret] printf result=2 typ=1
+0 [host-ret] printf result=2 typ=1
+0 [host-ret] printf result=2 typ=1
+0 
+    p = bsearch(&key, v, 8, sizeof(int), cmp_int);
+               ^
+947_qsort_bsearch.c:23:15 uninitialized variable '?'

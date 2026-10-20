@@ -1,0 +1,11 @@
+# Previously known fails — FIXED 2026-09-23 (IR pointer assign + IrExCall NULL Ident)
+#
+# 436_list_while_next     - while (p!=0) { s+=p->v; p=p->next; }  → PASS
+# 437_list_for_next       - for + p=p->next                          → PASS
+# 438_fptr_member_call    - a.fp(x) + p->fp(x)                       → PASS
+# 439_list_while_null_end - while(p) variant                         → PASS
+# 440_fptr_arrow_call     - p->fp(7)                                 → PASS
+#
+# Root causes fixed:
+# 1) IrExAssign used ExpressionAssignInt on TypePointer (no-op) in IR loop bodies
+# 2) IrExCall did VariableGet(E->Ident) when Ident==NULL for member callees (SEGV)

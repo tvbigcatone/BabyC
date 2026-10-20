@@ -1,0 +1,2308 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 21.13      0.15     0.15  1500001     0.00     0.00  IrExecLinLocalsRegs
+ 16.90      0.27     0.12 10500005     0.00     0.00  Step
+ 12.68      0.36     0.09  1000001     0.00     0.00  FnCodeRun
+  9.86      0.43     0.07   500001     0.00     0.00  FnCodeInstall
+  5.63      0.47     0.04  1500001     0.00     0.00  IrFramePop
+  5.63      0.51     0.04  1500001     0.00     0.00  IrTryThinIfCallFor
+  4.23      0.54     0.03  1000000     0.00     0.00  IrCallUserFuncCached
+  4.23      0.57     0.03   500000     0.00     0.00  IdxRunPush
+  2.82      0.59     0.02   500001     0.00     0.00  LinTabsRestore
+  1.41      0.60     0.01  5500000     0.00     0.00  LinTryParamIndexedAccess
+  1.41      0.61     0.01  3000362     0.00     0.00  IrUninitChecksOn
+  1.41      0.62     0.01  3000001     0.00     0.00  IrExprCachedGlobal
+  1.41      0.63     0.01  2000061     0.00     0.00  IrDispatchForFp
+  1.41      0.64     0.01  2000002     0.00     0.00  IrTryFastForAfterInit
+  1.41      0.65     0.01  2000002     0.00     0.00  IrTryFastPtrScanFor
+  1.41      0.66     0.01  1500009     0.00     0.00  IrStorageDescApplyFrame
+  1.41      0.67     0.01  1500001     0.00     0.00  IrFramePush
+  1.41      0.68     0.01  1500001     0.00     0.00  IrLowerOnFramePush
+  1.41      0.69     0.01  1500000     0.00     0.00  IrResolvePtr
+  1.41      0.70     0.01  1000006     0.00     0.00  IrFuncUsesFP
+  1.41      0.71     0.01   500017     0.00     0.00  IrTryFastArrayFill
+  0.00      0.71     0.00  5000005     0.00     0.00  IrFrameNoteLocalSlot
+  0.00      0.71     0.00  4500156     0.00     0.00  IrKernelFpEnabledFor
+  0.00      0.71     0.00  4000015     0.00     0.00  IrFastResolveBound
+  0.00      0.71     0.00  2500005     0.00     0.00  IrValueAsInt64
+  0.00      0.71     0.00  2500002     0.00     0.00  IrTokenFastAllowed
+  0.00      0.71     0.00  2500001     0.00     0.00  IrFrameSetLocalExtent
+  0.00      0.71     0.00  1500007     0.00     0.00  IrGlobalVal
+  0.00      0.71     0.00  1500001     0.00     0.00  IrLowerOnFramePop
+  0.00      0.71     0.00  1500001     0.00     0.00  IrStorageDescSeedFrameFromFnSlot
+  0.00      0.71     0.00  1500000     0.00     0.00  IrWriteByElemSize
+  0.00      0.71     0.00  1000590     0.00     0.00  IrExecIsVmProd
+  0.00      0.71     0.00  1000054     0.00     0.00  IrFuncMetaGet
+  0.00      0.71     0.00  1000003     0.00     0.00  FnCodeFind
+  0.00      0.71     0.00  1000002     0.00     0.00  IdxRunClearCache
+  0.00      0.71     0.00  1000001     0.00     0.00  IrExecLinLocals
+  0.00      0.71     0.00  1000001     0.00     0.00  IrFrameFreeOwned
+  0.00      0.71     0.00  1000001     0.00     0.00  IrTryExecBodyVm
+  0.00      0.71     0.00  1000000     0.00     0.00  IrFrameSetLocalOwned
+  0.00      0.71     0.00  1000000     0.00     0.00  IrStorageDescBindParamArg
+  0.00      0.71     0.00   500156     0.00     0.00  IrKernelEval
+  0.00      0.71     0.00   500012     0.00     0.00  IrGlobalValSoft
+  0.00      0.71     0.00   500012     0.00     0.00  IrKernelExecStmt
+  0.00      0.71     0.00   500012     0.00     0.00  IrNarrowToLocalType
+  0.00      0.71     0.00   500003     0.00     0.00  FnCodeSnapshot
+  0.00      0.71     0.00   500000     0.00     0.00  FnCodeFindByFunc
+  0.00      0.71     0.00   500000     0.00     0.00  IdxRunPop
+  0.00      0.71     0.00   500000     0.00     0.00  LinFramePop
+  0.00      0.71     0.00   500000     0.00     0.00  LinFramePushFor
+  0.00      0.71     0.00     1975     0.00     0.00  LexGetRawToken
+  0.00      0.71     0.00     1974     0.00     0.00  LexGetToken
+  0.00      0.71     0.00      778     0.00     0.00  LexScanGetToken
+  0.00      0.71     0.00      720     0.00     0.00  IrApplyBinOp
+  0.00      0.71     0.00      720     0.00     0.00  IrApplyBinOpFlags
+  0.00      0.71     0.00      674     0.00     0.00  ParserCopy
+  0.00      0.71     0.00      560     0.00     0.00  HeapFreeMem
+  0.00      0.71     0.00      559     0.00     0.00  HeapAllocMem
+  0.00      0.71     0.00      498     0.00     0.00  TableGet
+  0.00      0.71     0.00      423     0.00     0.00  TableSetIdentifier
+  0.00      0.71     0.00      385     0.00     0.00  IrVmStrictOn
+  0.00      0.71     0.00      288     0.00     0.00  IrKernelGCacheLookup.constprop.0
+  0.00      0.71     0.00      284     0.00     0.00  TableStrRegister2
+  0.00      0.71     0.00      281     0.00     0.00  LexGetWord
+  0.00      0.71     0.00      149     0.00     0.00  TypeParseFront
+  0.00      0.71     0.00      149     0.00     3.57  TypeParseIdentPart
+  0.00      0.71     0.00      149     0.00     0.00  VariableAlloc
+  0.00      0.71     0.00      148     0.00     0.00  VariableDefined
+  0.00      0.71     0.00      144     0.00     0.00  IrKernelResolveBase
+  0.00      0.71     0.00      144     0.00     0.00  TypeParse
+  0.00      0.71     0.00      140     0.00     0.00  IrCompileTrackedCalloc
+  0.00      0.71     0.00      138     0.00     0.00  TableStrRegister
+  0.00      0.71     0.00      124     0.00     0.00  TableSet
+  0.00      0.71     0.00       87     0.00     0.00  LinCseRegIsPinned
+  0.00      0.71     0.00       86     0.00     0.00  VariableAllocValueAndData
+  0.00      0.71     0.00       81     0.00     0.00  VariableFree
+  0.00      0.71     0.00       80     0.00     0.00  TypeGetMatching
+  0.00      0.71     0.00       76     0.00     0.00  LowerRec
+  0.00      0.71     0.00       73     0.00     0.00  HeapAllocStack
+  0.00      0.71     0.00       69     0.00     0.00  HeapPopStack
+  0.00      0.71     0.00       68     0.00     0.00  LinCseDropExprCache
+  0.00      0.71     0.00       63     0.00     0.00  IrCompilePrimary
+  0.00      0.71     0.00       60     0.00     0.00  VariableGet
+  0.00      0.71     0.00       59     0.00     9.03  TypeParseBack
+  0.00      0.71     0.00       57     0.00     0.00  LinScanExprWrites
+  0.00      0.71     0.00       56     0.00     0.00  IrDaStmt
+  0.00      0.71     0.00       53     0.00     0.00  LexAnalyse
+  0.00      0.71     0.00       53     0.00     0.00  LexInitParser
+  0.00      0.71     0.00       53     0.00     0.00  LexTokenise
+  0.00      0.71     0.00       51     0.00     0.00  ParseCountParams
+  0.00      0.71     0.00       51     0.00     6.38  ParseFunctionDefinition
+  0.00      0.71     0.00       46     0.00     0.00  IrBindIdentSlots
+  0.00      0.71     0.00       46     0.00     0.00  IrExprIsWideInt
+  0.00      0.71     0.00       43     0.00     0.00  TableDelete
+  0.00      0.71     0.00       40     0.00     0.00  Emit
+  0.00      0.71     0.00       40     0.00     0.00  IrCompileExprPrec
+  0.00      0.71     0.00       37     0.00     0.00  AllocReg
+  0.00      0.71     0.00       37     0.00     0.00  EmitTreeLoopTry
+  0.00      0.71     0.00       36     0.00     0.00  LinCseReset
+  0.00      0.71     0.00       36     0.00     0.00  LowerStmtRec
+  0.00      0.71     0.00       36     0.00     0.00  LowerStmtRec1
+  0.00      0.71     0.00       35     0.00     0.00  IrBindGlobalsExpr
+  0.00      0.71     0.00       35     0.00     0.00  IrExprIntegerOk
+  0.00      0.71     0.00       32     0.00     0.00  LinCseInvalidateLoop
+  0.00      0.71     0.00       31     0.00     0.00  EmitLine
+  0.00      0.71     0.00       31     0.00     0.00  IrExprTouchesFP
+  0.00      0.71     0.00       31     0.00     0.00  ParserCopyPos
+  0.00      0.71     0.00       30     0.00     0.00  IrCompileTrackedRealloc
+  0.00      0.71     0.00       28     0.00     0.00  LowerRecImpl
+  0.00      0.71     0.00       26     0.00     0.00  IrDaExpr
+  0.00      0.71     0.00       25     0.00     0.00  ExpressionCoerceInteger
+  0.00      0.71     0.00       23     0.00     0.00  LinCsePinLiveEntries
+  0.00      0.71     0.00       22     0.00     0.00  IrExprIsUnsigned
+  0.00      0.71     0.00       22     0.00     0.00  IrExprIsUnsignedPromoted
+  0.00      0.71     0.00       22     0.00     0.00  IrExprType
+  0.00      0.71     0.00       19     0.00     0.00  LexGetNumber
+  0.00      0.71     0.00       19     0.00     0.00  VariableDefinePlatformVar
+  0.00      0.71     0.00       18     0.00     0.00  IrTryFastArrayAccum
+  0.00      0.71     0.00       17     0.00     0.00  IrKernelExprOk
+  0.00      0.71     0.00       16     0.00    29.14  ParseStatement
+  0.00      0.71     0.00       16     0.00     0.00  TypeSizeValue
+  0.00      0.71     0.00       15     0.00     0.00  IrBindNameCache
+  0.00      0.71     0.00       14     0.00     0.00  IrCompileIdentElemPointee
+  0.00      0.71     0.00       12     0.00     0.00  IrSafeChecksOn
+  0.00      0.71     0.00       12     0.00     0.00  LexUnEscapeCharacter
+  0.00      0.71     0.00       12     0.00     0.00  LinCseInvalAll
+  0.00      0.71     0.00       12     0.00     0.00  LinCsePinReg
+  0.00      0.71     0.00       10     0.00     0.00  IrLinWideImmOn
+  0.00      0.71     0.00       10     0.00     0.00  IrShapeFpEnabled
+  0.00      0.71     0.00       10     0.00     0.00  IrStorageDescFromDecl
+  0.00      0.71     0.00       10     0.00     0.00  IrStorageDescStampFnSlot
+  0.00      0.71     0.00       10     0.00     0.00  IrTryFoldInitConst
+  0.00      0.71     0.00        9     0.00     0.00  CompileStampName
+  0.00      0.71     0.00        9     0.00     0.00  ExpressionStackCollapse
+  0.00      0.71     0.00        9     0.00     0.00  IrVarTableLookup
+  0.00      0.71     0.00        9     0.00     0.00  VariableValueRefresh
+  0.00      0.71     0.00        8     0.00     0.00  IrGlobalIdentSoft
+  0.00      0.71     0.00        8     0.00     0.00  VariableDefine
+  0.00      0.71     0.00        7     0.00     0.00  TableInitTable
+  0.00      0.71     0.00        7     0.00     0.00  VariableAllocValueAndCopy
+  0.00      0.71     0.00        6     0.00     0.00  IrKernelStmtOk
+  0.00      0.71     0.00        6     0.00     0.00  IrLiveInitStampOk
+  0.00      0.71     0.00        6     0.00     0.00  IrLowerPtrRowPointee
+  0.00      0.71     0.00        6     0.00     0.00  IrTryFastMatmul3
+  0.00      0.71     0.00        6     0.00     0.00  IrTryFastPtrWalk
+  0.00      0.71     0.00        6     0.00     0.00  IrTryIterCallAccum
+  0.00      0.71     0.00        6     0.00     0.00  TypeSize
+  0.00      0.71     0.00        6     0.00     0.00  VariableAllocValueFromType
+  0.00      0.71     0.00        5     0.00     0.00  ExpressionParseEx
+  0.00      0.71     0.00        5     0.00     0.00  FastForCaptureCond
+  0.00      0.71     0.00        5     0.00     0.00  IdxMetaPush
+  0.00      0.71     0.00        5     0.00     0.00  IrBindFastCondSlots
+  0.00      0.71     0.00        5     0.00     0.00  IrClassifyForFpCompile
+  0.00      0.71     0.00        5     0.00     0.00  IrInternLocal
+  0.00      0.71     0.00        5     0.00     0.00  IrKernelExprTouchesPtrArr
+  0.00      0.71     0.00        5     0.00     0.00  IrStmtTouchesFPWalk
+  0.00      0.71     0.00        5     0.00     0.00  IrStorageDescStampDecl
+  0.00      0.71     0.00        5     0.00     0.00  IrStorageDescStampDeclFull
+  0.00      0.71     0.00        5     0.00     0.00  IrTryDenseForBody
+  0.00      0.71     0.00        5     0.00     0.00  IrTryKernelFor
+  0.00      0.71     0.00        5     0.00     0.00  IrTryTightFor
+  0.00      0.71     0.00        5     0.00     6.12  ParseDeclaration
+  0.00      0.71     0.00        5     0.00     0.00  SealBrk
+  0.00      0.71     0.00        5     0.00     0.00  SealCont
+  0.00      0.71     0.00        4     0.00     0.00  BabycDebugEnabled
+  0.00      0.71     0.00        4     0.00     0.00  IrAnnotateStmt
+  0.00      0.71     0.00        4     0.00     0.00  IrCompileTrackedMalloc
+  0.00      0.71     0.00        4     0.00     0.00  IrKernelStmtScalarOnly
+  0.00      0.71     0.00        4     0.00     0.00  IrLookupFuncReturnType
+  0.00      0.71     0.00        4     0.00     0.00  IrStorageDescApplySlotKind
+  0.00      0.71     0.00        4     0.00     0.00  IrTryLeafCallAccum
+  0.00      0.71     0.00        4     0.00     0.00  IrTryLeafPtrStructAccum
+  0.00      0.71     0.00        4     0.00     0.00  IrTryNestedThinFor
+  0.00      0.71     0.00        4     0.00     0.00  IrTryScoreCallAccum
+  0.00      0.71     0.00        4     0.00     0.00  IrTryStructInlineCallFor
+  0.00      0.71     0.00        4     0.00     3.57  ParseTypedef
+  0.00      0.71     0.00        4     0.00     0.00  PicocParse
+  0.00      0.71     0.00        4     0.00     0.00  VariableStackPop
+  0.00      0.71     0.00        3     0.00     0.00  BabycExecConfigInit
+  0.00      0.71     0.00        3     0.00   177.50  ExpressionParseInt
+  0.00      0.71     0.00        3     0.00     0.00  ExpressionStackPushValue
+  0.00      0.71     0.00        3     0.00     0.00  GlobPush
+  0.00      0.71     0.00        3     0.00     0.00  IrExprIsFP
+  0.00      0.71     0.00        3     0.00     0.00  IrKernelExprScalarOnly
+  0.00      0.71     0.00        3     0.00     0.00  IrLinHostSupported
+  0.00      0.71     0.00        3     0.00     0.00  IrLowerEnabledInit
+  0.00      0.71     0.00        3     0.00     0.00  IrLowerIndexRowIsPointer
+  0.00      0.71     0.00        3     0.00     0.00  IrMemoEligible
+  0.00      0.71     0.00        3     0.00     0.00  IrMonoIsEligible
+  0.00      0.71     0.00        3     0.00     0.00  LexCopyTokens
+  0.00      0.71     0.00        3     0.00     0.00  TypeIsForwardDeclared
+  0.00      0.71     0.00        3     0.00     0.00  VariableDefineButIgnoreIdentical
+  0.00      0.71     0.00        2     0.00     0.00  BabycAccelOn
+  0.00      0.71     0.00        2     0.00     0.00  BabycAnalyzeNote
+  0.00      0.71     0.00        2     0.00     0.00  BabycPathGet
+  0.00      0.71     0.00        2     0.00     0.00  DebugCheckStatement
+  0.00      0.71     0.00        2     0.00     0.00  FnCodeCompile
+  0.00      0.71     0.00        2     0.00     0.00  HeapPopStackFrame
+  0.00      0.71     0.00        2     0.00     0.00  HeapPushStackFrame
+  0.00      0.71     0.00        2     0.00     0.00  IrBindGlobalsStmt
+  0.00      0.71     0.00        2     0.00     0.00  IrBodyFrameLookup
+  0.00      0.71     0.00        2     0.00     0.00  IrBodyFrameRegister
+  0.00      0.71     0.00        2     0.00     0.00  IrCompileClearParamContext
+  0.00      0.71     0.00        2     0.00     0.00  IrCompileFunctionBody
+  0.00      0.71     0.00        2     0.00     0.00  IrCompileSetParamContext
+  0.00      0.71     0.00        2     0.00     0.00  IrCompileSetReturnType
+  0.00      0.71     0.00        2     0.00     0.00  IrCompileStmt
+  0.00      0.71     0.00        2     0.00     0.00  IrCompileTrackedFree
+  0.00      0.71     0.00        2     0.00     0.00  IrFreeFunctionBody
+  0.00      0.71     0.00        2     0.00     0.00  IrFreeStmt
+  0.00      0.71     0.00        2     0.00     0.00  IrIsLeafReturn
+  0.00      0.71     0.00        2     0.00     0.00  IrLinEmitTypeIsPointerOrArray
+  0.00      0.71     0.00        2     0.00     0.00  IrLinPeephole
+  0.00      0.71     0.00        2     0.00     0.00  IrLowerStmt
+  0.00      0.71     0.00        2     0.00     0.00  IrMetaSeedFromBody
+  0.00      0.71     0.00        2     0.00     0.00  IrStmtIntegerOk
+  0.00      0.71     0.00        2     0.00     0.00  IrVerifyBody
+  0.00      0.71     0.00        2     0.00     0.00  IrVmProdNotice
+  0.00      0.71     0.00        2     0.00     0.00  LexGetStringConstant
+  0.00      0.71     0.00        2     0.00   243.79  LibraryAdd
+  0.00      0.71     0.00        2     0.00     0.00  TypeCreateOpaqueStruct
+  0.00      0.71     0.00        2     0.00     0.00  TypeParseStruct
+  0.00      0.71     0.00        2     0.00     0.00  TypeStackSizeValue
+  0.00      0.71     0.00        2     0.00     0.00  VariableStringLiteralDefine
+  0.00      0.71     0.00        2     0.00     0.00  VariableStringLiteralGet
+  0.00      0.71     0.00        2     0.00     0.00  VariableTableCleanup
+  0.00      0.71     0.00        1     0.00     0.00  BabycHeapCheckWrite
+  0.00      0.71     0.00        1     0.00     0.00  BasicIOInit
+  0.00      0.71     0.00        1     0.00     0.00  CompileFramePop
+  0.00      0.71     0.00        1     0.00     0.00  CompileFramePush
+  0.00      0.71     0.00        1     0.00     0.00  DebugCleanup
+  0.00      0.71     0.00        1     0.00     0.00  DebugInit
+  0.00      0.71     0.00        1     0.00     0.00  ExpressionAssignInt
+  0.00      0.71     0.00        1     0.00     0.00  ExpressionInfixOperator
+  0.00      0.71     0.00        1     0.00     0.00  ExpressionMarkInitialized
+  0.00      0.71     0.00        1     0.00     0.00  ExpressionParse
+  0.00      0.71     0.00        1     0.00   710.01  ExpressionParseFunctionCall
+  0.00      0.71     0.00        1     0.00     0.00  ExpressionPushInt
+  0.00      0.71     0.00        1     0.00     0.00  ExpressionStackPushValueByType
+  0.00      0.71     0.00        1     0.00     0.00  HeapCleanup
+  0.00      0.71     0.00        1     0.00     0.00  HeapInit
+  0.00      0.71     0.00        1     0.00     0.00  IncludeCleanup
+  0.00      0.71     0.00        1     0.00     0.00  IncludeFile
+  0.00      0.71     0.00        1     0.00     0.00  IncludeInit
+  0.00      0.71     0.00        1     0.00     0.00  IncludeRegister
+  0.00      0.71     0.00        1     0.00     0.00  IrCallHostFromRegs
+  0.00      0.71     0.00        1     0.00     0.00  IrCloneExpr
+  0.00      0.71     0.00        1     0.00   710.01  IrExecuteFunctionBody
+  0.00      0.71     0.00        1     0.00     0.00  IrFrameLocalExtent
+  0.00      0.71     0.00        1     0.00     0.00  IrKernelGCachePut
+  0.00      0.71     0.00        1     0.00     0.00  IrKernelStmtTouchesPtrArr
+  0.00      0.71     0.00        1     0.00     0.00  IrLiveMarkInit
+  0.00      0.71     0.00        1     0.00     0.00  IrLowerGotoFinished
+  0.00      0.71     0.00        1     0.00     0.00  IrPrintGlobalBindStats
+  0.00      0.71     0.00        1     0.00     0.00  IrPrintLowerStats
+  0.00      0.71     0.00        1     0.00     0.00  IrPrintVmStats
+  0.00      0.71     0.00        1     0.00     0.00  LexCleanup
+  0.00      0.71     0.00        1     0.00     0.00  LexInit
+  0.00      0.71     0.00        1     0.00     0.00  LexPrintStats
+  0.00      0.71     0.00        1     0.00     0.00  LexRawPeekToken
+  0.00      0.71     0.00        1     0.00     0.00  LexToEndOfLine
+  0.00      0.71     0.00        1     0.00   155.40  LibraryInit
+  0.00      0.71     0.00        1     0.00     0.00  LinCseExprFind
+  0.00      0.71     0.00        1     0.00     0.00  LinCseExprStore
+  0.00      0.71     0.00        1     0.00     0.00  LinCseHashExprRec
+  0.00      0.71     0.00        1     0.00     0.00  LowerCallEnabled
+  0.00      0.71     0.00        1     0.00     0.00  ParseCleanup
+  0.00      0.71     0.00        1     0.00     0.00  ParseMacroDefinition
+  0.00      0.71     0.00        1     0.00   155.40  PicocCallMain
+  0.00      0.71     0.00        1     0.00     0.00  PicocCleanup
+  0.00      0.71     0.00        1     0.00   399.20  PicocInitialise
+  0.00      0.71     0.00        1     0.00   155.40  PicocPlatformScanFile
+  0.00      0.71     0.00        1     0.00     0.00  PicocPrintIrStats
+  0.00      0.71     0.00        1     0.00     0.00  PlatformCleanup
+  0.00      0.71     0.00        1     0.00     0.00  PlatformInit
+  0.00      0.71     0.00        1     0.00     0.00  PlatformLibraryInit
+  0.00      0.71     0.00        1     0.00     0.00  PlatformReadFile
+  0.00      0.71     0.00        1     0.00     0.00  PrintfFormatIsIrSafe
+  0.00      0.71     0.00        1     0.00     0.00  StdioSetupFunc
+  0.00      0.71     0.00        1     0.00     0.00  TableInit
+  0.00      0.71     0.00        1     0.00     0.00  TableStrFree
+  0.00      0.71     0.00        1     0.00     0.00  TypeCleanup
+  0.00      0.71     0.00        1     0.00     0.00  TypeCleanupNode
+  0.00      0.71     0.00        1     0.00     0.00  TypeInit
+  0.00      0.71     0.00        1     0.00     0.00  VariableAddressIsStringLiteral
+  0.00      0.71     0.00        1     0.00     0.00  VariableAllocValueFromExistingData
+  0.00      0.71     0.00        1     0.00     0.00  VariableAllocValueShared
+  0.00      0.71     0.00        1     0.00     0.00  VariableCleanup
+  0.00      0.71     0.00        1     0.00     0.00  VariableInit
+  0.00      0.71     0.00        1     0.00     0.00  VariableStackFrameAdd
+  0.00      0.71     0.00        1     0.00     0.00  VariableStackFramePop
+  0.00      0.71     0.00        1     0.00     0.00  VariableValueCommit
+  0.00      0.71     0.00        1     0.00     0.00  VmOn
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2025 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 1.41% of 0.71 seconds
+
+index % time    self  children    called     name
+[1]    100.0    0.00    0.71       4+2       <cycle 7 as a whole> [1]
+                0.00    0.71       1             ExpressionParseFunctionCall <cycle 7> [2]
+                0.00    0.00       5+3           ExpressionParseEx <cycle 7> [172]
+-----------------------------------------------
+                                   1             ExpressionParseEx <cycle 7> [172]
+[2]    100.0    0.00    0.71       1         ExpressionParseFunctionCall <cycle 7> [2]
+                0.00    0.71       1/1           IrExecuteFunctionBody [3]
+                0.00    0.00       2/1974        LexGetToken [80]
+                0.00    0.00       2/2           HeapPopStackFrame [215]
+                0.00    0.00       1/60          VariableGet [110]
+                0.00    0.00       1/1           ExpressionStackPushValueByType [251]
+                0.00    0.00       1/2           HeapPushStackFrame [216]
+                0.00    0.00       1/73          HeapAllocStack [106]
+                0.00    0.00       1/1           VariableStackFrameAdd [297]
+                0.00    0.00       1/1           VariableStackFramePop [298]
+                                   1             ExpressionParseEx <cycle 7> [172]
+-----------------------------------------------
+                0.00    0.71       1/1           ExpressionParseFunctionCall <cycle 7> [2]
+[3]    100.0    0.00    0.71       1         IrExecuteFunctionBody [3]
+                0.44    0.27       1/1           FnCodeRun <cycle 6> [19]
+                0.00    0.00       1/1500001     IrFramePop [23]
+                0.00    0.00       1/1500001     IrFramePush [28]
+                0.00    0.00       1/1000001     IrTryExecBodyVm [46]
+                0.00    0.00       4/4           IrStorageDescApplySlotKind [190]
+                0.00    0.00       1/1000054     IrFuncMetaGet [65]
+                0.00    0.00       1/1           IrLowerGotoFinished [264]
+                0.00    0.00       1/1500001     IrLowerOnFramePop [62]
+                0.00    0.00       1/2500002     IrTokenFastAllowed [59]
+                0.00    0.00       1/1000001     IrFrameFreeOwned [69]
+                0.00    0.00       1/2500001     IrFrameSetLocalExtent [60]
+-----------------------------------------------
+                                                 <spontaneous>
+[4]    100.0    0.00    0.71                 main [4]
+                0.00    0.40       1/1           PicocInitialise [12]
+                0.00    0.16       1/1           PicocPlatformScanFile [18]
+                0.00    0.16       1/1           PicocCallMain [17]
+                0.00    0.00       1/1           DebugInit [245]
+                0.00    0.00       1/1           LexPrintStats [270]
+                0.00    0.00       1/1           IrPrintVmStats [267]
+                0.00    0.00       1/1           PicocPrintIrStats [280]
+                0.00    0.00       1/1           PlatformCleanup [281]
+                0.00    0.00       1/1           PicocCleanup [279]
+-----------------------------------------------
+[5]    100.0    0.44    0.27       1+17500009 <cycle 6 as a whole> [5]
+                0.12    0.16 10500005             Step <cycle 6> [14]
+                0.15    0.02 1500001             IrExecLinLocalsRegs <cycle 6> [15]
+                0.09    0.01 1000001             FnCodeRun <cycle 6> [19]
+                0.03    0.05 1000000             IrCallUserFuncCached <cycle 6> [20]
+                0.04    0.01 1500001             IrTryThinIfCallFor <cycle 6> [22]
+                0.01    0.02 2000002             IrTryFastForAfterInit <cycle 6> [25]
+-----------------------------------------------
+                0.00    0.01       4/149         ParseTypedef [31]
+                0.00    0.02       5/149         ParseDeclaration [24]
+                0.00    0.18      49/149         LibraryAdd [9]
+                0.00    0.33      91/149         ParseFunctionDefinition [13]
+[6]     75.0    0.00    0.53     149         TypeParseIdentPart [6]
+                0.00    0.53      59/59          TypeParseBack [7]
+                0.00    0.00     311/674         ParserCopy [84]
+                0.00    0.00     221/1974        LexGetToken [80]
+                0.00    0.00      72/80          TypeGetMatching [104]
+-----------------------------------------------
+                                   3             TypeParseBack [7]
+                0.00    0.53      59/59          TypeParseIdentPart [6]
+[7]     75.0    0.00    0.53      59+3       TypeParseBack [7]
+                0.00    0.53       3/3           ExpressionParseInt [8]
+                0.00    0.00     121/674         ParserCopy [84]
+                0.00    0.00      68/1974        LexGetToken [80]
+                0.00    0.00       3/80          TypeGetMatching [104]
+                                   3             TypeParseBack [7]
+-----------------------------------------------
+                0.00    0.53       3/3           TypeParseBack [7]
+[8]     75.0    0.00    0.53       3         ExpressionParseInt [8]
+                0.00    0.53       3/4           ExpressionParseEx <cycle 7> [172]
+                0.00    0.00       6/31          ParserCopyPos [131]
+                0.00    0.00       6/1974        LexGetToken [80]
+                0.00    0.00       3/4           VariableStackPop [197]
+                0.00    0.00       3/25          ExpressionCoerceInteger [135]
+-----------------------------------------------
+                0.00    0.24       1/2           ParseStatement <cycle 1> [11]
+                0.00    0.24       1/2           PicocInitialise [12]
+[9]     68.7    0.00    0.49       2         LibraryAdd [9]
+                0.00    0.31      49/51          ParseFunctionDefinition [13]
+                0.00    0.18      49/149         TypeParseIdentPart [6]
+                0.00    0.00      49/53          LexAnalyse [113]
+                0.00    0.00      49/53          LexInitParser [114]
+                0.00    0.00      49/144         TypeParse [97]
+                0.00    0.00      49/148         VariableDefined [95]
+                0.00    0.00      49/560         HeapFreeMem [85]
+                0.00    0.00       2/423         TableSetIdentifier [88]
+                0.00    0.00       2/138         TableStrRegister [99]
+-----------------------------------------------
+[10]    65.7    0.00    0.47       3+18      <cycle 1 as a whole> [10]
+                0.00    0.47      16             ParseStatement <cycle 1> [11]
+                0.00    0.00       4             PicocParse <cycle 1> [196]
+                0.00    0.00       1             IncludeFile <cycle 1> [255]
+-----------------------------------------------
+                                  16             PicocParse <cycle 1> [196]
+[11]    65.7    0.00    0.47      16         ParseStatement <cycle 1> [11]
+                0.00    0.24       1/2           LibraryAdd [9]
+                0.00    0.18       1/4           ExpressionParseEx <cycle 7> [172]
+                0.00    0.03       5/5           ParseDeclaration [24]
+                0.00    0.01       4/4           ParseTypedef [31]
+                0.00    0.00      33/1974        LexGetToken [80]
+                0.00    0.00       2/2           DebugCheckStatement [214]
+                0.00    0.00       1/1           ExpressionParse [249]
+                0.00    0.00       1/4           VariableStackPop [197]
+                0.00    0.00       1/423         TableSetIdentifier [88]
+                0.00    0.00       1/284         TableStrRegister2 [91]
+                0.00    0.00       1/1           ParseMacroDefinition [278]
+                0.00    0.00       1/148         VariableDefined [95]
+                0.00    0.00       1/60          VariableGet [110]
+                                   1             IncludeFile <cycle 1> [255]
+-----------------------------------------------
+                0.00    0.40       1/1           main [4]
+[12]    56.2    0.00    0.40       1         PicocInitialise [12]
+                0.00    0.24       1/2           LibraryAdd [9]
+                0.00    0.16       1/1           LibraryInit [16]
+                0.00    0.00       1/1           BasicIOInit [242]
+                0.00    0.00       1/1           PlatformInit [282]
+                0.00    0.00       1/1           TableInit [287]
+                0.00    0.00       1/1           HeapInit [253]
+                0.00    0.00       1/1           LexInit [269]
+                0.00    0.00       1/1           VariableInit [296]
+                0.00    0.00       1/1           IncludeInit [256]
+                0.00    0.00       1/1           TypeInit [291]
+                0.00    0.00       1/1           IncludeRegister [257]
+                0.00    0.00       1/1           PlatformLibraryInit [283]
+-----------------------------------------------
+                0.00    0.01       2/51          ParseDeclaration [24]
+                0.00    0.31      49/51          LibraryAdd [9]
+[13]    45.8    0.00    0.33      51         ParseFunctionDefinition [13]
+                0.00    0.33      91/149         TypeParseIdentPart [6]
+                0.00    0.00     466/1974        LexGetToken [80]
+                0.00    0.00      91/144         TypeParse [97]
+                0.00    0.00      53/1000054     IrFuncMetaGet [65]
+                0.00    0.00      51/51          ParseCountParams [116]
+                0.00    0.00      51/86          VariableAllocValueAndData [102]
+                0.00    0.00      51/559         HeapAllocMem [86]
+                0.00    0.00      51/124         TableSet [100]
+                0.00    0.00      51/560         HeapFreeMem [85]
+                0.00    0.00       2/3           LexCopyTokens [208]
+                0.00    0.00       2/498         TableGet [87]
+                0.00    0.00       2/2           IrCompileSetParamContext [222]
+                0.00    0.00       2/2           BabycPathGet [213]
+                0.00    0.00       2/2           IrCompileSetReturnType [223]
+                0.00    0.00       2/2           IrCompileClearParamContext [220]
+                0.00    0.00       2/2           BabycAnalyzeNote [212]
+                0.00    0.00       2/2           IrCompileFunctionBody [221]
+                0.00    0.00       2/2           IrMetaSeedFromBody [230]
+                0.00    0.00       2/2           IrIsLeafReturn [228]
+-----------------------------------------------
+                             10500005             IrExecLinLocalsRegs <cycle 6> [15]
+[14]    39.9    0.12    0.16 10500005         Step <cycle 6> [14]
+                0.07    0.00  500000/500001      FnCodeInstall [21]
+                0.00    0.03  500000/500000      LinFramePushFor [27]
+                0.00    0.02  500000/500000      LinFramePop [30]
+                0.01    0.00  500000/1500001     IrFramePop [23]
+                0.01    0.00 2000002/2000002     IrTryFastPtrScanFor [37]
+                0.01    0.00 1500000/1500000     IrResolvePtr [40]
+                0.00    0.00  500000/1500001     IrFramePush [28]
+                0.00    0.00  500000/1500001     IrStorageDescSeedFrameFromFnSlot [43]
+                0.00    0.00       1/2           FnCodeCompile [44]
+                0.00    0.00 2500000/2500005     IrValueAsInt64 [58]
+                0.00    0.00 1500000/1500000     IrWriteByElemSize [63]
+                0.00    0.00 1500000/1500007     IrGlobalVal [61]
+                0.00    0.00  500000/500000      FnCodeFindByFunc [77]
+                0.00    0.00  500000/2500001     IrFrameSetLocalExtent [60]
+                0.00    0.00  500000/1500001     IrLowerOnFramePop [62]
+                0.00    0.00       1/1           IrCallHostFromRegs [258]
+                0.00    0.00       1/1           IrFrameLocalExtent [260]
+                             2000002             IrTryFastForAfterInit <cycle 6> [25]
+                              500000             IrExecLinLocalsRegs <cycle 6> [15]
+-----------------------------------------------
+                              500000             Step <cycle 6> [14]
+                             1000001             FnCodeRun <cycle 6> [19]
+[15]    23.9    0.15    0.02 1500001         IrExecLinLocalsRegs <cycle 6> [15]
+                0.01    0.00 5500000/5500000     LinTryParamIndexedAccess [33]
+                0.01    0.00 3000002/3000362     IrUninitChecksOn [34]
+                0.00    0.00 5000005/5000005     IrFrameNoteLocalSlot [55]
+                             10500005             Step <cycle 6> [14]
+-----------------------------------------------
+                0.00    0.16       1/1           PicocInitialise [12]
+[16]    21.9    0.00    0.16       1         LibraryInit [16]
+                0.00    0.16       1/3           PicocParse <cycle 1> [196]
+                0.00    0.00       3/19          VariableDefinePlatformVar [141]
+                0.00    0.00       1/423         TableSetIdentifier [88]
+                0.00    0.00       1/138         TableStrRegister [99]
+-----------------------------------------------
+                0.00    0.16       1/1           main [4]
+[17]    21.9    0.00    0.16       1         PicocCallMain [17]
+                0.00    0.16       1/3           PicocParse <cycle 1> [196]
+                0.00    0.00       2/423         TableSetIdentifier [88]
+                0.00    0.00       2/138         TableStrRegister [99]
+                0.00    0.00       1/148         VariableDefined [95]
+                0.00    0.00       1/60          VariableGet [110]
+                0.00    0.00       1/19          VariableDefinePlatformVar [141]
+-----------------------------------------------
+                0.00    0.16       1/1           main [4]
+[18]    21.9    0.00    0.16       1         PicocPlatformScanFile [18]
+                0.00    0.16       1/3           PicocParse <cycle 1> [196]
+                0.00    0.00       1/1           PlatformReadFile [284]
+-----------------------------------------------
+                             1000000             IrCallUserFuncCached <cycle 6> [20]
+                0.44    0.27       1/1           IrExecuteFunctionBody [3]
+[19]    13.6    0.09    0.01 1000001         FnCodeRun <cycle 6> [19]
+                0.00    0.01 1000001/1500001     IrStorageDescSeedFrameFromFnSlot [43]
+                0.00    0.00       1/500001      FnCodeInstall [21]
+                0.00    0.00 1000001/1000001     IrExecLinLocals [68]
+                             1000001             IrExecLinLocalsRegs <cycle 6> [15]
+-----------------------------------------------
+                             1000000             IrTryThinIfCallFor <cycle 6> [22]
+[20]    11.3    0.03    0.05 1000000         IrCallUserFuncCached <cycle 6> [20]
+                0.03    0.00 1000000/1500001     IrFramePop [23]
+                0.01    0.01 1000000/1500001     IrFramePush [28]
+                0.01    0.00 1000002/1000006     IrFuncUsesFP [41]
+                0.00    0.00 1000000/1000001     IrTryExecBodyVm [46]
+                0.00    0.00 2000000/2500001     IrFrameSetLocalExtent [60]
+                0.00    0.00 1000000/1000054     IrFuncMetaGet [65]
+                0.00    0.00 1000000/1000000     IrStorageDescBindParamArg [71]
+                0.00    0.00 1000000/1000590     IrExecIsVmProd [64]
+                0.00    0.00 1000000/1500001     IrLowerOnFramePop [62]
+                0.00    0.00 1000000/2500002     IrTokenFastAllowed [59]
+                0.00    0.00 1000000/1000001     IrFrameFreeOwned [69]
+                0.00    0.00 1000000/1000000     IrFrameSetLocalOwned [70]
+                0.00    0.00       1/3           IrMemoEligible [206]
+                0.00    0.00       1/6           IrKernelStmtOk [164]
+                0.00    0.00       1/3           IrMonoIsEligible [207]
+                             1000000             FnCodeRun <cycle 6> [19]
+-----------------------------------------------
+                0.00    0.00       1/500001      FnCodeRun <cycle 6> [19]
+                0.07    0.00  500000/500001      Step <cycle 6> [14]
+[21]     9.9    0.07    0.00  500001         FnCodeInstall [21]
+                0.00    0.00  500001/1000002     IdxRunClearCache [67]
+-----------------------------------------------
+                             1500001             IrTryFastForAfterInit <cycle 6> [25]
+[22]     7.0    0.04    0.01 1500001         IrTryThinIfCallFor <cycle 6> [22]
+                0.01    0.00 3000001/3000001     IrExprCachedGlobal [35]
+                0.00    0.00 1500000/4000015     IrFastResolveBound [57]
+                             1000000             IrCallUserFuncCached <cycle 6> [20]
+-----------------------------------------------
+                0.00    0.00       1/1500001     IrExecuteFunctionBody [3]
+                0.01    0.00  500000/1500001     Step <cycle 6> [14]
+                0.03    0.00 1000000/1500001     IrCallUserFuncCached <cycle 6> [20]
+[23]     5.6    0.04    0.00 1500001         IrFramePop [23]
+                0.00    0.00 1500001/2500002     IrTokenFastAllowed [59]
+-----------------------------------------------
+                0.00    0.03       5/5           ParseStatement <cycle 1> [11]
+[24]     4.3    0.00    0.03       5         ParseDeclaration [24]
+                0.00    0.02       5/149         TypeParseIdentPart [6]
+                0.00    0.01       2/51          ParseFunctionDefinition [13]
+                0.00    0.00      11/1974        LexGetToken [80]
+                0.00    0.00       5/149         TypeParseFront [93]
+                0.00    0.00       3/3           VariableDefineButIgnoreIdentical [210]
+-----------------------------------------------
+                             2000002             Step <cycle 6> [14]
+[25]     4.2    0.01    0.02 2000002         IrTryFastForAfterInit <cycle 6> [25]
+                0.01    0.00 2000061/2000061     IrDispatchForFp [36]
+                0.01    0.00  500005/500017      IrTryFastArrayFill <cycle 2> [42]
+                0.00    0.00       5/5           IrTryKernelFor [47]
+                0.00    0.00       6/4500156     IrKernelFpEnabledFor [56]
+                0.00    0.00       6/18          IrTryFastArrayAccum [142]
+                0.00    0.00       6/6           IrTryIterCallAccum [169]
+                0.00    0.00       6/6           IrTryFastPtrWalk [168]
+                0.00    0.00       6/6           IrTryFastMatmul3 [167]
+                0.00    0.00       5/5           IrTryDenseForBody [181]
+                0.00    0.00       5/5           IrTryTightFor [182]
+                0.00    0.00       4/4           IrTryStructInlineCallFor [195]
+                0.00    0.00       4/4           IrTryNestedThinFor [193]
+                0.00    0.00       4/4           IrTryScoreCallAccum [194]
+                0.00    0.00       4/4           IrTryLeafCallAccum [191]
+                             1500001             IrTryThinIfCallFor <cycle 6> [22]
+-----------------------------------------------
+                0.03    0.00  500000/500000      LinFramePushFor [27]
+[26]     4.2    0.03    0.00  500000         IdxRunPush [26]
+-----------------------------------------------
+                0.00    0.03  500000/500000      Step <cycle 6> [14]
+[27]     4.2    0.00    0.03  500000         LinFramePushFor [27]
+                0.03    0.00  500000/500000      IdxRunPush [26]
+                0.00    0.00  500000/500003      FnCodeSnapshot [76]
+-----------------------------------------------
+                0.00    0.00       1/1500001     IrExecuteFunctionBody [3]
+                0.00    0.00  500000/1500001     Step <cycle 6> [14]
+                0.01    0.01 1000000/1500001     IrCallUserFuncCached <cycle 6> [20]
+[28]     2.8    0.01    0.01 1500001         IrFramePush [28]
+                0.01    0.00 1500001/1500001     IrLowerOnFramePush [39]
+-----------------------------------------------
+                0.00    0.00       1/500001      CompileFramePop [48]
+                0.02    0.00  500000/500001      LinFramePop [30]
+[29]     2.8    0.02    0.00  500001         LinTabsRestore [29]
+-----------------------------------------------
+                0.00    0.02  500000/500000      Step <cycle 6> [14]
+[30]     2.8    0.00    0.02  500000         LinFramePop [30]
+                0.02    0.00  500000/500001      LinTabsRestore [29]
+                0.00    0.00  500000/500000      IdxRunPop [78]
+                0.00    0.00  500000/1000002     IdxRunClearCache [67]
+-----------------------------------------------
+                0.00    0.01       4/4           ParseStatement <cycle 1> [11]
+[31]     2.0    0.00    0.01       4         ParseTypedef [31]
+                0.00    0.01       4/149         TypeParseIdentPart [6]
+                0.00    0.00       4/1974        LexGetToken [80]
+                0.00    0.00       4/144         TypeParse [97]
+                0.00    0.00       4/8           VariableDefine [161]
+-----------------------------------------------
+[32]     1.4    0.01    0.00  500017+500012  <cycle 2 as a whole> [32]
+                0.01    0.00  500017             IrTryFastArrayFill <cycle 2> [42]
+                0.00    0.00  500012+156         IrKernelExecStmt <cycle 2> [74]
+-----------------------------------------------
+                0.01    0.00 5500000/5500000     IrExecLinLocalsRegs <cycle 6> [15]
+[33]     1.4    0.01    0.00 5500000         LinTryParamIndexedAccess [33]
+-----------------------------------------------
+                0.00    0.00     360/3000362     IrLinPeephole [45]
+                0.01    0.00 3000002/3000362     IrExecLinLocalsRegs <cycle 6> [15]
+[34]     1.4    0.01    0.00 3000362         IrUninitChecksOn [34]
+-----------------------------------------------
+                0.01    0.00 3000001/3000001     IrTryThinIfCallFor <cycle 6> [22]
+[35]     1.4    0.01    0.00 3000001         IrExprCachedGlobal [35]
+                0.00    0.00       1/9           IrVarTableLookup [158]
+-----------------------------------------------
+                0.01    0.00 2000061/2000061     IrTryFastForAfterInit <cycle 6> [25]
+[36]     1.4    0.01    0.00 2000061         IrDispatchForFp [36]
+                0.00    0.00 2000061/4500156     IrKernelFpEnabledFor [56]
+-----------------------------------------------
+                0.01    0.00 2000002/2000002     Step <cycle 6> [14]
+[37]     1.4    0.01    0.00 2000002         IrTryFastPtrScanFor [37]
+                0.00    0.00 2000002/4500156     IrKernelFpEnabledFor [56]
+                0.00    0.00 2000002/4000015     IrFastResolveBound [57]
+-----------------------------------------------
+                0.00    0.00       5/1500009     IrStorageDescStampDeclFull [51]
+                0.01    0.00 1500004/1500009     IrStorageDescSeedFrameFromFnSlot [43]
+[38]     1.4    0.01    0.00 1500009         IrStorageDescApplyFrame [38]
+                0.00    0.00       1/1           IrLiveMarkInit [263]
+-----------------------------------------------
+                0.01    0.00 1500001/1500001     IrFramePush [28]
+[39]     1.4    0.01    0.00 1500001         IrLowerOnFramePush [39]
+-----------------------------------------------
+                0.01    0.00 1500000/1500000     Step <cycle 6> [14]
+[40]     1.4    0.01    0.00 1500000         IrResolvePtr [40]
+                0.00    0.00       2/500012      IrGlobalValSoft [73]
+-----------------------------------------------
+                0.00    0.00       4/1000006     FnCodeCompile [44]
+                0.01    0.00 1000002/1000006     IrCallUserFuncCached <cycle 6> [20]
+[41]     1.4    0.01    0.00 1000006         IrFuncUsesFP [41]
+-----------------------------------------------
+                                  12             IrKernelExecStmt <cycle 2> [74]
+                0.01    0.00  500005/500017      IrTryFastForAfterInit <cycle 6> [25]
+[42]     1.4    0.01    0.00  500017         IrTryFastArrayFill <cycle 2> [42]
+                0.00    0.00  500017/4500156     IrKernelFpEnabledFor [56]
+                0.00    0.00  500000/500012      IrGlobalValSoft [73]
+                0.00    0.00  500000/4000015     IrFastResolveBound [57]
+                              500000             IrKernelExecStmt <cycle 2> [74]
+-----------------------------------------------
+                0.00    0.00  500000/1500001     Step <cycle 6> [14]
+                0.00    0.01 1000001/1500001     FnCodeRun <cycle 6> [19]
+[43]     1.4    0.00    0.01 1500001         IrStorageDescSeedFrameFromFnSlot [43]
+                0.01    0.00 1500004/1500009     IrStorageDescApplyFrame [38]
+-----------------------------------------------
+                0.00    0.00       1/2           Step <cycle 6> [14]
+                0.00    0.00       1/2           IrTryExecBodyVm [46]
+[44]     0.0    0.00    0.00       2         FnCodeCompile [44]
+                0.00    0.00       2/2           IrLinPeephole [45]
+                0.00    0.00       1/1           CompileFramePop [48]
+                0.00    0.00       4/1000006     IrFuncUsesFP [41]
+                0.00    0.00       2/2           IrLowerStmt [52]
+                0.00    0.00       2/1000003     FnCodeFind [66]
+                0.00    0.00       2/500003      FnCodeSnapshot [76]
+                0.00    0.00       2/2           IrStmtIntegerOk [231]
+                0.00    0.00       2/2           IrVmProdNotice [233]
+                0.00    0.00       2/3           IrMonoIsEligible [207]
+                0.00    0.00       2/3           IrMemoEligible [206]
+                0.00    0.00       1/1           CompileFramePush [243]
+-----------------------------------------------
+                0.00    0.00       2/2           FnCodeCompile [44]
+[45]     0.0    0.00    0.00       2         IrLinPeephole [45]
+                0.00    0.00     360/3000362     IrUninitChecksOn [34]
+                0.00    0.00     540/1000590     IrExecIsVmProd [64]
+-----------------------------------------------
+                0.00    0.00       1/1000001     IrExecuteFunctionBody [3]
+                0.00    0.00 1000000/1000001     IrCallUserFuncCached <cycle 6> [20]
+[46]     0.0    0.00    0.00 1000001         IrTryExecBodyVm [46]
+                0.00    0.00       1/2           FnCodeCompile [44]
+                0.00    0.00 1000001/1000003     FnCodeFind [66]
+-----------------------------------------------
+                0.00    0.00       5/5           IrTryFastForAfterInit <cycle 6> [25]
+[47]     0.0    0.00    0.00       5         IrTryKernelFor [47]
+                0.00    0.00      12/500017      IrKernelExecStmt <cycle 2> [74]
+                0.00    0.00       5/4500156     IrKernelFpEnabledFor [56]
+                0.00    0.00       5/6           IrKernelStmtOk [164]
+                0.00    0.00       1/17          IrKernelExprOk [143]
+                0.00    0.00       1/1           IrKernelStmtTouchesPtrArr [262]
+                0.00    0.00       1/4000015     IrFastResolveBound [57]
+-----------------------------------------------
+                0.00    0.00       1/1           FnCodeCompile [44]
+[48]     0.0    0.00    0.00       1         CompileFramePop [48]
+                0.00    0.00       1/500001      LinTabsRestore [29]
+                0.00    0.00       1/1000002     IdxRunClearCache [67]
+-----------------------------------------------
+[49]     0.0    0.00    0.00       2+70      <cycle 4 as a whole> [49]
+                0.00    0.00      36             LowerStmtRec1 <cycle 4> [50]
+                0.00    0.00      36             LowerStmtRec <cycle 4> [125]
+-----------------------------------------------
+                                  36             LowerStmtRec <cycle 4> [125]
+[50]     0.0    0.00    0.00      36         LowerStmtRec1 <cycle 4> [50]
+                0.00    0.00       5/5           IrStorageDescStampDeclFull [51]
+                0.00    0.00      40/1000590     IrExecIsVmProd [64]
+                0.00    0.00      31/31          EmitLine [129]
+                0.00    0.00      27/54          LowerRecImpl <cycle 5> [133]
+                0.00    0.00      27/54          LowerRec <cycle 5> [105]
+                0.00    0.00      25/4500156     IrKernelFpEnabledFor [56]
+                0.00    0.00      20/40          Emit [120]
+                0.00    0.00      20/37          EmitTreeLoopTry [123]
+                0.00    0.00      15/68          LinCseDropExprCache [108]
+                0.00    0.00      15/32          LinCseInvalidateLoop [128]
+                0.00    0.00       9/9           CompileStampName [156]
+                0.00    0.00       6/23          LinCsePinLiveEntries [136]
+                0.00    0.00       5/5           IrStorageDescStampDecl [180]
+                0.00    0.00       5/385         IrVmStrictOn [89]
+                0.00    0.00       5/57          LinScanExprWrites [111]
+                0.00    0.00       5/5           SealCont [184]
+                0.00    0.00       5/5           SealBrk [183]
+                0.00    0.00       4/4           IrKernelStmtScalarOnly [188]
+                0.00    0.00       2/3           IrKernelExprScalarOnly [202]
+                                  34             LowerStmtRec <cycle 4> [125]
+-----------------------------------------------
+                0.00    0.00       5/5           LowerStmtRec1 <cycle 4> [50]
+[51]     0.0    0.00    0.00       5         IrStorageDescStampDeclFull [51]
+                0.00    0.00       5/1500009     IrStorageDescApplyFrame [38]
+                0.00    0.00       5/10          IrStorageDescFromDecl [153]
+                0.00    0.00       5/10          IrLinWideImmOn [151]
+                0.00    0.00       5/10          IrStorageDescStampFnSlot [154]
+-----------------------------------------------
+                0.00    0.00       2/2           FnCodeCompile [44]
+[52]     0.0    0.00    0.00       2         IrLowerStmt [52]
+                0.00    0.00       2/2           LowerStmtRec <cycle 4> [125]
+-----------------------------------------------
+[53]     0.0    0.00    0.00      27+76      <cycle 3 as a whole> [53]
+                0.00    0.00      63+1           IrCompilePrimary <cycle 3> [109]
+                0.00    0.00      40+23          IrCompileExprPrec <cycle 3> [121]
+-----------------------------------------------
+[54]     0.0    0.00    0.00      54+50      <cycle 5 as a whole> [54]
+                0.00    0.00      76             LowerRec <cycle 5> [105]
+                0.00    0.00      28+48          LowerRecImpl <cycle 5> [133]
+-----------------------------------------------
+                0.00    0.00 5000005/5000005     IrExecLinLocalsRegs <cycle 6> [15]
+[55]     0.0    0.00    0.00 5000005         IrFrameNoteLocalSlot [55]
+-----------------------------------------------
+                0.00    0.00       5/4500156     IrTryKernelFor [47]
+                0.00    0.00       6/4500156     IrTryFastMatmul3 [167]
+                0.00    0.00       6/4500156     IrTryFastPtrWalk [168]
+                0.00    0.00       6/4500156     IrTryFastForAfterInit <cycle 6> [25]
+                0.00    0.00      10/4500156     EmitTreeLoopTry [123]
+                0.00    0.00      18/4500156     IrTryFastArrayAccum [142]
+                0.00    0.00      25/4500156     LowerStmtRec1 <cycle 4> [50]
+                0.00    0.00  500017/4500156     IrTryFastArrayFill <cycle 2> [42]
+                0.00    0.00 2000002/4500156     IrTryFastPtrScanFor [37]
+                0.00    0.00 2000061/4500156     IrDispatchForFp [36]
+[56]     0.0    0.00    0.00 4500156         IrKernelFpEnabledFor [56]
+                0.00    0.00       5/5           IrStmtTouchesFPWalk [179]
+                0.00    0.00       1/2           BabycAccelOn [211]
+-----------------------------------------------
+                0.00    0.00       1/4000015     IrTryKernelFor [47]
+                0.00    0.00      12/4000015     IrKernelExecStmt <cycle 2> [74]
+                0.00    0.00  500000/4000015     IrTryFastArrayFill <cycle 2> [42]
+                0.00    0.00 1500000/4000015     IrTryThinIfCallFor <cycle 6> [22]
+                0.00    0.00 2000002/4000015     IrTryFastPtrScanFor [37]
+[57]     0.0    0.00    0.00 4000015         IrFastResolveBound [57]
+-----------------------------------------------
+                0.00    0.00       5/2500005     FastForCaptureCond [173]
+                0.00    0.00 2500000/2500005     Step <cycle 6> [14]
+[58]     0.0    0.00    0.00 2500005         IrValueAsInt64 [58]
+-----------------------------------------------
+                0.00    0.00       1/2500002     IrExecuteFunctionBody [3]
+                0.00    0.00 1000000/2500002     IrCallUserFuncCached <cycle 6> [20]
+                0.00    0.00 1500001/2500002     IrFramePop [23]
+[59]     0.0    0.00    0.00 2500002         IrTokenFastAllowed [59]
+-----------------------------------------------
+                0.00    0.00       1/2500001     IrExecuteFunctionBody [3]
+                0.00    0.00  500000/2500001     Step <cycle 6> [14]
+                0.00    0.00 2000000/2500001     IrCallUserFuncCached <cycle 6> [20]
+[60]     0.0    0.00    0.00 2500001         IrFrameSetLocalExtent [60]
+-----------------------------------------------
+                0.00    0.00       1/1500007     IrExprType [139]
+                0.00    0.00       1/1500007     IrKernelResolveBase [96]
+                0.00    0.00       5/1500007     IdxMetaPush [174]
+                0.00    0.00 1500000/1500007     Step <cycle 6> [14]
+[61]     0.0    0.00    0.00 1500007         IrGlobalVal [61]
+-----------------------------------------------
+                0.00    0.00       1/1500001     IrExecuteFunctionBody [3]
+                0.00    0.00  500000/1500001     Step <cycle 6> [14]
+                0.00    0.00 1000000/1500001     IrCallUserFuncCached <cycle 6> [20]
+[62]     0.0    0.00    0.00 1500001         IrLowerOnFramePop [62]
+-----------------------------------------------
+                0.00    0.00 1500000/1500000     Step <cycle 6> [14]
+[63]     0.0    0.00    0.00 1500000         IrWriteByElemSize [63]
+-----------------------------------------------
+                0.00    0.00       1/1000590     VmOn [300]
+                0.00    0.00       1/1000590     IrPrintVmStats [267]
+                0.00    0.00       8/1000590     LowerRecImpl <cycle 5> [133]
+                0.00    0.00      40/1000590     LowerStmtRec1 <cycle 4> [50]
+                0.00    0.00     540/1000590     IrLinPeephole [45]
+                0.00    0.00 1000000/1000590     IrCallUserFuncCached <cycle 6> [20]
+[64]     0.0    0.00    0.00 1000590         IrExecIsVmProd [64]
+-----------------------------------------------
+                0.00    0.00       1/1000054     IrExecuteFunctionBody [3]
+                0.00    0.00      53/1000054     ParseFunctionDefinition [13]
+                0.00    0.00 1000000/1000054     IrCallUserFuncCached <cycle 6> [20]
+[65]     0.0    0.00    0.00 1000054         IrFuncMetaGet [65]
+-----------------------------------------------
+                0.00    0.00       2/1000003     FnCodeCompile [44]
+                0.00    0.00 1000001/1000003     IrTryExecBodyVm [46]
+[66]     0.0    0.00    0.00 1000003         FnCodeFind [66]
+-----------------------------------------------
+                0.00    0.00       1/1000002     CompileFramePop [48]
+                0.00    0.00  500000/1000002     LinFramePop [30]
+                0.00    0.00  500001/1000002     FnCodeInstall [21]
+[67]     0.0    0.00    0.00 1000002         IdxRunClearCache [67]
+-----------------------------------------------
+                0.00    0.00 1000001/1000001     FnCodeRun <cycle 6> [19]
+[68]     0.0    0.00    0.00 1000001         IrExecLinLocals [68]
+-----------------------------------------------
+                0.00    0.00       1/1000001     IrExecuteFunctionBody [3]
+                0.00    0.00 1000000/1000001     IrCallUserFuncCached <cycle 6> [20]
+[69]     0.0    0.00    0.00 1000001         IrFrameFreeOwned [69]
+-----------------------------------------------
+                0.00    0.00 1000000/1000000     IrCallUserFuncCached <cycle 6> [20]
+[70]     0.0    0.00    0.00 1000000         IrFrameSetLocalOwned [70]
+-----------------------------------------------
+                0.00    0.00 1000000/1000000     IrCallUserFuncCached <cycle 6> [20]
+[71]     0.0    0.00    0.00 1000000         IrStorageDescBindParamArg [71]
+-----------------------------------------------
+                              501884             IrKernelEval [72]
+                0.00    0.00  500156/500156      IrKernelExecStmt <cycle 2> [74]
+[72]     0.0    0.00    0.00  500156+501884  IrKernelEval [72]
+                0.00    0.00  500012/500012      IrNarrowToLocalType [75]
+                0.00    0.00     720/720         IrApplyBinOp [82]
+                0.00    0.00     144/144         IrKernelResolveBase [96]
+                              501884             IrKernelEval [72]
+-----------------------------------------------
+                0.00    0.00       1/500012      IrKernelResolveBase [96]
+                0.00    0.00       2/500012      IrResolvePtr [40]
+                0.00    0.00       2/500012      LowerRecImpl <cycle 5> [133]
+                0.00    0.00       3/500012      IrLowerIndexRowIsPointer [205]
+                0.00    0.00       4/500012      IrLowerPtrRowPointee [166]
+                0.00    0.00  500000/500012      IrTryFastArrayFill <cycle 2> [42]
+[73]     0.0    0.00    0.00  500012         IrGlobalValSoft [73]
+-----------------------------------------------
+                                 156             IrKernelExecStmt <cycle 2> [74]
+                              500000             IrTryFastArrayFill <cycle 2> [42]
+                0.00    0.00      12/500017      IrTryKernelFor [47]
+[74]     0.0    0.00    0.00  500012+156     IrKernelExecStmt <cycle 2> [74]
+                0.00    0.00  500156/500156      IrKernelEval [72]
+                0.00    0.00      12/18          IrTryFastArrayAccum [142]
+                0.00    0.00      12/4000015     IrFastResolveBound [57]
+                                  12             IrTryFastArrayFill <cycle 2> [42]
+                                 156             IrKernelExecStmt <cycle 2> [74]
+-----------------------------------------------
+                0.00    0.00  500012/500012      IrKernelEval [72]
+[75]     0.0    0.00    0.00  500012         IrNarrowToLocalType [75]
+-----------------------------------------------
+                0.00    0.00       1/500003      CompileFramePush [243]
+                0.00    0.00       2/500003      FnCodeCompile [44]
+                0.00    0.00  500000/500003      LinFramePushFor [27]
+[76]     0.0    0.00    0.00  500003         FnCodeSnapshot [76]
+-----------------------------------------------
+                0.00    0.00  500000/500000      Step <cycle 6> [14]
+[77]     0.0    0.00    0.00  500000         FnCodeFindByFunc [77]
+-----------------------------------------------
+                0.00    0.00  500000/500000      LinFramePop [30]
+[78]     0.0    0.00    0.00  500000         IdxRunPop [78]
+-----------------------------------------------
+                0.00    0.00       1/1975        LexToEndOfLine [272]
+                0.00    0.00    1974/1975        LexGetToken [80]
+[79]     0.0    0.00    0.00    1975         LexGetRawToken [79]
+-----------------------------------------------
+                0.00    0.00       1/1974        ParseMacroDefinition [278]
+                0.00    0.00       2/1974        ExpressionParseFunctionCall <cycle 7> [2]
+                0.00    0.00       4/1974        ParseTypedef [31]
+                0.00    0.00       6/1974        ExpressionParseInt [8]
+                0.00    0.00       8/1974        TypeParseStruct [236]
+                0.00    0.00      11/1974        ParseDeclaration [24]
+                0.00    0.00      25/1974        ExpressionParseEx <cycle 7> [172]
+                0.00    0.00      33/1974        ParseStatement <cycle 1> [11]
+                0.00    0.00      33/1974        FastForCaptureCond [173]
+                0.00    0.00      68/1974        TypeParseBack [7]
+                0.00    0.00     108/1974        IrCompileExprPrec <cycle 3> [121]
+                0.00    0.00     151/1974        TypeParseFront [93]
+                0.00    0.00     221/1974        TypeParseIdentPart [6]
+                0.00    0.00     225/1974        IrCompileStmt [224]
+                0.00    0.00     294/1974        IrCompilePrimary <cycle 3> [109]
+                0.00    0.00     318/1974        ParseCountParams [116]
+                0.00    0.00     466/1974        ParseFunctionDefinition [13]
+[80]     0.0    0.00    0.00    1974         LexGetToken [80]
+                0.00    0.00    1974/1975        LexGetRawToken [79]
+-----------------------------------------------
+                0.00    0.00     778/778         LexTokenise [115]
+[81]     0.0    0.00    0.00     778         LexScanGetToken [81]
+                0.00    0.00       2/2           LexGetStringConstant [234]
+-----------------------------------------------
+                0.00    0.00     720/720         IrKernelEval [72]
+[82]     0.0    0.00    0.00     720         IrApplyBinOp [82]
+                0.00    0.00     720/720         IrApplyBinOpFlags [83]
+                0.00    0.00      15/46          IrExprIsWideInt [118]
+-----------------------------------------------
+                0.00    0.00     720/720         IrApplyBinOp [82]
+[83]     0.0    0.00    0.00     720         IrApplyBinOpFlags [83]
+-----------------------------------------------
+                0.00    0.00       1/674         VariableStackFrameAdd [297]
+                0.00    0.00       1/674         VariableStackFramePop [298]
+                0.00    0.00       2/674         IrCompileFunctionBody [221]
+                0.00    0.00       3/674         ExpressionParseEx <cycle 7> [172]
+                0.00    0.00       7/674         IrCompilePrimary <cycle 3> [109]
+                0.00    0.00       9/674         FastForCaptureCond [173]
+                0.00    0.00      70/674         IrCompileStmt [224]
+                0.00    0.00     121/674         TypeParseBack [7]
+                0.00    0.00     149/674         TypeParseFront [93]
+                0.00    0.00     311/674         TypeParseIdentPart [6]
+[84]     0.0    0.00    0.00     674         ParserCopy [84]
+-----------------------------------------------
+                0.00    0.00       3/560         VariableFree [103]
+                0.00    0.00       4/560         PicocParse <cycle 1> [196]
+                0.00    0.00       5/560         ParseCleanup [277]
+                0.00    0.00      12/560         TypeCleanupNode [290]
+                0.00    0.00      21/560         IncludeCleanup [254]
+                0.00    0.00      43/560         TableDelete [119]
+                0.00    0.00      49/560         LibraryAdd [9]
+                0.00    0.00      51/560         ParseFunctionDefinition [13]
+                0.00    0.00      53/560         LexTokenise [115]
+                0.00    0.00     157/560         TableStrFree [288]
+                0.00    0.00     162/560         VariableCleanup [295]
+[85]     0.0    0.00    0.00     560         HeapFreeMem [85]
+-----------------------------------------------
+                0.00    0.00       1/559         IncludeRegister [257]
+                0.00    0.00       4/559         PicocParse <cycle 1> [196]
+                0.00    0.00      20/559         IncludeInit [256]
+                0.00    0.00      51/559         ParseFunctionDefinition [13]
+                0.00    0.00      81/559         VariableAllocValueAndData [102]
+                0.00    0.00     106/559         LexTokenise [115]
+                0.00    0.00     139/559         VariableAlloc [94]
+                0.00    0.00     157/559         TableSetIdentifier [88]
+[86]     0.0    0.00    0.00     559         HeapAllocMem [86]
+-----------------------------------------------
+                0.00    0.00       1/498         VariableAddressIsStringLiteral [292]
+                0.00    0.00       2/498         ParseFunctionDefinition [13]
+                0.00    0.00       2/498         VariableStringLiteralGet [239]
+                0.00    0.00       3/498         VariableDefineButIgnoreIdentical [210]
+                0.00    0.00       4/498         FastForCaptureCond [173]
+                0.00    0.00       4/498         IrLookupFuncReturnType [189]
+                0.00    0.00       8/498         IrVarTableLookup [158]
+                0.00    0.00      11/498         VariableGet [110]
+                0.00    0.00      15/498         IrCompilePrimary <cycle 3> [109]
+                0.00    0.00      19/498         IrBindIdentSlots [117]
+                0.00    0.00     148/498         VariableDefined [95]
+                0.00    0.00     281/498         LexGetWord [92]
+[87]     0.0    0.00    0.00     498         TableGet [87]
+-----------------------------------------------
+                0.00    0.00       1/423         TableInit [287]
+                0.00    0.00       1/423         ParseStatement <cycle 1> [11]
+                0.00    0.00       1/423         LibraryInit [16]
+                0.00    0.00       1/423         IncludeRegister [257]
+                0.00    0.00       2/423         LexGetStringConstant [234]
+                0.00    0.00       2/423         LibraryAdd [9]
+                0.00    0.00       2/423         PicocCallMain [17]
+                0.00    0.00       3/423         StdioSetupFunc [286]
+                0.00    0.00       4/423         PicocParse <cycle 1> [196]
+                0.00    0.00      19/423         VariableDefinePlatformVar [141]
+                0.00    0.00      20/423         IncludeInit [256]
+                0.00    0.00      43/423         LexInit [269]
+                0.00    0.00      43/423         LexCleanup [268]
+                0.00    0.00     281/423         LexGetWord [92]
+[88]     0.0    0.00    0.00     423         TableSetIdentifier [88]
+                0.00    0.00     157/559         HeapAllocMem [86]
+-----------------------------------------------
+                0.00    0.00       5/385         LowerStmtRec1 <cycle 4> [50]
+                0.00    0.00     380/385         LowerRecImpl <cycle 5> [133]
+[89]     0.0    0.00    0.00     385         IrVmStrictOn [89]
+-----------------------------------------------
+                0.00    0.00     288/288         IrKernelResolveBase [96]
+[90]     0.0    0.00    0.00     288         IrKernelGCacheLookup.constprop.0 [90]
+-----------------------------------------------
+                0.00    0.00       1/284         ParseStatement <cycle 1> [11]
+                0.00    0.00       2/284         LexGetStringConstant [234]
+                0.00    0.00     281/284         LexGetWord [92]
+[91]     0.0    0.00    0.00     284         TableStrRegister2 [91]
+-----------------------------------------------
+                0.00    0.00     281/281         LexTokenise [115]
+[92]     0.0    0.00    0.00     281         LexGetWord [92]
+                0.00    0.00     281/423         TableSetIdentifier [88]
+                0.00    0.00     281/284         TableStrRegister2 [91]
+                0.00    0.00     281/498         TableGet [87]
+-----------------------------------------------
+                0.00    0.00       5/149         ParseDeclaration [24]
+                0.00    0.00     144/149         TypeParse [97]
+[93]     0.0    0.00    0.00     149         TypeParseFront [93]
+                0.00    0.00     151/1974        LexGetToken [80]
+                0.00    0.00     149/674         ParserCopy [84]
+                0.00    0.00      37/60          VariableGet [110]
+                0.00    0.00       2/2           TypeParseStruct [236]
+-----------------------------------------------
+                0.00    0.00       1/149         ExpressionStackPushValueByType [251]
+                0.00    0.00       1/149         ExpressionPushInt [250]
+                0.00    0.00       2/149         TypeCreateOpaqueStruct [235]
+                0.00    0.00       3/149         LexCopyTokens [208]
+                0.00    0.00       3/149         ExpressionStackPushValue [199]
+                0.00    0.00       4/149         TypeInit [291]
+                0.00    0.00       5/149         ExpressionParseEx <cycle 7> [172]
+                0.00    0.00       6/149         TypeGetMatching [104]
+                0.00    0.00     124/149         TableSet [100]
+[94]     0.0    0.00    0.00     149         VariableAlloc [94]
+                0.00    0.00     139/559         HeapAllocMem [86]
+                0.00    0.00      10/73          HeapAllocStack [106]
+-----------------------------------------------
+                0.00    0.00       1/148         ParseStatement <cycle 1> [11]
+                0.00    0.00       1/148         PicocCallMain [17]
+                0.00    0.00       1/148         IncludeFile <cycle 1> [255]
+                0.00    0.00       1/148         StdioSetupFunc [286]
+                0.00    0.00       4/148         IrLookupFuncReturnType [189]
+                0.00    0.00      19/148         IrBindIdentSlots [117]
+                0.00    0.00      28/148         IrCompileStmt [224]
+                0.00    0.00      44/148         IrCompilePrimary <cycle 3> [109]
+                0.00    0.00      49/148         LibraryAdd [9]
+[95]     0.0    0.00    0.00     148         VariableDefined [95]
+                0.00    0.00     148/498         TableGet [87]
+-----------------------------------------------
+                                 144             IrKernelResolveBase [96]
+                0.00    0.00     144/144         IrKernelEval [72]
+[96]     0.0    0.00    0.00     144+144     IrKernelResolveBase [96]
+                0.00    0.00     288/288         IrKernelGCacheLookup.constprop.0 [90]
+                0.00    0.00       1/500012      IrGlobalValSoft [73]
+                0.00    0.00       1/1500007     IrGlobalVal [61]
+                0.00    0.00       1/1           IrKernelGCachePut [261]
+                                 144             IrKernelResolveBase [96]
+-----------------------------------------------
+                0.00    0.00       4/144         ParseTypedef [31]
+                0.00    0.00      49/144         LibraryAdd [9]
+                0.00    0.00      91/144         ParseFunctionDefinition [13]
+[97]     0.0    0.00    0.00     144         TypeParse [97]
+                0.00    0.00     144/149         TypeParseFront [93]
+-----------------------------------------------
+                0.00    0.00       1/140         IrCloneExpr [259]
+                0.00    0.00      10/140         IrTryFoldInitConst [155]
+                0.00    0.00      23/140         IrCompileExprPrec <cycle 3> [121]
+                0.00    0.00      32/140         IrCompileStmt [224]
+                0.00    0.00      74/140         IrCompilePrimary <cycle 3> [109]
+[98]     0.0    0.00    0.00     140         IrCompileTrackedCalloc [98]
+-----------------------------------------------
+                0.00    0.00       1/138         LibraryInit [16]
+                0.00    0.00       1/138         IncludeRegister [257]
+                0.00    0.00       2/138         LibraryAdd [9]
+                0.00    0.00       2/138         PicocCallMain [17]
+                0.00    0.00       3/138         StdioSetupFunc [286]
+                0.00    0.00       4/138         PicocParse <cycle 1> [196]
+                0.00    0.00      19/138         VariableDefinePlatformVar [141]
+                0.00    0.00      20/138         IncludeInit [256]
+                0.00    0.00      43/138         LexInit [269]
+                0.00    0.00      43/138         LexCleanup [268]
+[99]     0.0    0.00    0.00     138         TableStrRegister [99]
+-----------------------------------------------
+                0.00    0.00       1/124         ParseMacroDefinition [278]
+                0.00    0.00       2/124         VariableStringLiteralDefine [238]
+                0.00    0.00       8/124         VariableDefine [161]
+                0.00    0.00      19/124         VariableDefinePlatformVar [141]
+                0.00    0.00      43/124         LexInit [269]
+                0.00    0.00      51/124         ParseFunctionDefinition [13]
+[100]    0.0    0.00    0.00     124         TableSet [100]
+                0.00    0.00     124/149         VariableAlloc [94]
+-----------------------------------------------
+                0.00    0.00      37/87          AllocReg [122]
+                0.00    0.00      50/87          LowerRecImpl <cycle 5> [133]
+[101]    0.0    0.00    0.00      87         LinCseRegIsPinned [101]
+-----------------------------------------------
+                0.00    0.00       1/86          ParseMacroDefinition [278]
+                0.00    0.00       2/86          LexGetStringConstant [234]
+                0.00    0.00       6/86          VariableAllocValueFromType [171]
+                0.00    0.00       7/86          VariableAllocValueAndCopy [163]
+                0.00    0.00      19/86          VariableDefinePlatformVar [141]
+                0.00    0.00      51/86          ParseFunctionDefinition [13]
+[102]    0.0    0.00    0.00      86         VariableAllocValueAndData [102]
+                0.00    0.00      81/559         HeapAllocMem [86]
+                0.00    0.00       5/73          HeapAllocStack [106]
+-----------------------------------------------
+                0.00    0.00      81/81          VariableCleanup [295]
+[103]    0.0    0.00    0.00      81         VariableFree [103]
+                0.00    0.00       3/560         HeapFreeMem [85]
+                0.00    0.00       2/2           IrFreeStmt [227]
+                0.00    0.00       2/2           IrFreeFunctionBody [226]
+-----------------------------------------------
+                0.00    0.00       1/80          StdioSetupFunc [286]
+                0.00    0.00       2/80          TypeCreateOpaqueStruct [235]
+                0.00    0.00       2/80          TypeParseStruct [236]
+                0.00    0.00       3/80          TypeParseBack [7]
+                0.00    0.00      72/80          TypeParseIdentPart [6]
+[104]    0.0    0.00    0.00      80         TypeGetMatching [104]
+                0.00    0.00       6/149         VariableAlloc [94]
+-----------------------------------------------
+                                  49             LowerRecImpl <cycle 5> [133]
+                0.00    0.00      27/54          LowerStmtRec1 <cycle 4> [50]
+[105]    0.0    0.00    0.00      76         LowerRec <cycle 5> [105]
+                0.00    0.00       1/1           LinCseHashExprRec [275]
+                0.00    0.00       1/1           LinCseExprFind [273]
+                0.00    0.00       1/1           LinCseExprStore [274]
+                                   1             LowerRecImpl <cycle 5> [133]
+-----------------------------------------------
+                0.00    0.00       1/73          ExpressionParseFunctionCall <cycle 7> [2]
+                0.00    0.00       1/73          VariableAllocValueFromExistingData [293]
+                0.00    0.00       1/73          VariableStackFrameAdd [297]
+                0.00    0.00       2/73          LexGetStringConstant [234]
+                0.00    0.00       5/73          VariableAllocValueAndData [102]
+                0.00    0.00      10/73          VariableAlloc [94]
+                0.00    0.00      53/73          LexTokenise [115]
+[106]    0.0    0.00    0.00      73         HeapAllocStack [106]
+-----------------------------------------------
+                0.00    0.00       2/69          LexGetStringConstant [234]
+                0.00    0.00       3/69          ExpressionStackCollapse [157]
+                0.00    0.00       4/69          VariableStackPop [197]
+                0.00    0.00       7/69          ExpressionParseEx <cycle 7> [172]
+                0.00    0.00      53/69          LexTokenise [115]
+[107]    0.0    0.00    0.00      69         HeapPopStack [107]
+-----------------------------------------------
+                0.00    0.00      15/68          LowerStmtRec1 <cycle 4> [50]
+                0.00    0.00      18/68          LowerRecImpl <cycle 5> [133]
+                0.00    0.00      35/68          LowerStmtRec <cycle 4> [125]
+[108]    0.0    0.00    0.00      68         LinCseDropExprCache [108]
+-----------------------------------------------
+                                   1             IrCompilePrimary <cycle 3> [109]
+                                  63             IrCompileExprPrec <cycle 3> [121]
+[109]    0.0    0.00    0.00      63+1       IrCompilePrimary <cycle 3> [109]
+                0.00    0.00     294/1974        LexGetToken [80]
+                0.00    0.00      74/140         IrCompileTrackedCalloc [98]
+                0.00    0.00      44/148         VariableDefined [95]
+                0.00    0.00      38/46          IrBindIdentSlots [117]
+                0.00    0.00      22/25          ExpressionCoerceInteger [135]
+                0.00    0.00      15/498         TableGet [87]
+                0.00    0.00       7/674         ParserCopy [84]
+                0.00    0.00       4/10          IrTryFoldInitConst [155]
+                0.00    0.00       1/1           PrintfFormatIsIrSafe [285]
+                                  13             IrCompileExprPrec <cycle 3> [121]
+                                   1             IrCompilePrimary <cycle 3> [109]
+-----------------------------------------------
+                0.00    0.00       1/60          ParseStatement <cycle 1> [11]
+                0.00    0.00       1/60          ExpressionParseFunctionCall <cycle 7> [2]
+                0.00    0.00       1/60          PicocCallMain [17]
+                0.00    0.00       4/60          ExpressionParseEx <cycle 7> [172]
+                0.00    0.00      16/60          IrCompileStmt [224]
+                0.00    0.00      37/60          TypeParseFront [93]
+[110]    0.0    0.00    0.00      60         VariableGet [110]
+                0.00    0.00      11/498         TableGet [87]
+-----------------------------------------------
+                                 494             LinScanExprWrites [111]
+                0.00    0.00       5/57          LowerStmtRec1 <cycle 4> [50]
+                0.00    0.00      52/57          EmitTreeLoopTry [123]
+[111]    0.0    0.00    0.00      57+494     LinScanExprWrites [111]
+                                 494             LinScanExprWrites [111]
+-----------------------------------------------
+                                 177             IrDaStmt [112]
+                0.00    0.00       2/56          IrCompileFunctionBody [221]
+                0.00    0.00      54/56          IrAnnotateStmt [186]
+[112]    0.0    0.00    0.00      56+177     IrDaStmt [112]
+                0.00    0.00      26/26          IrDaExpr [134]
+                0.00    0.00      14/14          IrCompileIdentElemPointee [146]
+                0.00    0.00       4/4           IrLookupFuncReturnType [189]
+                                 177             IrDaStmt [112]
+-----------------------------------------------
+                0.00    0.00       4/53          PicocParse <cycle 1> [196]
+                0.00    0.00      49/53          LibraryAdd [9]
+[113]    0.0    0.00    0.00      53         LexAnalyse [113]
+                0.00    0.00      53/53          LexTokenise [115]
+-----------------------------------------------
+                0.00    0.00       4/53          PicocParse <cycle 1> [196]
+                0.00    0.00      49/53          LibraryAdd [9]
+[114]    0.0    0.00    0.00      53         LexInitParser [114]
+-----------------------------------------------
+                0.00    0.00      53/53          LexAnalyse [113]
+[115]    0.0    0.00    0.00      53         LexTokenise [115]
+                0.00    0.00     778/778         LexScanGetToken [81]
+                0.00    0.00     281/281         LexGetWord [92]
+                0.00    0.00     106/559         HeapAllocMem [86]
+                0.00    0.00      53/73          HeapAllocStack [106]
+                0.00    0.00      53/69          HeapPopStack [107]
+                0.00    0.00      53/560         HeapFreeMem [85]
+                0.00    0.00      19/19          LexGetNumber [140]
+-----------------------------------------------
+                0.00    0.00      51/51          ParseFunctionDefinition [13]
+[116]    0.0    0.00    0.00      51         ParseCountParams [116]
+                0.00    0.00     318/1974        LexGetToken [80]
+-----------------------------------------------
+                0.00    0.00       8/46          IrBindGlobalsExpr [126]
+                0.00    0.00      38/46          IrCompilePrimary <cycle 3> [109]
+[117]    0.0    0.00    0.00      46         IrBindIdentSlots [117]
+                0.00    0.00      19/148         VariableDefined [95]
+                0.00    0.00      19/498         TableGet [87]
+-----------------------------------------------
+                                  52             IrExprIsWideInt [118]
+                0.00    0.00      15/46          IrApplyBinOp [82]
+                0.00    0.00      31/46          LowerRecImpl <cycle 5> [133]
+[118]    0.0    0.00    0.00      46+52      IrExprIsWideInt [118]
+                                  52             IrExprIsWideInt [118]
+-----------------------------------------------
+                0.00    0.00      43/43          LexCleanup [268]
+[119]    0.0    0.00    0.00      43         TableDelete [119]
+                0.00    0.00      43/560         HeapFreeMem [85]
+-----------------------------------------------
+                0.00    0.00      20/40          EmitTreeLoopTry [123]
+                0.00    0.00      20/40          LowerStmtRec1 <cycle 4> [50]
+[120]    0.0    0.00    0.00      40         Emit [120]
+-----------------------------------------------
+                                  23             IrCompileExprPrec <cycle 3> [121]
+                                  13             IrCompilePrimary <cycle 3> [109]
+                0.00    0.00      27/27          IrCompileStmt [224]
+[121]    0.0    0.00    0.00      40+23      IrCompileExprPrec <cycle 3> [121]
+                0.00    0.00     108/1974        LexGetToken [80]
+                0.00    0.00      23/140         IrCompileTrackedCalloc [98]
+                0.00    0.00       1/1           IrCloneExpr [259]
+                0.00    0.00       1/4           IrCompileTrackedMalloc [187]
+                                  63             IrCompilePrimary <cycle 3> [109]
+                                  23             IrCompileExprPrec <cycle 3> [121]
+-----------------------------------------------
+                0.00    0.00      10/37          EmitTreeLoopTry [123]
+                0.00    0.00      27/37          LowerRecImpl <cycle 5> [133]
+[122]    0.0    0.00    0.00      37         AllocReg [122]
+                0.00    0.00      37/87          LinCseRegIsPinned [101]
+-----------------------------------------------
+                                  25             EmitTreeLoopTry [123]
+                0.00    0.00      17/37          LowerStmtRec <cycle 4> [125]
+                0.00    0.00      20/37          LowerStmtRec1 <cycle 4> [50]
+[123]    0.0    0.00    0.00      37+25      EmitTreeLoopTry [123]
+                0.00    0.00      52/57          LinScanExprWrites [111]
+                0.00    0.00      20/40          Emit [120]
+                0.00    0.00      10/4500156     IrKernelFpEnabledFor [56]
+                0.00    0.00      10/10          IrShapeFpEnabled [152]
+                0.00    0.00      10/37          AllocReg [122]
+                                  25             EmitTreeLoopTry [123]
+-----------------------------------------------
+                0.00    0.00      18/36          LowerStmtRec <cycle 4> [125]
+                0.00    0.00      18/36          LowerRecImpl <cycle 5> [133]
+[124]    0.0    0.00    0.00      36         LinCseReset [124]
+-----------------------------------------------
+                                  34             LowerStmtRec1 <cycle 4> [50]
+                0.00    0.00       2/2           IrLowerStmt [52]
+[125]    0.0    0.00    0.00      36         LowerStmtRec <cycle 4> [125]
+                0.00    0.00      35/68          LinCseDropExprCache [108]
+                0.00    0.00      18/36          LinCseReset [124]
+                0.00    0.00      17/37          EmitTreeLoopTry [123]
+                0.00    0.00      17/32          LinCseInvalidateLoop [128]
+                0.00    0.00      17/23          LinCsePinLiveEntries [136]
+                                  36             LowerStmtRec1 <cycle 4> [50]
+-----------------------------------------------
+                                 203             IrBindGlobalsExpr [126]
+                0.00    0.00      35/35          IrBindGlobalsStmt [217]
+[126]    0.0    0.00    0.00      35+203     IrBindGlobalsExpr [126]
+                0.00    0.00       8/46          IrBindIdentSlots [117]
+                                 203             IrBindGlobalsExpr [126]
+-----------------------------------------------
+                                 113             IrExprIntegerOk [127]
+                0.00    0.00      35/35          IrStmtIntegerOk [231]
+[127]    0.0    0.00    0.00      35+113     IrExprIntegerOk [127]
+                                 113             IrExprIntegerOk [127]
+-----------------------------------------------
+                0.00    0.00      15/32          LowerStmtRec1 <cycle 4> [50]
+                0.00    0.00      17/32          LowerStmtRec <cycle 4> [125]
+[128]    0.0    0.00    0.00      32         LinCseInvalidateLoop [128]
+-----------------------------------------------
+                0.00    0.00      31/31          LowerStmtRec1 <cycle 4> [50]
+[129]    0.0    0.00    0.00      31         EmitLine [129]
+-----------------------------------------------
+                                 260             IrExprTouchesFP [130]
+                0.00    0.00      31/31          IrStmtTouchesFPWalk [179]
+[130]    0.0    0.00    0.00      31+260     IrExprTouchesFP [130]
+                                 260             IrExprTouchesFP [130]
+-----------------------------------------------
+                0.00    0.00       6/31          ExpressionParseInt [8]
+                0.00    0.00      25/31          ExpressionParseEx <cycle 7> [172]
+[131]    0.0    0.00    0.00      31         ParserCopyPos [131]
+-----------------------------------------------
+                                  72             IrCompileTrackedRealloc [132]
+                0.00    0.00       3/30          IrCompileStmt [224]
+                0.00    0.00      27/30          IrFreeStmt [227]
+[132]    0.0    0.00    0.00      30+72      IrCompileTrackedRealloc [132]
+                                  72             IrCompileTrackedRealloc [132]
+-----------------------------------------------
+                                  48             LowerRecImpl <cycle 5> [133]
+                                   1             LowerRec <cycle 5> [105]
+                0.00    0.00      27/54          LowerStmtRec1 <cycle 4> [50]
+[133]    0.0    0.00    0.00      28+48      LowerRecImpl <cycle 5> [133]
+                0.00    0.00     380/385         IrVmStrictOn [89]
+                0.00    0.00      50/87          LinCseRegIsPinned [101]
+                0.00    0.00      31/46          IrExprIsWideInt [118]
+                0.00    0.00      27/37          AllocReg [122]
+                0.00    0.00      22/22          IrExprIsUnsigned [137]
+                0.00    0.00      22/22          IrExprIsUnsignedPromoted [138]
+                0.00    0.00      18/68          LinCseDropExprCache [108]
+                0.00    0.00      18/36          LinCseReset [124]
+                0.00    0.00      12/12          LinCsePinReg [150]
+                0.00    0.00      12/12          LinCseInvalAll [149]
+                0.00    0.00       8/1000590     IrExecIsVmProd [64]
+                0.00    0.00       8/8           IrGlobalIdentSoft [160]
+                0.00    0.00       6/6           IrLiveInitStampOk [165]
+                0.00    0.00       5/5           IdxMetaPush [174]
+                0.00    0.00       3/3           IrLowerIndexRowIsPointer [205]
+                0.00    0.00       3/3           GlobPush [200]
+                0.00    0.00       3/3           IrLinHostSupported [203]
+                0.00    0.00       3/6           IrLowerPtrRowPointee [166]
+                0.00    0.00       3/3           IrExprIsFP [201]
+                0.00    0.00       2/500012      IrGlobalValSoft [73]
+                0.00    0.00       2/2           IrLinEmitTypeIsPointerOrArray [229]
+                0.00    0.00       1/1           LowerCallEnabled [276]
+                                  49             LowerRec <cycle 5> [105]
+                                  48             LowerRecImpl <cycle 5> [133]
+-----------------------------------------------
+                                 123             IrDaExpr [134]
+                0.00    0.00      26/26          IrDaStmt [112]
+[134]    0.0    0.00    0.00      26+123     IrDaExpr [134]
+                                 123             IrDaExpr [134]
+-----------------------------------------------
+                0.00    0.00       3/25          ExpressionParseInt [8]
+                0.00    0.00      22/25          IrCompilePrimary <cycle 3> [109]
+[135]    0.0    0.00    0.00      25         ExpressionCoerceInteger [135]
+-----------------------------------------------
+                0.00    0.00       6/23          LowerStmtRec1 <cycle 4> [50]
+                0.00    0.00      17/23          LowerStmtRec <cycle 4> [125]
+[136]    0.0    0.00    0.00      23         LinCsePinLiveEntries [136]
+-----------------------------------------------
+                0.00    0.00      22/22          LowerRecImpl <cycle 5> [133]
+[137]    0.0    0.00    0.00      22         IrExprIsUnsigned [137]
+-----------------------------------------------
+                0.00    0.00      22/22          LowerRecImpl <cycle 5> [133]
+[138]    0.0    0.00    0.00      22         IrExprIsUnsignedPromoted [138]
+                0.00    0.00      22/22          IrExprType [139]
+-----------------------------------------------
+                0.00    0.00      22/22          IrExprIsUnsignedPromoted [138]
+[139]    0.0    0.00    0.00      22         IrExprType [139]
+                0.00    0.00       1/1500007     IrGlobalVal [61]
+-----------------------------------------------
+                0.00    0.00      19/19          LexTokenise [115]
+[140]    0.0    0.00    0.00      19         LexGetNumber [140]
+-----------------------------------------------
+                0.00    0.00       1/19          PicocCallMain [17]
+                0.00    0.00       1/19          IncludeFile <cycle 1> [255]
+                0.00    0.00       3/19          LibraryInit [16]
+                0.00    0.00      14/19          StdioSetupFunc [286]
+[141]    0.0    0.00    0.00      19         VariableDefinePlatformVar [141]
+                0.00    0.00      19/423         TableSetIdentifier [88]
+                0.00    0.00      19/138         TableStrRegister [99]
+                0.00    0.00      19/86          VariableAllocValueAndData [102]
+                0.00    0.00      19/124         TableSet [100]
+-----------------------------------------------
+                0.00    0.00       6/18          IrTryFastForAfterInit <cycle 6> [25]
+                0.00    0.00      12/18          IrKernelExecStmt <cycle 2> [74]
+[142]    0.0    0.00    0.00      18         IrTryFastArrayAccum [142]
+                0.00    0.00      18/4500156     IrKernelFpEnabledFor [56]
+-----------------------------------------------
+                                  32             IrKernelExprOk [143]
+                0.00    0.00       1/17          IrTryKernelFor [47]
+                0.00    0.00      16/17          IrKernelStmtOk [164]
+[143]    0.0    0.00    0.00      17+32      IrKernelExprOk [143]
+                0.00    0.00      12/12          IrSafeChecksOn [147]
+                                  32             IrKernelExprOk [143]
+-----------------------------------------------
+                0.00    0.00       1/16          ExpressionStackCollapse [157]
+                0.00    0.00       4/16          VariableDefine [161]
+                0.00    0.00       4/16          VariableStackPop [197]
+                0.00    0.00       7/16          VariableAllocValueAndCopy [163]
+[144]    0.0    0.00    0.00      16         TypeSizeValue [144]
+-----------------------------------------------
+                0.00    0.00      15/15          IrBindGlobalsStmt [217]
+[145]    0.0    0.00    0.00      15         IrBindNameCache [145]
+-----------------------------------------------
+                0.00    0.00      14/14          IrDaStmt [112]
+[146]    0.0    0.00    0.00      14         IrCompileIdentElemPointee [146]
+-----------------------------------------------
+                0.00    0.00      12/12          IrKernelExprOk [143]
+[147]    0.0    0.00    0.00      12         IrSafeChecksOn [147]
+-----------------------------------------------
+                0.00    0.00      12/12          LexGetStringConstant [234]
+[148]    0.0    0.00    0.00      12         LexUnEscapeCharacter [148]
+-----------------------------------------------
+                0.00    0.00      12/12          LowerRecImpl <cycle 5> [133]
+[149]    0.0    0.00    0.00      12         LinCseInvalAll [149]
+-----------------------------------------------
+                0.00    0.00      12/12          LowerRecImpl <cycle 5> [133]
+[150]    0.0    0.00    0.00      12         LinCsePinReg [150]
+-----------------------------------------------
+                0.00    0.00       5/10          IrStorageDescStampDecl [180]
+                0.00    0.00       5/10          IrStorageDescStampDeclFull [51]
+[151]    0.0    0.00    0.00      10         IrLinWideImmOn [151]
+-----------------------------------------------
+                0.00    0.00      10/10          EmitTreeLoopTry [123]
+[152]    0.0    0.00    0.00      10         IrShapeFpEnabled [152]
+                0.00    0.00       1/2           BabycAccelOn [211]
+-----------------------------------------------
+                0.00    0.00       5/10          IrStorageDescStampDecl [180]
+                0.00    0.00       5/10          IrStorageDescStampDeclFull [51]
+[153]    0.0    0.00    0.00      10         IrStorageDescFromDecl [153]
+-----------------------------------------------
+                0.00    0.00       5/10          IrStorageDescStampDecl [180]
+                0.00    0.00       5/10          IrStorageDescStampDeclFull [51]
+[154]    0.0    0.00    0.00      10         IrStorageDescStampFnSlot [154]
+-----------------------------------------------
+                0.00    0.00       4/10          IrCompilePrimary <cycle 3> [109]
+                0.00    0.00       6/10          IrCompileStmt [224]
+[155]    0.0    0.00    0.00      10         IrTryFoldInitConst [155]
+                0.00    0.00      10/140         IrCompileTrackedCalloc [98]
+-----------------------------------------------
+                0.00    0.00       9/9           LowerStmtRec1 <cycle 4> [50]
+[156]    0.0    0.00    0.00       9         CompileStampName [156]
+-----------------------------------------------
+                0.00    0.00       9/9           ExpressionParseEx <cycle 7> [172]
+[157]    0.0    0.00    0.00       9         ExpressionStackCollapse [157]
+                0.00    0.00       3/69          HeapPopStack [107]
+                0.00    0.00       2/2           TypeStackSizeValue [237]
+                0.00    0.00       1/16          TypeSizeValue [144]
+                0.00    0.00       1/1           ExpressionPushInt [250]
+                0.00    0.00       1/1           ExpressionInfixOperator [247]
+-----------------------------------------------
+                0.00    0.00       1/9           IrExprCachedGlobal [35]
+                0.00    0.00       8/9           IrGlobalIdentSoft [160]
+[158]    0.0    0.00    0.00       9         IrVarTableLookup [158]
+                0.00    0.00       8/498         TableGet [87]
+-----------------------------------------------
+                0.00    0.00       1/9           ExpressionStackPushValueByType [251]
+                0.00    0.00       1/9           ExpressionPushInt [250]
+                0.00    0.00       3/9           ExpressionStackPushValue [199]
+                0.00    0.00       4/9           ExpressionParseEx <cycle 7> [172]
+[159]    0.0    0.00    0.00       9         VariableValueRefresh [159]
+-----------------------------------------------
+                0.00    0.00       8/8           LowerRecImpl <cycle 5> [133]
+[160]    0.0    0.00    0.00       8         IrGlobalIdentSoft [160]
+                0.00    0.00       8/9           IrVarTableLookup [158]
+-----------------------------------------------
+                0.00    0.00       1/8           IncludeFile <cycle 1> [255]
+                0.00    0.00       3/8           VariableDefineButIgnoreIdentical [210]
+                0.00    0.00       4/8           ParseTypedef [31]
+[161]    0.0    0.00    0.00       8         VariableDefine [161]
+                0.00    0.00       8/124         TableSet [100]
+                0.00    0.00       4/7           VariableAllocValueAndCopy [163]
+                0.00    0.00       4/6           VariableAllocValueFromType [171]
+                0.00    0.00       4/16          TypeSizeValue [144]
+-----------------------------------------------
+                0.00    0.00       1/7           LexInit [269]
+                0.00    0.00       1/7           VariableStackFrameAdd [297]
+                0.00    0.00       1/7           DebugInit [245]
+                0.00    0.00       2/7           TypeCreateOpaqueStruct [235]
+                0.00    0.00       2/7           VariableInit [296]
+[162]    0.0    0.00    0.00       7         TableInitTable [162]
+-----------------------------------------------
+                0.00    0.00       3/7           ExpressionStackPushValue [199]
+                0.00    0.00       4/7           VariableDefine [161]
+[163]    0.0    0.00    0.00       7         VariableAllocValueAndCopy [163]
+                0.00    0.00       7/16          TypeSizeValue [144]
+                0.00    0.00       7/86          VariableAllocValueAndData [102]
+-----------------------------------------------
+                                  14             IrKernelStmtOk [164]
+                0.00    0.00       1/6           IrCallUserFuncCached <cycle 6> [20]
+                0.00    0.00       5/6           IrTryKernelFor [47]
+[164]    0.0    0.00    0.00       6+14      IrKernelStmtOk [164]
+                0.00    0.00      16/17          IrKernelExprOk [143]
+                                  14             IrKernelStmtOk [164]
+-----------------------------------------------
+                0.00    0.00       6/6           LowerRecImpl <cycle 5> [133]
+[165]    0.0    0.00    0.00       6         IrLiveInitStampOk [165]
+-----------------------------------------------
+                0.00    0.00       3/6           IrLowerIndexRowIsPointer [205]
+                0.00    0.00       3/6           LowerRecImpl <cycle 5> [133]
+[166]    0.0    0.00    0.00       6         IrLowerPtrRowPointee [166]
+                0.00    0.00       4/500012      IrGlobalValSoft [73]
+-----------------------------------------------
+                0.00    0.00       6/6           IrTryFastForAfterInit <cycle 6> [25]
+[167]    0.0    0.00    0.00       6         IrTryFastMatmul3 [167]
+                0.00    0.00       6/4500156     IrKernelFpEnabledFor [56]
+-----------------------------------------------
+                0.00    0.00       6/6           IrTryFastForAfterInit <cycle 6> [25]
+[168]    0.0    0.00    0.00       6         IrTryFastPtrWalk [168]
+                0.00    0.00       6/4500156     IrKernelFpEnabledFor [56]
+-----------------------------------------------
+                0.00    0.00       6/6           IrTryFastForAfterInit <cycle 6> [25]
+[169]    0.0    0.00    0.00       6         IrTryIterCallAccum [169]
+-----------------------------------------------
+                0.00    0.00       6/6           VariableAllocValueFromType [171]
+[170]    0.0    0.00    0.00       6         TypeSize [170]
+-----------------------------------------------
+                0.00    0.00       1/6           ExpressionStackPushValueByType [251]
+                0.00    0.00       1/6           ExpressionPushInt [250]
+                0.00    0.00       4/6           VariableDefine [161]
+[171]    0.0    0.00    0.00       6         VariableAllocValueFromType [171]
+                0.00    0.00       6/6           TypeSize [170]
+                0.00    0.00       6/86          VariableAllocValueAndData [102]
+-----------------------------------------------
+                                   3             ExpressionParseEx <cycle 7> [172]
+                                   1             ExpressionParseFunctionCall <cycle 7> [2]
+                0.00    0.18       1/4           ParseStatement <cycle 1> [11]
+                0.00    0.53       3/4           ExpressionParseInt [8]
+[172]    0.0    0.00    0.00       5+3       ExpressionParseEx <cycle 7> [172]
+                0.00    0.00      25/31          ParserCopyPos [131]
+                0.00    0.00      25/1974        LexGetToken [80]
+                0.00    0.00       9/9           ExpressionStackCollapse [157]
+                0.00    0.00       7/69          HeapPopStack [107]
+                0.00    0.00       5/149         VariableAlloc [94]
+                0.00    0.00       4/60          VariableGet [110]
+                0.00    0.00       4/9           VariableValueRefresh [159]
+                0.00    0.00       3/674         ParserCopy [84]
+                0.00    0.00       3/3           ExpressionStackPushValue [199]
+                0.00    0.00       1/1           VariableAllocValueFromExistingData [293]
+                0.00    0.00       1/1           VariableAllocValueShared [294]
+                                   1             ExpressionParseFunctionCall <cycle 7> [2]
+                                   3             ExpressionParseEx <cycle 7> [172]
+-----------------------------------------------
+                0.00    0.00       5/5           IrCompileStmt [224]
+[173]    0.0    0.00    0.00       5         FastForCaptureCond [173]
+                0.00    0.00      33/1974        LexGetToken [80]
+                0.00    0.00       9/674         ParserCopy [84]
+                0.00    0.00       5/2500005     IrValueAsInt64 [58]
+                0.00    0.00       4/498         TableGet [87]
+-----------------------------------------------
+                0.00    0.00       5/5           LowerRecImpl <cycle 5> [133]
+[174]    0.0    0.00    0.00       5         IdxMetaPush [174]
+                0.00    0.00       5/1500007     IrGlobalVal [61]
+-----------------------------------------------
+                0.00    0.00       5/5           IrCompileStmt [224]
+[175]    0.0    0.00    0.00       5         IrBindFastCondSlots [175]
+-----------------------------------------------
+                0.00    0.00       5/5           IrCompileStmt [224]
+[176]    0.0    0.00    0.00       5         IrClassifyForFpCompile [176]
+-----------------------------------------------
+                0.00    0.00       5/5           IrCompileStmt [224]
+[177]    0.0    0.00    0.00       5         IrInternLocal [177]
+-----------------------------------------------
+                                  31             IrKernelExprTouchesPtrArr [178]
+                0.00    0.00       5/5           IrKernelStmtTouchesPtrArr [262]
+[178]    0.0    0.00    0.00       5+31      IrKernelExprTouchesPtrArr [178]
+                                  31             IrKernelExprTouchesPtrArr [178]
+-----------------------------------------------
+                                 159             IrStmtTouchesFPWalk [179]
+                0.00    0.00       5/5           IrKernelFpEnabledFor [56]
+[179]    0.0    0.00    0.00       5+159     IrStmtTouchesFPWalk [179]
+                0.00    0.00      31/31          IrExprTouchesFP [130]
+                                 159             IrStmtTouchesFPWalk [179]
+-----------------------------------------------
+                0.00    0.00       5/5           LowerStmtRec1 <cycle 4> [50]
+[180]    0.0    0.00    0.00       5         IrStorageDescStampDecl [180]
+                0.00    0.00       5/10          IrStorageDescFromDecl [153]
+                0.00    0.00       5/10          IrLinWideImmOn [151]
+                0.00    0.00       5/10          IrStorageDescStampFnSlot [154]
+-----------------------------------------------
+                0.00    0.00       5/5           IrTryFastForAfterInit <cycle 6> [25]
+[181]    0.0    0.00    0.00       5         IrTryDenseForBody [181]
+-----------------------------------------------
+                0.00    0.00       5/5           IrTryFastForAfterInit <cycle 6> [25]
+[182]    0.0    0.00    0.00       5         IrTryTightFor [182]
+-----------------------------------------------
+                0.00    0.00       5/5           LowerStmtRec1 <cycle 4> [50]
+[183]    0.0    0.00    0.00       5         SealBrk [183]
+-----------------------------------------------
+                0.00    0.00       5/5           LowerStmtRec1 <cycle 4> [50]
+[184]    0.0    0.00    0.00       5         SealCont [184]
+-----------------------------------------------
+                0.00    0.00       1/4           IrHookInit [545]
+                0.00    0.00       3/4           IrLowerEnabledInit [204]
+[185]    0.0    0.00    0.00       4         BabycDebugEnabled [185]
+-----------------------------------------------
+                                 384             IrAnnotateStmt [186]
+                0.00    0.00       4/4           IrCompileFunctionBody [221]
+[186]    0.0    0.00    0.00       4+384     IrAnnotateStmt [186]
+                0.00    0.00      54/56          IrDaStmt [112]
+                                 384             IrAnnotateStmt [186]
+-----------------------------------------------
+                0.00    0.00       1/4           IrCompileExprPrec <cycle 3> [121]
+                0.00    0.00       3/4           IrCompileStmt [224]
+[187]    0.0    0.00    0.00       4         IrCompileTrackedMalloc [187]
+-----------------------------------------------
+                                   1             IrKernelStmtScalarOnly [188]
+                0.00    0.00       4/4           LowerStmtRec1 <cycle 4> [50]
+[188]    0.0    0.00    0.00       4+1       IrKernelStmtScalarOnly [188]
+                0.00    0.00       1/3           IrKernelExprScalarOnly [202]
+                                   1             IrKernelStmtScalarOnly [188]
+-----------------------------------------------
+                0.00    0.00       4/4           IrDaStmt [112]
+[189]    0.0    0.00    0.00       4         IrLookupFuncReturnType [189]
+                0.00    0.00       4/148         VariableDefined [95]
+                0.00    0.00       4/498         TableGet [87]
+-----------------------------------------------
+                0.00    0.00       4/4           IrExecuteFunctionBody [3]
+[190]    0.0    0.00    0.00       4         IrStorageDescApplySlotKind [190]
+-----------------------------------------------
+                0.00    0.00       4/4           IrTryFastForAfterInit <cycle 6> [25]
+[191]    0.0    0.00    0.00       4         IrTryLeafCallAccum [191]
+-----------------------------------------------
+                0.00    0.00       4/4           IrTryScoreCallAccum [194]
+[192]    0.0    0.00    0.00       4         IrTryLeafPtrStructAccum [192]
+-----------------------------------------------
+                0.00    0.00       4/4           IrTryFastForAfterInit <cycle 6> [25]
+[193]    0.0    0.00    0.00       4         IrTryNestedThinFor [193]
+-----------------------------------------------
+                0.00    0.00       4/4           IrTryFastForAfterInit <cycle 6> [25]
+[194]    0.0    0.00    0.00       4         IrTryScoreCallAccum [194]
+                0.00    0.00       4/4           IrTryLeafPtrStructAccum [192]
+-----------------------------------------------
+                0.00    0.00       4/4           IrTryFastForAfterInit <cycle 6> [25]
+[195]    0.0    0.00    0.00       4         IrTryStructInlineCallFor [195]
+-----------------------------------------------
+                                   1             IncludeFile <cycle 1> [255]
+                0.00    0.16       1/3           LibraryInit [16]
+                0.00    0.16       1/3           PicocCallMain [17]
+                0.00    0.16       1/3           PicocPlatformScanFile [18]
+[196]    0.0    0.00    0.00       4         PicocParse <cycle 1> [196]
+                0.00    0.00       4/423         TableSetIdentifier [88]
+                0.00    0.00       4/138         TableStrRegister [99]
+                0.00    0.00       4/559         HeapAllocMem [86]
+                0.00    0.00       4/53          LexAnalyse [113]
+                0.00    0.00       4/53          LexInitParser [114]
+                0.00    0.00       4/560         HeapFreeMem [85]
+                                  16             ParseStatement <cycle 1> [11]
+-----------------------------------------------
+                0.00    0.00       1/4           ParseStatement <cycle 1> [11]
+                0.00    0.00       3/4           ExpressionParseInt [8]
+[197]    0.0    0.00    0.00       4         VariableStackPop [197]
+                0.00    0.00       4/16          TypeSizeValue [144]
+                0.00    0.00       4/69          HeapPopStack [107]
+-----------------------------------------------
+                0.00    0.00       3/3           IrLowerEnabledInit [204]
+[198]    0.0    0.00    0.00       3         BabycExecConfigInit [198]
+-----------------------------------------------
+                0.00    0.00       3/3           ExpressionParseEx <cycle 7> [172]
+[199]    0.0    0.00    0.00       3         ExpressionStackPushValue [199]
+                0.00    0.00       3/7           VariableAllocValueAndCopy [163]
+                0.00    0.00       3/9           VariableValueRefresh [159]
+                0.00    0.00       3/149         VariableAlloc [94]
+-----------------------------------------------
+                0.00    0.00       3/3           LowerRecImpl <cycle 5> [133]
+[200]    0.0    0.00    0.00       3         GlobPush [200]
+-----------------------------------------------
+                0.00    0.00       3/3           LowerRecImpl <cycle 5> [133]
+[201]    0.0    0.00    0.00       3         IrExprIsFP [201]
+-----------------------------------------------
+                                   3             IrKernelExprScalarOnly [202]
+                0.00    0.00       1/3           IrKernelStmtScalarOnly [188]
+                0.00    0.00       2/3           LowerStmtRec1 <cycle 4> [50]
+[202]    0.0    0.00    0.00       3+3       IrKernelExprScalarOnly [202]
+                                   3             IrKernelExprScalarOnly [202]
+-----------------------------------------------
+                0.00    0.00       3/3           LowerRecImpl <cycle 5> [133]
+[203]    0.0    0.00    0.00       3         IrLinHostSupported [203]
+-----------------------------------------------
+                0.00    0.00       1/3           IrHookInit [545]
+                0.00    0.00       2/3           IrVmProdNotice [233]
+[204]    0.0    0.00    0.00       3         IrLowerEnabledInit [204]
+                0.00    0.00       3/3           BabycExecConfigInit [198]
+                0.00    0.00       3/4           BabycDebugEnabled [185]
+-----------------------------------------------
+                0.00    0.00       3/3           LowerRecImpl <cycle 5> [133]
+[205]    0.0    0.00    0.00       3         IrLowerIndexRowIsPointer [205]
+                0.00    0.00       3/6           IrLowerPtrRowPointee [166]
+                0.00    0.00       3/500012      IrGlobalValSoft [73]
+-----------------------------------------------
+                0.00    0.00       1/3           IrCallUserFuncCached <cycle 6> [20]
+                0.00    0.00       2/3           FnCodeCompile [44]
+[206]    0.0    0.00    0.00       3         IrMemoEligible [206]
+-----------------------------------------------
+                0.00    0.00       1/3           IrCallUserFuncCached <cycle 6> [20]
+                0.00    0.00       2/3           FnCodeCompile [44]
+[207]    0.0    0.00    0.00       3         IrMonoIsEligible [207]
+-----------------------------------------------
+                0.00    0.00       1/3           ParseMacroDefinition [278]
+                0.00    0.00       2/3           ParseFunctionDefinition [13]
+[208]    0.0    0.00    0.00       3         LexCopyTokens [208]
+                0.00    0.00       3/149         VariableAlloc [94]
+-----------------------------------------------
+                0.00    0.00       3/3           VariableDefineButIgnoreIdentical [210]
+[209]    0.0    0.00    0.00       3         TypeIsForwardDeclared [209]
+-----------------------------------------------
+                0.00    0.00       3/3           ParseDeclaration [24]
+[210]    0.0    0.00    0.00       3         VariableDefineButIgnoreIdentical [210]
+                0.00    0.00       3/3           TypeIsForwardDeclared [209]
+                0.00    0.00       3/8           VariableDefine [161]
+                0.00    0.00       3/498         TableGet [87]
+-----------------------------------------------
+                0.00    0.00       1/2           IrShapeFpEnabled [152]
+                0.00    0.00       1/2           IrKernelFpEnabledFor [56]
+[211]    0.0    0.00    0.00       2         BabycAccelOn [211]
+-----------------------------------------------
+                0.00    0.00       2/2           ParseFunctionDefinition [13]
+[212]    0.0    0.00    0.00       2         BabycAnalyzeNote [212]
+-----------------------------------------------
+                0.00    0.00       2/2           ParseFunctionDefinition [13]
+[213]    0.0    0.00    0.00       2         BabycPathGet [213]
+-----------------------------------------------
+                0.00    0.00       2/2           ParseStatement <cycle 1> [11]
+[214]    0.0    0.00    0.00       2         DebugCheckStatement [214]
+-----------------------------------------------
+                0.00    0.00       2/2           ExpressionParseFunctionCall <cycle 7> [2]
+[215]    0.0    0.00    0.00       2         HeapPopStackFrame [215]
+-----------------------------------------------
+                0.00    0.00       1/2           ExpressionParseFunctionCall <cycle 7> [2]
+                0.00    0.00       1/2           VariableStackFrameAdd [297]
+[216]    0.0    0.00    0.00       2         HeapPushStackFrame [216]
+-----------------------------------------------
+                                 192             IrBindGlobalsStmt [217]
+                0.00    0.00       2/2           IrCompileFunctionBody [221]
+[217]    0.0    0.00    0.00       2+192     IrBindGlobalsStmt [217]
+                0.00    0.00      35/35          IrBindGlobalsExpr [126]
+                0.00    0.00      15/15          IrBindNameCache [145]
+                                 192             IrBindGlobalsStmt [217]
+-----------------------------------------------
+                0.00    0.00       2/2           IrMetaSeedFromBody [230]
+[218]    0.0    0.00    0.00       2         IrBodyFrameLookup [218]
+-----------------------------------------------
+                0.00    0.00       2/2           IrCompileFunctionBody [221]
+[219]    0.0    0.00    0.00       2         IrBodyFrameRegister [219]
+-----------------------------------------------
+                0.00    0.00       2/2           ParseFunctionDefinition [13]
+[220]    0.0    0.00    0.00       2         IrCompileClearParamContext [220]
+-----------------------------------------------
+                0.00    0.00       2/2           ParseFunctionDefinition [13]
+[221]    0.0    0.00    0.00       2         IrCompileFunctionBody [221]
+                0.00    0.00       4/4           IrAnnotateStmt [186]
+                0.00    0.00       2/2           IrCompileStmt [224]
+                0.00    0.00       2/674         ParserCopy [84]
+                0.00    0.00       2/56          IrDaStmt [112]
+                0.00    0.00       2/2           IrBindGlobalsStmt [217]
+                0.00    0.00       2/2           IrVerifyBody [232]
+                0.00    0.00       2/2           IrBodyFrameRegister [219]
+-----------------------------------------------
+                0.00    0.00       2/2           ParseFunctionDefinition [13]
+[222]    0.0    0.00    0.00       2         IrCompileSetParamContext [222]
+-----------------------------------------------
+                0.00    0.00       2/2           ParseFunctionDefinition [13]
+[223]    0.0    0.00    0.00       2         IrCompileSetReturnType [223]
+-----------------------------------------------
+                                  25             IrCompileStmt [224]
+                0.00    0.00       2/2           IrCompileFunctionBody [221]
+[224]    0.0    0.00    0.00       2+25      IrCompileStmt [224]
+                0.00    0.00     225/1974        LexGetToken [80]
+                0.00    0.00      70/674         ParserCopy [84]
+                0.00    0.00      32/140         IrCompileTrackedCalloc [98]
+                0.00    0.00      28/148         VariableDefined [95]
+                0.00    0.00      27/27          IrCompileExprPrec <cycle 3> [121]
+                0.00    0.00      16/60          VariableGet [110]
+                0.00    0.00       6/10          IrTryFoldInitConst [155]
+                0.00    0.00       5/5           IrInternLocal [177]
+                0.00    0.00       5/5           FastForCaptureCond [173]
+                0.00    0.00       5/5           IrBindFastCondSlots [175]
+                0.00    0.00       5/5           IrClassifyForFpCompile [176]
+                0.00    0.00       3/4           IrCompileTrackedMalloc [187]
+                0.00    0.00       3/30          IrCompileTrackedRealloc [132]
+                0.00    0.00       2/2           IrCompileTrackedFree [225]
+                                  25             IrCompileStmt [224]
+-----------------------------------------------
+                0.00    0.00       2/2           IrCompileStmt [224]
+[225]    0.0    0.00    0.00       2         IrCompileTrackedFree [225]
+-----------------------------------------------
+                0.00    0.00       2/2           VariableFree [103]
+[226]    0.0    0.00    0.00       2         IrFreeFunctionBody [226]
+-----------------------------------------------
+                                 192             IrFreeStmt [227]
+                0.00    0.00       2/2           VariableFree [103]
+[227]    0.0    0.00    0.00       2+192     IrFreeStmt [227]
+                0.00    0.00      27/30          IrCompileTrackedRealloc [132]
+                                 192             IrFreeStmt [227]
+-----------------------------------------------
+                0.00    0.00       2/2           ParseFunctionDefinition [13]
+[228]    0.0    0.00    0.00       2         IrIsLeafReturn [228]
+-----------------------------------------------
+                0.00    0.00       2/2           LowerRecImpl <cycle 5> [133]
+[229]    0.0    0.00    0.00       2         IrLinEmitTypeIsPointerOrArray [229]
+-----------------------------------------------
+                0.00    0.00       2/2           ParseFunctionDefinition [13]
+[230]    0.0    0.00    0.00       2         IrMetaSeedFromBody [230]
+                0.00    0.00       2/2           IrBodyFrameLookup [218]
+-----------------------------------------------
+                                 192             IrStmtIntegerOk [231]
+                0.00    0.00       2/2           FnCodeCompile [44]
+[231]    0.0    0.00    0.00       2+192     IrStmtIntegerOk [231]
+                0.00    0.00      35/35          IrExprIntegerOk [127]
+                                 192             IrStmtIntegerOk [231]
+-----------------------------------------------
+                0.00    0.00       2/2           IrCompileFunctionBody [221]
+[232]    0.0    0.00    0.00       2         IrVerifyBody [232]
+-----------------------------------------------
+                0.00    0.00       2/2           FnCodeCompile [44]
+[233]    0.0    0.00    0.00       2         IrVmProdNotice [233]
+                0.00    0.00       2/3           IrLowerEnabledInit [204]
+-----------------------------------------------
+                0.00    0.00       2/2           LexScanGetToken [81]
+[234]    0.0    0.00    0.00       2         LexGetStringConstant [234]
+                0.00    0.00      12/12          LexUnEscapeCharacter [148]
+                0.00    0.00       2/73          HeapAllocStack [106]
+                0.00    0.00       2/423         TableSetIdentifier [88]
+                0.00    0.00       2/284         TableStrRegister2 [91]
+                0.00    0.00       2/69          HeapPopStack [107]
+                0.00    0.00       2/2           VariableStringLiteralGet [239]
+                0.00    0.00       2/86          VariableAllocValueAndData [102]
+                0.00    0.00       2/2           VariableStringLiteralDefine [238]
+-----------------------------------------------
+                0.00    0.00       2/2           StdioSetupFunc [286]
+[235]    0.0    0.00    0.00       2         TypeCreateOpaqueStruct [235]
+                0.00    0.00       2/80          TypeGetMatching [104]
+                0.00    0.00       2/149         VariableAlloc [94]
+                0.00    0.00       2/7           TableInitTable [162]
+-----------------------------------------------
+                0.00    0.00       2/2           TypeParseFront [93]
+[236]    0.0    0.00    0.00       2         TypeParseStruct [236]
+                0.00    0.00       8/1974        LexGetToken [80]
+                0.00    0.00       2/80          TypeGetMatching [104]
+-----------------------------------------------
+                0.00    0.00       2/2           ExpressionStackCollapse [157]
+[237]    0.0    0.00    0.00       2         TypeStackSizeValue [237]
+-----------------------------------------------
+                0.00    0.00       2/2           LexGetStringConstant [234]
+[238]    0.0    0.00    0.00       2         VariableStringLiteralDefine [238]
+                0.00    0.00       2/124         TableSet [100]
+-----------------------------------------------
+                0.00    0.00       2/2           LexGetStringConstant [234]
+[239]    0.0    0.00    0.00       2         VariableStringLiteralGet [239]
+                0.00    0.00       2/498         TableGet [87]
+-----------------------------------------------
+                0.00    0.00       2/2           TypeCleanupNode [290]
+[240]    0.0    0.00    0.00       2         VariableTableCleanup [240]
+-----------------------------------------------
+                0.00    0.00       1/1           ExpressionAssignInt [246]
+[241]    0.0    0.00    0.00       1         BabycHeapCheckWrite [241]
+-----------------------------------------------
+                0.00    0.00       1/1           PicocInitialise [12]
+[242]    0.0    0.00    0.00       1         BasicIOInit [242]
+-----------------------------------------------
+                0.00    0.00       1/1           FnCodeCompile [44]
+[243]    0.0    0.00    0.00       1         CompileFramePush [243]
+                0.00    0.00       1/500003      FnCodeSnapshot [76]
+-----------------------------------------------
+                0.00    0.00       1/1           PicocCleanup [279]
+[244]    0.0    0.00    0.00       1         DebugCleanup [244]
+-----------------------------------------------
+                0.00    0.00       1/1           main [4]
+[245]    0.0    0.00    0.00       1         DebugInit [245]
+                0.00    0.00       1/7           TableInitTable [162]
+-----------------------------------------------
+                0.00    0.00       1/1           ExpressionInfixOperator [247]
+[246]    0.0    0.00    0.00       1         ExpressionAssignInt [246]
+                0.00    0.00       1/1           VariableAddressIsStringLiteral [292]
+                0.00    0.00       1/1           BabycHeapCheckWrite [241]
+                0.00    0.00       1/1           ExpressionMarkInitialized [248]
+                0.00    0.00       1/1           VariableValueCommit [299]
+-----------------------------------------------
+                0.00    0.00       1/1           ExpressionStackCollapse [157]
+[247]    0.0    0.00    0.00       1         ExpressionInfixOperator [247]
+                0.00    0.00       1/1           ExpressionAssignInt [246]
+-----------------------------------------------
+                0.00    0.00       1/1           ExpressionAssignInt [246]
+[248]    0.0    0.00    0.00       1         ExpressionMarkInitialized [248]
+-----------------------------------------------
+                0.00    0.00       1/1           ParseStatement <cycle 1> [11]
+[249]    0.0    0.00    0.00       1         ExpressionParse [249]
+-----------------------------------------------
+                0.00    0.00       1/1           ExpressionStackCollapse [157]
+[250]    0.0    0.00    0.00       1         ExpressionPushInt [250]
+                0.00    0.00       1/6           VariableAllocValueFromType [171]
+                0.00    0.00       1/9           VariableValueRefresh [159]
+                0.00    0.00       1/149         VariableAlloc [94]
+-----------------------------------------------
+                0.00    0.00       1/1           ExpressionParseFunctionCall <cycle 7> [2]
+[251]    0.0    0.00    0.00       1         ExpressionStackPushValueByType [251]
+                0.00    0.00       1/6           VariableAllocValueFromType [171]
+                0.00    0.00       1/9           VariableValueRefresh [159]
+                0.00    0.00       1/149         VariableAlloc [94]
+-----------------------------------------------
+                0.00    0.00       1/1           PicocCleanup [279]
+[252]    0.0    0.00    0.00       1         HeapCleanup [252]
+-----------------------------------------------
+                0.00    0.00       1/1           PicocInitialise [12]
+[253]    0.0    0.00    0.00       1         HeapInit [253]
+-----------------------------------------------
+                0.00    0.00       1/1           PicocCleanup [279]
+[254]    0.0    0.00    0.00       1         IncludeCleanup [254]
+                0.00    0.00      21/560         HeapFreeMem [85]
+-----------------------------------------------
+                                   1             ParseStatement <cycle 1> [11]
+[255]    0.0    0.00    0.00       1         IncludeFile <cycle 1> [255]
+                0.00    0.00       1/148         VariableDefined [95]
+                0.00    0.00       1/8           VariableDefine [161]
+                0.00    0.00       1/19          VariableDefinePlatformVar [141]
+                0.00    0.00       1/1           StdioSetupFunc [286]
+                                   1             PicocParse <cycle 1> [196]
+-----------------------------------------------
+                0.00    0.00       1/1           PicocInitialise [12]
+[256]    0.0    0.00    0.00       1         IncludeInit [256]
+                0.00    0.00      20/559         HeapAllocMem [86]
+                0.00    0.00      20/423         TableSetIdentifier [88]
+                0.00    0.00      20/138         TableStrRegister [99]
+-----------------------------------------------
+                0.00    0.00       1/1           PicocInitialise [12]
+[257]    0.0    0.00    0.00       1         IncludeRegister [257]
+                0.00    0.00       1/423         TableSetIdentifier [88]
+                0.00    0.00       1/138         TableStrRegister [99]
+                0.00    0.00       1/559         HeapAllocMem [86]
+-----------------------------------------------
+                0.00    0.00       1/1           Step <cycle 6> [14]
+[258]    0.0    0.00    0.00       1         IrCallHostFromRegs [258]
+-----------------------------------------------
+                                   2             IrCloneExpr [259]
+                0.00    0.00       1/1           IrCompileExprPrec <cycle 3> [121]
+[259]    0.0    0.00    0.00       1+2       IrCloneExpr [259]
+                0.00    0.00       1/140         IrCompileTrackedCalloc [98]
+                                   2             IrCloneExpr [259]
+-----------------------------------------------
+                0.00    0.00       1/1           Step <cycle 6> [14]
+[260]    0.0    0.00    0.00       1         IrFrameLocalExtent [260]
+-----------------------------------------------
+                0.00    0.00       1/1           IrKernelResolveBase [96]
+[261]    0.0    0.00    0.00       1         IrKernelGCachePut [261]
+-----------------------------------------------
+                                  20             IrKernelStmtTouchesPtrArr [262]
+                0.00    0.00       1/1           IrTryKernelFor [47]
+[262]    0.0    0.00    0.00       1+20      IrKernelStmtTouchesPtrArr [262]
+                0.00    0.00       5/5           IrKernelExprTouchesPtrArr [178]
+                                  20             IrKernelStmtTouchesPtrArr [262]
+-----------------------------------------------
+                0.00    0.00       1/1           IrStorageDescApplyFrame [38]
+[263]    0.0    0.00    0.00       1         IrLiveMarkInit [263]
+-----------------------------------------------
+                0.00    0.00       1/1           IrExecuteFunctionBody [3]
+[264]    0.0    0.00    0.00       1         IrLowerGotoFinished [264]
+-----------------------------------------------
+                0.00    0.00       1/1           PicocPrintIrStats [280]
+[265]    0.0    0.00    0.00       1         IrPrintGlobalBindStats [265]
+-----------------------------------------------
+                0.00    0.00       1/1           PicocPrintIrStats [280]
+[266]    0.0    0.00    0.00       1         IrPrintLowerStats [266]
+-----------------------------------------------
+                0.00    0.00       1/1           main [4]
+[267]    0.0    0.00    0.00       1         IrPrintVmStats [267]
+                0.00    0.00       1/1           VmOn [300]
+                0.00    0.00       1/1000590     IrExecIsVmProd [64]
+-----------------------------------------------
+                0.00    0.00       1/1           PicocCleanup [279]
+[268]    0.0    0.00    0.00       1         LexCleanup [268]
+                0.00    0.00      43/423         TableSetIdentifier [88]
+                0.00    0.00      43/138         TableStrRegister [99]
+                0.00    0.00      43/43          TableDelete [119]
+-----------------------------------------------
+                0.00    0.00       1/1           PicocInitialise [12]
+[269]    0.0    0.00    0.00       1         LexInit [269]
+                0.00    0.00      43/423         TableSetIdentifier [88]
+                0.00    0.00      43/138         TableStrRegister [99]
+                0.00    0.00      43/124         TableSet [100]
+                0.00    0.00       1/7           TableInitTable [162]
+-----------------------------------------------
+                0.00    0.00       1/1           main [4]
+[270]    0.0    0.00    0.00       1         LexPrintStats [270]
+-----------------------------------------------
+                0.00    0.00       1/1           ParseMacroDefinition [278]
+[271]    0.0    0.00    0.00       1         LexRawPeekToken [271]
+-----------------------------------------------
+                0.00    0.00       1/1           ParseMacroDefinition [278]
+[272]    0.0    0.00    0.00       1         LexToEndOfLine [272]
+                0.00    0.00       1/1975        LexGetRawToken [79]
+-----------------------------------------------
+                0.00    0.00       1/1           LowerRec <cycle 5> [105]
+[273]    0.0    0.00    0.00       1         LinCseExprFind [273]
+-----------------------------------------------
+                0.00    0.00       1/1           LowerRec <cycle 5> [105]
+[274]    0.0    0.00    0.00       1         LinCseExprStore [274]
+-----------------------------------------------
+                                   1             LinCseHashExprRec [275]
+                0.00    0.00       1/1           LowerRec <cycle 5> [105]
+[275]    0.0    0.00    0.00       1+1       LinCseHashExprRec [275]
+                                   1             LinCseHashExprRec [275]
+-----------------------------------------------
+                0.00    0.00       1/1           LowerRecImpl <cycle 5> [133]
+[276]    0.0    0.00    0.00       1         LowerCallEnabled [276]
+-----------------------------------------------
+                0.00    0.00       1/1           PicocCleanup [279]
+[277]    0.0    0.00    0.00       1         ParseCleanup [277]
+                0.00    0.00       5/560         HeapFreeMem [85]
+-----------------------------------------------
+                0.00    0.00       1/1           ParseStatement <cycle 1> [11]
+[278]    0.0    0.00    0.00       1         ParseMacroDefinition [278]
+                0.00    0.00       1/1974        LexGetToken [80]
+                0.00    0.00       1/1           LexRawPeekToken [271]
+                0.00    0.00       1/86          VariableAllocValueAndData [102]
+                0.00    0.00       1/1           LexToEndOfLine [272]
+                0.00    0.00       1/3           LexCopyTokens [208]
+                0.00    0.00       1/124         TableSet [100]
+-----------------------------------------------
+                0.00    0.00       1/1           main [4]
+[279]    0.0    0.00    0.00       1         PicocCleanup [279]
+                0.00    0.00       1/1           IncludeCleanup [254]
+                0.00    0.00       1/1           DebugCleanup [244]
+                0.00    0.00       1/1           LexCleanup [268]
+                0.00    0.00       1/1           ParseCleanup [277]
+                0.00    0.00       1/1           TypeCleanupNode [290]
+                0.00    0.00       1/1           TypeCleanup [289]
+                0.00    0.00       1/1           VariableCleanup [295]
+                0.00    0.00       1/1           HeapCleanup [252]
+                0.00    0.00       1/1           TableStrFree [288]
+-----------------------------------------------
+                0.00    0.00       1/1           main [4]
+[280]    0.0    0.00    0.00       1         PicocPrintIrStats [280]
+                0.00    0.00       1/1           IrPrintGlobalBindStats [265]
+                0.00    0.00       1/1           IrPrintLowerStats [266]
+-----------------------------------------------
+                0.00    0.00       1/1           main [4]
+[281]    0.0    0.00    0.00       1         PlatformCleanup [281]
+-----------------------------------------------
+                0.00    0.00       1/1           PicocInitialise [12]
+[282]    0.0    0.00    0.00       1         PlatformInit [282]
+-----------------------------------------------
+                0.00    0.00       1/1           PicocInitialise [12]
+[283]    0.0    0.00    0.00       1         PlatformLibraryInit [283]
+-----------------------------------------------
+                0.00    0.00       1/1           PicocPlatformScanFile [18]
+[284]    0.0    0.00    0.00       1         PlatformReadFile [284]
+-----------------------------------------------
+                0.00    0.00       1/1           IrCompilePrimary <cycle 3> [109]
+[285]    0.0    0.00    0.00       1         PrintfFormatIsIrSafe [285]
+-----------------------------------------------
+                0.00    0.00       1/1           IncludeFile <cycle 1> [255]
+[286]    0.0    0.00    0.00       1         StdioSetupFunc [286]
+                0.00    0.00      14/19          VariableDefinePlatformVar [141]
+                0.00    0.00       3/423         TableSetIdentifier [88]
+                0.00    0.00       3/138         TableStrRegister [99]
+                0.00    0.00       2/2           TypeCreateOpaqueStruct [235]
+                0.00    0.00       1/80          TypeGetMatching [104]
+                0.00    0.00       1/148         VariableDefined [95]
+-----------------------------------------------
+                0.00    0.00       1/1           PicocInitialise [12]
+[287]    0.0    0.00    0.00       1         TableInit [287]
+                0.00    0.00       1/423         TableSetIdentifier [88]
+-----------------------------------------------
+                0.00    0.00       1/1           PicocCleanup [279]
+[288]    0.0    0.00    0.00       1         TableStrFree [288]
+                0.00    0.00     157/560         HeapFreeMem [85]
+-----------------------------------------------
+                0.00    0.00       1/1           PicocCleanup [279]
+[289]    0.0    0.00    0.00       1         TypeCleanup [289]
+-----------------------------------------------
+                                  27             TypeCleanupNode [290]
+                0.00    0.00       1/1           PicocCleanup [279]
+[290]    0.0    0.00    0.00       1+27      TypeCleanupNode [290]
+                0.00    0.00      12/560         HeapFreeMem [85]
+                0.00    0.00       2/2           VariableTableCleanup [240]
+                                  27             TypeCleanupNode [290]
+-----------------------------------------------
+                0.00    0.00       1/1           PicocInitialise [12]
+[291]    0.0    0.00    0.00       1         TypeInit [291]
+                0.00    0.00       4/149         VariableAlloc [94]
+-----------------------------------------------
+                0.00    0.00       1/1           ExpressionAssignInt [246]
+[292]    0.0    0.00    0.00       1         VariableAddressIsStringLiteral [292]
+                0.00    0.00       1/498         TableGet [87]
+-----------------------------------------------
+                0.00    0.00       1/1           ExpressionParseEx <cycle 7> [172]
+[293]    0.0    0.00    0.00       1         VariableAllocValueFromExistingData [293]
+                0.00    0.00       1/73          HeapAllocStack [106]
+-----------------------------------------------
+                0.00    0.00       1/1           ExpressionParseEx <cycle 7> [172]
+[294]    0.0    0.00    0.00       1         VariableAllocValueShared [294]
+-----------------------------------------------
+                0.00    0.00       1/1           PicocCleanup [279]
+[295]    0.0    0.00    0.00       1         VariableCleanup [295]
+                0.00    0.00     162/560         HeapFreeMem [85]
+                0.00    0.00      81/81          VariableFree [103]
+-----------------------------------------------
+                0.00    0.00       1/1           PicocInitialise [12]
+[296]    0.0    0.00    0.00       1         VariableInit [296]
+                0.00    0.00       2/7           TableInitTable [162]
+-----------------------------------------------
+                0.00    0.00       1/1           ExpressionParseFunctionCall <cycle 7> [2]
+[297]    0.0    0.00    0.00       1         VariableStackFrameAdd [297]
+                0.00    0.00       1/2           HeapPushStackFrame [216]
+                0.00    0.00       1/73          HeapAllocStack [106]
+                0.00    0.00       1/674         ParserCopy [84]
+                0.00    0.00       1/7           TableInitTable [162]
+-----------------------------------------------
+                0.00    0.00       1/1           ExpressionParseFunctionCall <cycle 7> [2]
+[298]    0.0    0.00    0.00       1         VariableStackFramePop [298]
+                0.00    0.00       1/674         ParserCopy [84]
+-----------------------------------------------
+                0.00    0.00       1/1           ExpressionAssignInt [246]
+[299]    0.0    0.00    0.00       1         VariableValueCommit [299]
+-----------------------------------------------
+                0.00    0.00       1/1           IrPrintVmStats [267]
+[300]    0.0    0.00    0.00       1         VmOn [300]
+                0.00    0.00       1/1000590     IrExecIsVmProd [64]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2025 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+ [122] AllocReg               [60] IrFrameSetLocalExtent  [16] LibraryInit
+ [211] BabycAccelOn           [70] IrFrameSetLocalOwned  [108] LinCseDropExprCache (ir_lin_compile.c)
+ [212] BabycAnalyzeNote      [226] IrFreeFunctionBody    [273] LinCseExprFind
+ [185] BabycDebugEnabled     [227] IrFreeStmt (ir_compile.c) [274] LinCseExprStore
+ [198] BabycExecConfigInit    [65] IrFuncMetaGet         [275] LinCseHashExprRec (ir_lin_emit.c)
+ [241] BabycHeapCheckWrite    [41] IrFuncUsesFP          [149] LinCseInvalAll
+ [213] BabycPathGet          [160] IrGlobalIdentSoft     [128] LinCseInvalidateLoop
+ [242] BasicIOInit            [61] IrGlobalVal           [136] LinCsePinLiveEntries (ir_lin_compile.c)
+  [48] CompileFramePop        [73] IrGlobalValSoft       [150] LinCsePinReg
+ [243] CompileFramePush      [177] IrInternLocal (ir_compile.c) [101] LinCseRegIsPinned
+ [156] CompileStampName      [228] IrIsLeafReturn        [124] LinCseReset
+ [214] DebugCheckStatement    [72] IrKernelEval           [30] LinFramePop
+ [244] DebugCleanup           [74] IrKernelExecStmt       [27] LinFramePushFor
+ [245] DebugInit             [143] IrKernelExprOk        [111] LinScanExprWrites (ir_lin_compile.c)
+ [120] Emit                  [202] IrKernelExprScalarOnly (ir_lin_compile.c) [29] LinTabsRestore
+ [129] EmitLine              [178] IrKernelExprTouchesPtrArr (ir_fast.c) [33] LinTryParamIndexedAccess
+ [123] EmitTreeLoopTry (ir_lin_compile.c) [56] IrKernelFpEnabledFor [276] LowerCallEnabled
+ [246] ExpressionAssignInt    [90] IrKernelGCacheLookup.constprop.0 (ir_fast.c) [105] LowerRec
+ [135] ExpressionCoerceInteger [261] IrKernelGCachePut (ir_fast.c) [133] LowerRecImpl (ir_lin_emit.c)
+ [247] ExpressionInfixOperator [96] IrKernelResolveBase  [125] LowerStmtRec (ir_lin_compile.c)
+ [248] ExpressionMarkInitialized [164] IrKernelStmtOk     [50] LowerStmtRec1 (ir_lin_compile.c)
+ [249] ExpressionParse       [188] IrKernelStmtScalarOnly [277] ParseCleanup
+ [172] ExpressionParseEx     [262] IrKernelStmtTouchesPtrArr (ir_fast.c) [116] ParseCountParams
+   [2] ExpressionParseFunctionCall [229] IrLinEmitTypeIsPointerOrArray (ir_lin_emit.c) [24] ParseDeclaration
+   [8] ExpressionParseInt    [203] IrLinHostSupported     [13] ParseFunctionDefinition
+ [250] ExpressionPushInt      [45] IrLinPeephole         [278] ParseMacroDefinition
+ [157] ExpressionStackCollapse [151] IrLinWideImmOn       [11] ParseStatement
+ [199] ExpressionStackPushValue [165] IrLiveInitStampOk   [31] ParseTypedef
+ [251] ExpressionStackPushValueByType [263] IrLiveMarkInit [84] ParserCopy
+ [173] FastForCaptureCond    [189] IrLookupFuncReturnType (ir_compile.c) [131] ParserCopyPos
+  [44] FnCodeCompile         [204] IrLowerEnabledInit     [17] PicocCallMain
+  [66] FnCodeFind            [264] IrLowerGotoFinished   [279] PicocCleanup
+  [77] FnCodeFindByFunc      [205] IrLowerIndexRowIsPointer [12] PicocInitialise
+  [21] FnCodeInstall          [62] IrLowerOnFramePop     [196] PicocParse
+  [19] FnCodeRun (ir_lower.c) [39] IrLowerOnFramePush     [18] PicocPlatformScanFile
+  [76] FnCodeSnapshot        [166] IrLowerPtrRowPointee  [280] PicocPrintIrStats
+ [200] GlobPush               [52] IrLowerStmt           [281] PlatformCleanup
+  [86] HeapAllocMem          [206] IrMemoEligible        [282] PlatformInit
+ [106] HeapAllocStack        [230] IrMetaSeedFromBody    [283] PlatformLibraryInit
+ [252] HeapCleanup           [207] IrMonoIsEligible      [284] PlatformReadFile
+  [85] HeapFreeMem            [75] IrNarrowToLocalType   [285] PrintfFormatIsIrSafe
+ [253] HeapInit              [265] IrPrintGlobalBindStats [183] SealBrk (ir_lin_compile.c)
+ [107] HeapPopStack          [266] IrPrintLowerStats     [184] SealCont (ir_lin_compile.c)
+ [215] HeapPopStackFrame     [267] IrPrintVmStats        [286] StdioSetupFunc
+ [216] HeapPushStackFrame     [40] IrResolvePtr           [14] Step
+ [174] IdxMetaPush           [147] IrSafeChecksOn        [119] TableDelete
+  [67] IdxRunClearCache      [152] IrShapeFpEnabled       [87] TableGet
+  [78] IdxRunPop             [231] IrStmtIntegerOk       [287] TableInit
+  [26] IdxRunPush            [179] IrStmtTouchesFPWalk (ir_fast.c) [162] TableInitTable
+ [254] IncludeCleanup         [38] IrStorageDescApplyFrame [100] TableSet
+ [255] IncludeFile           [190] IrStorageDescApplySlotKind [88] TableSetIdentifier
+ [256] IncludeInit            [71] IrStorageDescBindParamArg [288] TableStrFree
+ [257] IncludeRegister       [153] IrStorageDescFromDecl  [99] TableStrRegister
+ [186] IrAnnotateStmt (ir_compile.c) [43] IrStorageDescSeedFrameFromFnSlot [91] TableStrRegister2
+  [82] IrApplyBinOp          [180] IrStorageDescStampDecl [289] TypeCleanup
+  [83] IrApplyBinOpFlags      [51] IrStorageDescStampDeclFull [290] TypeCleanupNode
+ [175] IrBindFastCondSlots (ir_compile.c) [154] IrStorageDescStampFnSlot [235] TypeCreateOpaqueStruct
+ [126] IrBindGlobalsExpr (ir_compile.c) [59] IrTokenFastAllowed [104] TypeGetMatching
+ [217] IrBindGlobalsStmt (ir_compile.c) [181] IrTryDenseForBody [291] TypeInit
+ [117] IrBindIdentSlots (ir_compile.c) [46] IrTryExecBodyVm [209] TypeIsForwardDeclared
+ [145] IrBindNameCache (ir_compile.c) [142] IrTryFastArrayAccum [97] TypeParse
+ [218] IrBodyFrameLookup      [42] IrTryFastArrayFill      [7] TypeParseBack
+ [219] IrBodyFrameRegister    [25] IrTryFastForAfterInit  [93] TypeParseFront
+ [258] IrCallHostFromRegs    [167] IrTryFastMatmul3        [6] TypeParseIdentPart
+  [20] IrCallUserFuncCached   [37] IrTryFastPtrScanFor   [236] TypeParseStruct
+ [176] IrClassifyForFpCompile (ir_compile.c) [168] IrTryFastPtrWalk [170] TypeSize
+ [259] IrCloneExpr (ir_compile.c) [155] IrTryFoldInitConst (ir_compile.c) [144] TypeSizeValue
+ [220] IrCompileClearParamContext [169] IrTryIterCallAccum [237] TypeStackSizeValue
+ [121] IrCompileExprPrec (ir_compile.c) [47] IrTryKernelFor [292] VariableAddressIsStringLiteral
+ [221] IrCompileFunctionBody [191] IrTryLeafCallAccum     [94] VariableAlloc
+ [146] IrCompileIdentElemPointee (ir_compile.c) [192] IrTryLeafPtrStructAccum [163] VariableAllocValueAndCopy
+ [109] IrCompilePrimary (ir_compile.c) [193] IrTryNestedThinFor [102] VariableAllocValueAndData
+ [222] IrCompileSetParamContext [194] IrTryScoreCallAccum [293] VariableAllocValueFromExistingData
+ [223] IrCompileSetReturnType [195] IrTryStructInlineCallFor [171] VariableAllocValueFromType
+ [224] IrCompileStmt (ir_compile.c) [22] IrTryThinIfCallFor [294] VariableAllocValueShared
+  [98] IrCompileTrackedCalloc (ir_compile.c) [182] IrTryTightFor [295] VariableCleanup
+ [225] IrCompileTrackedFree (ir_compile.c) [34] IrUninitChecksOn [161] VariableDefine
+ [187] IrCompileTrackedMalloc (ir_compile.c) [58] IrValueAsInt64 [210] VariableDefineButIgnoreIdentical
+ [132] IrCompileTrackedRealloc (ir_compile.c) [158] IrVarTableLookup [141] VariableDefinePlatformVar
+ [134] IrDaExpr (ir_compile.c) [232] IrVerifyBody         [95] VariableDefined
+ [112] IrDaStmt (ir_compile.c) [233] IrVmProdNotice      [103] VariableFree
+  [36] IrDispatchForFp        [89] IrVmStrictOn          [110] VariableGet
+  [64] IrExecIsVmProd         [63] IrWriteByElemSize (ir_runtime.h) [296] VariableInit
+  [68] IrExecLinLocals       [113] LexAnalyse            [297] VariableStackFrameAdd
+  [15] IrExecLinLocalsRegs   [268] LexCleanup            [298] VariableStackFramePop
+   [3] IrExecuteFunctionBody [208] LexCopyTokens         [197] VariableStackPop
+  [35] IrExprCachedGlobal    [140] LexGetNumber          [238] VariableStringLiteralDefine
+ [127] IrExprIntegerOk        [79] LexGetRawToken        [239] VariableStringLiteralGet
+ [201] IrExprIsFP            [234] LexGetStringConstant  [240] VariableTableCleanup
+ [137] IrExprIsUnsigned       [80] LexGetToken           [299] VariableValueCommit
+ [138] IrExprIsUnsignedPromoted [92] LexGetWord          [159] VariableValueRefresh
+ [118] IrExprIsWideInt       [269] LexInit               [300] VmOn (ir_vm.c)
+ [130] IrExprTouchesFP (ir_fast.c) [114] LexInitParser    [10] <cycle 1>
+ [139] IrExprType            [270] LexPrintStats          [32] <cycle 2>
+  [57] IrFastResolveBound (ir_fast.c) [271] LexRawPeekToken [53] <cycle 3>
+  [69] IrFrameFreeOwned       [81] LexScanGetToken        [49] <cycle 4>
+ [260] IrFrameLocalExtent    [272] LexToEndOfLine         [54] <cycle 5>
+  [55] IrFrameNoteLocalSlot  [115] LexTokenise             [5] <cycle 6>
+  [23] IrFramePop            [148] LexUnEscapeCharacter    [1] <cycle 7>
+  [28] IrFramePush             [9] LibraryAdd

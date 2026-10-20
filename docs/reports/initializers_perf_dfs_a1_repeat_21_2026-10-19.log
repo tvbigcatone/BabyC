@@ -1,0 +1,22 @@
+PAIR 01 baseline=9.527ms candidate=9.617ms delta=+0.94% output=15000
+PAIR 02 baseline=9.390ms candidate=9.435ms delta=+0.47% output=15000
+PAIR 03 baseline=9.734ms candidate=9.523ms delta=-2.16% output=15000
+PAIR 04 baseline=9.874ms candidate=9.786ms delta=-0.89% output=15000
+PAIR 05 baseline=9.754ms candidate=9.505ms delta=-2.55% output=15000
+PAIR 06 baseline=9.427ms candidate=9.718ms delta=+3.08% output=15000
+PAIR 07 baseline=8.490ms candidate=9.405ms delta=+10.78% output=15000
+PAIR 08 baseline=9.712ms candidate=9.381ms delta=-3.40% output=15000
+PAIR 09 baseline=9.757ms candidate=9.743ms delta=-0.14% output=15000
+PAIR 10 baseline=9.681ms candidate=10.229ms delta=+5.66% output=15000
+PAIR 11 baseline=9.910ms candidate=9.782ms delta=-1.29% output=15000
+PAIR 12 baseline=9.963ms candidate=9.987ms delta=+0.24% output=15000
+PAIR 13 baseline=9.719ms candidate=9.569ms delta=-1.54% output=15000
+PAIR 14 baseline=9.893ms candidate=9.661ms delta=-2.35% output=15000
+PAIR 15 baseline=9.472ms candidate=9.407ms delta=-0.68% output=15000
+PAIR 16 baseline=9.479ms candidate=9.596ms delta=+1.23% output=15000
+PAIR 17 baseline=9.910ms candidate=16.194ms delta=+63.42% output=15000
+PAIR 18 baseline=10.799ms candidate=10.394ms delta=-3.75% output=15000
+PAIR 19 baseline=9.892ms candidate=9.566ms delta=-3.30% output=15000
+PAIR 20 baseline=9.540ms candidate=9.513ms delta=-0.29% output=15000
+PAIR 21 baseline=9.627ms candidate=9.657ms delta=+0.31% output=15000
+SUMMARY pairs=21 baseline_med=9.719ms candidate_med=9.617ms raw_delta=-1.05% paired_med=-0.29% IQR=-2.16%..+0.94%

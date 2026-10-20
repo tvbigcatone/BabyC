@@ -1,0 +1,138 @@
+{
+  "string_scan": {
+    "specialized": {
+      "ms": [
+        265.375,
+        270.542,
+        272.781,
+        257.925,
+        284.927,
+        277.947,
+        264.406
+      ],
+      "median": 270.542,
+      "status": {
+        "rc": 0,
+        "out": "inear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000\n"
+      }
+    },
+    "generic": {
+      "ms": [
+        296.872,
+        305.334,
+        305.532,
+        360.176,
+        323.769,
+        327.016,
+        307.814
+      ],
+      "median": 307.814,
+      "status": {
+        "rc": 0,
+        "out": "inear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000\n"
+      }
+    }
+  },
+  "string_scan_bounded": {
+    "specialized": {
+      "ms": [
+        293.828,
+        298.961,
+        305.801,
+        307.84,
+        296.802,
+        345.105,
+        314.171
+      ],
+      "median": 305.801,
+      "status": {
+        "rc": 0,
+        "out": "inear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000\n"
+      }
+    },
+    "generic": {
+      "ms": [
+        359.0,
+        402.419,
+        378.542,
+        371.482,
+        374.837,
+        364.85,
+        389.798
+      ],
+      "median": 374.837,
+      "status": {
+        "rc": 0,
+        "out": "inear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n380000\n"
+      }
+    }
+  },
+  "struct_score": {
+    "specialized": {
+      "ms": [
+        68.372,
+        61.865,
+        64.248,
+        64.892,
+        66.474,
+        63.773,
+        68.314
+      ],
+      "median": 64.892,
+      "status": {
+        "rc": 0,
+        "out": "near STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000\n"
+      }
+    },
+    "generic": {
+      "ms": [
+        60.254,
+        64.1,
+        63.535,
+        62.968,
+        62.24,
+        63.983,
+        60.507
+      ],
+      "median": 62.968,
+      "status": {
+        "rc": 0,
+        "out": "near STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n7500000\n"
+      }
+    }
+  },
+  "dfs_rec": {
+    "specialized": {
+      "ms": [
+        29.346,
+        23.975,
+        25.851,
+        26.17,
+        25.157,
+        24.959,
+        26.114
+      ],
+      "median": 25.851,
+      "status": {
+        "rc": 0,
+        "out": "linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n15000\n"
+      }
+    },
+    "generic": {
+      "ms": [
+        23.689,
+        25.059,
+        23.218,
+        24.211,
+        24.321,
+        24.768,
+        25.527
+      ],
+      "median": 24.321,
+      "status": {
+        "rc": 0,
+        "out": "linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic \u22648 args)\n15000\n"
+      }
+    }
+  }
+}

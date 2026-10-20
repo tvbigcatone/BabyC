@@ -1,0 +1,9 @@
+=== Initial 047 strict dump: original 651 cumulative tree ===
+[vm-try] body=0x563db678e2f0 depth=1 kind=2
+[vm-rej] compile-null
+[babyc-bytecode-vm-prod] attempts=0 runs=0
+
+=== process output ===
+/*
+  ^
+047_grep.c:1:2 strict: tree fallback (body)

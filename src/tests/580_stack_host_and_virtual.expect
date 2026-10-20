@@ -1,0 +1,3 @@
+    char pad[2048];
+                  ^
+580_stack_host_and_virtual.c:4:18 stack overflow (local variables / call frames exceed stack size)

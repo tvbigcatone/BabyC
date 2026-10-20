@@ -1,0 +1,3 @@
+    printf("%d\n", a[3]);
+                    ^
+418_array_oob_fail.c:5:20 array index 3 out of bounds (size 3)

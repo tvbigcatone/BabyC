@@ -1,0 +1,21 @@
+COMMAND: BABYC_PATH=linear BABYC_STRICT=1 BABYC_ACCEL=0 python3 tools/run_numbered_matrix.py --path linear --accel 0 --strict
+CONFIG linear_accel0_STRICT TOTAL=1006
+FAIL 47/1006 047_grep rc=1 elapsed=0.002s
+  EXPECT: '?GREP-E-No arguments\nUsage: grep [-cfnv] pattern [file ...].  grep ? for help'
+  ACTUAL: '/*\n  ^\n047_grep.c:1:2 strict: tree fallback (body)'
+CUMULATIVE 100/1006: PASSED=99 FAILED=1 TIMEOUT=0 SKIPPED=0
+FAIL 126/1006 126_csmith_modulo_zero rc=1 elapsed=0.001s
+  EXPECT: 'if (((uint64_t)(((((uint16_t)g_102 * (uint16_t)(g_32 = (((((l_532 = (((uint16_t)((((uint16_t)(--p_3) << (uint16_t)g_48.f6) >= g_32) <= ((int32_t)((((uint16_t)((g_200 = (((g_48.f1 ^= ((1L ^ (((l_528 = (l_527 = ((int16_t)((((((int16_t)p_5 * (int16_t)((uint32_t)((int32_t)(l_521[3][2] != (l_522[4] = l_521[3][2])) % (int32_t)((uint16_t)(-(uint16_t)l_526) % (uint16_t)p_6)) - (uint32_t)p_4)) != p_6) <= 0x15E5) , &g_144) != &g_144) / (int16_t)g_52))) & 8UL) == 9L)) & 0x31F7)) > 0L) , g_48.f8)) <= 0xE38AB67088FAEE93LL) << (uint16_t)p_6) || 4294967292UL) , 0xF6C187DE) + (int32_t)p_4)) << (uint16_t)g_48.f6) , 0xDB8C250E7B4AEB2BLL)) | 0xCA817D1E21DFAE80LL) >= g_48.f0) || g_374) != g_48.f5))) ^ g_293) , 0x48E2) <= 0x4D04) + (uint64_t)p_5))\n                                                                                                                                                                                                                                                                                                                                                                      ^\n126_csmith_modulo_zero.c:93:357 modulo by zero'
+  ACTUAL: '/* Regression from csmith-like code: expression evaluates to modulo by zero.\n                     ^\n126_csmith_modulo_zero.c:1:21 strict: tree fallback (body)'
+CUMULATIVE 200/1006: PASSED=198 FAILED=2 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 300/1006: PASSED=298 FAILED=2 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 400/1006: PASSED=398 FAILED=2 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 500/1006: PASSED=498 FAILED=2 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 600/1006: PASSED=598 FAILED=2 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 700/1006: PASSED=698 FAILED=2 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 800/1006: PASSED=798 FAILED=2 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 900/1006: PASSED=898 FAILED=2 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 1000/1006: PASSED=998 FAILED=2 TIMEOUT=0 SKIPPED=0
+CUMULATIVE 1006/1006: PASSED=1004 FAILED=2 TIMEOUT=0 SKIPPED=0
+SUMMARY linear_accel0_STRICT: PASSED=1004 FAILED=2 TIMEOUT=0 SKIPPED=0 TOTAL=1006 SECONDS=3.60
+FAILURES: 047_grep.c 126_csmith_modulo_zero.c

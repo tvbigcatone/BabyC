@@ -1,0 +1,3 @@
+    printf("%d\n", a[1]);
+                       ^
+244_array_elem_uninit.c:5:23 uninitialized variable

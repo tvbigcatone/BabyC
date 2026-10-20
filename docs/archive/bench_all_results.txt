@@ -1,0 +1,101 @@
+=== Python: 3.12.3 ===
+=== Sets: micro  (8 programs) ===
+=== Correctness ===
+bench            IR             NO_IR          python         gcc            status
+fib              4160200000     4160200000     4160200000     4160200000     OK
+array_sum        9999000000     9999000000     9999000000     9999000000     OK
+list_walk        599700000      599700000      599700000      599700000      OK
+struct_score     7500000        7500000        7500000        7500000        OK
+string_proc      380000         380000         380000         380000         OK
+matmul_small     2733800        2733800        2733800        2733800        OK
+dfs_rec          15000          15000          15000          15000          OK
+isort            29665          29665          29665          29665          OK
+
+=== Timing (best of 3, seconds) ===
+bench                   IR     NO_IR    python       gcc   py/IR  tok/IR  IR/gcc
+fib                 0.0027    0.2402    0.0160    0.0022   5.98x  89.42x   1.23x
+array_sum           0.0537    1.4007    0.1616    0.0026   3.01x  26.10x  20.53x
+list_walk           0.0048    0.4563    0.0564    0.0034  11.68x  94.45x   1.41x
+struct_score        0.0041    0.7857    0.0627    0.0023  15.29x 191.53x   1.76x
+string_proc         0.0212    5.2299    0.2559    0.0052  12.06x 246.59x   4.05x
+matmul_small        0.0254    0.1087    0.0198    0.0023   0.78x   4.28x  10.83x
+dfs_rec             0.0156    0.3094    0.0213    0.0026   1.37x  19.85x   6.00x
+isort               0.2755    5.2909    0.3759    0.0036   1.36x  19.21x  77.26x
+
+Legend: IR | NO_IR | python | gcc  (Irb retired — token = BABYC_NO_IR)
+sets=micro memo=off
+IR faster than Python on 7/8
+=== Python: 3.12.3 ===
+=== Sets: serie1  (14 programs) ===
+=== Correctness ===
+bench            IR             NO_IR          python         gcc            status
+serie1/collatz   658436 261     658436 261     658436 261     658436 261     OK
+serie1/crc       1017892610     1017892610     1017892610     1017892610     OK
+serie1/fib       75025          75025          75025          75025          OK
+serie1/fibc      242785         242785         242785         242785         OK
+serie1/gcd       225965         225965         225965         225965         OK
+serie1/hello     hi             hi             hi             hi             OK
+serie1/isort     8 65515 652681 8 65515 652681 8 65515 652681 8 65515 652681 OK
+serie1/list      797750         797750         797750         797750         OK
+serie1/mandel    2185           2185           2185           2185           OK
+serie1/matmul    295327         295327         295327         295327         OK
+serie1/sieve     41538          41538          41538          41538          OK
+serie1/strproc   242367         242367         242367         242367         OK
+serie1/structs   894781         894781         894781         894781         OK
+serie1/tri       55667          55667          55667          55667          OK
+
+=== Timing (best of 3, seconds) ===
+bench                   IR     NO_IR    python       gcc   py/IR  tok/IR  IR/gcc
+serie1/collatz      0.1182    0.8641    0.0864    0.0036   0.73x   7.31x  32.54x
+serie1/crc          0.0057    0.0620    0.0185    0.0024   3.27x  10.92x   2.39x
+serie1/fib          0.0026    0.2204    0.0209    0.0023   7.97x  84.20x   1.13x
+serie1/fibc         0.1200    0.2836    0.0276    0.0023   0.23x   2.36x  51.64x
+serie1/gcd          0.0537    0.4392    0.0265    0.0039   0.49x   8.18x  13.91x
+serie1/hello        0.0026    0.0026    0.0126    0.0026   4.84x   0.99x   0.99x
+serie1/isort        0.1222    0.5874    0.0551    0.0025   0.45x   4.81x  48.18x
+serie1/list         0.1108    0.4603    0.0508    0.0041   0.46x   4.16x  27.11x
+serie1/mandel       0.0860    0.4992    0.0525    0.0029   0.61x   5.81x  29.47x
+serie1/matmul       0.1121    0.4368    0.0515    0.0025   0.46x   3.90x  44.70x
+serie1/sieve        0.2203    1.4008    0.1204    0.0033   0.55x   6.36x  65.85x
+serie1/strproc      0.0565    0.5574    0.0579    0.0030   1.03x   9.87x  18.66x
+serie1/structs      0.2696    0.5788    0.0485    0.0028   0.18x   2.15x  95.74x
+serie1/tri          0.1385    0.5420    0.0281    0.0022   0.20x   3.91x  63.18x
+
+Legend: IR | NO_IR | python | gcc  (Irb retired — token = BABYC_NO_IR)
+sets=serie1 memo=off
+IR faster than Python on 4/14
+=== Python: 3.12.3 ===
+=== Sets: serie2  (12 programs) ===
+=== Correctness ===
+bench            IR             NO_IR          python         gcc            status
+serie2/bubble    211 65460 5252 211 65460 5252 211 65460 5252 211 65460 5252 OK
+serie2/collatz_v 387940         387940         387940         387940         OK
+serie2/crc       1017892610     1017892610     1017892610     1017892610     OK
+serie2/hashtab   2500 7500      2500 7500      2500 7500      2500 7500      OK
+serie2/lcs       384            384            384            384            OK
+serie2/mandel_v  80893          80893          80893          80893          OK
+serie2/matmul_v  18932          18932          18932          18932          OK
+serie2/nqueens   352            352            352            352            OK
+serie2/selsort_v 332 65503 6705 332 65503 6705 332 65503 6705 332 65503 6705 OK
+serie2/sieve_v   33860          33860          33860          33860          OK
+serie2/structs_v 826980         826980         826980         826980         OK
+serie2/wordcount 4174 27 830279 4174 27 830279 4174 27 830279 4174 27 830279 OK
+
+=== Timing (best of 3, seconds) ===
+bench                   IR     NO_IR    python       gcc   py/IR  tok/IR  IR/gcc
+serie2/bubble       0.0505    0.2495    0.0238    0.0025   0.47x   4.94x  20.27x
+serie2/collatz_v    0.1250    0.6217    0.0608    0.0028   0.49x   4.97x  44.54x
+serie2/crc          0.0057    0.0619    0.0184    0.0024   3.22x  10.87x   2.39x
+serie2/hashtab      0.0237    0.1985    0.0287    0.0024   1.21x   8.37x   9.93x
+serie2/lcs          0.0333    0.5957    0.0506    0.0024   1.52x  17.91x  13.80x
+serie2/mandel_v     0.0459    0.2675    0.0211    0.0026   0.46x   5.83x  17.73x
+serie2/matmul_v     0.0341    0.4278    0.0585    0.0025   1.72x  12.56x  13.57x
+serie2/nqueens      0.0281    0.4649    0.0171    0.0028   0.61x  16.54x  10.09x
+serie2/selsort_v    0.0592    0.3218    0.0240    0.0031   0.41x   5.43x  19.20x
+serie2/sieve_v      0.1837    1.5452    0.1425    0.0044   0.78x   8.41x  41.85x
+serie2/structs_v    0.0602    0.1899    0.0252    0.0025   0.42x   3.16x  24.15x
+serie2/wordcount    0.0143    0.1220    0.0209    0.0023   1.46x   8.53x   6.10x
+
+Legend: IR | NO_IR | python | gcc  (Irb retired — token = BABYC_NO_IR)
+sets=serie2 memo=off
+IR faster than Python on 5/12

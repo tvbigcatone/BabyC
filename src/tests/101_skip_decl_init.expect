@@ -1,0 +1,5 @@
+live=7
+loop=1,10
+loop=2,11
+reached=6
+skip_decl_init_ok

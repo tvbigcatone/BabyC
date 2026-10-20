@@ -1,0 +1,19 @@
+=== 618_inc_member_call_arg ===
+--- MODE=tree ---
+RC=0
+STDOUT=-4|4|22|11|10|5|
+STDERR=
+FALLBACK_FOUND=0
+UNINIT_FOUND=0
+--- MODE=linear0 ---
+RC=0
+STDOUT=-4|4|22|11|10|5|
+STDERR=[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)|
+FALLBACK_FOUND=0
+UNINIT_FOUND=0
+--- MODE=linear1 ---
+RC=0
+STDOUT=-4|4|22|11|10|5|
+STDERR=[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)|
+FALLBACK_FOUND=0
+UNINIT_FOUND=0

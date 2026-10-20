@@ -1,0 +1,3 @@
+    printf("%s\n", p);
+                    ^
+406_lib_crash_report.c:8:20 SEGV inside library function 'printf'

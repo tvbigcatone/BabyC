@@ -1,0 +1,9 @@
+BabyC Phase 3 integer semantic microtests — GCC output check
+Command pattern: gcc -std=c11 -O0 -w <test.c> -o <tmp executable>; run executable; compare stdout to the matching .expect.
+The -w suppresses intentional -Wsign-compare warnings in mixed-signedness probes; optimization level remains -O0.
+PASS 1018_integer_promotions_signedness: stdout identical to .expect
+PASS 1019_integer_shift_divmod: stdout identical to .expect
+PASS 1020_integer_narrow_call_return: stdout identical to .expect
+PASS 1021_unsigned_wrap_compound: stdout identical to .expect
+PASS 1022_integer_conditional_conversions: stdout identical to .expect
+PASS 1023_integer_bitfields: stdout identical to .expect

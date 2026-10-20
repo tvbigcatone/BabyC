@@ -1,0 +1,8 @@
+sizeof_char=1
+sizeof_short=2
+sizeof_int=4
+sizeof_long_long=8
+sizeof_double=8
+ptr_consistent=ok
+long_long_64=ok
+long_size=ok

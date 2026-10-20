@@ -1,0 +1,4 @@
+3 1
+    printf("%d\n", l.p[0].x);
+                           ^
+263_nested_struct_array_uninit.c:10:27 uninitialized variable

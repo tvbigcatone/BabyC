@@ -1,0 +1,3 @@
+int foo(void) {
+              ^
+473_func_body_unclosed.c:2:13 function body of 'foo' not closed

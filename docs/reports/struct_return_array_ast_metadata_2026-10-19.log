@@ -1,0 +1,5 @@
+[decl-meta] line=12 name=v slot=0 arr=1 ptr=1 elemPtr=0 fptr=0 from=16 fromSize=8 elemSize=8 expr=-1
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+[decl-meta] line=5 name=r slot=0 arr=1 ptr=0 elemPtr=0 fptr=0 from=16 fromSize=8 elemSize=8 expr=-1
+7 1 1
+[babyc-bytecode-vm-prod] attempts=0 runs=0

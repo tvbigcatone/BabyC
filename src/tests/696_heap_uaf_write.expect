@@ -1,0 +1,3 @@
+    p[0] = 9;
+           ^
+696_heap_uaf_write.c:8:10 write to freed memory

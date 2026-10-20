@@ -1,0 +1,7 @@
+=== babyc analyze ===
+  IR    f  (380_analyze_mode.c:4)
+  IR    main  (380_analyze_mode.c:6)
+---
+user functions: 2  BodyIR: 2  token-fallback: 0  (100% IR)
+compile counters: ir=2 token=0
+=== end analyze ===

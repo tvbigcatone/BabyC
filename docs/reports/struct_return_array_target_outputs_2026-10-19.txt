@@ -1,0 +1,14 @@
+=== PATH=tree STRICT=0 ACCEL=0 ===
+7 1 1
+RC=0
+=== PATH=tree STRICT=0 ACCEL=1 ===
+7 1 1
+RC=0
+=== PATH=linear STRICT=1 ACCEL=0 ===
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+7 1 1
+RC=0
+=== PATH=linear STRICT=1 ACCEL=1 ===
+[babyc] PATH=linear STRICT=1 experimental: linear instruction interpreter prod (index/global mem ops + host Intrinsic ≤8 args)
+7 1 1
+RC=0
